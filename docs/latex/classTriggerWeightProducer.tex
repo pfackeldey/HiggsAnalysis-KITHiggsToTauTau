@@ -1,0 +1,51 @@
+\hypertarget{classTriggerWeightProducer}{
+\section{TriggerWeightProducer Class Reference}
+\label{classTriggerWeightProducer}\index{TriggerWeightProducer@{TriggerWeightProducer}}
+}
+
+
+{\ttfamily \#include $<$DataMcScaleFactorProducers.h$>$}Inheritance diagram for TriggerWeightProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classTriggerWeightProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classTriggerWeightProducer_ae1c96224d40a0964c2ea992591a6310e}{GetProducerId} () const override
+\item 
+\hyperlink{classTriggerWeightProducer_af3a739fe500b608be0d9fd7112823d72}{TriggerWeightProducer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for the Trigger weights using the functions and paramters provided by the Htt group See: \href{https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013#Data_MC_correction_factors}{\tt https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013\#Data\_\-MC\_\-correction\_\-factors}
+
+Required config tags:
+\begin{DoxyItemize}
+\item TriggerEfficiencyData (vector of ROOT files containing triggerEfficiencies histogram)
+\item TriggerEfficiencyMc (vector of ROOT files containing triggerEfficiencies histogram)
+\item TriggerEfficiencyHistogram (default: triggerEfficiencies) 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTriggerWeightProducer_af3a739fe500b608be0d9fd7112823d72}{
+\index{TriggerWeightProducer@{TriggerWeightProducer}!TriggerWeightProducer@{TriggerWeightProducer}}
+\index{TriggerWeightProducer@{TriggerWeightProducer}!TriggerWeightProducer@{TriggerWeightProducer}}
+\subsubsection[{TriggerWeightProducer}]{\setlength{\rightskip}{0pt plus 5cm}TriggerWeightProducer::TriggerWeightProducer ()}}
+\label{classTriggerWeightProducer_af3a739fe500b608be0d9fd7112823d72}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTriggerWeightProducer_ae1c96224d40a0964c2ea992591a6310e}{
+\index{TriggerWeightProducer@{TriggerWeightProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TriggerWeightProducer@{TriggerWeightProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string TriggerWeightProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classTriggerWeightProducer_ae1c96224d40a0964c2ea992591a6310e}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{DataMcScaleFactorProducers_8h}{DataMcScaleFactorProducers.h}\item 
+src/Producers/\hyperlink{DataMcScaleFactorProducers_8cc}{DataMcScaleFactorProducers.cc}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{SvfitTools_8h}{
+\section{interface/Utility/SvfitTools.h File Reference}
+\label{SvfitTools_8h}\index{interface/Utility/SvfitTools.h@{interface/Utility/SvfitTools.h}}
+}
+{\ttfamily \#include \char`\"{}Artus/Utility/interface/ArtusLogging.h\char`\"{}}\par
+{\ttfamily \#include $<$map$>$}\par
+{\ttfamily \#include $<$TChain.h$>$}\par
+{\ttfamily \#include $<$TMemFile.h$>$}\par
+{\ttfamily \#include \char`\"{}TauAnalysis/SVfitStandalone/interface/SVfitStandaloneAlgorithm.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TauAnalysis/SVfitStandalone/interface/SVfitStandaloneQuantities.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Kappa/DataFormats/interface/Kappa.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttEnumTypes.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classTauSVfitQuantity}{TauSVfitQuantity}
+\item 
+class \hyperlink{classTauESVfitQuantity}{TauESVfitQuantity}
+\item 
+class \hyperlink{classTauERatioSVfitQuantity}{TauERatioSVfitQuantity}
+\item 
+class \hyperlink{classTauPtSVfitQuantity}{TauPtSVfitQuantity}
+\item 
+class \hyperlink{classTauEtaSVfitQuantity}{TauEtaSVfitQuantity}
+\item 
+class \hyperlink{classTauPhiSVfitQuantity}{TauPhiSVfitQuantity}
+\item 
+class \hyperlink{classMCTauTauQuantitiesAdapter}{MCTauTauQuantitiesAdapter}
+\item 
+class \hyperlink{classSvfitEventKey}{SvfitEventKey}
+\item 
+class \hyperlink{classSvfitInputs}{SvfitInputs}
+\item 
+class \hyperlink{classSvfitResults}{SvfitResults}
+\item 
+class \hyperlink{classSvfitTools}{SvfitTools}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacestd}{std}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef ROOT::Math::DisplacementVector3D$<$ ROOT::Math::Cartesian3D$<$ float $>$, ROOT::Math::DefaultCoordinateSystemTag $>$ \hyperlink{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}{RMDataV}
+\item 
+typedef ROOT::Math::SMatrix$<$ double, 2, 2, ROOT::Math::MatRepSym$<$ double, 2 $>$ $>$ \hyperlink{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}{RMSM2x2}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacestd_a100b654f8c856a5aef7dac3916df8d5d}{std::to\_\-string} (\hyperlink{classSvfitEventKey}{SvfitEventKey} const \&svfitEventKey)
+\item 
+std::ostream \& \hyperlink{SvfitTools_8h_a5810f81bd29e27275a530d8248193ebc}{operator$<$$<$} (std::ostream \&os, \hyperlink{classSvfitEventKey}{SvfitEventKey} const \&svfitEventKey)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}{
+\index{SvfitTools.h@{SvfitTools.h}!RMDataV@{RMDataV}}
+\index{RMDataV@{RMDataV}!SvfitTools.h@{SvfitTools.h}}
+\subsubsection[{RMDataV}]{\setlength{\rightskip}{0pt plus 5cm}typedef ROOT::Math::DisplacementVector3D$<$ROOT::Math::Cartesian3D$<$float$>$,ROOT::Math::DefaultCoordinateSystemTag$>$ {\bf RMDataV}}}
+\label{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}
+\hypertarget{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}{
+\index{SvfitTools.h@{SvfitTools.h}!RMSM2x2@{RMSM2x2}}
+\index{RMSM2x2@{RMSM2x2}!SvfitTools.h@{SvfitTools.h}}
+\subsubsection[{RMSM2x2}]{\setlength{\rightskip}{0pt plus 5cm}typedef ROOT::Math::SMatrix$<$double, 2, 2, ROOT::Math::MatRepSym$<$double, 2$>$ $>$ {\bf RMSM2x2}}}
+\label{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}
+
+
+\subsection{Function Documentation}
+\hypertarget{SvfitTools_8h_a5810f81bd29e27275a530d8248193ebc}{
+\index{SvfitTools.h@{SvfitTools.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SvfitTools.h@{SvfitTools.h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (std::ostream \& {\em os}, \/  {\bf SvfitEventKey} const \& {\em svfitEventKey})}}
+\label{SvfitTools_8h_a5810f81bd29e27275a530d8248193ebc}

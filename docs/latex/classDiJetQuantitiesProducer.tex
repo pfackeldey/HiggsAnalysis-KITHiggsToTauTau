@@ -1,0 +1,68 @@
+\hypertarget{classDiJetQuantitiesProducer}{
+\section{DiJetQuantitiesProducer Class Reference}
+\label{classDiJetQuantitiesProducer}\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+}
+
+
+{\ttfamily \#include $<$DiJetQuantitiesProducer.h$>$}Inheritance diagram for DiJetQuantitiesProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classDiJetQuantitiesProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(RMDLV const \&)$>$ \hyperlink{classDiJetQuantitiesProducer_a08cdb9a72346178635bc116c04ef6271}{dijet\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classDiJetQuantitiesProducer_a9fce10c46aed19eabf7bce163b9b129d}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classDiJetQuantitiesProducer_aab4d47b6a70353c6c37f15f461dd97b1}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classDiJetQuantitiesProducer_a94dddcf5600c7c6d97d14c86b44115da}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classDiJetQuantitiesProducer_a11fe61b81d216c394cf0dfcdd6935ba0}{GetDiJetQuantity} (product\_\-type const \&product, \hyperlink{classDiJetQuantitiesProducer_a08cdb9a72346178635bc116c04ef6271}{dijet\_\-extractor\_\-lambda} dijetQuantity)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classDiJetQuantitiesProducer_a08cdb9a72346178635bc116c04ef6271}{
+\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}!dijet\_\-extractor\_\-lambda@{dijet\_\-extractor\_\-lambda}}
+\index{dijet\_\-extractor\_\-lambda@{dijet\_\-extractor\_\-lambda}!DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+\subsubsection[{dijet\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double(RMDLV const\&)$>$ {\bf DiJetQuantitiesProducer::dijet\_\-extractor\_\-lambda}}}
+\label{classDiJetQuantitiesProducer_a08cdb9a72346178635bc116c04ef6271}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDiJetQuantitiesProducer_a11fe61b81d216c394cf0dfcdd6935ba0}{
+\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}!GetDiJetQuantity@{GetDiJetQuantity}}
+\index{GetDiJetQuantity@{GetDiJetQuantity}!DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+\subsubsection[{GetDiJetQuantity}]{\setlength{\rightskip}{0pt plus 5cm}double DiJetQuantitiesProducer::GetDiJetQuantity (product\_\-type const \& {\em product}, \/  {\bf dijet\_\-extractor\_\-lambda} {\em dijetQuantity})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classDiJetQuantitiesProducer_a11fe61b81d216c394cf0dfcdd6935ba0}
+\hypertarget{classDiJetQuantitiesProducer_a9fce10c46aed19eabf7bce163b9b129d}{
+\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string DiJetQuantitiesProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classDiJetQuantitiesProducer_a9fce10c46aed19eabf7bce163b9b129d}
+\hypertarget{classDiJetQuantitiesProducer_aab4d47b6a70353c6c37f15f461dd97b1}{
+\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}!Init@{Init}}
+\index{Init@{Init}!DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void DiJetQuantitiesProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDiJetQuantitiesProducer_aab4d47b6a70353c6c37f15f461dd97b1}
+\hypertarget{classDiJetQuantitiesProducer_a94dddcf5600c7c6d97d14c86b44115da}{
+\index{DiJetQuantitiesProducer@{DiJetQuantitiesProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!DiJetQuantitiesProducer@{DiJetQuantitiesProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void DiJetQuantitiesProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDiJetQuantitiesProducer_a94dddcf5600c7c6d97d14c86b44115da}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{DiJetQuantitiesProducer_8h}{DiJetQuantitiesProducer.h}\item 
+src/Producers/\hyperlink{DiJetQuantitiesProducer_8cc}{DiJetQuantitiesProducer.cc}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{classDecayChannelProducer}{
+\section{DecayChannelProducer Class Reference}
+\label{classDecayChannelProducer}\index{DecayChannelProducer@{DecayChannelProducer}}
+}
+
+
+{\ttfamily \#include $<$DecayChannelProducer.h$>$}Inheritance diagram for DecayChannelProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classDecayChannelProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classDecayChannelProducer_a151b0b47507bc8e521fe9acab96d38bc}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classDecayChannelProducer_a5876d5fbfeb50e57f802d2f334a1bf4b}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classDecayChannelProducer_a0e10edeaa5e3ae64023b521237f50003}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDecayChannelProducer_a6f207dff7857e0c2bacdca16ca9cea80}{FillGenLeptonCollections} (product\_\-type \&product) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttEnumTypes_a5e7e80b023df2c06dfd1e9c08f6efb35}{HttEnumTypes::DecayChannel} \hyperlink{classDecayChannelProducer_a4377dc18e06d6ddb5f7abbfb8a4b48e5}{m\_\-decayChannel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer that defines the decay channel. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDecayChannelProducer_a6f207dff7857e0c2bacdca16ca9cea80}{
+\index{DecayChannelProducer@{DecayChannelProducer}!FillGenLeptonCollections@{FillGenLeptonCollections}}
+\index{FillGenLeptonCollections@{FillGenLeptonCollections}!DecayChannelProducer@{DecayChannelProducer}}
+\subsubsection[{FillGenLeptonCollections}]{\setlength{\rightskip}{0pt plus 5cm}void DecayChannelProducer::FillGenLeptonCollections (product\_\-type \& {\em product}) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classDecayChannelProducer_a6f207dff7857e0c2bacdca16ca9cea80}
+\hypertarget{classDecayChannelProducer_a151b0b47507bc8e521fe9acab96d38bc}{
+\index{DecayChannelProducer@{DecayChannelProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!DecayChannelProducer@{DecayChannelProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string DecayChannelProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classDecayChannelProducer_a151b0b47507bc8e521fe9acab96d38bc}
+
+
+Reimplemented in \hyperlink{classTTHDecayChannelProducer_aace688b4843340b15df45ba5b7481739}{TTHDecayChannelProducer}, and \hyperlink{classRun2DecayChannelProducer_a06679779125c72055f17b6459ed6cd76}{Run2DecayChannelProducer}.\hypertarget{classDecayChannelProducer_a5876d5fbfeb50e57f802d2f334a1bf4b}{
+\index{DecayChannelProducer@{DecayChannelProducer}!Init@{Init}}
+\index{Init@{Init}!DecayChannelProducer@{DecayChannelProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void DecayChannelProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDecayChannelProducer_a5876d5fbfeb50e57f802d2f334a1bf4b}
+
+
+Reimplemented in \hyperlink{classRun2DecayChannelProducer_a882927f7f4db3244af175db88535a496}{Run2DecayChannelProducer}.\hypertarget{classDecayChannelProducer_a0e10edeaa5e3ae64023b521237f50003}{
+\index{DecayChannelProducer@{DecayChannelProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!DecayChannelProducer@{DecayChannelProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void DecayChannelProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDecayChannelProducer_a0e10edeaa5e3ae64023b521237f50003}
+
+
+Reimplemented in \hyperlink{classTTHDecayChannelProducer_a156d33176c768ffd652292bf365f73a0}{TTHDecayChannelProducer}, and \hyperlink{classRun2DecayChannelProducer_a5f16d982e94c38e4c36e97d842bee5be}{Run2DecayChannelProducer}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classDecayChannelProducer_a4377dc18e06d6ddb5f7abbfb8a4b48e5}{
+\index{DecayChannelProducer@{DecayChannelProducer}!m\_\-decayChannel@{m\_\-decayChannel}}
+\index{m\_\-decayChannel@{m\_\-decayChannel}!DecayChannelProducer@{DecayChannelProducer}}
+\subsubsection[{m\_\-decayChannel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::DecayChannel} {\bf DecayChannelProducer::m\_\-decayChannel}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classDecayChannelProducer_a4377dc18e06d6ddb5f7abbfb8a4b48e5}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{DecayChannelProducer_8h}{DecayChannelProducer.h}\item 
+src/Producers/\hyperlink{DecayChannelProducer_8cc}{DecayChannelProducer.cc}\end{DoxyCompactItemize}

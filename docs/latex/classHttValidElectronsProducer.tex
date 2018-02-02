@@ -1,0 +1,196 @@
+\hypertarget{classHttValidElectronsProducer}{
+\section{HttValidElectronsProducer Class Reference}
+\label{classHttValidElectronsProducer}\index{HttValidElectronsProducer@{HttValidElectronsProducer}}
+}
+
+
+GlobalProducer, for valid electrons.  
+
+
+{\ttfamily \#include $<$HttValidElectronsProducer.h$>$}Inheritance diagram for HttValidElectronsProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHttValidElectronsProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3}{ElectronIDType} \{ \par
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa4500fcb41d94192317e16d5d0a7932b}{INVALID} =  -\/2, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af78fa54075517cb7cd2656fd8b436529}{NONE} =  -\/1, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a0254637102c75f7e4df9cb337da2e1d5}{SUMMER2013LOOSE} =  0, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a976c643d768971c30c99410b51b9eb62}{SUMMER2013TIGHT} =  1, 
+\par
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a6cd64bfbbef04d42f9908a6fe96dd7b9}{SUMMER2013TTHTIGHT} =  2, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3afdff23fab549c8951682694db8628e36}{SUMMER2013TTHLOOSE} =  3, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a5a03216f07b395797dbb7037cff9252f}{CUTBASED2015ANDLATER} =  4, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af9a854b70d468a2504277a276a81a1c6}{MVABASED2015ANDLATER} =  5, 
+\par
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a91405eb56bc38794aa61f037481cac9b}{CUTBASED2015NOISOANDIPCUTSVETO} =  6, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ad3e287b5aa3f888f0976e394b5ceff2e}{CUTBASED2015NOISOANDIPCUTSLOOSE} =  7, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ac574083e81d10633124e638b9e76ff63}{CUTBASED2015NOISOANDIPCUTSMEDIUM} =  8, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3abb0bf92e0ec81f3b7c0f53b5c90e7e78}{CUTBASED2015NOISOANDIPCUTSTIGHT} =  9, 
+\par
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a72bc0f4cfa339f782aae7384e64d6916}{CUTBASED2016NOISOCUTSVETO} =  10, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa6cb20cbe205f30a779ff7a5afed5eca}{CUTBASED2016NOISOCUTSLOOSE} =  11, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a1274e591c8064f9e1dd379b82d98e4d5}{CUTBASED2016NOISOCUTSMEDIUM} =  12, 
+\hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa2117a69063c0ee8ea5510e95e9f57df}{CUTBASED2016NOISOCUTSTIGHT} =  13
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttValidElectronsProducer_a8e773bcd5e4cb3261727af6db04760b3}{HttValidElectronsProducer} (std::vector$<$ KElectron $\ast$ $>$ product\_\-type::$\ast$validElectrons=\&product\_\-type::m\_\-validElectrons, std::vector$<$ KElectron $\ast$ $>$ product\_\-type::$\ast$invalidElectrons=\&product\_\-type::m\_\-invalidElectrons, std::string(setting\_\-type::$\ast$GetElectronID)(void) const =\&setting\_\-type::GetElectronID, std::string(setting\_\-type::$\ast$GetElectronIDType)(void) const =\&setting\_\-type::GetElectronIDType, std::string(setting\_\-type::$\ast$GetElectronIDName)(void) const =\&setting\_\-type::GetElectronIDName, float(setting\_\-type::$\ast$GetElectronMvaIDCutEB1)(void) const =\&setting\_\-type::GetElectronMvaIDCutEB1, float(setting\_\-type::$\ast$GetElectronMvaIDCutEB2)(void) const =\&setting\_\-type::GetElectronMvaIDCutEB2, float(setting\_\-type::$\ast$GetElectronMvaIDCutEE)(void) const =\&setting\_\-type::GetElectronMvaIDCutEE, std::string(setting\_\-type::$\ast$GetElectronIsoType)(void) const =\&setting\_\-type::GetElectronIsoType, std::string(setting\_\-type::$\ast$GetElectronIso)(void) const =\&setting\_\-type::GetElectronIso, std::string(setting\_\-type::$\ast$GetElectronReco)(void) const =\&setting\_\-type::GetElectronReco, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetLowerPtCuts)(void) const =\&setting\_\-type::GetElectronLowerPtCuts, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetUpperAbsEtaCuts)(void) const =\&setting\_\-type::GetElectronUpperAbsEtaCuts, float(setting\_\-type::$\ast$GetElectronChargedIsoVetoConeSizeEB)(void) const =\&setting\_\-type::GetElectronChargedIsoVetoConeSizeEB, float(setting\_\-type::$\ast$GetElectronChargedIsoVetoConeSizeEE)(void) const =\&setting\_\-type::GetElectronChargedIsoVetoConeSizeEE, float(setting\_\-type::$\ast$GetElectronNeutralIsoVetoConeSize)(void) const =\&setting\_\-type::GetElectronNeutralIsoVetoConeSize, float(setting\_\-type::$\ast$GetElectronPhotonIsoVetoConeSizeEB)(void) const =\&setting\_\-type::GetElectronPhotonIsoVetoConeSizeEB, float(setting\_\-type::$\ast$GetElectronPhotonIsoVetoConeSizeEE)(void) const =\&setting\_\-type::GetElectronPhotonIsoVetoConeSizeEE, float(setting\_\-type::$\ast$GetElectronDeltaBetaIsoVetoConeSize)(void) const =\&setting\_\-type::GetElectronDeltaBetaIsoVetoConeSize, float(setting\_\-type::$\ast$GetElectronChargedIsoPtThreshold)(void) const =\&setting\_\-type::GetElectronChargedIsoPtThreshold, float(setting\_\-type::$\ast$GetElectronNeutralIsoPtThreshold)(void) const =\&setting\_\-type::GetElectronNeutralIsoPtThreshold, float(setting\_\-type::$\ast$GetElectronPhotonIsoPtThreshold)(void) const =\&setting\_\-type::GetElectronPhotonIsoPtThreshold, float(setting\_\-type::$\ast$GetElectronDeltaBetaIsoPtThreshold)(void) const =\&setting\_\-type::GetElectronDeltaBetaIsoPtThreshold, float(setting\_\-type::$\ast$GetElectronIsoSignalConeSize)(void) const =\&setting\_\-type::GetElectronIsoSignalConeSize, float(setting\_\-type::$\ast$GetElectronDeltaBetaCorrectionFactor)(void) const =\&setting\_\-type::GetElectronDeltaBetaCorrectionFactor, float(setting\_\-type::$\ast$GetElectronIsoPtSumOverPtLowerThresholdEB)(void) const =\&setting\_\-type::GetElectronIsoPtSumOverPtLowerThresholdEB, float(setting\_\-type::$\ast$GetElectronIsoPtSumOverPtLowerThresholdEE)(void) const =\&setting\_\-type::GetElectronIsoPtSumOverPtLowerThresholdEE, float(setting\_\-type::$\ast$GetElectronIsoPtSumOverPtUpperThresholdEB)(void) const =\&setting\_\-type::GetElectronIsoPtSumOverPtUpperThresholdEB, float(setting\_\-type::$\ast$GetElectronIsoPtSumOverPtUpperThresholdEE)(void) const =\&setting\_\-type::GetElectronIsoPtSumOverPtUpperThresholdEE, float(setting\_\-type::$\ast$GetElectronTrackDxyCut)(void) const =\&setting\_\-type::GetElectronTrackDxyCut, float(setting\_\-type::$\ast$GetElectronTrackDzCut)(void) const =\&setting\_\-type::GetElectronTrackDzCut, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetElectronIDList)(void) const =\&setting\_\-type::GetElectronIDList)
+\item 
+virtual void \hyperlink{classHttValidElectronsProducer_ae10e80f0e540bbf1d1e85a141b530bd7}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3}{ElectronIDType} \hyperlink{classHttValidElectronsProducer_a4280849eaeb101017cbe0a49d4b68311}{ToElectronIDType} (std::string const \&electronIDType)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classHttValidElectronsProducer_aba4230bf7a962a9a18a03433aaa3d3ec}{AdditionalCriteria} (KElectron $\ast$electron, event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+GlobalProducer, for valid electrons. Required config tags in addtion to the ones of the base class:
+\begin{DoxyItemize}
+\item ElectronIDType
+\item ElectronIDName (default given)
+\item ElectronMvaIDCutEB1 (default given)
+\item ElectronMvaIDCutEB2 (default given)
+\item ElectronMvaIDCutEE (default given)
+\item ElectronChargedIsoVetoConeSizeEB (default given)
+\item ElectronChargedIsoVetoConeSizeEE (default given)
+\item ElectronNeutralIsoVetoConeSize (default given)
+\item ElectronPhotonIsoVetoConeSizeEB (default given)
+\item ElectronPhotonIsoVetoConeSizeEE (default given)
+\item ElectronDeltaBetaIsoVetoConeSize (default given)
+\item ElectronChargedIsoPtThreshold (default given)
+\item ElectronNeutralIsoPtThreshold (default given)
+\item ElectronPhotonIsoPtThreshold (default given)
+\item ElectronDeltaBetaIsoPtThreshold (default given)
+\item ElectronIsoSignalConeSize
+\item ElectronDeltaBetaCorrectionFactor
+\item ElectronIsoPtSumOverPtLowerThresholdEB
+\item ElectronIsoPtSumOverPtLowerThresholdEE
+\item ElectronIsoPtSumOverPtUpperThresholdEB
+\item ElectronIsoPtSumOverPtUpperThresholdEE
+\item ElectronIDList (default given) 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3}{
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!ElectronIDType@{ElectronIDType}}
+\index{ElectronIDType@{ElectronIDType}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\subsubsection[{ElectronIDType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf HttValidElectronsProducer::ElectronIDType}}}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{INVALID@{INVALID}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa4500fcb41d94192317e16d5d0a7932b}{
+INVALID}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa4500fcb41d94192317e16d5d0a7932b}
+}]\index{NONE@{NONE}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af78fa54075517cb7cd2656fd8b436529}{
+NONE}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af78fa54075517cb7cd2656fd8b436529}
+}]\index{SUMMER2013LOOSE@{SUMMER2013LOOSE}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!SUMMER2013LOOSE@{SUMMER2013LOOSE}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a0254637102c75f7e4df9cb337da2e1d5}{
+SUMMER2013LOOSE}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a0254637102c75f7e4df9cb337da2e1d5}
+}]\index{SUMMER2013TIGHT@{SUMMER2013TIGHT}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!SUMMER2013TIGHT@{SUMMER2013TIGHT}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a976c643d768971c30c99410b51b9eb62}{
+SUMMER2013TIGHT}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a976c643d768971c30c99410b51b9eb62}
+}]\index{SUMMER2013TTHTIGHT@{SUMMER2013TTHTIGHT}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!SUMMER2013TTHTIGHT@{SUMMER2013TTHTIGHT}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a6cd64bfbbef04d42f9908a6fe96dd7b9}{
+SUMMER2013TTHTIGHT}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a6cd64bfbbef04d42f9908a6fe96dd7b9}
+}]\index{SUMMER2013TTHLOOSE@{SUMMER2013TTHLOOSE}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!SUMMER2013TTHLOOSE@{SUMMER2013TTHLOOSE}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3afdff23fab549c8951682694db8628e36}{
+SUMMER2013TTHLOOSE}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3afdff23fab549c8951682694db8628e36}
+}]\index{CUTBASED2015ANDLATER@{CUTBASED2015ANDLATER}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2015ANDLATER@{CUTBASED2015ANDLATER}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a5a03216f07b395797dbb7037cff9252f}{
+CUTBASED2015ANDLATER}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a5a03216f07b395797dbb7037cff9252f}
+}]\index{MVABASED2015ANDLATER@{MVABASED2015ANDLATER}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!MVABASED2015ANDLATER@{MVABASED2015ANDLATER}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af9a854b70d468a2504277a276a81a1c6}{
+MVABASED2015ANDLATER}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3af9a854b70d468a2504277a276a81a1c6}
+}]\index{CUTBASED2015NOISOANDIPCUTSVETO@{CUTBASED2015NOISOANDIPCUTSVETO}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2015NOISOANDIPCUTSVETO@{CUTBASED2015NOISOANDIPCUTSVETO}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a91405eb56bc38794aa61f037481cac9b}{
+CUTBASED2015NOISOANDIPCUTSVETO}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a91405eb56bc38794aa61f037481cac9b}
+}]\index{CUTBASED2015NOISOANDIPCUTSLOOSE@{CUTBASED2015NOISOANDIPCUTSLOOSE}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2015NOISOANDIPCUTSLOOSE@{CUTBASED2015NOISOANDIPCUTSLOOSE}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ad3e287b5aa3f888f0976e394b5ceff2e}{
+CUTBASED2015NOISOANDIPCUTSLOOSE}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ad3e287b5aa3f888f0976e394b5ceff2e}
+}]\index{CUTBASED2015NOISOANDIPCUTSMEDIUM@{CUTBASED2015NOISOANDIPCUTSMEDIUM}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2015NOISOANDIPCUTSMEDIUM@{CUTBASED2015NOISOANDIPCUTSMEDIUM}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ac574083e81d10633124e638b9e76ff63}{
+CUTBASED2015NOISOANDIPCUTSMEDIUM}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3ac574083e81d10633124e638b9e76ff63}
+}]\index{CUTBASED2015NOISOANDIPCUTSTIGHT@{CUTBASED2015NOISOANDIPCUTSTIGHT}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2015NOISOANDIPCUTSTIGHT@{CUTBASED2015NOISOANDIPCUTSTIGHT}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3abb0bf92e0ec81f3b7c0f53b5c90e7e78}{
+CUTBASED2015NOISOANDIPCUTSTIGHT}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3abb0bf92e0ec81f3b7c0f53b5c90e7e78}
+}]\index{CUTBASED2016NOISOCUTSVETO@{CUTBASED2016NOISOCUTSVETO}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2016NOISOCUTSVETO@{CUTBASED2016NOISOCUTSVETO}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a72bc0f4cfa339f782aae7384e64d6916}{
+CUTBASED2016NOISOCUTSVETO}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a72bc0f4cfa339f782aae7384e64d6916}
+}]\index{CUTBASED2016NOISOCUTSLOOSE@{CUTBASED2016NOISOCUTSLOOSE}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2016NOISOCUTSLOOSE@{CUTBASED2016NOISOCUTSLOOSE}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa6cb20cbe205f30a779ff7a5afed5eca}{
+CUTBASED2016NOISOCUTSLOOSE}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa6cb20cbe205f30a779ff7a5afed5eca}
+}]\index{CUTBASED2016NOISOCUTSMEDIUM@{CUTBASED2016NOISOCUTSMEDIUM}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2016NOISOCUTSMEDIUM@{CUTBASED2016NOISOCUTSMEDIUM}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a1274e591c8064f9e1dd379b82d98e4d5}{
+CUTBASED2016NOISOCUTSMEDIUM}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3a1274e591c8064f9e1dd379b82d98e4d5}
+}]\index{CUTBASED2016NOISOCUTSTIGHT@{CUTBASED2016NOISOCUTSTIGHT}!HttValidElectronsProducer@{HttValidElectronsProducer}}\index{HttValidElectronsProducer@{HttValidElectronsProducer}!CUTBASED2016NOISOCUTSTIGHT@{CUTBASED2016NOISOCUTSTIGHT}}\item[{\em 
+\hypertarget{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa2117a69063c0ee8ea5510e95e9f57df}{
+CUTBASED2016NOISOCUTSTIGHT}
+\label{classHttValidElectronsProducer_ad4e8f1361e437e197126f52a538578d3aa2117a69063c0ee8ea5510e95e9f57df}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHttValidElectronsProducer_a8e773bcd5e4cb3261727af6db04760b3}{
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\subsubsection[{HttValidElectronsProducer}]{\setlength{\rightskip}{0pt plus 5cm}HttValidElectronsProducer::HttValidElectronsProducer (std::vector$<$ KElectron $\ast$ $>$ product\_\-type::$\ast$ {\em validElectrons} = {\ttfamily \&product\_\-type::m\_\-validElectrons}, \/  std::vector$<$ KElectron $\ast$ $>$ product\_\-type::$\ast$ {\em invalidElectrons} = {\ttfamily \&product\_\-type::m\_\-invalidElectrons}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronID} = {\ttfamily \&setting\_\-type::GetElectronID}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronIDType} = {\ttfamily \&setting\_\-type::GetElectronIDType}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronIDName} = {\ttfamily \&setting\_\-type::GetElectronIDName}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronMvaIDCutEB1} = {\ttfamily \&setting\_\-type::GetElectronMvaIDCutEB1}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronMvaIDCutEB2} = {\ttfamily \&setting\_\-type::GetElectronMvaIDCutEB2}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronMvaIDCutEE} = {\ttfamily \&setting\_\-type::GetElectronMvaIDCutEE}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoType} = {\ttfamily \&setting\_\-type::GetElectronIsoType}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronIso} = {\ttfamily \&setting\_\-type::GetElectronIso}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetElectronReco} = {\ttfamily \&setting\_\-type::GetElectronReco}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetLowerPtCuts} = {\ttfamily \&setting\_\-type::GetElectronLowerPtCuts}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetUpperAbsEtaCuts} = {\ttfamily \&setting\_\-type::GetElectronUpperAbsEtaCuts}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronChargedIsoVetoConeSizeEB} = {\ttfamily \&setting\_\-type::GetElectronChargedIsoVetoConeSizeEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronChargedIsoVetoConeSizeEE} = {\ttfamily \&setting\_\-type::GetElectronChargedIsoVetoConeSizeEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronNeutralIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetElectronNeutralIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronPhotonIsoVetoConeSizeEB} = {\ttfamily \&setting\_\-type::GetElectronPhotonIsoVetoConeSizeEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronPhotonIsoVetoConeSizeEE} = {\ttfamily \&setting\_\-type::GetElectronPhotonIsoVetoConeSizeEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronDeltaBetaIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetElectronDeltaBetaIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronChargedIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetElectronChargedIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronNeutralIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetElectronNeutralIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronPhotonIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetElectronPhotonIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronDeltaBetaIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetElectronDeltaBetaIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoSignalConeSize} = {\ttfamily \&setting\_\-type::GetElectronIsoSignalConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronDeltaBetaCorrectionFactor} = {\ttfamily \&setting\_\-type::GetElectronDeltaBetaCorrectionFactor}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoPtSumOverPtLowerThresholdEB} = {\ttfamily \&setting\_\-type::GetElectronIsoPtSumOverPtLowerThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoPtSumOverPtLowerThresholdEE} = {\ttfamily \&setting\_\-type::GetElectronIsoPtSumOverPtLowerThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoPtSumOverPtUpperThresholdEB} = {\ttfamily \&setting\_\-type::GetElectronIsoPtSumOverPtUpperThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronIsoPtSumOverPtUpperThresholdEE} = {\ttfamily \&setting\_\-type::GetElectronIsoPtSumOverPtUpperThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronTrackDxyCut} = {\ttfamily \&setting\_\-type::GetElectronTrackDxyCut}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetElectronTrackDzCut} = {\ttfamily \&setting\_\-type::GetElectronTrackDzCut}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetElectronIDList} = {\ttfamily \&setting\_\-type::GetElectronIDList})}}
+\label{classHttValidElectronsProducer_a8e773bcd5e4cb3261727af6db04760b3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttValidElectronsProducer_aba4230bf7a962a9a18a03433aaa3d3ec}{
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!AdditionalCriteria@{AdditionalCriteria}}
+\index{AdditionalCriteria@{AdditionalCriteria}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\subsubsection[{AdditionalCriteria}]{\setlength{\rightskip}{0pt plus 5cm}bool HttValidElectronsProducer::AdditionalCriteria (KElectron $\ast$ {\em electron}, \/  event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, protected, virtual\mbox{]}}}}
+\label{classHttValidElectronsProducer_aba4230bf7a962a9a18a03433aaa3d3ec}
+\hypertarget{classHttValidElectronsProducer_ae10e80f0e540bbf1d1e85a141b530bd7}{
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!Init@{Init}}
+\index{Init@{Init}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void HttValidElectronsProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttValidElectronsProducer_ae10e80f0e540bbf1d1e85a141b530bd7}
+
+
+Reimplemented in \hyperlink{classHttValidLooseElectronsProducer_a5eadcc58c3d058258eb36c9d4ec17aa9}{HttValidLooseElectronsProducer}, and \hyperlink{classHttValidVetoElectronsProducer_acba0b3d8e9aad0dda1c8f438b51cc262}{HttValidVetoElectronsProducer}.\hypertarget{classHttValidElectronsProducer_a4280849eaeb101017cbe0a49d4b68311}{
+\index{HttValidElectronsProducer@{HttValidElectronsProducer}!ToElectronIDType@{ToElectronIDType}}
+\index{ToElectronIDType@{ToElectronIDType}!HttValidElectronsProducer@{HttValidElectronsProducer}}
+\subsubsection[{ToElectronIDType}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ElectronIDType} HttValidElectronsProducer::ToElectronIDType (std::string const \& {\em electronIDType})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classHttValidElectronsProducer_a4280849eaeb101017cbe0a49d4b68311}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttValidElectronsProducer_8h}{HttValidElectronsProducer.h}\item 
+src/Producers/\hyperlink{HttValidElectronsProducer_8cc}{HttValidElectronsProducer.cc}\end{DoxyCompactItemize}

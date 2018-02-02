@@ -1,0 +1,65 @@
+\hypertarget{classHttTriggerSettingsProducer}{
+\section{HttTriggerSettingsProducer Class Reference}
+\label{classHttTriggerSettingsProducer}\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+}
+
+
+{\ttfamily \#include $<$HttTriggerSettingsProducer.h$>$}Inheritance diagram for HttTriggerSettingsProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHttTriggerSettingsProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttTriggerSettingsProducer_a3c34bbb4cfd682c16185052aaec910f3}{HttTriggerSettingsProducer} ()
+\item 
+virtual std::string \hyperlink{classHttTriggerSettingsProducer_a31b44c47c6a23463ffc9b6b649beb7ae}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classHttTriggerSettingsProducer_a30cc02de6aa44308f888170653930fc8}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classHttTriggerSettingsProducer_ad24b2f54c1c3740e2fa3c12bab665b6e}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer to overwrite settings for triggers (e.g. run-\/dependent settings) Config tags:
+\begin{DoxyItemize}
+\item Channel
+\item ElectronTriggerFilterNames
+\item MuonTriggerFilterNames
+\item TauTriggerFilterNames
+\item JetTriggerFilterNames 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHttTriggerSettingsProducer_a3c34bbb4cfd682c16185052aaec910f3}{
+\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}!HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}!HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+\subsubsection[{HttTriggerSettingsProducer}]{\setlength{\rightskip}{0pt plus 5cm}HttTriggerSettingsProducer::HttTriggerSettingsProducer ()}}
+\label{classHttTriggerSettingsProducer_a3c34bbb4cfd682c16185052aaec910f3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttTriggerSettingsProducer_a31b44c47c6a23463ffc9b6b649beb7ae}{
+\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}std::string HttTriggerSettingsProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttTriggerSettingsProducer_a31b44c47c6a23463ffc9b6b649beb7ae}
+\hypertarget{classHttTriggerSettingsProducer_a30cc02de6aa44308f888170653930fc8}{
+\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}!Init@{Init}}
+\index{Init@{Init}!HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void HttTriggerSettingsProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttTriggerSettingsProducer_a30cc02de6aa44308f888170653930fc8}
+\hypertarget{classHttTriggerSettingsProducer_ad24b2f54c1c3740e2fa3c12bab665b6e}{
+\index{HttTriggerSettingsProducer@{HttTriggerSettingsProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!HttTriggerSettingsProducer@{HttTriggerSettingsProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void HttTriggerSettingsProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttTriggerSettingsProducer_ad24b2f54c1c3740e2fa3c12bab665b6e}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttTriggerSettingsProducer_8h}{HttTriggerSettingsProducer.h}\item 
+src/Producers/\hyperlink{HttTriggerSettingsProducer_8cc}{HttTriggerSettingsProducer.cc}\end{DoxyCompactItemize}

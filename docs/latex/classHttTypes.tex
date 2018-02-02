@@ -1,0 +1,63 @@
+\hypertarget{classHttTypes}{
+\section{HttTypes Class Reference}
+\label{classHttTypes}\index{HttTypes@{HttTypes}}
+}
+
+
+all data types which are used for Htt analyses  
+
+
+{\ttfamily \#include $<$HttTypes.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classHttEvent}{HttEvent} \hyperlink{classHttTypes_ad4519395b176ec8e6c98f2dfedb68b78}{event\_\-type}
+\begin{DoxyCompactList}\small\item\em content of the kappa ntuple \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classHttProduct}{HttProduct} \hyperlink{classHttTypes_a498cba01b87a7d48dc0378323f41720c}{product\_\-type}
+\begin{DoxyCompactList}\small\item\em objects that have been produced for plotting within Artus (i.e. logic implemented at analysis level) \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classHttSettings}{HttSettings} \hyperlink{classHttTypes_a25629547ad3af93af6e61b8bf62a160e}{setting\_\-type}
+\begin{DoxyCompactList}\small\item\em configuration settings which are Htt specific? \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classHttMetadata}{HttMetadata} \hyperlink{classHttTypes_affda9644df5a8e5bf3a5aa6d02e5281b}{metadata\_\-type}
+\begin{DoxyCompactList}\small\item\em objects that exist once per pipeline and can be modified in Init functions of processors \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+all data types which are used for Htt analyses \hyperlink{classHttTypes}{HttTypes} \hyperlink{HttTypes_8h}{HiggsAnalysis/KITHiggsToTauTau/interface/HttTypes.h}
+
+Adjusts common Artus tools to the data formats used for Htt specific analyses. These types are defined in \hyperlink{classHttTypes}{HttTypes}. Corresponding Artus templates are then expanded to use the specific types.
+
+The final analysis workflow is organized by Producers, Filters and Consumers. Common philosophy is to keep Consumers free of the analysis logic, which should be implemented in form of Filters and Producers. Several Consumers could be defined to detemrine what quantities will be available for plotting after Artus is run. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classHttTypes_ad4519395b176ec8e6c98f2dfedb68b78}{
+\index{HttTypes@{HttTypes}!event\_\-type@{event\_\-type}}
+\index{event\_\-type@{event\_\-type}!HttTypes@{HttTypes}}
+\subsubsection[{event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttEvent} {\bf HttTypes::event\_\-type}}}
+\label{classHttTypes_ad4519395b176ec8e6c98f2dfedb68b78}
+
+
+content of the kappa ntuple \hypertarget{classHttTypes_affda9644df5a8e5bf3a5aa6d02e5281b}{
+\index{HttTypes@{HttTypes}!metadata\_\-type@{metadata\_\-type}}
+\index{metadata\_\-type@{metadata\_\-type}!HttTypes@{HttTypes}}
+\subsubsection[{metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttMetadata} {\bf HttTypes::metadata\_\-type}}}
+\label{classHttTypes_affda9644df5a8e5bf3a5aa6d02e5281b}
+
+
+objects that exist once per pipeline and can be modified in Init functions of processors \hypertarget{classHttTypes_a498cba01b87a7d48dc0378323f41720c}{
+\index{HttTypes@{HttTypes}!product\_\-type@{product\_\-type}}
+\index{product\_\-type@{product\_\-type}!HttTypes@{HttTypes}}
+\subsubsection[{product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttProduct} {\bf HttTypes::product\_\-type}}}
+\label{classHttTypes_a498cba01b87a7d48dc0378323f41720c}
+
+
+objects that have been produced for plotting within Artus (i.e. logic implemented at analysis level) \hypertarget{classHttTypes_a25629547ad3af93af6e61b8bf62a160e}{
+\index{HttTypes@{HttTypes}!setting\_\-type@{setting\_\-type}}
+\index{setting\_\-type@{setting\_\-type}!HttTypes@{HttTypes}}
+\subsubsection[{setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttSettings} {\bf HttTypes::setting\_\-type}}}
+\label{classHttTypes_a25629547ad3af93af6e61b8bf62a160e}
+
+
+configuration settings which are Htt specific? 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{HttTypes_8h}{HttTypes.h}\end{DoxyCompactItemize}

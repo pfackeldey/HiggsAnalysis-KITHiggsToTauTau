@@ -1,0 +1,51 @@
+\hypertarget{classDecayChannelFilter}{
+\section{DecayChannelFilter Class Reference}
+\label{classDecayChannelFilter}\index{DecayChannelFilter@{DecayChannelFilter}}
+}
+
+
+{\ttfamily \#include $<$DecayChannelFilter.h$>$}Inheritance diagram for DecayChannelFilter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classDecayChannelFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classDecayChannelFilter_a35656f3ba0c09ccd8297a5b432741deb}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classDecayChannelFilter_a3ef44e4cca191eeacb2a3c898293ddab}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual bool \hyperlink{classDecayChannelFilter_a02700352e9691d39dfc16d5dd0391093}{DoesEventPass} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter for the decay channel. Required config tag:
+\begin{DoxyItemize}
+\item Channel 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classDecayChannelFilter_a02700352e9691d39dfc16d5dd0391093}{
+\index{DecayChannelFilter@{DecayChannelFilter}!DoesEventPass@{DoesEventPass}}
+\index{DoesEventPass@{DoesEventPass}!DecayChannelFilter@{DecayChannelFilter}}
+\subsubsection[{DoesEventPass}]{\setlength{\rightskip}{0pt plus 5cm}bool DecayChannelFilter::DoesEventPass (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDecayChannelFilter_a02700352e9691d39dfc16d5dd0391093}
+\hypertarget{classDecayChannelFilter_a35656f3ba0c09ccd8297a5b432741deb}{
+\index{DecayChannelFilter@{DecayChannelFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!DecayChannelFilter@{DecayChannelFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string DecayChannelFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classDecayChannelFilter_a35656f3ba0c09ccd8297a5b432741deb}
+\hypertarget{classDecayChannelFilter_a3ef44e4cca191eeacb2a3c898293ddab}{
+\index{DecayChannelFilter@{DecayChannelFilter}!Init@{Init}}
+\index{Init@{Init}!DecayChannelFilter@{DecayChannelFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void DecayChannelFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classDecayChannelFilter_a3ef44e4cca191eeacb2a3c898293ddab}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{DecayChannelFilter_8h}{DecayChannelFilter.h}\item 
+src/Filters/\hyperlink{DecayChannelFilter_8cc}{DecayChannelFilter.cc}\end{DoxyCompactItemize}

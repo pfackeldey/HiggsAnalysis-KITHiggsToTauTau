@@ -1,0 +1,87 @@
+\hypertarget{classMinimalPlotlevelFilter}{
+\section{MinimalPlotlevelFilter Class Reference}
+\label{classMinimalPlotlevelFilter}\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+}
+
+
+{\ttfamily \#include $<$MinimalPlotlevelFilter.h$>$}Inheritance diagram for MinimalPlotlevelFilter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classMinimalPlotlevelFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ float(event\_\-type const \&, product\_\-type const \&)$>$ \hyperlink{classMinimalPlotlevelFilter_aa163bb0b63ea3977ac16ae1d93c212da}{float\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classMinimalPlotlevelFilter_a7441333289fdb10e98e4b90bec49fe7c}{GetFilterId} () const override
+\item 
+void \hyperlink{classMinimalPlotlevelFilter_aaefe1a2b934ecae86dadad1d99b36e26}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classMinimalPlotlevelFilter_a684d038fb986d2dd9a52e24fe0a4c695}{RemoveSubstrs} (typename std::basic\_\-string$<$ T $>$ \&s, char p) const 
+\item 
+bool \hyperlink{classMinimalPlotlevelFilter_afbc57cd2c1cf01f677370e059d37a05b}{EvaluateSubExpression} (std::string \&expression, event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings) const 
+\item 
+virtual bool \hyperlink{classMinimalPlotlevelFilter_af6f815df35d7ee526a860be377834363}{DoesEventPass} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter with lightweight expression parser Required config tag:
+\begin{DoxyItemize}
+\item PlotlevelFilterExpressionQuantities -\/$>$ List of variable names to be used in expression
+\item PlotevelFilterExpression -\/$>$ Expression to be applied Hint:
+\end{DoxyItemize}
+
+Use $\ast$ for connecting subexpressions with AND
+\begin{DoxyItemize}
+\item You are allowd to use $|$$|$ for OR statements
+\item Syntax:
+\item Always write \mbox{[}variable\mbox{]} \mbox{[}relation\mbox{]} \mbox{[}static value\mbox{]}
+\item You must insert one space between relation signs and value/variable BUT none between $\ast$ or $|$$|$ (pt\_\-1 $<$ 40$|$$|$pt\_\-2 $>$ 50)$\ast$(mjj $>$ 250) 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMinimalPlotlevelFilter_aa163bb0b63ea3977ac16ae1d93c212da}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!float\_\-extractor\_\-lambda@{float\_\-extractor\_\-lambda}}
+\index{float\_\-extractor\_\-lambda@{float\_\-extractor\_\-lambda}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{float\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$float(event\_\-type const\&, product\_\-type const\&)$>$ {\bf MinimalPlotlevelFilter::float\_\-extractor\_\-lambda}}}
+\label{classMinimalPlotlevelFilter_aa163bb0b63ea3977ac16ae1d93c212da}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMinimalPlotlevelFilter_af6f815df35d7ee526a860be377834363}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!DoesEventPass@{DoesEventPass}}
+\index{DoesEventPass@{DoesEventPass}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{DoesEventPass}]{\setlength{\rightskip}{0pt plus 5cm}bool MinimalPlotlevelFilter::DoesEventPass (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMinimalPlotlevelFilter_af6f815df35d7ee526a860be377834363}
+\hypertarget{classMinimalPlotlevelFilter_afbc57cd2c1cf01f677370e059d37a05b}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!EvaluateSubExpression@{EvaluateSubExpression}}
+\index{EvaluateSubExpression@{EvaluateSubExpression}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{EvaluateSubExpression}]{\setlength{\rightskip}{0pt plus 5cm}bool MinimalPlotlevelFilter::EvaluateSubExpression (std::string \& {\em expression}, \/  event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}) const}}
+\label{classMinimalPlotlevelFilter_afbc57cd2c1cf01f677370e059d37a05b}
+\hypertarget{classMinimalPlotlevelFilter_a7441333289fdb10e98e4b90bec49fe7c}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}std::string MinimalPlotlevelFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMinimalPlotlevelFilter_a7441333289fdb10e98e4b90bec49fe7c}
+\hypertarget{classMinimalPlotlevelFilter_aaefe1a2b934ecae86dadad1d99b36e26}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!Init@{Init}}
+\index{Init@{Init}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void MinimalPlotlevelFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override\mbox{]}}}}
+\label{classMinimalPlotlevelFilter_aaefe1a2b934ecae86dadad1d99b36e26}
+\hypertarget{classMinimalPlotlevelFilter_a684d038fb986d2dd9a52e24fe0a4c695}{
+\index{MinimalPlotlevelFilter@{MinimalPlotlevelFilter}!RemoveSubstrs@{RemoveSubstrs}}
+\index{RemoveSubstrs@{RemoveSubstrs}!MinimalPlotlevelFilter@{MinimalPlotlevelFilter}}
+\subsubsection[{RemoveSubstrs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void MinimalPlotlevelFilter::RemoveSubstrs (typename std::basic\_\-string$<$ T $>$ \& {\em s}, \/  char {\em p}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMinimalPlotlevelFilter_a684d038fb986d2dd9a52e24fe0a4c695}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{MinimalPlotlevelFilter_8h}{MinimalPlotlevelFilter.h}\item 
+src/Filters/\hyperlink{MinimalPlotlevelFilter_8cc}{MinimalPlotlevelFilter.cc}\end{DoxyCompactItemize}

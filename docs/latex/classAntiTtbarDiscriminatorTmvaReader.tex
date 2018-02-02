@@ -1,0 +1,60 @@
+\hypertarget{classAntiTtbarDiscriminatorTmvaReader}{
+\section{AntiTtbarDiscriminatorTmvaReader Class Reference}
+\label{classAntiTtbarDiscriminatorTmvaReader}\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+}
+
+
+Producer for discriminator agains TTbar (as used in the EM channel).  
+
+
+{\ttfamily \#include $<$HttTmvaClassificationReaders.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classAntiTtbarDiscriminatorTmvaReader_adfd8a81ccfe692021fa40adeb0d9eed9}{GetProducerId} () const override
+\item 
+\hyperlink{classAntiTtbarDiscriminatorTmvaReader_a904c009bb180d246e5d0fd4814d014fa}{AntiTtbarDiscriminatorTmvaReader} ()
+\item 
+virtual void \hyperlink{classAntiTtbarDiscriminatorTmvaReader_ac535a532e2737e6991fd6d36d49cb12f}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classAntiTtbarDiscriminatorTmvaReader_aceac156af9c7dd33d0c4f3827ad7a27d}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for discriminator agains TTbar (as used in the EM channel). Required config tags:
+\begin{DoxyItemize}
+\item AntiTtbarTmvaInputQuantities
+\item AntiTtbarTmvaMethods
+\item AntiTtbarTmvaWeights (same length as for AntiTtbarTmvaMethods required) 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAntiTtbarDiscriminatorTmvaReader_a904c009bb180d246e5d0fd4814d014fa}{
+\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}!AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}!AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+\subsubsection[{AntiTtbarDiscriminatorTmvaReader}]{\setlength{\rightskip}{0pt plus 5cm}AntiTtbarDiscriminatorTmvaReader::AntiTtbarDiscriminatorTmvaReader ()}}
+\label{classAntiTtbarDiscriminatorTmvaReader_a904c009bb180d246e5d0fd4814d014fa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAntiTtbarDiscriminatorTmvaReader_adfd8a81ccfe692021fa40adeb0d9eed9}{
+\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string AntiTtbarDiscriminatorTmvaReader::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classAntiTtbarDiscriminatorTmvaReader_adfd8a81ccfe692021fa40adeb0d9eed9}
+\hypertarget{classAntiTtbarDiscriminatorTmvaReader_ac535a532e2737e6991fd6d36d49cb12f}{
+\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}!Init@{Init}}
+\index{Init@{Init}!AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void AntiTtbarDiscriminatorTmvaReader::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classAntiTtbarDiscriminatorTmvaReader_ac535a532e2737e6991fd6d36d49cb12f}
+\hypertarget{classAntiTtbarDiscriminatorTmvaReader_aceac156af9c7dd33d0c4f3827ad7a27d}{
+\index{AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}!Produce@{Produce}}
+\index{Produce@{Produce}!AntiTtbarDiscriminatorTmvaReader@{AntiTtbarDiscriminatorTmvaReader}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void AntiTtbarDiscriminatorTmvaReader::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classAntiTtbarDiscriminatorTmvaReader_aceac156af9c7dd33d0c4f3827ad7a27d}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttTmvaClassificationReaders_8h}{HttTmvaClassificationReaders.h}\item 
+src/Producers/\hyperlink{HttTmvaClassificationReaders_8cc}{HttTmvaClassificationReaders.cc}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+\hypertarget{EmbeddingGlobalQuantitiesProducer_8h}{
+\section{interface/Producers/EmbeddingGlobalQuantitiesProducer.h File Reference}
+\label{EmbeddingGlobalQuantitiesProducer_8h}\index{interface/Producers/EmbeddingGlobalQuantitiesProducer.h@{interface/Producers/EmbeddingGlobalQuantitiesProducer.h}}
+}
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttTypes.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttEnumTypes.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Artus/Consumer/interface/LambdaNtupleConsumer.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classEmbeddingGlobalQuantitiesProducer}{EmbeddingGlobalQuantitiesProducer}
+\begin{DoxyCompactList}\small\item\em Producer, that is calculating quantities describing the full event in embedding. Need follwoing Producers to be executed for this (attention to order!):
+\begin{DoxyItemize}
+\item PFCandidatesProducer
+\item ZProducer. 
+\end{DoxyItemize}\item\end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{classMEtSys}{
+\section{MEtSys Class Reference}
+\label{classMEtSys}\index{MEtSys@{MEtSys}}
+}
+
+
+{\ttfamily \#include $<$MEtSys.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018}{ProcessType} \{ \hyperlink{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a9c1abe56956a6b876cb4c9ce6b06c90e}{BOSON} = 0, 
+\hyperlink{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a5c42e7fcbbda18b3b0214e7b3950946c}{EWK} = 1, 
+\hyperlink{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a638e7ed171fc2a7dc9948677651115db}{TOP} = 2
+ \}
+\item 
+enum \hyperlink{classMEtSys_ade79c833dae227147e7a69c89b190cb1}{SysType} \{ \hyperlink{classMEtSys_ade79c833dae227147e7a69c89b190cb1a40e1010876cb51cfde0f84459c698229}{NoType} = -\/1, 
+\hyperlink{classMEtSys_ade79c833dae227147e7a69c89b190cb1a1fd579dea12da28ae73e97d8576ba085}{Response} = 0, 
+\hyperlink{classMEtSys_ade79c833dae227147e7a69c89b190cb1ad27d4ad379b232ecce936dc70f9b1e7b}{Resolution} = 1
+ \}
+\item 
+enum \hyperlink{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3}{SysShift} \{ \hyperlink{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a3182462bbd1e56e2b1a2240348f51501}{NoShift} = -\/1, 
+\hyperlink{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a9b04c12dd84d31ee032a390725233d48}{Up} = 0, 
+\hyperlink{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a098972c6837721650242936a4d0eef66}{Down} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMEtSys_a275f454299d9a8de1a88fb25e6ce7295}{MEtSys} (TString fileName)
+\item 
+\hyperlink{classMEtSys_a1a0d2275df8de195a44d8d19bf593b48}{$\sim$MEtSys} ()
+\item 
+void \hyperlink{classMEtSys_a845ef3f7f0420219c79c81dea8a326b8}{ApplyMEtSys} (float metPx, float metPy, float genVPx, float genVPy, float visVPx, float visVPy, int njets, int bkgdType, int sysType, int shiftType, float \&metShiftPx, float \&metShiftPy)
+\item 
+void \hyperlink{classMEtSys_a6363f250899177442b8662bbe266699a}{ShiftMEt} (float metPx, float metPy, float genVPx, float genVPy, float visVPx, float visVPy, int njets, int bkgdType, int sysType, float sysShift, float \&metShiftPx, float \&metShiftPy)
+\item 
+void \hyperlink{classMEtSys_ac0f73d0c4b0f762f3326e389e30380b7}{ShiftResponseMet} (float metPx, float metPy, float genVPx, float genVPy, float visVPx, float visVPy, int njets, int bkgdType, float sysShift, float \&metShiftPx, float \&metShiftPy)
+\item 
+void \hyperlink{classMEtSys_a97e00588ed003eeb90730ff2ac4be9f8}{ShiftResolutionMet} (float metPx, float metPy, float genVPx, float genVPy, float visVPx, float visVPy, int njets, int bkgdType, float sysShift, float \&metShiftPx, float \&metShiftPy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018}{
+\index{MEtSys@{MEtSys}!ProcessType@{ProcessType}}
+\index{ProcessType@{ProcessType}!MEtSys@{MEtSys}}
+\subsubsection[{ProcessType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MEtSys::ProcessType}}}
+\label{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{BOSON@{BOSON}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!BOSON@{BOSON}}\item[{\em 
+\hypertarget{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a9c1abe56956a6b876cb4c9ce6b06c90e}{
+BOSON}
+\label{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a9c1abe56956a6b876cb4c9ce6b06c90e}
+}]\index{EWK@{EWK}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!EWK@{EWK}}\item[{\em 
+\hypertarget{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a5c42e7fcbbda18b3b0214e7b3950946c}{
+EWK}
+\label{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a5c42e7fcbbda18b3b0214e7b3950946c}
+}]\index{TOP@{TOP}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!TOP@{TOP}}\item[{\em 
+\hypertarget{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a638e7ed171fc2a7dc9948677651115db}{
+TOP}
+\label{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018a638e7ed171fc2a7dc9948677651115db}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3}{
+\index{MEtSys@{MEtSys}!SysShift@{SysShift}}
+\index{SysShift@{SysShift}!MEtSys@{MEtSys}}
+\subsubsection[{SysShift}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MEtSys::SysShift}}}
+\label{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NoShift@{NoShift}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!NoShift@{NoShift}}\item[{\em 
+\hypertarget{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a3182462bbd1e56e2b1a2240348f51501}{
+NoShift}
+\label{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a3182462bbd1e56e2b1a2240348f51501}
+}]\index{Up@{Up}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!Up@{Up}}\item[{\em 
+\hypertarget{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a9b04c12dd84d31ee032a390725233d48}{
+Up}
+\label{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a9b04c12dd84d31ee032a390725233d48}
+}]\index{Down@{Down}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!Down@{Down}}\item[{\em 
+\hypertarget{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a098972c6837721650242936a4d0eef66}{
+Down}
+\label{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3a098972c6837721650242936a4d0eef66}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classMEtSys_ade79c833dae227147e7a69c89b190cb1}{
+\index{MEtSys@{MEtSys}!SysType@{SysType}}
+\index{SysType@{SysType}!MEtSys@{MEtSys}}
+\subsubsection[{SysType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MEtSys::SysType}}}
+\label{classMEtSys_ade79c833dae227147e7a69c89b190cb1}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NoType@{NoType}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!NoType@{NoType}}\item[{\em 
+\hypertarget{classMEtSys_ade79c833dae227147e7a69c89b190cb1a40e1010876cb51cfde0f84459c698229}{
+NoType}
+\label{classMEtSys_ade79c833dae227147e7a69c89b190cb1a40e1010876cb51cfde0f84459c698229}
+}]\index{Response@{Response}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!Response@{Response}}\item[{\em 
+\hypertarget{classMEtSys_ade79c833dae227147e7a69c89b190cb1a1fd579dea12da28ae73e97d8576ba085}{
+Response}
+\label{classMEtSys_ade79c833dae227147e7a69c89b190cb1a1fd579dea12da28ae73e97d8576ba085}
+}]\index{Resolution@{Resolution}!MEtSys@{MEtSys}}\index{MEtSys@{MEtSys}!Resolution@{Resolution}}\item[{\em 
+\hypertarget{classMEtSys_ade79c833dae227147e7a69c89b190cb1ad27d4ad379b232ecce936dc70f9b1e7b}{
+Resolution}
+\label{classMEtSys_ade79c833dae227147e7a69c89b190cb1ad27d4ad379b232ecce936dc70f9b1e7b}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMEtSys_a275f454299d9a8de1a88fb25e6ce7295}{
+\index{MEtSys@{MEtSys}!MEtSys@{MEtSys}}
+\index{MEtSys@{MEtSys}!MEtSys@{MEtSys}}
+\subsubsection[{MEtSys}]{\setlength{\rightskip}{0pt plus 5cm}MEtSys::MEtSys (TString {\em fileName})}}
+\label{classMEtSys_a275f454299d9a8de1a88fb25e6ce7295}
+\hypertarget{classMEtSys_a1a0d2275df8de195a44d8d19bf593b48}{
+\index{MEtSys@{MEtSys}!$\sim$MEtSys@{$\sim$MEtSys}}
+\index{$\sim$MEtSys@{$\sim$MEtSys}!MEtSys@{MEtSys}}
+\subsubsection[{$\sim$MEtSys}]{\setlength{\rightskip}{0pt plus 5cm}MEtSys::$\sim$MEtSys ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMEtSys_a1a0d2275df8de195a44d8d19bf593b48}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMEtSys_a845ef3f7f0420219c79c81dea8a326b8}{
+\index{MEtSys@{MEtSys}!ApplyMEtSys@{ApplyMEtSys}}
+\index{ApplyMEtSys@{ApplyMEtSys}!MEtSys@{MEtSys}}
+\subsubsection[{ApplyMEtSys}]{\setlength{\rightskip}{0pt plus 5cm}void MEtSys::ApplyMEtSys (float {\em metPx}, \/  float {\em metPy}, \/  float {\em genVPx}, \/  float {\em genVPy}, \/  float {\em visVPx}, \/  float {\em visVPy}, \/  int {\em njets}, \/  int {\em bkgdType}, \/  int {\em sysType}, \/  int {\em shiftType}, \/  float \& {\em metShiftPx}, \/  float \& {\em metShiftPy})}}
+\label{classMEtSys_a845ef3f7f0420219c79c81dea8a326b8}
+\hypertarget{classMEtSys_a6363f250899177442b8662bbe266699a}{
+\index{MEtSys@{MEtSys}!ShiftMEt@{ShiftMEt}}
+\index{ShiftMEt@{ShiftMEt}!MEtSys@{MEtSys}}
+\subsubsection[{ShiftMEt}]{\setlength{\rightskip}{0pt plus 5cm}void MEtSys::ShiftMEt (float {\em metPx}, \/  float {\em metPy}, \/  float {\em genVPx}, \/  float {\em genVPy}, \/  float {\em visVPx}, \/  float {\em visVPy}, \/  int {\em njets}, \/  int {\em bkgdType}, \/  int {\em sysType}, \/  float {\em sysShift}, \/  float \& {\em metShiftPx}, \/  float \& {\em metShiftPy})}}
+\label{classMEtSys_a6363f250899177442b8662bbe266699a}
+\hypertarget{classMEtSys_a97e00588ed003eeb90730ff2ac4be9f8}{
+\index{MEtSys@{MEtSys}!ShiftResolutionMet@{ShiftResolutionMet}}
+\index{ShiftResolutionMet@{ShiftResolutionMet}!MEtSys@{MEtSys}}
+\subsubsection[{ShiftResolutionMet}]{\setlength{\rightskip}{0pt plus 5cm}void MEtSys::ShiftResolutionMet (float {\em metPx}, \/  float {\em metPy}, \/  float {\em genVPx}, \/  float {\em genVPy}, \/  float {\em visVPx}, \/  float {\em visVPy}, \/  int {\em njets}, \/  int {\em bkgdType}, \/  float {\em sysShift}, \/  float \& {\em metShiftPx}, \/  float \& {\em metShiftPy})}}
+\label{classMEtSys_a97e00588ed003eeb90730ff2ac4be9f8}
+\hypertarget{classMEtSys_ac0f73d0c4b0f762f3326e389e30380b7}{
+\index{MEtSys@{MEtSys}!ShiftResponseMet@{ShiftResponseMet}}
+\index{ShiftResponseMet@{ShiftResponseMet}!MEtSys@{MEtSys}}
+\subsubsection[{ShiftResponseMet}]{\setlength{\rightskip}{0pt plus 5cm}void MEtSys::ShiftResponseMet (float {\em metPx}, \/  float {\em metPy}, \/  float {\em genVPx}, \/  float {\em genVPy}, \/  float {\em visVPx}, \/  float {\em visVPy}, \/  int {\em njets}, \/  int {\em bkgdType}, \/  float {\em sysShift}, \/  float \& {\em metShiftPx}, \/  float \& {\em metShiftPy})}}
+\label{classMEtSys_ac0f73d0c4b0f762f3326e389e30380b7}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Utility/\hyperlink{MEtSys_8h}{MEtSys.h}\item 
+src/Utility/\hyperlink{MEtSys_8cc}{MEtSys.cc}\end{DoxyCompactItemize}

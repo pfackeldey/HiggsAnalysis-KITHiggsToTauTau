@@ -1,0 +1,201 @@
+\hypertarget{classTagAndProbeElectronPairProducer}{
+\section{TagAndProbeElectronPairProducer Class Reference}
+\label{classTagAndProbeElectronPairProducer}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+}
+
+
+{\ttfamily \#include $<$TagAndProbePairProducer.h$>$}Inheritance diagram for TagAndProbeElectronPairProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTagAndProbeElectronPairProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8}{ValidElectronsInput} \{ \hyperlink{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a078825729d0104f4bb6204e241c6dd7b}{AUTO} =  0, 
+\hyperlink{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a938269f5bc37d8dc9b909619b6cf5200}{UNCORRECTED} =  1, 
+\hyperlink{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a44b8c85a518924aedd5b8979208245a2}{CORRECTED} =  2
+ \}
+\item 
+enum \hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58}{ElectronID} \{ \par
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a14fb63ac7e3a642a3e384b8d923c283a}{INVALID} =  -\/2, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ad1ffeb5682c39bdc4bd5801313850c6d}{NONE} =  -\/1, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a0ae390be670987ebf5966f8082c07cef}{MVANONTRIG} =  0, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a551adf29e5b852e99b875352ad2c66a4}{MVATRIG} =  1, 
+\par
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac8513ff8b3debd5cb6b18abcc45671b5}{VBTF95\_\-VETO} =  2, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a7b7a3338a8a78ef8754466efa1fbea96}{VBTF95\_\-LOOSE} =  3, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a4f197f0c351ea428a3a3b86c68292f61}{VBTF95\_\-MEDIUM} =  4, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa5f7a7247f65993f9ca4ffbbbcf10d40}{VBTF95\_\-TIGHT} =  5, 
+\par
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a69ce1d539c56918a85c89eaa87c53ea4}{FAKEABLE} =  6, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a2277cd6ac780ffe9110c6c0ea8cb2f4e}{USER} =  7, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58af4dd4c7c039fdfdacbf2a1c4e3eace3c}{VETO} =  8, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa56d1ba9e43f36d384ef8adaed72be36}{LOOSE} =  9, 
+\par
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a39d438602e28c8f65ccebb6851f9ff4a}{MEDIUM} =  10, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a3eab5ee42d7d8d8ded5a3fa898e1ed9f}{TIGHT} =  11, 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac51b7cb4355c7a5d849782d88cfd2b02}{VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA} =  12
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classTagAndProbeElectronPairProducer_a378c649f26b158f90e9e0faacea2ac47}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classTagAndProbeElectronPairProducer_a24874428037dc66e71e7f6f90f240612}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classTagAndProbeElectronPairProducer_a8ce87461c4370a9cee8acbd5b95d4054}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8}{ValidElectronsInput} \hyperlink{classTagAndProbeElectronPairProducer_a8e225e450795c93748853aae2db87617}{ToValidElectronsInput} (std::string const \&validElectronsInput)
+\item 
+static \hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58}{ElectronID} \hyperlink{classTagAndProbeElectronPairProducer_a2c9fe72c7bef27a25b703bcc94486631}{ToElectronID} (std::string const \&\hyperlink{classTagAndProbeElectronPairProducer_a7f5635442607a6ab2f0414729baeefe7}{electronID})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58}{ElectronID} \hyperlink{classTagAndProbeElectronPairProducer_a7f5635442607a6ab2f0414729baeefe7}{electronID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!ElectronID@{ElectronID}}
+\index{ElectronID@{ElectronID}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{ElectronID}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TagAndProbeElectronPairProducer::ElectronID}}}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{INVALID@{INVALID}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!INVALID@{INVALID}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a14fb63ac7e3a642a3e384b8d923c283a}{
+INVALID}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a14fb63ac7e3a642a3e384b8d923c283a}
+}]\index{NONE@{NONE}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ad1ffeb5682c39bdc4bd5801313850c6d}{
+NONE}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ad1ffeb5682c39bdc4bd5801313850c6d}
+}]\index{MVANONTRIG@{MVANONTRIG}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!MVANONTRIG@{MVANONTRIG}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a0ae390be670987ebf5966f8082c07cef}{
+MVANONTRIG}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a0ae390be670987ebf5966f8082c07cef}
+}]\index{MVATRIG@{MVATRIG}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!MVATRIG@{MVATRIG}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a551adf29e5b852e99b875352ad2c66a4}{
+MVATRIG}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a551adf29e5b852e99b875352ad2c66a4}
+}]\index{VBTF95\_\-VETO@{VBTF95\_\-VETO}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VBTF95\_\-VETO@{VBTF95\_\-VETO}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac8513ff8b3debd5cb6b18abcc45671b5}{
+VBTF95\_\-VETO}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac8513ff8b3debd5cb6b18abcc45671b5}
+}]\index{VBTF95\_\-LOOSE@{VBTF95\_\-LOOSE}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VBTF95\_\-LOOSE@{VBTF95\_\-LOOSE}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a7b7a3338a8a78ef8754466efa1fbea96}{
+VBTF95\_\-LOOSE}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a7b7a3338a8a78ef8754466efa1fbea96}
+}]\index{VBTF95\_\-MEDIUM@{VBTF95\_\-MEDIUM}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VBTF95\_\-MEDIUM@{VBTF95\_\-MEDIUM}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a4f197f0c351ea428a3a3b86c68292f61}{
+VBTF95\_\-MEDIUM}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a4f197f0c351ea428a3a3b86c68292f61}
+}]\index{VBTF95\_\-TIGHT@{VBTF95\_\-TIGHT}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VBTF95\_\-TIGHT@{VBTF95\_\-TIGHT}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa5f7a7247f65993f9ca4ffbbbcf10d40}{
+VBTF95\_\-TIGHT}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa5f7a7247f65993f9ca4ffbbbcf10d40}
+}]\index{FAKEABLE@{FAKEABLE}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!FAKEABLE@{FAKEABLE}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a69ce1d539c56918a85c89eaa87c53ea4}{
+FAKEABLE}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a69ce1d539c56918a85c89eaa87c53ea4}
+}]\index{USER@{USER}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!USER@{USER}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a2277cd6ac780ffe9110c6c0ea8cb2f4e}{
+USER}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a2277cd6ac780ffe9110c6c0ea8cb2f4e}
+}]\index{VETO@{VETO}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VETO@{VETO}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58af4dd4c7c039fdfdacbf2a1c4e3eace3c}{
+VETO}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58af4dd4c7c039fdfdacbf2a1c4e3eace3c}
+}]\index{LOOSE@{LOOSE}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!LOOSE@{LOOSE}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa56d1ba9e43f36d384ef8adaed72be36}{
+LOOSE}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58aa56d1ba9e43f36d384ef8adaed72be36}
+}]\index{MEDIUM@{MEDIUM}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!MEDIUM@{MEDIUM}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a39d438602e28c8f65ccebb6851f9ff4a}{
+MEDIUM}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a39d438602e28c8f65ccebb6851f9ff4a}
+}]\index{TIGHT@{TIGHT}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!TIGHT@{TIGHT}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a3eab5ee42d7d8d8ded5a3fa898e1ed9f}{
+TIGHT}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58a3eab5ee42d7d8d8ded5a3fa898e1ed9f}
+}]\index{VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA@{VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA@{VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac51b7cb4355c7a5d849782d88cfd2b02}{
+VBTF95\_\-LOOSE\_\-RELAXEDVTXCRITERIA}
+\label{classTagAndProbeElectronPairProducer_a0e5505ee08adec94faa1c6d76a9d6c58ac51b7cb4355c7a5d849782d88cfd2b02}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!ValidElectronsInput@{ValidElectronsInput}}
+\index{ValidElectronsInput@{ValidElectronsInput}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{ValidElectronsInput}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TagAndProbeElectronPairProducer::ValidElectronsInput}}}
+\label{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{AUTO@{AUTO}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!AUTO@{AUTO}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a078825729d0104f4bb6204e241c6dd7b}{
+AUTO}
+\label{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a078825729d0104f4bb6204e241c6dd7b}
+}]\index{UNCORRECTED@{UNCORRECTED}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!UNCORRECTED@{UNCORRECTED}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a938269f5bc37d8dc9b909619b6cf5200}{
+UNCORRECTED}
+\label{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a938269f5bc37d8dc9b909619b6cf5200}
+}]\index{CORRECTED@{CORRECTED}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!CORRECTED@{CORRECTED}}\item[{\em 
+\hypertarget{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a44b8c85a518924aedd5b8979208245a2}{
+CORRECTED}
+\label{classTagAndProbeElectronPairProducer_a1e84988dfb1232821fb29999308985b8a44b8c85a518924aedd5b8979208245a2}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTagAndProbeElectronPairProducer_a378c649f26b158f90e9e0faacea2ac47}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string TagAndProbeElectronPairProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a378c649f26b158f90e9e0faacea2ac47}
+\hypertarget{classTagAndProbeElectronPairProducer_a24874428037dc66e71e7f6f90f240612}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!Init@{Init}}
+\index{Init@{Init}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void TagAndProbeElectronPairProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a24874428037dc66e71e7f6f90f240612}
+\hypertarget{classTagAndProbeElectronPairProducer_a8ce87461c4370a9cee8acbd5b95d4054}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void TagAndProbeElectronPairProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a8ce87461c4370a9cee8acbd5b95d4054}
+\hypertarget{classTagAndProbeElectronPairProducer_a2c9fe72c7bef27a25b703bcc94486631}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!ToElectronID@{ToElectronID}}
+\index{ToElectronID@{ToElectronID}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{ToElectronID}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ElectronID} TagAndProbeElectronPairProducer::ToElectronID (std::string const \& {\em electronID})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a2c9fe72c7bef27a25b703bcc94486631}
+\hypertarget{classTagAndProbeElectronPairProducer_a8e225e450795c93748853aae2db87617}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!ToValidElectronsInput@{ToValidElectronsInput}}
+\index{ToValidElectronsInput@{ToValidElectronsInput}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{ToValidElectronsInput}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ValidElectronsInput} TagAndProbeElectronPairProducer::ToValidElectronsInput (std::string const \& {\em validElectronsInput})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a8e225e450795c93748853aae2db87617}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classTagAndProbeElectronPairProducer_a7f5635442607a6ab2f0414729baeefe7}{
+\index{TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}!electronID@{electronID}}
+\index{electronID@{electronID}!TagAndProbeElectronPairProducer@{TagAndProbeElectronPairProducer}}
+\subsubsection[{electronID}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElectronID} {\bf TagAndProbeElectronPairProducer::electronID}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTagAndProbeElectronPairProducer_a7f5635442607a6ab2f0414729baeefe7}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{TagAndProbePairProducer_8h}{TagAndProbePairProducer.h}\item 
+src/Producers/\hyperlink{TagAndProbePairProducer_8cc}{TagAndProbePairProducer.cc}\end{DoxyCompactItemize}

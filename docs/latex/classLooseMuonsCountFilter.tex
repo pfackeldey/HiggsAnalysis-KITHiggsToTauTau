@@ -1,0 +1,48 @@
+\hypertarget{classLooseMuonsCountFilter}{
+\section{LooseMuonsCountFilter Class Reference}
+\label{classLooseMuonsCountFilter}\index{LooseMuonsCountFilter@{LooseMuonsCountFilter}}
+}
+
+
+{\ttfamily \#include $<$LooseObjectsCountFilters.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(event\_\-type const \&, product\_\-type const \&)$>$ \hyperlink{classLooseMuonsCountFilter_a017ecff0b747ccb8a1cfff22ee97796a}{double\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classLooseMuonsCountFilter_a557a83e2f449d46c65d7a1245c83fe20}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classLooseMuonsCountFilter_a494858cc791d4765dd421a36aafcd3ef}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter checking for the existance of exactly the given number of valid loose muons. Required config tag: NLooseMuons 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classLooseMuonsCountFilter_a017ecff0b747ccb8a1cfff22ee97796a}{
+\index{LooseMuonsCountFilter@{LooseMuonsCountFilter}!double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}}
+\index{double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}!LooseMuonsCountFilter@{LooseMuonsCountFilter}}
+\subsubsection[{double\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double(event\_\-type const\&, product\_\-type const\&)$>$ {\bf LooseMuonsCountFilter::double\_\-extractor\_\-lambda}}}
+\label{classLooseMuonsCountFilter_a017ecff0b747ccb8a1cfff22ee97796a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLooseMuonsCountFilter_a557a83e2f449d46c65d7a1245c83fe20}{
+\index{LooseMuonsCountFilter@{LooseMuonsCountFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!LooseMuonsCountFilter@{LooseMuonsCountFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string LooseMuonsCountFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classLooseMuonsCountFilter_a557a83e2f449d46c65d7a1245c83fe20}
+\hypertarget{classLooseMuonsCountFilter_a494858cc791d4765dd421a36aafcd3ef}{
+\index{LooseMuonsCountFilter@{LooseMuonsCountFilter}!Init@{Init}}
+\index{Init@{Init}!LooseMuonsCountFilter@{LooseMuonsCountFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void LooseMuonsCountFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classLooseMuonsCountFilter_a494858cc791d4765dd421a36aafcd3ef}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{LooseObjectsCountFilters_8h}{LooseObjectsCountFilters.h}\item 
+src/Filters/\hyperlink{LooseObjectsCountFilters_8cc}{LooseObjectsCountFilters.cc}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classSvfitResults}{
+\section{SvfitResults Class Reference}
+\label{classSvfitResults}\index{SvfitResults@{SvfitResults}}
+}
+
+
+{\ttfamily \#include $<$SvfitTools.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSvfitResults_aacb68d5010cb4ca046f01d846c074fe7}{SvfitResults} ()
+\item 
+\hyperlink{classSvfitResults_a8331554fc6ab67e2a2856c61f8b2286a}{SvfitResults} (double \hyperlink{classSvfitResults_a0da3be281513b44ba678f0402b0bdf1d}{fittedTransverseMass}, RMFLV const \&\hyperlink{classSvfitResults_ad53212bbbb3ed120e696fe36fa4ad215}{fittedHiggsLV}, float \hyperlink{classSvfitResults_a061a9d939fb96f6cdfc0688a7b3db356}{fittedTau1ERatio}, RMFLV const \&\hyperlink{classSvfitResults_a122d035561c86eff8aa24f84e0c67cb2}{fittedTau1LV}, float \hyperlink{classSvfitResults_a94a0917e8fac0662ad460800b77aa71e}{fittedTau2ERatio}, RMFLV const \&\hyperlink{classSvfitResults_ad1b5371d1ebf4c5cc04c029f280a46cb}{fittedTau2LV})
+\item 
+\hyperlink{classSvfitResults_a949205ecda5ead5d8e5bce308e2a9880}{SvfitResults} (SVfitStandaloneAlgorithm const \&svfitStandaloneAlgorithm)
+\item 
+\hyperlink{classSvfitResults_a5b9bcbf6a71d304d800ff5951a023d07}{$\sim$SvfitResults} ()
+\item 
+void \hyperlink{classSvfitResults_abc44ddb612f169968a7c53e254d15579}{Set} (double \hyperlink{classSvfitResults_a0da3be281513b44ba678f0402b0bdf1d}{fittedTransverseMass}, RMFLV const \&\hyperlink{classSvfitResults_ad53212bbbb3ed120e696fe36fa4ad215}{fittedHiggsLV}, float \hyperlink{classSvfitResults_a061a9d939fb96f6cdfc0688a7b3db356}{fittedTau1ERatio}, RMFLV const \&\hyperlink{classSvfitResults_a122d035561c86eff8aa24f84e0c67cb2}{fittedTau1LV}, float \hyperlink{classSvfitResults_a94a0917e8fac0662ad460800b77aa71e}{fittedTau2ERatio}, RMFLV const \&\hyperlink{classSvfitResults_ad1b5371d1ebf4c5cc04c029f280a46cb}{fittedTau2LV})
+\item 
+void \hyperlink{classSvfitResults_a65bd60c67619a8833287c6f86687cc27}{Set} (SVfitStandaloneAlgorithm const \&svfitStandaloneAlgorithm)
+\item 
+void \hyperlink{classSvfitResults_a57b084ba9986fcfe3709ae0f28c0d418}{FromRecalculation} ()
+\item 
+void \hyperlink{classSvfitResults_aa2dfd4bb75cdb81445d4a7f12ff13765}{FromCache} ()
+\item 
+void \hyperlink{classSvfitResults_ad4822dc697bd45db7b7aa76c00ebd8e1}{CreateBranches} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitResults_aa81f0fc890b1d57d6e780c195dc8a956}{SetBranchAddresses} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitResults_aa0a9d6018105c2c242239e66d0af4a51}{ActivateBranches} (TTree $\ast$tree, bool activate=true)
+\item 
+bool \hyperlink{classSvfitResults_a574ed1daf1dbdc964579142882be0a8c}{operator==} (\hyperlink{classSvfitResults}{SvfitResults} const \&rhs) const 
+\item 
+bool \hyperlink{classSvfitResults_ad041804809054ef7c2646c60917ba4df}{operator!=} (\hyperlink{classSvfitResults}{SvfitResults} const \&rhs) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classSvfitResults_a0da3be281513b44ba678f0402b0bdf1d}{fittedTransverseMass}
+\item 
+RMFLV $\ast$ \hyperlink{classSvfitResults_ad53212bbbb3ed120e696fe36fa4ad215}{fittedHiggsLV} = nullptr
+\item 
+float \hyperlink{classSvfitResults_a061a9d939fb96f6cdfc0688a7b3db356}{fittedTau1ERatio}
+\item 
+RMFLV $\ast$ \hyperlink{classSvfitResults_a122d035561c86eff8aa24f84e0c67cb2}{fittedTau1LV} = nullptr
+\item 
+float \hyperlink{classSvfitResults_a94a0917e8fac0662ad460800b77aa71e}{fittedTau2ERatio}
+\item 
+RMFLV $\ast$ \hyperlink{classSvfitResults_ad1b5371d1ebf4c5cc04c029f280a46cb}{fittedTau2LV} = nullptr
+\item 
+bool \hyperlink{classSvfitResults_ad5d54373ccfdfb31d2a2c6006cd7c472}{recalculated}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSvfitResults_aacb68d5010cb4ca046f01d846c074fe7}{
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\subsubsection[{SvfitResults}]{\setlength{\rightskip}{0pt plus 5cm}SvfitResults::SvfitResults ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSvfitResults_aacb68d5010cb4ca046f01d846c074fe7}
+\hypertarget{classSvfitResults_a8331554fc6ab67e2a2856c61f8b2286a}{
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\subsubsection[{SvfitResults}]{\setlength{\rightskip}{0pt plus 5cm}SvfitResults::SvfitResults (double {\em fittedTransverseMass}, \/  RMFLV const \& {\em fittedHiggsLV}, \/  float {\em fittedTau1ERatio}, \/  RMFLV const \& {\em fittedTau1LV}, \/  float {\em fittedTau2ERatio}, \/  RMFLV const \& {\em fittedTau2LV})}}
+\label{classSvfitResults_a8331554fc6ab67e2a2856c61f8b2286a}
+\hypertarget{classSvfitResults_a949205ecda5ead5d8e5bce308e2a9880}{
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\index{SvfitResults@{SvfitResults}!SvfitResults@{SvfitResults}}
+\subsubsection[{SvfitResults}]{\setlength{\rightskip}{0pt plus 5cm}SvfitResults::SvfitResults (SVfitStandaloneAlgorithm const \& {\em svfitStandaloneAlgorithm})}}
+\label{classSvfitResults_a949205ecda5ead5d8e5bce308e2a9880}
+\hypertarget{classSvfitResults_a5b9bcbf6a71d304d800ff5951a023d07}{
+\index{SvfitResults@{SvfitResults}!$\sim$SvfitResults@{$\sim$SvfitResults}}
+\index{$\sim$SvfitResults@{$\sim$SvfitResults}!SvfitResults@{SvfitResults}}
+\subsubsection[{$\sim$SvfitResults}]{\setlength{\rightskip}{0pt plus 5cm}SvfitResults::$\sim$SvfitResults ()}}
+\label{classSvfitResults_a5b9bcbf6a71d304d800ff5951a023d07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSvfitResults_aa0a9d6018105c2c242239e66d0af4a51}{
+\index{SvfitResults@{SvfitResults}!ActivateBranches@{ActivateBranches}}
+\index{ActivateBranches@{ActivateBranches}!SvfitResults@{SvfitResults}}
+\subsubsection[{ActivateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::ActivateBranches (TTree $\ast$ {\em tree}, \/  bool {\em activate} = {\ttfamily true})}}
+\label{classSvfitResults_aa0a9d6018105c2c242239e66d0af4a51}
+\hypertarget{classSvfitResults_ad4822dc697bd45db7b7aa76c00ebd8e1}{
+\index{SvfitResults@{SvfitResults}!CreateBranches@{CreateBranches}}
+\index{CreateBranches@{CreateBranches}!SvfitResults@{SvfitResults}}
+\subsubsection[{CreateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::CreateBranches (TTree $\ast$ {\em tree})}}
+\label{classSvfitResults_ad4822dc697bd45db7b7aa76c00ebd8e1}
+\hypertarget{classSvfitResults_aa2dfd4bb75cdb81445d4a7f12ff13765}{
+\index{SvfitResults@{SvfitResults}!FromCache@{FromCache}}
+\index{FromCache@{FromCache}!SvfitResults@{SvfitResults}}
+\subsubsection[{FromCache}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::FromCache ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSvfitResults_aa2dfd4bb75cdb81445d4a7f12ff13765}
+\hypertarget{classSvfitResults_a57b084ba9986fcfe3709ae0f28c0d418}{
+\index{SvfitResults@{SvfitResults}!FromRecalculation@{FromRecalculation}}
+\index{FromRecalculation@{FromRecalculation}!SvfitResults@{SvfitResults}}
+\subsubsection[{FromRecalculation}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::FromRecalculation ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSvfitResults_a57b084ba9986fcfe3709ae0f28c0d418}
+\hypertarget{classSvfitResults_ad041804809054ef7c2646c60917ba4df}{
+\index{SvfitResults@{SvfitResults}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!SvfitResults@{SvfitResults}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitResults::operator!= ({\bf SvfitResults} const \& {\em rhs}) const}}
+\label{classSvfitResults_ad041804809054ef7c2646c60917ba4df}
+\hypertarget{classSvfitResults_a574ed1daf1dbdc964579142882be0a8c}{
+\index{SvfitResults@{SvfitResults}!operator==@{operator==}}
+\index{operator==@{operator==}!SvfitResults@{SvfitResults}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitResults::operator== ({\bf SvfitResults} const \& {\em rhs}) const}}
+\label{classSvfitResults_a574ed1daf1dbdc964579142882be0a8c}
+\hypertarget{classSvfitResults_a65bd60c67619a8833287c6f86687cc27}{
+\index{SvfitResults@{SvfitResults}!Set@{Set}}
+\index{Set@{Set}!SvfitResults@{SvfitResults}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::Set (SVfitStandaloneAlgorithm const \& {\em svfitStandaloneAlgorithm})}}
+\label{classSvfitResults_a65bd60c67619a8833287c6f86687cc27}
+\hypertarget{classSvfitResults_abc44ddb612f169968a7c53e254d15579}{
+\index{SvfitResults@{SvfitResults}!Set@{Set}}
+\index{Set@{Set}!SvfitResults@{SvfitResults}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::Set (double {\em fittedTransverseMass}, \/  RMFLV const \& {\em fittedHiggsLV}, \/  float {\em fittedTau1ERatio}, \/  RMFLV const \& {\em fittedTau1LV}, \/  float {\em fittedTau2ERatio}, \/  RMFLV const \& {\em fittedTau2LV})}}
+\label{classSvfitResults_abc44ddb612f169968a7c53e254d15579}
+\hypertarget{classSvfitResults_aa81f0fc890b1d57d6e780c195dc8a956}{
+\index{SvfitResults@{SvfitResults}!SetBranchAddresses@{SetBranchAddresses}}
+\index{SetBranchAddresses@{SetBranchAddresses}!SvfitResults@{SvfitResults}}
+\subsubsection[{SetBranchAddresses}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitResults::SetBranchAddresses (TTree $\ast$ {\em tree})}}
+\label{classSvfitResults_aa81f0fc890b1d57d6e780c195dc8a956}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSvfitResults_ad53212bbbb3ed120e696fe36fa4ad215}{
+\index{SvfitResults@{SvfitResults}!fittedHiggsLV@{fittedHiggsLV}}
+\index{fittedHiggsLV@{fittedHiggsLV}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedHiggsLV}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf SvfitResults::fittedHiggsLV} = nullptr}}
+\label{classSvfitResults_ad53212bbbb3ed120e696fe36fa4ad215}
+\hypertarget{classSvfitResults_a061a9d939fb96f6cdfc0688a7b3db356}{
+\index{SvfitResults@{SvfitResults}!fittedTau1ERatio@{fittedTau1ERatio}}
+\index{fittedTau1ERatio@{fittedTau1ERatio}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedTau1ERatio}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf SvfitResults::fittedTau1ERatio}}}
+\label{classSvfitResults_a061a9d939fb96f6cdfc0688a7b3db356}
+\hypertarget{classSvfitResults_a122d035561c86eff8aa24f84e0c67cb2}{
+\index{SvfitResults@{SvfitResults}!fittedTau1LV@{fittedTau1LV}}
+\index{fittedTau1LV@{fittedTau1LV}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedTau1LV}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf SvfitResults::fittedTau1LV} = nullptr}}
+\label{classSvfitResults_a122d035561c86eff8aa24f84e0c67cb2}
+\hypertarget{classSvfitResults_a94a0917e8fac0662ad460800b77aa71e}{
+\index{SvfitResults@{SvfitResults}!fittedTau2ERatio@{fittedTau2ERatio}}
+\index{fittedTau2ERatio@{fittedTau2ERatio}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedTau2ERatio}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf SvfitResults::fittedTau2ERatio}}}
+\label{classSvfitResults_a94a0917e8fac0662ad460800b77aa71e}
+\hypertarget{classSvfitResults_ad1b5371d1ebf4c5cc04c029f280a46cb}{
+\index{SvfitResults@{SvfitResults}!fittedTau2LV@{fittedTau2LV}}
+\index{fittedTau2LV@{fittedTau2LV}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedTau2LV}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf SvfitResults::fittedTau2LV} = nullptr}}
+\label{classSvfitResults_ad1b5371d1ebf4c5cc04c029f280a46cb}
+\hypertarget{classSvfitResults_a0da3be281513b44ba678f0402b0bdf1d}{
+\index{SvfitResults@{SvfitResults}!fittedTransverseMass@{fittedTransverseMass}}
+\index{fittedTransverseMass@{fittedTransverseMass}!SvfitResults@{SvfitResults}}
+\subsubsection[{fittedTransverseMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf SvfitResults::fittedTransverseMass}}}
+\label{classSvfitResults_a0da3be281513b44ba678f0402b0bdf1d}
+\hypertarget{classSvfitResults_ad5d54373ccfdfb31d2a2c6006cd7c472}{
+\index{SvfitResults@{SvfitResults}!recalculated@{recalculated}}
+\index{recalculated@{recalculated}!SvfitResults@{SvfitResults}}
+\subsubsection[{recalculated}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf SvfitResults::recalculated}}}
+\label{classSvfitResults_ad5d54373ccfdfb31d2a2c6006cd7c472}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Utility/\hyperlink{SvfitTools_8h}{SvfitTools.h}\item 
+src/Utility/\hyperlink{SvfitTools_8cc}{SvfitTools.cc}\end{DoxyCompactItemize}

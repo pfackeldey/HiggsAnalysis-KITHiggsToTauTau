@@ -1,0 +1,59 @@
+\hypertarget{classEmbeddingGlobalQuantitiesProducer}{
+\section{EmbeddingGlobalQuantitiesProducer Class Reference}
+\label{classEmbeddingGlobalQuantitiesProducer}\index{EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}}
+}
+
+
+Producer, that is calculating quantities describing the full event in embedding. Need follwoing Producers to be executed for this (attention to order!):
+\begin{DoxyItemize}
+\item PFCandidatesProducer
+\item ZProducer. 
+\end{DoxyItemize} 
+
+
+{\ttfamily \#include $<$EmbeddingGlobalQuantitiesProducer.h$>$}Inheritance diagram for EmbeddingGlobalQuantitiesProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEmbeddingGlobalQuantitiesProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classEmbeddingGlobalQuantitiesProducer_acc5b530d1c375f0508c5b0348e651481}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classEmbeddingGlobalQuantitiesProducer_a21a081a1b3182777ebf179aded3f0cc7}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classEmbeddingGlobalQuantitiesProducer_a05b0572f8e6ba73bc73f3ea0958e5210}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer, that is calculating quantities describing the full event in embedding. Need follwoing Producers to be executed for this (attention to order!):
+\begin{DoxyItemize}
+\item PFCandidatesProducer
+\item ZProducer. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEmbeddingGlobalQuantitiesProducer_acc5b530d1c375f0508c5b0348e651481}{
+\index{EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string EmbeddingGlobalQuantitiesProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classEmbeddingGlobalQuantitiesProducer_acc5b530d1c375f0508c5b0348e651481}
+\hypertarget{classEmbeddingGlobalQuantitiesProducer_a21a081a1b3182777ebf179aded3f0cc7}{
+\index{EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}!Init@{Init}}
+\index{Init@{Init}!EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void EmbeddingGlobalQuantitiesProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classEmbeddingGlobalQuantitiesProducer_a21a081a1b3182777ebf179aded3f0cc7}
+\hypertarget{classEmbeddingGlobalQuantitiesProducer_a05b0572f8e6ba73bc73f3ea0958e5210}{
+\index{EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!EmbeddingGlobalQuantitiesProducer@{EmbeddingGlobalQuantitiesProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void EmbeddingGlobalQuantitiesProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classEmbeddingGlobalQuantitiesProducer_a05b0572f8e6ba73bc73f3ea0958e5210}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{EmbeddingGlobalQuantitiesProducer_8h}{EmbeddingGlobalQuantitiesProducer.h}\item 
+src/Producers/\hyperlink{EmbeddingGlobalQuantitiesProducer_8cc}{EmbeddingGlobalQuantitiesProducer.cc}\end{DoxyCompactItemize}

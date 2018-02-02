@@ -1,0 +1,142 @@
+\hypertarget{classHttElectronCorrectionsProducer}{
+\section{HttElectronCorrectionsProducer Class Reference}
+\label{classHttElectronCorrectionsProducer}\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+}
+
+
+Producer for electron energy scale corrections (Htt version).  
+
+
+{\ttfamily \#include $<$HttElectronCorrectionsProducer.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4c}{ElectronEnergyCorrection} \{ \hyperlink{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4cad6a08c4c96f309eeca36c533657962b9}{NONE} =  -\/1, 
+\hyperlink{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4ca87fb65884138c9c12222dffa316c7c64}{FALL2015} =  0
+ \}
+\item 
+typedef KappaTypes::event\_\-type \hyperlink{classHttElectronCorrectionsProducer_a7972baeb26d5c7003099092fe30db215}{event\_\-type}
+\item 
+typedef KappaTypes::product\_\-type \hyperlink{classHttElectronCorrectionsProducer_a3e393b3f94ee4c60d6bbb9bc5fb33416}{product\_\-type}
+\item 
+typedef KappaTypes::setting\_\-type \hyperlink{classHttElectronCorrectionsProducer_a7e0458045a229bf4cdb7dbdc488078be}{setting\_\-type}
+\item 
+typedef KappaTypes::metadata\_\-type \hyperlink{classHttElectronCorrectionsProducer_a956e67f1c2b74330fe6da6e5dad3eb50}{metadata\_\-type}
+\item 
+typedef \hyperlink{classHttEvent}{HttTypes::event\_\-type} \hyperlink{classHttElectronCorrectionsProducer_aec239474ed932e121abaed5120be13f5}{spec\_\-event\_\-type}
+\item 
+typedef \hyperlink{classHttProduct}{HttTypes::product\_\-type} \hyperlink{classHttElectronCorrectionsProducer_a9824b78ffae5c1f3e425dcac5ce9b2ee}{spec\_\-product\_\-type}
+\item 
+typedef \hyperlink{classHttSettings}{HttTypes::setting\_\-type} \hyperlink{classHttElectronCorrectionsProducer_aa3b043e17998776aaa656403db7427c4}{spec\_\-setting\_\-type}
+\item 
+typedef \hyperlink{classHttMetadata}{HttTypes::metadata\_\-type} \hyperlink{classHttElectronCorrectionsProducer_a28d582443a6aa64237a73ad5d993b34f}{spec\_\-metadata\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttElectronCorrectionsProducer_a23e30f4e831c2be5cef1c9968fee70e0}{Init} (\hyperlink{classHttElectronCorrectionsProducer_a7e0458045a229bf4cdb7dbdc488078be}{setting\_\-type} const \&settings, \hyperlink{classHttElectronCorrectionsProducer_a956e67f1c2b74330fe6da6e5dad3eb50}{metadata\_\-type} \&metadata) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4c}{ElectronEnergyCorrection} \hyperlink{classHttElectronCorrectionsProducer_a29ad3cf007efb99ee413fccdfb1896a6}{ToElectronEnergyCorrection} (std::string const \&eleEnergyCorrection)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttElectronCorrectionsProducer_a9de2dd4eaa7676e68e9c67ff9616a9f2}{AdditionalCorrections} (KElectron $\ast$electron, \hyperlink{classHttElectronCorrectionsProducer_a7972baeb26d5c7003099092fe30db215}{event\_\-type} const \&event, \hyperlink{classHttElectronCorrectionsProducer_a3e393b3f94ee4c60d6bbb9bc5fb33416}{product\_\-type} \&product, \hyperlink{classHttElectronCorrectionsProducer_a7e0458045a229bf4cdb7dbdc488078be}{setting\_\-type} const \&settings, \hyperlink{classHttElectronCorrectionsProducer_a956e67f1c2b74330fe6da6e5dad3eb50}{metadata\_\-type} const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for electron energy scale corrections (Htt version). Required config tags
+\begin{DoxyItemize}
+\item ElectronEnergyCorrection (possible value: fall2015) 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classHttElectronCorrectionsProducer_a7972baeb26d5c7003099092fe30db215}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!event\_\-type@{event\_\-type}}
+\index{event\_\-type@{event\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::event\_\-type {\bf HttElectronCorrectionsProducer::event\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a7972baeb26d5c7003099092fe30db215}
+\hypertarget{classHttElectronCorrectionsProducer_a956e67f1c2b74330fe6da6e5dad3eb50}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!metadata\_\-type@{metadata\_\-type}}
+\index{metadata\_\-type@{metadata\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::metadata\_\-type {\bf HttElectronCorrectionsProducer::metadata\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a956e67f1c2b74330fe6da6e5dad3eb50}
+\hypertarget{classHttElectronCorrectionsProducer_a3e393b3f94ee4c60d6bbb9bc5fb33416}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!product\_\-type@{product\_\-type}}
+\index{product\_\-type@{product\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::product\_\-type {\bf HttElectronCorrectionsProducer::product\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a3e393b3f94ee4c60d6bbb9bc5fb33416}
+\hypertarget{classHttElectronCorrectionsProducer_a7e0458045a229bf4cdb7dbdc488078be}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!setting\_\-type@{setting\_\-type}}
+\index{setting\_\-type@{setting\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::setting\_\-type {\bf HttElectronCorrectionsProducer::setting\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a7e0458045a229bf4cdb7dbdc488078be}
+\hypertarget{classHttElectronCorrectionsProducer_aec239474ed932e121abaed5120be13f5}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!spec\_\-event\_\-type@{spec\_\-event\_\-type}}
+\index{spec\_\-event\_\-type@{spec\_\-event\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{spec\_\-event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::event\_\-type} {\bf HttElectronCorrectionsProducer::spec\_\-event\_\-type}}}
+\label{classHttElectronCorrectionsProducer_aec239474ed932e121abaed5120be13f5}
+\hypertarget{classHttElectronCorrectionsProducer_a28d582443a6aa64237a73ad5d993b34f}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}}
+\index{spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{spec\_\-metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::metadata\_\-type} {\bf HttElectronCorrectionsProducer::spec\_\-metadata\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a28d582443a6aa64237a73ad5d993b34f}
+\hypertarget{classHttElectronCorrectionsProducer_a9824b78ffae5c1f3e425dcac5ce9b2ee}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!spec\_\-product\_\-type@{spec\_\-product\_\-type}}
+\index{spec\_\-product\_\-type@{spec\_\-product\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{spec\_\-product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::product\_\-type} {\bf HttElectronCorrectionsProducer::spec\_\-product\_\-type}}}
+\label{classHttElectronCorrectionsProducer_a9824b78ffae5c1f3e425dcac5ce9b2ee}
+\hypertarget{classHttElectronCorrectionsProducer_aa3b043e17998776aaa656403db7427c4}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!spec\_\-setting\_\-type@{spec\_\-setting\_\-type}}
+\index{spec\_\-setting\_\-type@{spec\_\-setting\_\-type}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{spec\_\-setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::setting\_\-type} {\bf HttElectronCorrectionsProducer::spec\_\-setting\_\-type}}}
+\label{classHttElectronCorrectionsProducer_aa3b043e17998776aaa656403db7427c4}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4c}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!ElectronEnergyCorrection@{ElectronEnergyCorrection}}
+\index{ElectronEnergyCorrection@{ElectronEnergyCorrection}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{ElectronEnergyCorrection}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf HttElectronCorrectionsProducer::ElectronEnergyCorrection}}}
+\label{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4c}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4cad6a08c4c96f309eeca36c533657962b9}{
+NONE}
+\label{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4cad6a08c4c96f309eeca36c533657962b9}
+}]\index{FALL2015@{FALL2015}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!FALL2015@{FALL2015}}\item[{\em 
+\hypertarget{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4ca87fb65884138c9c12222dffa316c7c64}{
+FALL2015}
+\label{classHttElectronCorrectionsProducer_a4a9df688e889b0c00043b901eecaac4ca87fb65884138c9c12222dffa316c7c64}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttElectronCorrectionsProducer_a9de2dd4eaa7676e68e9c67ff9616a9f2}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!AdditionalCorrections@{AdditionalCorrections}}
+\index{AdditionalCorrections@{AdditionalCorrections}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{AdditionalCorrections}]{\setlength{\rightskip}{0pt plus 5cm}void HttElectronCorrectionsProducer::AdditionalCorrections (KElectron $\ast$ {\em electron}, \/  {\bf event\_\-type} const \& {\em event}, \/  {\bf product\_\-type} \& {\em product}, \/  {\bf setting\_\-type} const \& {\em settings}, \/  {\bf metadata\_\-type} const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, protected, virtual\mbox{]}}}}
+\label{classHttElectronCorrectionsProducer_a9de2dd4eaa7676e68e9c67ff9616a9f2}
+\hypertarget{classHttElectronCorrectionsProducer_a23e30f4e831c2be5cef1c9968fee70e0}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!Init@{Init}}
+\index{Init@{Init}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void HttElectronCorrectionsProducer::Init ({\bf setting\_\-type} const \& {\em settings}, \/  {\bf metadata\_\-type} \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttElectronCorrectionsProducer_a23e30f4e831c2be5cef1c9968fee70e0}
+\hypertarget{classHttElectronCorrectionsProducer_a29ad3cf007efb99ee413fccdfb1896a6}{
+\index{HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}!ToElectronEnergyCorrection@{ToElectronEnergyCorrection}}
+\index{ToElectronEnergyCorrection@{ToElectronEnergyCorrection}!HttElectronCorrectionsProducer@{HttElectronCorrectionsProducer}}
+\subsubsection[{ToElectronEnergyCorrection}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ElectronEnergyCorrection} HttElectronCorrectionsProducer::ToElectronEnergyCorrection (std::string const \& {\em eleEnergyCorrection})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classHttElectronCorrectionsProducer_a29ad3cf007efb99ee413fccdfb1896a6}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttElectronCorrectionsProducer_8h}{HttElectronCorrectionsProducer.h}\item 
+src/Producers/\hyperlink{HttElectronCorrectionsProducer_8cc}{HttElectronCorrectionsProducer.cc}\end{DoxyCompactItemize}

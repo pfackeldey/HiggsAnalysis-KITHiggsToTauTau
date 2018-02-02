@@ -1,0 +1,43 @@
+\hypertarget{classElectronEtaSelector}{
+\section{ElectronEtaSelector Class Reference}
+\label{classElectronEtaSelector}\index{ElectronEtaSelector@{ElectronEtaSelector}}
+}
+
+
+{\ttfamily \#include $<$ElectronEtaSelector.h$>$}Inheritance diagram for ElectronEtaSelector::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classElectronEtaSelector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classElectronEtaSelector_a44f2b988ce958eaad34e06e37da02c5c}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classElectronEtaSelector_a00d27d0a73fef869f62e9d8d50c05c59}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer that modifies the event.m\_\-electrons\mbox{[}..\mbox{]}.p4.Eta() according to the Htt specifications to electron-\/$>$superclusterposition.Eta() See: \href{https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013#Electron_ID}{\tt https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013\#Electron\_\-ID}
+
+It is recommendet to always run this producer globally and before any use of event.m\_\-electrons. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classElectronEtaSelector_a44f2b988ce958eaad34e06e37da02c5c}{
+\index{ElectronEtaSelector@{ElectronEtaSelector}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!ElectronEtaSelector@{ElectronEtaSelector}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string ElectronEtaSelector::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classElectronEtaSelector_a44f2b988ce958eaad34e06e37da02c5c}
+\hypertarget{classElectronEtaSelector_a00d27d0a73fef869f62e9d8d50c05c59}{
+\index{ElectronEtaSelector@{ElectronEtaSelector}!Produce@{Produce}}
+\index{Produce@{Produce}!ElectronEtaSelector@{ElectronEtaSelector}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void ElectronEtaSelector::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classElectronEtaSelector_a00d27d0a73fef869f62e9d8d50c05c59}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{ElectronEtaSelector_8h}{ElectronEtaSelector.h}\item 
+src/Producers/\hyperlink{ElectronEtaSelector_8cc}{ElectronEtaSelector.cc}\end{DoxyCompactItemize}

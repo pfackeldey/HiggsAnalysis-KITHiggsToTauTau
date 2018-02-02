@@ -1,0 +1,77 @@
+\hypertarget{classMetSelectorBase}{
+\section{MetSelectorBase$<$ TMet $>$ Class Template Reference}
+\label{classMetSelectorBase}\index{MetSelectorBase@{MetSelectorBase}}
+}
+
+
+Producer for the MET.  
+
+
+{\ttfamily \#include $<$MetSelectors.h$>$}Inheritance diagram for MetSelectorBase$<$ TMet $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classMetSelectorBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetSelectorBase_a373ff1e127345c9c14a16e19c358d63b}{MetSelectorBase} (TMet $\ast$event\_\-type::$\ast$met, std::vector$<$ TMet $>$ $\ast$event\_\-type::$\ast$mets)
+\item 
+virtual void \hyperlink{classMetSelectorBase_a727ae5cae998adf7943885fd32417f68}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classMetSelectorBase_a61da28f5d705a0e0a620879c7bf6a61c}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TMet $\ast$event\_\-type::$\ast$ \hyperlink{classMetSelectorBase_a2eaea4fc8ec9c76234347ada082c5f9d}{m\_\-metMember}
+\item 
+std::vector$<$ TMet $>$ $\ast$event\_\-type::$\ast$ \hyperlink{classMetSelectorBase_a035fd3acacfd2f9a20f110d2134aa85f}{m\_\-metsMember}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TMet$>$ class MetSelectorBase$<$ TMet $>$}
+
+Producer for the MET. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMetSelectorBase_a373ff1e127345c9c14a16e19c358d63b}{
+\index{MetSelectorBase@{MetSelectorBase}!MetSelectorBase@{MetSelectorBase}}
+\index{MetSelectorBase@{MetSelectorBase}!MetSelectorBase@{MetSelectorBase}}
+\subsubsection[{MetSelectorBase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MetSelectorBase}$<$ TMet $>$::{\bf MetSelectorBase} (TMet $\ast$event\_\-type::$\ast$ {\em met}, \/  std::vector$<$ TMet $>$ $\ast$event\_\-type::$\ast$ {\em mets})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMetSelectorBase_a373ff1e127345c9c14a16e19c358d63b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMetSelectorBase_a727ae5cae998adf7943885fd32417f68}{
+\index{MetSelectorBase@{MetSelectorBase}!Init@{Init}}
+\index{Init@{Init}!MetSelectorBase@{MetSelectorBase}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ virtual void {\bf MetSelectorBase}$<$ TMet $>$::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMetSelectorBase_a727ae5cae998adf7943885fd32417f68}
+\hypertarget{classMetSelectorBase_a61da28f5d705a0e0a620879c7bf6a61c}{
+\index{MetSelectorBase@{MetSelectorBase}!Produce@{Produce}}
+\index{Produce@{Produce}!MetSelectorBase@{MetSelectorBase}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ virtual void {\bf MetSelectorBase}$<$ TMet $>$::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMetSelectorBase_a61da28f5d705a0e0a620879c7bf6a61c}
+
+
+Reimplemented in \hyperlink{classMetSelectorPuppi_a8271850e0ac5dfdfe20e403947f87c3d}{MetSelectorPuppi}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classMetSelectorBase_a2eaea4fc8ec9c76234347ada082c5f9d}{
+\index{MetSelectorBase@{MetSelectorBase}!m\_\-metMember@{m\_\-metMember}}
+\index{m\_\-metMember@{m\_\-metMember}!MetSelectorBase@{MetSelectorBase}}
+\subsubsection[{m\_\-metMember}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ TMet$\ast$ event\_\-type::$\ast$ {\bf MetSelectorBase}$<$ TMet $>$::{\bf m\_\-metMember}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetSelectorBase_a2eaea4fc8ec9c76234347ada082c5f9d}
+\hypertarget{classMetSelectorBase_a035fd3acacfd2f9a20f110d2134aa85f}{
+\index{MetSelectorBase@{MetSelectorBase}!m\_\-metsMember@{m\_\-metsMember}}
+\index{m\_\-metsMember@{m\_\-metsMember}!MetSelectorBase@{MetSelectorBase}}
+\subsubsection[{m\_\-metsMember}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ std::vector$<$TMet$>$$\ast$ event\_\-type::$\ast$ {\bf MetSelectorBase}$<$ TMet $>$::{\bf m\_\-metsMember}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetSelectorBase_a035fd3acacfd2f9a20f110d2134aa85f}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{MetSelectors_8h}{MetSelectors.h}\end{DoxyCompactItemize}

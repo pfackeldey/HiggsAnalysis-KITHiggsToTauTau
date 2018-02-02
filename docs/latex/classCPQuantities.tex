@@ -1,0 +1,241 @@
+\hypertarget{classCPQuantities}{
+\section{CPQuantities Class Reference}
+\label{classCPQuantities}\index{CPQuantities@{CPQuantities}}
+}
+
+
+Place to collect functions calculating CP quantities -\/Phi$\ast$ : this is a variable, with which one can say, whether the considered boson is a CP even state or a CP odd state -\/Phi$\ast$CP : this is a variable, with which one can figure out, whether the Higgs is a CP mixture or not -\/Zs : this is a variable, with which one can figure out, wether the considered boson has spin 1 (Z) or 0 (Higgs).  
+
+
+{\ttfamily \#include $<$CPQuantities.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCPQuantities_ad58f8cf3eb5bbcd779c16cf55271e263}{CalculatePhiStarCP} (RMFLV tau1, RMFLV tau2, RMFLV chargPart1, RMFLV chargPart2)
+\item 
+double \hyperlink{classCPQuantities_a1f725895e37c3c82be878f6e1de13da9}{CalculatePhiStarCP} (KVertex $\ast$pv, KTrack track1, KTrack track2, RMFLV chargPart1, RMFLV chargPart2)
+\item 
+double \hyperlink{classCPQuantities_a42c490c334c7d6e5a0fa5c46319be1fa}{CalculatePhiStarCP} (KRefitVertex $\ast$pv, KTrack track1, KTrack track2, RMFLV chargPart1, RMFLV chargPart2)
+\item 
+double \hyperlink{classCPQuantities_ae5788e20756f36ca936b5a9be6df7499}{CalculatePhiStarCP} (RMFLV chargPart1, RMFLV chargPart2, TVector3 ipvec1, TVector3 ipvec2, std::string level)
+\item 
+double \hyperlink{classCPQuantities_a9c1bb591c0cd39d7811f55ec11e85cf3}{CalculatePhiStarCP\_\-rho} (RMFLV chargedPiP, RMFLV chargedPiM, RMFLV piZeroP, RMFLV piZeroM)
+\item 
+double \hyperlink{classCPQuantities_ab99f363dffcef31b9586c837345f8de3}{CalculatePhiStarCPComb} (TVector3 ipvec, RMFLV daughter, RMFLV pion, RMFLV pizero, int daughterCharge)
+\item 
+double \hyperlink{classCPQuantities_af2aecefa85b7f167105e077382c9c6d0}{CalculateChargedHadronEnergy} (RMFLV diTauMomentum, RMFLV chargHad)
+\item 
+double \hyperlink{classCPQuantities_a113b0671c39aba801291753fbe2fb4d8}{CalculatePhiCP} (RMFLV boson, RMFLV tau1, RMFLV tau2, RMFLV pion1, RMFLV pion2)
+\item 
+double \hyperlink{classCPQuantities_acff7d59bea15f181b1dfe66c43b49577}{CalculatePhiCPLab} (RMFLV chargPart1, TVector3 ipvec1, TVector3 ipvec2)
+\item 
+double \hyperlink{classCPQuantities_ac5089fe60e10d6185702deab951d9d90}{CalculateChargedProngEnergy} (RMFLV tau, RMFLV chargedProng)
+\item 
+double \hyperlink{classCPQuantities_a89656a406f278bdda8cadea631bee6aa}{CalculateChargedProngEnergyApprox} (RMFLV tau, RMFLV chargedProng)
+\item 
+double \hyperlink{classCPQuantities_a41459ffae38ce33912733b24136b0859}{CalculateSpinAnalysingDiscriminant\_\-rho} (RMFLV tau1, RMFLV tau2, RMFLV pionP, RMFLV pionM, RMFLV pi0P, RMFLV pi0M)
+\item 
+double \hyperlink{classCPQuantities_a21ad326d0dc204211a393fc9f0cbc844}{CalculateSpinAnalysingDiscriminant\_\-rho} (RMFLV chargedPion, RMFLV pi0)
+\item 
+double \hyperlink{classCPQuantities_a75ee8a45a17843c7bff05190732a7bb4}{CalculateTrackReferenceError} (KTrack track)
+\item 
+double \hyperlink{classCPQuantities_a7bdaec07de8627dd1424946e7776768c}{CalculateZPlusMinus} (RMFLV higgs, RMFLV chargedPart)
+\item 
+double \hyperlink{classCPQuantities_a30852bb8fd044b8b6c979150aa1c5e84}{CalculateZs} (double zPlus, double zMinus)
+\item 
+double \hyperlink{classCPQuantities_a03e5be1168d4cea8c65b74640570cc0c}{CalculateD0sArea} (double d0\_\-1, double d0\_\-2)
+\item 
+double \hyperlink{classCPQuantities_ae45f7a1f234b3a6bff9d6afeeb769a16}{CalculateD0sDist} (double d0\_\-1, double d0\_\-2)
+\item 
+double \hyperlink{classCPQuantities_a5e9cd0d191719349777eb5d8b5bc919c}{PhiTransform} (double phi)
+\item 
+TVector3 \hyperlink{classCPQuantities_a6d5ba56501e2c1c35da35309af81b112}{CalculateIPVector} (KGenParticle $\ast$genParticle, RMPoint $\ast$pv)
+\item 
+TVector3 \hyperlink{classCPQuantities_a7cba8aa116e58892d0ecca846e8b8f08}{CalculateIPVector} (KLepton $\ast$recoParticle, KVertex $\ast$pv)
+\item 
+double \hyperlink{classCPQuantities_a115b55637b473bdab3941eadb1cf5b55}{CalculateCosPsi} (RMFLV recoPart, TVector3 ipvec)
+\item 
+std::vector$<$ double $>$ \hyperlink{classCPQuantities_a692317cc0e1ca420fda665230c58b5b6}{CalculateIPErrors} (KLepton $\ast$lepton, KVertex $\ast$pv, TVector3 $\ast$ipvec)
+\item 
+double \hyperlink{classCPQuantities_aa267b9a3948b963ea9cbb7a5542ba900}{GetGenPhiStar} ()
+\item 
+double \hyperlink{classCPQuantities_a2697905dce575b8d56a83e24367cb8b9}{GetGenOStarCP} ()
+\item 
+double \hyperlink{classCPQuantities_a705bbd0a4e63114d14651656001adff1}{GetGenPhi} ()
+\item 
+double \hyperlink{classCPQuantities_a39840af1718044f5c19a0dbd42d314e7}{GetGenOCP} ()
+\item 
+double \hyperlink{classCPQuantities_a778283bd3af9c19d9498d9763d0facb5}{GetRecoPhiStar} ()
+\item 
+double \hyperlink{classCPQuantities_aa84d24d23086f4ecb1f144180ab3adca}{GetRecoOStarCP} ()
+\item 
+double \hyperlink{classCPQuantities_a00be036cdc2d8c9ed21ea6a70cee56f0}{GetRecoIP1} ()
+\item 
+double \hyperlink{classCPQuantities_a2045f55f5ee2cde785b01464b3fe822a}{GetRecoIP2} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Place to collect functions calculating CP quantities -\/Phi$\ast$ : this is a variable, with which one can say, whether the considered boson is a CP even state or a CP odd state -\/Phi$\ast$CP : this is a variable, with which one can figure out, whether the Higgs is a CP mixture or not -\/Zs : this is a variable, with which one can figure out, wether the considered boson has spin 1 (Z) or 0 (Higgs). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCPQuantities_af2aecefa85b7f167105e077382c9c6d0}{
+\index{CPQuantities@{CPQuantities}!CalculateChargedHadronEnergy@{CalculateChargedHadronEnergy}}
+\index{CalculateChargedHadronEnergy@{CalculateChargedHadronEnergy}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateChargedHadronEnergy}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateChargedHadronEnergy (RMFLV {\em diTauMomentum}, \/  RMFLV {\em chargHad})}}
+\label{classCPQuantities_af2aecefa85b7f167105e077382c9c6d0}
+\hypertarget{classCPQuantities_ac5089fe60e10d6185702deab951d9d90}{
+\index{CPQuantities@{CPQuantities}!CalculateChargedProngEnergy@{CalculateChargedProngEnergy}}
+\index{CalculateChargedProngEnergy@{CalculateChargedProngEnergy}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateChargedProngEnergy}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateChargedProngEnergy (RMFLV {\em tau}, \/  RMFLV {\em chargedProng})}}
+\label{classCPQuantities_ac5089fe60e10d6185702deab951d9d90}
+\hypertarget{classCPQuantities_a89656a406f278bdda8cadea631bee6aa}{
+\index{CPQuantities@{CPQuantities}!CalculateChargedProngEnergyApprox@{CalculateChargedProngEnergyApprox}}
+\index{CalculateChargedProngEnergyApprox@{CalculateChargedProngEnergyApprox}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateChargedProngEnergyApprox}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateChargedProngEnergyApprox (RMFLV {\em tau}, \/  RMFLV {\em chargedProng})}}
+\label{classCPQuantities_a89656a406f278bdda8cadea631bee6aa}
+\hypertarget{classCPQuantities_a115b55637b473bdab3941eadb1cf5b55}{
+\index{CPQuantities@{CPQuantities}!CalculateCosPsi@{CalculateCosPsi}}
+\index{CalculateCosPsi@{CalculateCosPsi}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateCosPsi}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateCosPsi (RMFLV {\em recoPart}, \/  TVector3 {\em ipvec})}}
+\label{classCPQuantities_a115b55637b473bdab3941eadb1cf5b55}
+\hypertarget{classCPQuantities_a03e5be1168d4cea8c65b74640570cc0c}{
+\index{CPQuantities@{CPQuantities}!CalculateD0sArea@{CalculateD0sArea}}
+\index{CalculateD0sArea@{CalculateD0sArea}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateD0sArea}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateD0sArea (double {\em d0\_\-1}, \/  double {\em d0\_\-2})}}
+\label{classCPQuantities_a03e5be1168d4cea8c65b74640570cc0c}
+\hypertarget{classCPQuantities_ae45f7a1f234b3a6bff9d6afeeb769a16}{
+\index{CPQuantities@{CPQuantities}!CalculateD0sDist@{CalculateD0sDist}}
+\index{CalculateD0sDist@{CalculateD0sDist}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateD0sDist}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateD0sDist (double {\em d0\_\-1}, \/  double {\em d0\_\-2})}}
+\label{classCPQuantities_ae45f7a1f234b3a6bff9d6afeeb769a16}
+\hypertarget{classCPQuantities_a692317cc0e1ca420fda665230c58b5b6}{
+\index{CPQuantities@{CPQuantities}!CalculateIPErrors@{CalculateIPErrors}}
+\index{CalculateIPErrors@{CalculateIPErrors}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateIPErrors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ CPQuantities::CalculateIPErrors (KLepton $\ast$ {\em lepton}, \/  KVertex $\ast$ {\em pv}, \/  TVector3 $\ast$ {\em ipvec})}}
+\label{classCPQuantities_a692317cc0e1ca420fda665230c58b5b6}
+\hypertarget{classCPQuantities_a7cba8aa116e58892d0ecca846e8b8f08}{
+\index{CPQuantities@{CPQuantities}!CalculateIPVector@{CalculateIPVector}}
+\index{CalculateIPVector@{CalculateIPVector}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateIPVector}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 CPQuantities::CalculateIPVector (KLepton $\ast$ {\em recoParticle}, \/  KVertex $\ast$ {\em pv})}}
+\label{classCPQuantities_a7cba8aa116e58892d0ecca846e8b8f08}
+\hypertarget{classCPQuantities_a6d5ba56501e2c1c35da35309af81b112}{
+\index{CPQuantities@{CPQuantities}!CalculateIPVector@{CalculateIPVector}}
+\index{CalculateIPVector@{CalculateIPVector}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateIPVector}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 CPQuantities::CalculateIPVector (KGenParticle $\ast$ {\em genParticle}, \/  RMPoint $\ast$ {\em pv})}}
+\label{classCPQuantities_a6d5ba56501e2c1c35da35309af81b112}
+\hypertarget{classCPQuantities_a113b0671c39aba801291753fbe2fb4d8}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiCP@{CalculatePhiCP}}
+\index{CalculatePhiCP@{CalculatePhiCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiCP (RMFLV {\em boson}, \/  RMFLV {\em tau1}, \/  RMFLV {\em tau2}, \/  RMFLV {\em pion1}, \/  RMFLV {\em pion2})}}
+\label{classCPQuantities_a113b0671c39aba801291753fbe2fb4d8}
+\hypertarget{classCPQuantities_acff7d59bea15f181b1dfe66c43b49577}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiCPLab@{CalculatePhiCPLab}}
+\index{CalculatePhiCPLab@{CalculatePhiCPLab}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiCPLab}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiCPLab (RMFLV {\em chargPart1}, \/  TVector3 {\em ipvec1}, \/  TVector3 {\em ipvec2})}}
+\label{classCPQuantities_acff7d59bea15f181b1dfe66c43b49577}
+\hypertarget{classCPQuantities_ae5788e20756f36ca936b5a9be6df7499}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCP@{CalculatePhiStarCP}}
+\index{CalculatePhiStarCP@{CalculatePhiStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCP (RMFLV {\em chargPart1}, \/  RMFLV {\em chargPart2}, \/  TVector3 {\em ipvec1}, \/  TVector3 {\em ipvec2}, \/  std::string {\em level})}}
+\label{classCPQuantities_ae5788e20756f36ca936b5a9be6df7499}
+\hypertarget{classCPQuantities_a42c490c334c7d6e5a0fa5c46319be1fa}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCP@{CalculatePhiStarCP}}
+\index{CalculatePhiStarCP@{CalculatePhiStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCP (KRefitVertex $\ast$ {\em pv}, \/  KTrack {\em track1}, \/  KTrack {\em track2}, \/  RMFLV {\em chargPart1}, \/  RMFLV {\em chargPart2})}}
+\label{classCPQuantities_a42c490c334c7d6e5a0fa5c46319be1fa}
+\hypertarget{classCPQuantities_a1f725895e37c3c82be878f6e1de13da9}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCP@{CalculatePhiStarCP}}
+\index{CalculatePhiStarCP@{CalculatePhiStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCP (KVertex $\ast$ {\em pv}, \/  KTrack {\em track1}, \/  KTrack {\em track2}, \/  RMFLV {\em chargPart1}, \/  RMFLV {\em chargPart2})}}
+\label{classCPQuantities_a1f725895e37c3c82be878f6e1de13da9}
+\hypertarget{classCPQuantities_ad58f8cf3eb5bbcd779c16cf55271e263}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCP@{CalculatePhiStarCP}}
+\index{CalculatePhiStarCP@{CalculatePhiStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCP (RMFLV {\em tau1}, \/  RMFLV {\em tau2}, \/  RMFLV {\em chargPart1}, \/  RMFLV {\em chargPart2})}}
+\label{classCPQuantities_ad58f8cf3eb5bbcd779c16cf55271e263}
+\hypertarget{classCPQuantities_a9c1bb591c0cd39d7811f55ec11e85cf3}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCP\_\-rho@{CalculatePhiStarCP\_\-rho}}
+\index{CalculatePhiStarCP\_\-rho@{CalculatePhiStarCP\_\-rho}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCP\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCP\_\-rho (RMFLV {\em chargedPiP}, \/  RMFLV {\em chargedPiM}, \/  RMFLV {\em piZeroP}, \/  RMFLV {\em piZeroM})}}
+\label{classCPQuantities_a9c1bb591c0cd39d7811f55ec11e85cf3}
+\hypertarget{classCPQuantities_ab99f363dffcef31b9586c837345f8de3}{
+\index{CPQuantities@{CPQuantities}!CalculatePhiStarCPComb@{CalculatePhiStarCPComb}}
+\index{CalculatePhiStarCPComb@{CalculatePhiStarCPComb}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculatePhiStarCPComb}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculatePhiStarCPComb (TVector3 {\em ipvec}, \/  RMFLV {\em daughter}, \/  RMFLV {\em pion}, \/  RMFLV {\em pizero}, \/  int {\em daughterCharge})}}
+\label{classCPQuantities_ab99f363dffcef31b9586c837345f8de3}
+\hypertarget{classCPQuantities_a21ad326d0dc204211a393fc9f0cbc844}{
+\index{CPQuantities@{CPQuantities}!CalculateSpinAnalysingDiscriminant\_\-rho@{CalculateSpinAnalysingDiscriminant\_\-rho}}
+\index{CalculateSpinAnalysingDiscriminant\_\-rho@{CalculateSpinAnalysingDiscriminant\_\-rho}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateSpinAnalysingDiscriminant\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateSpinAnalysingDiscriminant\_\-rho (RMFLV {\em chargedPion}, \/  RMFLV {\em pi0})}}
+\label{classCPQuantities_a21ad326d0dc204211a393fc9f0cbc844}
+\hypertarget{classCPQuantities_a41459ffae38ce33912733b24136b0859}{
+\index{CPQuantities@{CPQuantities}!CalculateSpinAnalysingDiscriminant\_\-rho@{CalculateSpinAnalysingDiscriminant\_\-rho}}
+\index{CalculateSpinAnalysingDiscriminant\_\-rho@{CalculateSpinAnalysingDiscriminant\_\-rho}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateSpinAnalysingDiscriminant\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateSpinAnalysingDiscriminant\_\-rho (RMFLV {\em tau1}, \/  RMFLV {\em tau2}, \/  RMFLV {\em pionP}, \/  RMFLV {\em pionM}, \/  RMFLV {\em pi0P}, \/  RMFLV {\em pi0M})}}
+\label{classCPQuantities_a41459ffae38ce33912733b24136b0859}
+\hypertarget{classCPQuantities_a75ee8a45a17843c7bff05190732a7bb4}{
+\index{CPQuantities@{CPQuantities}!CalculateTrackReferenceError@{CalculateTrackReferenceError}}
+\index{CalculateTrackReferenceError@{CalculateTrackReferenceError}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateTrackReferenceError}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateTrackReferenceError (KTrack {\em track})}}
+\label{classCPQuantities_a75ee8a45a17843c7bff05190732a7bb4}
+\hypertarget{classCPQuantities_a7bdaec07de8627dd1424946e7776768c}{
+\index{CPQuantities@{CPQuantities}!CalculateZPlusMinus@{CalculateZPlusMinus}}
+\index{CalculateZPlusMinus@{CalculateZPlusMinus}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateZPlusMinus}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateZPlusMinus (RMFLV {\em higgs}, \/  RMFLV {\em chargedPart})}}
+\label{classCPQuantities_a7bdaec07de8627dd1424946e7776768c}
+\hypertarget{classCPQuantities_a30852bb8fd044b8b6c979150aa1c5e84}{
+\index{CPQuantities@{CPQuantities}!CalculateZs@{CalculateZs}}
+\index{CalculateZs@{CalculateZs}!CPQuantities@{CPQuantities}}
+\subsubsection[{CalculateZs}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::CalculateZs (double {\em zPlus}, \/  double {\em zMinus})}}
+\label{classCPQuantities_a30852bb8fd044b8b6c979150aa1c5e84}
+\hypertarget{classCPQuantities_a39840af1718044f5c19a0dbd42d314e7}{
+\index{CPQuantities@{CPQuantities}!GetGenOCP@{GetGenOCP}}
+\index{GetGenOCP@{GetGenOCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetGenOCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetGenOCP ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a39840af1718044f5c19a0dbd42d314e7}
+\hypertarget{classCPQuantities_a2697905dce575b8d56a83e24367cb8b9}{
+\index{CPQuantities@{CPQuantities}!GetGenOStarCP@{GetGenOStarCP}}
+\index{GetGenOStarCP@{GetGenOStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetGenOStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetGenOStarCP ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a2697905dce575b8d56a83e24367cb8b9}
+\hypertarget{classCPQuantities_a705bbd0a4e63114d14651656001adff1}{
+\index{CPQuantities@{CPQuantities}!GetGenPhi@{GetGenPhi}}
+\index{GetGenPhi@{GetGenPhi}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetGenPhi}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetGenPhi ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a705bbd0a4e63114d14651656001adff1}
+\hypertarget{classCPQuantities_aa267b9a3948b963ea9cbb7a5542ba900}{
+\index{CPQuantities@{CPQuantities}!GetGenPhiStar@{GetGenPhiStar}}
+\index{GetGenPhiStar@{GetGenPhiStar}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetGenPhiStar}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetGenPhiStar ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_aa267b9a3948b963ea9cbb7a5542ba900}
+\hypertarget{classCPQuantities_a00be036cdc2d8c9ed21ea6a70cee56f0}{
+\index{CPQuantities@{CPQuantities}!GetRecoIP1@{GetRecoIP1}}
+\index{GetRecoIP1@{GetRecoIP1}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetRecoIP1}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetRecoIP1 ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a00be036cdc2d8c9ed21ea6a70cee56f0}
+\hypertarget{classCPQuantities_a2045f55f5ee2cde785b01464b3fe822a}{
+\index{CPQuantities@{CPQuantities}!GetRecoIP2@{GetRecoIP2}}
+\index{GetRecoIP2@{GetRecoIP2}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetRecoIP2}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetRecoIP2 ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a2045f55f5ee2cde785b01464b3fe822a}
+\hypertarget{classCPQuantities_aa84d24d23086f4ecb1f144180ab3adca}{
+\index{CPQuantities@{CPQuantities}!GetRecoOStarCP@{GetRecoOStarCP}}
+\index{GetRecoOStarCP@{GetRecoOStarCP}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetRecoOStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetRecoOStarCP ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_aa84d24d23086f4ecb1f144180ab3adca}
+\hypertarget{classCPQuantities_a778283bd3af9c19d9498d9763d0facb5}{
+\index{CPQuantities@{CPQuantities}!GetRecoPhiStar@{GetRecoPhiStar}}
+\index{GetRecoPhiStar@{GetRecoPhiStar}!CPQuantities@{CPQuantities}}
+\subsubsection[{GetRecoPhiStar}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::GetRecoPhiStar ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCPQuantities_a778283bd3af9c19d9498d9763d0facb5}
+\hypertarget{classCPQuantities_a5e9cd0d191719349777eb5d8b5bc919c}{
+\index{CPQuantities@{CPQuantities}!PhiTransform@{PhiTransform}}
+\index{PhiTransform@{PhiTransform}!CPQuantities@{CPQuantities}}
+\subsubsection[{PhiTransform}]{\setlength{\rightskip}{0pt plus 5cm}double CPQuantities::PhiTransform (double {\em phi})}}
+\label{classCPQuantities_a5e9cd0d191719349777eb5d8b5bc919c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Utility/\hyperlink{CPQuantities_8h}{CPQuantities.h}\item 
+src/Utility/\hyperlink{CPQuantities_8cc}{CPQuantities.cc}\end{DoxyCompactItemize}

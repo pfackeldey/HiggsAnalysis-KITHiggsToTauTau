@@ -1,0 +1,53 @@
+\hypertarget{classTauTauRestFrameSelector}{
+\section{TauTauRestFrameSelector Class Reference}
+\label{classTauTauRestFrameSelector}\index{TauTauRestFrameSelector@{TauTauRestFrameSelector}}
+}
+
+
+{\ttfamily \#include $<$TauTauRestFrameSelector.h$>$}Inheritance diagram for TauTauRestFrameSelector::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTauTauRestFrameSelector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classTauTauRestFrameSelector_a045f49f73f38509dfba1652056a49955}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classTauTauRestFrameSelector_afb59f86a2071c144277a0209a79f5f4d}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classTauTauRestFrameSelector_a825068b05a9345eaffc8c34895142720}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer to select the tautau restframe reconstruction method.
+
+Required config tags:
+\begin{DoxyItemize}
+\item TauTauRestFrameReco (possible valus: visible\_\-leptons, visible\_\-leptons\_\-met, collinear\_\-approximation, svfit) 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classTauTauRestFrameSelector_a045f49f73f38509dfba1652056a49955}{
+\index{TauTauRestFrameSelector@{TauTauRestFrameSelector}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TauTauRestFrameSelector@{TauTauRestFrameSelector}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string TauTauRestFrameSelector::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classTauTauRestFrameSelector_a045f49f73f38509dfba1652056a49955}
+\hypertarget{classTauTauRestFrameSelector_afb59f86a2071c144277a0209a79f5f4d}{
+\index{TauTauRestFrameSelector@{TauTauRestFrameSelector}!Init@{Init}}
+\index{Init@{Init}!TauTauRestFrameSelector@{TauTauRestFrameSelector}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void TauTauRestFrameSelector::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTauTauRestFrameSelector_afb59f86a2071c144277a0209a79f5f4d}
+\hypertarget{classTauTauRestFrameSelector_a825068b05a9345eaffc8c34895142720}{
+\index{TauTauRestFrameSelector@{TauTauRestFrameSelector}!Produce@{Produce}}
+\index{Produce@{Produce}!TauTauRestFrameSelector@{TauTauRestFrameSelector}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void TauTauRestFrameSelector::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTauTauRestFrameSelector_a825068b05a9345eaffc8c34895142720}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{TauTauRestFrameSelector_8h}{TauTauRestFrameSelector.h}\item 
+src/Producers/\hyperlink{TauTauRestFrameSelector_8cc}{TauTauRestFrameSelector.cc}\end{DoxyCompactItemize}

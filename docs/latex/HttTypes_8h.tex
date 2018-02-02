@@ -1,0 +1,43 @@
+\hypertarget{HttTypes_8h}{
+\section{interface/HttTypes.h File Reference}
+\label{HttTypes_8h}\index{interface/HttTypes.h@{interface/HttTypes.h}}
+}
+{\ttfamily \#include \char`\"{}Artus/Core/interface/ProducerBase.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Artus/Core/interface/Pipeline.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Artus/Core/interface/PipelineRunner.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttEvent.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttProduct.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttSettings.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}HiggsAnalysis/KITHiggsToTauTau/interface/HttMetadata.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classHttTypes}{HttTypes}
+\begin{DoxyCompactList}\small\item\em all data types which are used for Htt analyses \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Pipeline$<$ \hyperlink{classHttTypes}{HttTypes} $>$ \hyperlink{HttTypes_8h_a38050c2872c9f0fba3b6cc0899ea8445}{HttPipeline}
+\item 
+typedef PipelineRunner$<$ \hyperlink{HttTypes_8h_a38050c2872c9f0fba3b6cc0899ea8445}{HttPipeline}, \hyperlink{classHttTypes}{HttTypes} $>$ \hyperlink{HttTypes_8h_a0a1cc2e4db58bb399c2a6de4769d5bb6}{HttPipelineRunner}
+\item 
+typedef PipelineInitilizerBase$<$ \hyperlink{classHttTypes}{HttTypes} $>$ \hyperlink{HttTypes_8h_ae2e6276e6363f0d5177056cc58b77f26}{HttPipelineInitializer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{HttTypes_8h_a38050c2872c9f0fba3b6cc0899ea8445}{
+\index{HttTypes.h@{HttTypes.h}!HttPipeline@{HttPipeline}}
+\index{HttPipeline@{HttPipeline}!HttTypes.h@{HttTypes.h}}
+\subsubsection[{HttPipeline}]{\setlength{\rightskip}{0pt plus 5cm}typedef Pipeline$<${\bf HttTypes}$>$ {\bf HttPipeline}}}
+\label{HttTypes_8h_a38050c2872c9f0fba3b6cc0899ea8445}
+\hypertarget{HttTypes_8h_ae2e6276e6363f0d5177056cc58b77f26}{
+\index{HttTypes.h@{HttTypes.h}!HttPipelineInitializer@{HttPipelineInitializer}}
+\index{HttPipelineInitializer@{HttPipelineInitializer}!HttTypes.h@{HttTypes.h}}
+\subsubsection[{HttPipelineInitializer}]{\setlength{\rightskip}{0pt plus 5cm}typedef PipelineInitilizerBase$<${\bf HttTypes}$>$ {\bf HttPipelineInitializer}}}
+\label{HttTypes_8h_ae2e6276e6363f0d5177056cc58b77f26}
+\hypertarget{HttTypes_8h_a0a1cc2e4db58bb399c2a6de4769d5bb6}{
+\index{HttTypes.h@{HttTypes.h}!HttPipelineRunner@{HttPipelineRunner}}
+\index{HttPipelineRunner@{HttPipelineRunner}!HttTypes.h@{HttTypes.h}}
+\subsubsection[{HttPipelineRunner}]{\setlength{\rightskip}{0pt plus 5cm}typedef PipelineRunner$<${\bf HttPipeline}, {\bf HttTypes}$>$ {\bf HttPipelineRunner}}}
+\label{HttTypes_8h_a0a1cc2e4db58bb399c2a6de4769d5bb6}

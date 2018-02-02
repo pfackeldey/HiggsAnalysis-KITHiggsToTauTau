@@ -1,0 +1,48 @@
+\hypertarget{classGenTauCPProducerBase}{
+\section{GenTauCPProducerBase Class Reference}
+\label{classGenTauCPProducerBase}\index{GenTauCPProducerBase@{GenTauCPProducerBase}}
+}
+
+
+GlobalProducer, for CP studies of tau decays. Following quantities are calculated from the input of GenTauDecayProducer :.  
+
+
+{\ttfamily \#include $<$GenTauCPProducers.h$>$}Inheritance diagram for GenTauCPProducerBase::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classGenTauCPProducerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classGenTauCPProducerBase_a5eacebc116568fa618c6171e5e04fd09}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classGenTauCPProducerBase_a99bde6a5233f6794dfac7a744dfa69c5}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+GlobalProducer, for CP studies of tau decays. Following quantities are calculated from the input of GenTauDecayProducer :. -\/Phi$\ast$ : this is a variable, with which one can say, whether the considered Higgs-\/Boson is a scalar (CP even) or a pseudoscalar (CP odd) -\/Psi$\ast$CP : this is a variable, with which one can figure out, whether the have a CP-\/mixture or not 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGenTauCPProducerBase_a5eacebc116568fa618c6171e5e04fd09}{
+\index{GenTauCPProducerBase@{GenTauCPProducerBase}!Init@{Init}}
+\index{Init@{Init}!GenTauCPProducerBase@{GenTauCPProducerBase}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void GenTauCPProducerBase::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classGenTauCPProducerBase_a5eacebc116568fa618c6171e5e04fd09}
+
+
+Reimplemented in \hyperlink{classGenTauCPProducer_a23653a610d8e1db8666e35c3793d1eb4}{GenTauCPProducer}, and \hyperlink{classGenMatchedTauCPProducer_a408a6629682820189c1236cd6453374c}{GenMatchedTauCPProducer}.\hypertarget{classGenTauCPProducerBase_a99bde6a5233f6794dfac7a744dfa69c5}{
+\index{GenTauCPProducerBase@{GenTauCPProducerBase}!Produce@{Produce}}
+\index{Produce@{Produce}!GenTauCPProducerBase@{GenTauCPProducerBase}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void GenTauCPProducerBase::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classGenTauCPProducerBase_a99bde6a5233f6794dfac7a744dfa69c5}
+
+
+Reimplemented in \hyperlink{classGenTauCPProducer_a2ae8772bad72e005ac04ec307f6c1ae0}{GenTauCPProducer}, and \hyperlink{classGenMatchedTauCPProducer_a82b615c1d349a3f1d65ede4379e18758}{GenMatchedTauCPProducer}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{GenTauCPProducers_8h}{GenTauCPProducers.h}\item 
+src/Producers/\hyperlink{GenTauCPProducers_8cc}{GenTauCPProducers.cc}\end{DoxyCompactItemize}

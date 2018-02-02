@@ -1,0 +1,48 @@
+\hypertarget{classMaxLooseMuonsCountFilter}{
+\section{MaxLooseMuonsCountFilter Class Reference}
+\label{classMaxLooseMuonsCountFilter}\index{MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}}
+}
+
+
+{\ttfamily \#include $<$MaxLooseObjectsCountFilters.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(event\_\-type const \&, product\_\-type const \&)$>$ \hyperlink{classMaxLooseMuonsCountFilter_afa57cf1998c0ea1958154102426bfe33}{double\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classMaxLooseMuonsCountFilter_a9b8ffc6d02a83e06623ab8a16777a1db}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classMaxLooseMuonsCountFilter_ab7cee67d21f4e51ac1098f2ec372bfdf}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter checking for the existance of at most the given number of valid loose muons. Required config tag: MaxNLooseMuons 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMaxLooseMuonsCountFilter_afa57cf1998c0ea1958154102426bfe33}{
+\index{MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}!double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}}
+\index{double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}!MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}}
+\subsubsection[{double\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double(event\_\-type const\&, product\_\-type const\&)$>$ {\bf MaxLooseMuonsCountFilter::double\_\-extractor\_\-lambda}}}
+\label{classMaxLooseMuonsCountFilter_afa57cf1998c0ea1958154102426bfe33}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMaxLooseMuonsCountFilter_a9b8ffc6d02a83e06623ab8a16777a1db}{
+\index{MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string MaxLooseMuonsCountFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMaxLooseMuonsCountFilter_a9b8ffc6d02a83e06623ab8a16777a1db}
+\hypertarget{classMaxLooseMuonsCountFilter_ab7cee67d21f4e51ac1098f2ec372bfdf}{
+\index{MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}!Init@{Init}}
+\index{Init@{Init}!MaxLooseMuonsCountFilter@{MaxLooseMuonsCountFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void MaxLooseMuonsCountFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMaxLooseMuonsCountFilter_ab7cee67d21f4e51ac1098f2ec372bfdf}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{MaxLooseObjectsCountFilters_8h}{MaxLooseObjectsCountFilters.h}\item 
+src/Filters/\hyperlink{MaxLooseObjectsCountFilters_8cc}{MaxLooseObjectsCountFilters.cc}\end{DoxyCompactItemize}

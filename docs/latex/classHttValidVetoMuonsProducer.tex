@@ -1,0 +1,50 @@
+\hypertarget{classHttValidVetoMuonsProducer}{
+\section{HttValidVetoMuonsProducer Class Reference}
+\label{classHttValidVetoMuonsProducer}\index{HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}}
+}
+
+
+{\ttfamily \#include $<$HttValidMuonsProducer.h$>$}Inheritance diagram for HttValidVetoMuonsProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHttValidVetoMuonsProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classHttValidVetoMuonsProducer_a8be5500f8a9a5b7602a77959da458244}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classHttValidVetoMuonsProducer_a0eee36cccabefc0d4503017243a0409e}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+\hyperlink{classHttValidVetoMuonsProducer_a7ca92428466a67da2518c2997faf8ca7}{HttValidVetoMuonsProducer} (std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$validMuons=\&product\_\-type::m\_\-validVetoMuons, std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$invalidMuons=\&product\_\-type::m\_\-invalidVetoMuons, std::string(setting\_\-type::$\ast$GetMuonID)(void) const =\&setting\_\-type::GetVetoMuonID, std::string(setting\_\-type::$\ast$GetMuonIsoType)(void) const =\&setting\_\-type::GetVetoMuonIsoType, std::string(setting\_\-type::$\ast$GetMuonIsoTypeUserMode)(void) const =\&setting\_\-type::GetMuonIsoTypeUserMode, std::string(setting\_\-type::$\ast$GetMuonIso)(void) const =\&setting\_\-type::GetVetoMuonIso, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetLowerPtCuts)(void) const =\&setting\_\-type::GetVetoMuonLowerPtCuts, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetUpperAbsEtaCuts)(void) const =\&setting\_\-type::GetVetoMuonUpperAbsEtaCuts, float(setting\_\-type::$\ast$GetMuonChargedIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonChargedIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonNeutralIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonNeutralIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonPhotonIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonPhotonIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonDeltaBetaIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonDeltaBetaIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonChargedIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonChargedIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonNeutralIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonNeutralIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonPhotonIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonPhotonIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonDeltaBetaIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonDeltaBetaIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonIsoSignalConeSize)(void) const =\&setting\_\-type::GetMuonIsoSignalConeSize, float(setting\_\-type::$\ast$GetMuonDeltaBetaCorrectionFactor)(void) const =\&setting\_\-type::GetMuonDeltaBetaCorrectionFactor, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtLowerThresholdEB)(void) const =\&setting\_\-type::GetVetoMuonIsoPtSumOverPtLowerThresholdEB, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtLowerThresholdEE)(void) const =\&setting\_\-type::GetVetoMuonIsoPtSumOverPtLowerThresholdEE, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtUpperThresholdEB)(void) const =\&setting\_\-type::GetVetoMuonIsoPtSumOverPtUpperThresholdEB, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtUpperThresholdEE)(void) const =\&setting\_\-type::GetVetoMuonIsoPtSumOverPtUpperThresholdEE, float(setting\_\-type::$\ast$GetMuonTrackDxyCut)(void) const =\&setting\_\-type::GetMuonTrackDxyCut, float(setting\_\-type::$\ast$GetMuonTrackDzCut)(void) const =\&setting\_\-type::GetMuonTrackDzCut)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHttValidVetoMuonsProducer_a7ca92428466a67da2518c2997faf8ca7}{
+\index{HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}!HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}}
+\index{HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}!HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}}
+\subsubsection[{HttValidVetoMuonsProducer}]{\setlength{\rightskip}{0pt plus 5cm}HttValidVetoMuonsProducer::HttValidVetoMuonsProducer (std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$ {\em validMuons} = {\ttfamily \&product\_\-type::m\_\-validVetoMuons}, \/  std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$ {\em invalidMuons} = {\ttfamily \&product\_\-type::m\_\-invalidVetoMuons}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonID} = {\ttfamily \&setting\_\-type::GetVetoMuonID}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoType} = {\ttfamily \&setting\_\-type::GetVetoMuonIsoType}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoTypeUserMode} = {\ttfamily \&setting\_\-type::GetMuonIsoTypeUserMode}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIso} = {\ttfamily \&setting\_\-type::GetVetoMuonIso}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetLowerPtCuts} = {\ttfamily \&setting\_\-type::GetVetoMuonLowerPtCuts}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetUpperAbsEtaCuts} = {\ttfamily \&setting\_\-type::GetVetoMuonUpperAbsEtaCuts}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonChargedIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonChargedIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonNeutralIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonNeutralIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonPhotonIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonPhotonIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonChargedIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonChargedIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonNeutralIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonNeutralIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonPhotonIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonPhotonIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoSignalConeSize} = {\ttfamily \&setting\_\-type::GetMuonIsoSignalConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaCorrectionFactor} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaCorrectionFactor}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtLowerThresholdEB} = {\ttfamily \&setting\_\-type::GetVetoMuonIsoPtSumOverPtLowerThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtLowerThresholdEE} = {\ttfamily \&setting\_\-type::GetVetoMuonIsoPtSumOverPtLowerThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtUpperThresholdEB} = {\ttfamily \&setting\_\-type::GetVetoMuonIsoPtSumOverPtUpperThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtUpperThresholdEE} = {\ttfamily \&setting\_\-type::GetVetoMuonIsoPtSumOverPtUpperThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonTrackDxyCut} = {\ttfamily \&setting\_\-type::GetMuonTrackDxyCut}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonTrackDzCut} = {\ttfamily \&setting\_\-type::GetMuonTrackDzCut})}}
+\label{classHttValidVetoMuonsProducer_a7ca92428466a67da2518c2997faf8ca7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttValidVetoMuonsProducer_a8be5500f8a9a5b7602a77959da458244}{
+\index{HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string HttValidVetoMuonsProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classHttValidVetoMuonsProducer_a8be5500f8a9a5b7602a77959da458244}
+\hypertarget{classHttValidVetoMuonsProducer_a0eee36cccabefc0d4503017243a0409e}{
+\index{HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}!Init@{Init}}
+\index{Init@{Init}!HttValidVetoMuonsProducer@{HttValidVetoMuonsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual void HttValidVetoMuonsProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classHttValidVetoMuonsProducer_a0eee36cccabefc0d4503017243a0409e}
+
+
+Reimplemented from \hyperlink{classHttValidMuonsProducer_aa37cabc89fdfbf3be64a97020edf93de}{HttValidMuonsProducer}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttValidMuonsProducer_8h}{HttValidMuonsProducer.h}\item 
+src/Producers/\hyperlink{HttValidMuonsProducer_8cc}{HttValidMuonsProducer.cc}\end{DoxyCompactItemize}

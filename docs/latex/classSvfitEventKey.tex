@@ -1,0 +1,202 @@
+\hypertarget{classSvfitEventKey}{
+\section{SvfitEventKey Class Reference}
+\label{classSvfitEventKey}\index{SvfitEventKey@{SvfitEventKey}}
+}
+
+
+{\ttfamily \#include $<$SvfitTools.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{IntegrationMethod} \{ \hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a32ab24479e199f867947dd3f89698ef4}{NONE} =  -\/1, 
+\hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a24e95311937a64e17f8e8094f480cfd5}{MARKOV\_\-CHAIN} =  0, 
+\hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03af2253e6c26956c15a64c53119ef6d18d}{VEGAS} =  1, 
+\hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a4c54efe8b272371f4c9525db7b10fdbf}{FIT} =  2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSvfitEventKey_aff668a7473d61de199fe0ceae2a5df3d}{SvfitEventKey} ()
+\item 
+\hyperlink{classSvfitEventKey_a76c6b1b4c6af1e59a457958aa3528adf}{SvfitEventKey} (ULong64\_\-t const \&\hyperlink{classSvfitEventKey_afaa8e9d1f49d1717f6498c17a5b6a37a}{runLumiEvent}, svFitStandalone::kDecayType const \&\hyperlink{classSvfitEventKey_a6d4378d317fc0e19a7ce7428c4524343}{decayType1}, svFitStandalone::kDecayType const \&\hyperlink{classSvfitEventKey_a2a985c09ffce1e4e79cfa375c29f6ee0}{decayType2}, \hyperlink{classHttEnumTypes_a09f53466ade8cb436d340aedf88ab0c2}{HttEnumTypes::SystematicShift} const \&\hyperlink{classSvfitEventKey_aadc4624e556a70b6c095ac5373f8bbc8}{systematicShift}, float const \&\hyperlink{classSvfitEventKey_a1e9c9f821950ae0d027d21a8ebd67f46}{systematicShiftSigma}, \hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{IntegrationMethod} const \&\hyperlink{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}{integrationMethod}, ULong64\_\-t const \&\hyperlink{classSvfitEventKey_a4a66e2828f6714fb510373c0df2fd3b6}{hash})
+\item 
+void \hyperlink{classSvfitEventKey_a69653824044f22206ef446001e2a8752}{Set} (ULong64\_\-t const \&\hyperlink{classSvfitEventKey_afaa8e9d1f49d1717f6498c17a5b6a37a}{runLumiEvent}, svFitStandalone::kDecayType const \&\hyperlink{classSvfitEventKey_a6d4378d317fc0e19a7ce7428c4524343}{decayType1}, svFitStandalone::kDecayType const \&\hyperlink{classSvfitEventKey_a2a985c09ffce1e4e79cfa375c29f6ee0}{decayType2}, \hyperlink{classHttEnumTypes_a09f53466ade8cb436d340aedf88ab0c2}{HttEnumTypes::SystematicShift} const \&\hyperlink{classSvfitEventKey_aadc4624e556a70b6c095ac5373f8bbc8}{systematicShift}, float const \&\hyperlink{classSvfitEventKey_a1e9c9f821950ae0d027d21a8ebd67f46}{systematicShiftSigma}, \hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{IntegrationMethod} const \&\hyperlink{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}{integrationMethod}, ULong64\_\-t const \&\hyperlink{classSvfitEventKey_a4a66e2828f6714fb510373c0df2fd3b6}{hash})
+\item 
+\hyperlink{classHttEnumTypes_a09f53466ade8cb436d340aedf88ab0c2}{HttEnumTypes::SystematicShift} \hyperlink{classSvfitEventKey_ab524322fe4600f72cc28a83fa5ce31b1}{GetSystematicShift} () const 
+\item 
+\hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{IntegrationMethod} \hyperlink{classSvfitEventKey_ac7d1b2868f3d0e24b61af7406e085c04}{GetIntegrationMethod} () const 
+\item 
+void \hyperlink{classSvfitEventKey_a29b6a06e4503052c4460277b9a97168d}{CreateBranches} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitEventKey_a14b4be71d2b92bdc1e2439bf088edfee}{SetBranchAddresses} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitEventKey_aa6ef8de6f65a785ae34fdb7ffd8aa5b3}{ActivateBranches} (TTree $\ast$tree, bool activate=true)
+\item 
+bool \hyperlink{classSvfitEventKey_aa21176141d7621a159c9e13443058385}{operator$<$} (\hyperlink{classSvfitEventKey}{SvfitEventKey} const \&rhs) const 
+\item 
+bool \hyperlink{classSvfitEventKey_a4acd29df38157399bb5879ebf430e111}{operator==} (\hyperlink{classSvfitEventKey}{SvfitEventKey} const \&rhs) const 
+\item 
+bool \hyperlink{classSvfitEventKey_a16bde69686be01e07c60db6fe5fc2df0}{operator!=} (\hyperlink{classSvfitEventKey}{SvfitEventKey} const \&rhs) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{IntegrationMethod} \hyperlink{classSvfitEventKey_ab29dafe105b8ade3257ee81cc31ad7ef}{ToIntegrationMethod} (std::string const \&\hyperlink{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}{integrationMethod})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ULong64\_\-t \hyperlink{classSvfitEventKey_afaa8e9d1f49d1717f6498c17a5b6a37a}{runLumiEvent}
+\item 
+int \hyperlink{classSvfitEventKey_a6d4378d317fc0e19a7ce7428c4524343}{decayType1}
+\item 
+int \hyperlink{classSvfitEventKey_a2a985c09ffce1e4e79cfa375c29f6ee0}{decayType2}
+\item 
+int \hyperlink{classSvfitEventKey_aadc4624e556a70b6c095ac5373f8bbc8}{systematicShift}
+\item 
+float \hyperlink{classSvfitEventKey_a1e9c9f821950ae0d027d21a8ebd67f46}{systematicShiftSigma}
+\item 
+int \hyperlink{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}{integrationMethod}
+\item 
+ULong64\_\-t \hyperlink{classSvfitEventKey_a4a66e2828f6714fb510373c0df2fd3b6}{hash}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}{
+\index{SvfitEventKey@{SvfitEventKey}!IntegrationMethod@{IntegrationMethod}}
+\index{IntegrationMethod@{IntegrationMethod}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{IntegrationMethod}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SvfitEventKey::IntegrationMethod}}}
+\label{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!SvfitEventKey@{SvfitEventKey}}\index{SvfitEventKey@{SvfitEventKey}!NONE@{NONE}}\item[{\em 
+\hypertarget{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a32ab24479e199f867947dd3f89698ef4}{
+NONE}
+\label{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a32ab24479e199f867947dd3f89698ef4}
+}]\index{MARKOV\_\-CHAIN@{MARKOV\_\-CHAIN}!SvfitEventKey@{SvfitEventKey}}\index{SvfitEventKey@{SvfitEventKey}!MARKOV\_\-CHAIN@{MARKOV\_\-CHAIN}}\item[{\em 
+\hypertarget{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a24e95311937a64e17f8e8094f480cfd5}{
+MARKOV\_\-CHAIN}
+\label{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a24e95311937a64e17f8e8094f480cfd5}
+}]\index{VEGAS@{VEGAS}!SvfitEventKey@{SvfitEventKey}}\index{SvfitEventKey@{SvfitEventKey}!VEGAS@{VEGAS}}\item[{\em 
+\hypertarget{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03af2253e6c26956c15a64c53119ef6d18d}{
+VEGAS}
+\label{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03af2253e6c26956c15a64c53119ef6d18d}
+}]\index{FIT@{FIT}!SvfitEventKey@{SvfitEventKey}}\index{SvfitEventKey@{SvfitEventKey}!FIT@{FIT}}\item[{\em 
+\hypertarget{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a4c54efe8b272371f4c9525db7b10fdbf}{
+FIT}
+\label{classSvfitEventKey_a88a764b33d83be8b5ac538a980de7b03a4c54efe8b272371f4c9525db7b10fdbf}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSvfitEventKey_aff668a7473d61de199fe0ceae2a5df3d}{
+\index{SvfitEventKey@{SvfitEventKey}!SvfitEventKey@{SvfitEventKey}}
+\index{SvfitEventKey@{SvfitEventKey}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{SvfitEventKey}]{\setlength{\rightskip}{0pt plus 5cm}SvfitEventKey::SvfitEventKey ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSvfitEventKey_aff668a7473d61de199fe0ceae2a5df3d}
+\hypertarget{classSvfitEventKey_a76c6b1b4c6af1e59a457958aa3528adf}{
+\index{SvfitEventKey@{SvfitEventKey}!SvfitEventKey@{SvfitEventKey}}
+\index{SvfitEventKey@{SvfitEventKey}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{SvfitEventKey}]{\setlength{\rightskip}{0pt plus 5cm}SvfitEventKey::SvfitEventKey (ULong64\_\-t const \& {\em runLumiEvent}, \/  svFitStandalone::kDecayType const \& {\em decayType1}, \/  svFitStandalone::kDecayType const \& {\em decayType2}, \/  {\bf HttEnumTypes::SystematicShift} const \& {\em systematicShift}, \/  float const \& {\em systematicShiftSigma}, \/  {\bf IntegrationMethod} const \& {\em integrationMethod}, \/  ULong64\_\-t const \& {\em hash})}}
+\label{classSvfitEventKey_a76c6b1b4c6af1e59a457958aa3528adf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSvfitEventKey_aa6ef8de6f65a785ae34fdb7ffd8aa5b3}{
+\index{SvfitEventKey@{SvfitEventKey}!ActivateBranches@{ActivateBranches}}
+\index{ActivateBranches@{ActivateBranches}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{ActivateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitEventKey::ActivateBranches (TTree $\ast$ {\em tree}, \/  bool {\em activate} = {\ttfamily true})}}
+\label{classSvfitEventKey_aa6ef8de6f65a785ae34fdb7ffd8aa5b3}
+\hypertarget{classSvfitEventKey_a29b6a06e4503052c4460277b9a97168d}{
+\index{SvfitEventKey@{SvfitEventKey}!CreateBranches@{CreateBranches}}
+\index{CreateBranches@{CreateBranches}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{CreateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitEventKey::CreateBranches (TTree $\ast$ {\em tree})}}
+\label{classSvfitEventKey_a29b6a06e4503052c4460277b9a97168d}
+\hypertarget{classSvfitEventKey_ac7d1b2868f3d0e24b61af7406e085c04}{
+\index{SvfitEventKey@{SvfitEventKey}!GetIntegrationMethod@{GetIntegrationMethod}}
+\index{GetIntegrationMethod@{GetIntegrationMethod}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{GetIntegrationMethod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SvfitEventKey::IntegrationMethod} SvfitEventKey::GetIntegrationMethod () const}}
+\label{classSvfitEventKey_ac7d1b2868f3d0e24b61af7406e085c04}
+\hypertarget{classSvfitEventKey_ab524322fe4600f72cc28a83fa5ce31b1}{
+\index{SvfitEventKey@{SvfitEventKey}!GetSystematicShift@{GetSystematicShift}}
+\index{GetSystematicShift@{GetSystematicShift}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{GetSystematicShift}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::SystematicShift} SvfitEventKey::GetSystematicShift () const}}
+\label{classSvfitEventKey_ab524322fe4600f72cc28a83fa5ce31b1}
+\hypertarget{classSvfitEventKey_a16bde69686be01e07c60db6fe5fc2df0}{
+\index{SvfitEventKey@{SvfitEventKey}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitEventKey::operator!= ({\bf SvfitEventKey} const \& {\em rhs}) const}}
+\label{classSvfitEventKey_a16bde69686be01e07c60db6fe5fc2df0}
+\hypertarget{classSvfitEventKey_aa21176141d7621a159c9e13443058385}{
+\index{SvfitEventKey@{SvfitEventKey}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitEventKey::operator$<$ ({\bf SvfitEventKey} const \& {\em rhs}) const}}
+\label{classSvfitEventKey_aa21176141d7621a159c9e13443058385}
+\hypertarget{classSvfitEventKey_a4acd29df38157399bb5879ebf430e111}{
+\index{SvfitEventKey@{SvfitEventKey}!operator==@{operator==}}
+\index{operator==@{operator==}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitEventKey::operator== ({\bf SvfitEventKey} const \& {\em rhs}) const}}
+\label{classSvfitEventKey_a4acd29df38157399bb5879ebf430e111}
+\hypertarget{classSvfitEventKey_a69653824044f22206ef446001e2a8752}{
+\index{SvfitEventKey@{SvfitEventKey}!Set@{Set}}
+\index{Set@{Set}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitEventKey::Set (ULong64\_\-t const \& {\em runLumiEvent}, \/  svFitStandalone::kDecayType const \& {\em decayType1}, \/  svFitStandalone::kDecayType const \& {\em decayType2}, \/  {\bf HttEnumTypes::SystematicShift} const \& {\em systematicShift}, \/  float const \& {\em systematicShiftSigma}, \/  {\bf IntegrationMethod} const \& {\em integrationMethod}, \/  ULong64\_\-t const \& {\em hash})}}
+\label{classSvfitEventKey_a69653824044f22206ef446001e2a8752}
+\hypertarget{classSvfitEventKey_a14b4be71d2b92bdc1e2439bf088edfee}{
+\index{SvfitEventKey@{SvfitEventKey}!SetBranchAddresses@{SetBranchAddresses}}
+\index{SetBranchAddresses@{SetBranchAddresses}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{SetBranchAddresses}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitEventKey::SetBranchAddresses (TTree $\ast$ {\em tree})}}
+\label{classSvfitEventKey_a14b4be71d2b92bdc1e2439bf088edfee}
+\hypertarget{classSvfitEventKey_ab29dafe105b8ade3257ee81cc31ad7ef}{
+\index{SvfitEventKey@{SvfitEventKey}!ToIntegrationMethod@{ToIntegrationMethod}}
+\index{ToIntegrationMethod@{ToIntegrationMethod}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{ToIntegrationMethod}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf IntegrationMethod} SvfitEventKey::ToIntegrationMethod (std::string const \& {\em integrationMethod})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classSvfitEventKey_ab29dafe105b8ade3257ee81cc31ad7ef}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSvfitEventKey_a6d4378d317fc0e19a7ce7428c4524343}{
+\index{SvfitEventKey@{SvfitEventKey}!decayType1@{decayType1}}
+\index{decayType1@{decayType1}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{decayType1}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitEventKey::decayType1}}}
+\label{classSvfitEventKey_a6d4378d317fc0e19a7ce7428c4524343}
+\hypertarget{classSvfitEventKey_a2a985c09ffce1e4e79cfa375c29f6ee0}{
+\index{SvfitEventKey@{SvfitEventKey}!decayType2@{decayType2}}
+\index{decayType2@{decayType2}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{decayType2}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitEventKey::decayType2}}}
+\label{classSvfitEventKey_a2a985c09ffce1e4e79cfa375c29f6ee0}
+\hypertarget{classSvfitEventKey_a4a66e2828f6714fb510373c0df2fd3b6}{
+\index{SvfitEventKey@{SvfitEventKey}!hash@{hash}}
+\index{hash@{hash}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{hash}]{\setlength{\rightskip}{0pt plus 5cm}ULong64\_\-t {\bf SvfitEventKey::hash}}}
+\label{classSvfitEventKey_a4a66e2828f6714fb510373c0df2fd3b6}
+\hypertarget{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}{
+\index{SvfitEventKey@{SvfitEventKey}!integrationMethod@{integrationMethod}}
+\index{integrationMethod@{integrationMethod}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{integrationMethod}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitEventKey::integrationMethod}}}
+\label{classSvfitEventKey_a8e070522e0476b25b155fb94d4a53e56}
+\hypertarget{classSvfitEventKey_afaa8e9d1f49d1717f6498c17a5b6a37a}{
+\index{SvfitEventKey@{SvfitEventKey}!runLumiEvent@{runLumiEvent}}
+\index{runLumiEvent@{runLumiEvent}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{runLumiEvent}]{\setlength{\rightskip}{0pt plus 5cm}ULong64\_\-t {\bf SvfitEventKey::runLumiEvent}}}
+\label{classSvfitEventKey_afaa8e9d1f49d1717f6498c17a5b6a37a}
+\hypertarget{classSvfitEventKey_aadc4624e556a70b6c095ac5373f8bbc8}{
+\index{SvfitEventKey@{SvfitEventKey}!systematicShift@{systematicShift}}
+\index{systematicShift@{systematicShift}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{systematicShift}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitEventKey::systematicShift}}}
+\label{classSvfitEventKey_aadc4624e556a70b6c095ac5373f8bbc8}
+\hypertarget{classSvfitEventKey_a1e9c9f821950ae0d027d21a8ebd67f46}{
+\index{SvfitEventKey@{SvfitEventKey}!systematicShiftSigma@{systematicShiftSigma}}
+\index{systematicShiftSigma@{systematicShiftSigma}!SvfitEventKey@{SvfitEventKey}}
+\subsubsection[{systematicShiftSigma}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf SvfitEventKey::systematicShiftSigma}}}
+\label{classSvfitEventKey_a1e9c9f821950ae0d027d21a8ebd67f46}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Utility/\hyperlink{SvfitTools_8h}{SvfitTools.h}\item 
+src/Utility/\hyperlink{SvfitTools_8cc}{SvfitTools.cc}\end{DoxyCompactItemize}

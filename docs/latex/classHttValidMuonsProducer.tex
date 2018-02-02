@@ -1,0 +1,138 @@
+\hypertarget{classHttValidMuonsProducer}{
+\section{HttValidMuonsProducer Class Reference}
+\label{classHttValidMuonsProducer}\index{HttValidMuonsProducer@{HttValidMuonsProducer}}
+}
+
+
+GlobalProducer, for valid muons.  
+
+
+{\ttfamily \#include $<$HttValidMuonsProducer.h$>$}Inheritance diagram for HttValidMuonsProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHttValidMuonsProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9d}{MuonIsoTypeUserMode} \{ \hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da637dfe0effc2de8d0dedaee121915add}{NONE} =  -\/1, 
+\hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da06729d6468ab1c8b660eec995f069135}{FROMCMSSW} =  0, 
+\hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da7b599b6c372776d15d6511e71a5f660a}{CALCULATED} =  1, 
+\hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da86e7cabd6af134034209db47738fd276}{FROMCMSSWR04} =  2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttValidMuonsProducer_a44dc5ea86aa4e09ec653d08d9ebbb03f}{HttValidMuonsProducer} (std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$validMuons=\&product\_\-type::m\_\-validMuons, std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$invalidMuons=\&product\_\-type::m\_\-invalidMuons, std::string(setting\_\-type::$\ast$GetMuonID)(void) const =\&setting\_\-type::GetMuonID, std::string(setting\_\-type::$\ast$GetMuonIsoType)(void) const =\&setting\_\-type::GetMuonIsoType, std::string(setting\_\-type::$\ast$GetMuonIsoTypeUserMode)(void) const =\&setting\_\-type::GetMuonIsoTypeUserMode, std::string(setting\_\-type::$\ast$GetMuonIso)(void) const =\&setting\_\-type::GetMuonIso, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetLowerPtCuts)(void) const =\&setting\_\-type::GetMuonLowerPtCuts, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetUpperAbsEtaCuts)(void) const =\&setting\_\-type::GetMuonUpperAbsEtaCuts, float(setting\_\-type::$\ast$GetMuonChargedIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonChargedIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonNeutralIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonNeutralIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonPhotonIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonPhotonIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonDeltaBetaIsoVetoConeSize)(void) const =\&setting\_\-type::GetMuonDeltaBetaIsoVetoConeSize, float(setting\_\-type::$\ast$GetMuonChargedIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonChargedIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonNeutralIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonNeutralIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonPhotonIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonPhotonIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonDeltaBetaIsoPtThreshold)(void) const =\&setting\_\-type::GetMuonDeltaBetaIsoPtThreshold, float(setting\_\-type::$\ast$GetMuonIsoSignalConeSize)(void) const =\&setting\_\-type::GetMuonIsoSignalConeSize, float(setting\_\-type::$\ast$GetMuonDeltaBetaCorrectionFactor)(void) const =\&setting\_\-type::GetMuonDeltaBetaCorrectionFactor, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtLowerThresholdEB)(void) const =\&setting\_\-type::GetMuonIsoPtSumOverPtLowerThresholdEB, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtLowerThresholdEE)(void) const =\&setting\_\-type::GetMuonIsoPtSumOverPtLowerThresholdEE, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtUpperThresholdEB)(void) const =\&setting\_\-type::GetMuonIsoPtSumOverPtUpperThresholdEB, float(setting\_\-type::$\ast$GetMuonIsoPtSumOverPtUpperThresholdEE)(void) const =\&setting\_\-type::GetMuonIsoPtSumOverPtUpperThresholdEE, float(setting\_\-type::$\ast$GetMuonTrackDxyCut)(void) const =\&setting\_\-type::GetMuonTrackDxyCut, float(setting\_\-type::$\ast$GetMuonTrackDzCut)(void) const =\&setting\_\-type::GetMuonTrackDzCut)
+\item 
+virtual void \hyperlink{classHttValidMuonsProducer_aa37cabc89fdfbf3be64a97020edf93de}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9d}{MuonIsoTypeUserMode} \hyperlink{classHttValidMuonsProducer_a0ef099aa63658c2b4c17baa8128dad2c}{ToMuonIsoTypeUserMode} (std::string const \&\hyperlink{classHttValidMuonsProducer_a22ca8a17ba77169e7c70aed8dfb77e75}{muonIsoTypeUserMode})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classHttValidMuonsProducer_ac19593568471fd88ba6acf3a355f0dab}{AdditionalCriteria} (KMuon $\ast$muon, event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9d}{MuonIsoTypeUserMode} \hyperlink{classHttValidMuonsProducer_a22ca8a17ba77169e7c70aed8dfb77e75}{muonIsoTypeUserMode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+GlobalProducer, for valid muons. Required config tags in addtion to the ones of the base class:
+\begin{DoxyItemize}
+\item MuonChargedIsoVetoConeSize (default given)
+\item MuonNeutralIsoVetoConeSize (default given)
+\item MuonPhotonIsoVetoConeSize (default given)
+\item MuonDeltaBetaIsoVetoConeSize (default given)
+\item MuonChargedIsoPtThreshold (default given)
+\item MuonNeutralIsoPtThreshold (default given)
+\item MuonPhotonIsoPtThreshold (default given)
+\item MuonDeltaBetaIsoPtThreshold (default given)
+\item MuonIsoTypeUserMode (default: \char`\"{}fromcmssw\char`\"{})
+\item MuonIsoSignalConeSize
+\item MuonDeltaBetaCorrectionFactor
+\item MuonIsoPtSumOverPtLowerThresholdEB
+\item MuonIsoPtSumOverPtLowerThresholdEE
+\item MuonIsoPtSumOverPtUpperThresholdEB
+\item MuonIsoPtSumOverPtUpperThresholdEE 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9d}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!MuonIsoTypeUserMode@{MuonIsoTypeUserMode}}
+\index{MuonIsoTypeUserMode@{MuonIsoTypeUserMode}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{MuonIsoTypeUserMode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf HttValidMuonsProducer::MuonIsoTypeUserMode}}}
+\label{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9d}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!HttValidMuonsProducer@{HttValidMuonsProducer}}\index{HttValidMuonsProducer@{HttValidMuonsProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da637dfe0effc2de8d0dedaee121915add}{
+NONE}
+\label{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da637dfe0effc2de8d0dedaee121915add}
+}]\index{FROMCMSSW@{FROMCMSSW}!HttValidMuonsProducer@{HttValidMuonsProducer}}\index{HttValidMuonsProducer@{HttValidMuonsProducer}!FROMCMSSW@{FROMCMSSW}}\item[{\em 
+\hypertarget{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da06729d6468ab1c8b660eec995f069135}{
+FROMCMSSW}
+\label{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da06729d6468ab1c8b660eec995f069135}
+}]\index{CALCULATED@{CALCULATED}!HttValidMuonsProducer@{HttValidMuonsProducer}}\index{HttValidMuonsProducer@{HttValidMuonsProducer}!CALCULATED@{CALCULATED}}\item[{\em 
+\hypertarget{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da7b599b6c372776d15d6511e71a5f660a}{
+CALCULATED}
+\label{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da7b599b6c372776d15d6511e71a5f660a}
+}]\index{FROMCMSSWR04@{FROMCMSSWR04}!HttValidMuonsProducer@{HttValidMuonsProducer}}\index{HttValidMuonsProducer@{HttValidMuonsProducer}!FROMCMSSWR04@{FROMCMSSWR04}}\item[{\em 
+\hypertarget{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da86e7cabd6af134034209db47738fd276}{
+FROMCMSSWR04}
+\label{classHttValidMuonsProducer_aad2635063bc018555daf5c7e0eeeef9da86e7cabd6af134034209db47738fd276}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHttValidMuonsProducer_a44dc5ea86aa4e09ec653d08d9ebbb03f}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{HttValidMuonsProducer}]{\setlength{\rightskip}{0pt plus 5cm}HttValidMuonsProducer::HttValidMuonsProducer (std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$ {\em validMuons} = {\ttfamily \&product\_\-type::m\_\-validMuons}, \/  std::vector$<$ KMuon $\ast$ $>$ product\_\-type::$\ast$ {\em invalidMuons} = {\ttfamily \&product\_\-type::m\_\-invalidMuons}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonID} = {\ttfamily \&setting\_\-type::GetMuonID}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoType} = {\ttfamily \&setting\_\-type::GetMuonIsoType}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoTypeUserMode} = {\ttfamily \&setting\_\-type::GetMuonIsoTypeUserMode}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMuonIso} = {\ttfamily \&setting\_\-type::GetMuonIso}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetLowerPtCuts} = {\ttfamily \&setting\_\-type::GetMuonLowerPtCuts}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetUpperAbsEtaCuts} = {\ttfamily \&setting\_\-type::GetMuonUpperAbsEtaCuts}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonChargedIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonChargedIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonNeutralIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonNeutralIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonPhotonIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonPhotonIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaIsoVetoConeSize} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaIsoVetoConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonChargedIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonChargedIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonNeutralIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonNeutralIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonPhotonIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonPhotonIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaIsoPtThreshold} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaIsoPtThreshold}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoSignalConeSize} = {\ttfamily \&setting\_\-type::GetMuonIsoSignalConeSize}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonDeltaBetaCorrectionFactor} = {\ttfamily \&setting\_\-type::GetMuonDeltaBetaCorrectionFactor}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtLowerThresholdEB} = {\ttfamily \&setting\_\-type::GetMuonIsoPtSumOverPtLowerThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtLowerThresholdEE} = {\ttfamily \&setting\_\-type::GetMuonIsoPtSumOverPtLowerThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtUpperThresholdEB} = {\ttfamily \&setting\_\-type::GetMuonIsoPtSumOverPtUpperThresholdEB}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonIsoPtSumOverPtUpperThresholdEE} = {\ttfamily \&setting\_\-type::GetMuonIsoPtSumOverPtUpperThresholdEE}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonTrackDxyCut} = {\ttfamily \&setting\_\-type::GetMuonTrackDxyCut}, \/  float(setting\_\-type::$\ast$)(void) const  {\em GetMuonTrackDzCut} = {\ttfamily \&setting\_\-type::GetMuonTrackDzCut})}}
+\label{classHttValidMuonsProducer_a44dc5ea86aa4e09ec653d08d9ebbb03f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttValidMuonsProducer_ac19593568471fd88ba6acf3a355f0dab}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!AdditionalCriteria@{AdditionalCriteria}}
+\index{AdditionalCriteria@{AdditionalCriteria}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{AdditionalCriteria}]{\setlength{\rightskip}{0pt plus 5cm}bool HttValidMuonsProducer::AdditionalCriteria (KMuon $\ast$ {\em muon}, \/  event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, protected, virtual\mbox{]}}}}
+\label{classHttValidMuonsProducer_ac19593568471fd88ba6acf3a355f0dab}
+\hypertarget{classHttValidMuonsProducer_aa37cabc89fdfbf3be64a97020edf93de}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!Init@{Init}}
+\index{Init@{Init}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual void HttValidMuonsProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classHttValidMuonsProducer_aa37cabc89fdfbf3be64a97020edf93de}
+
+
+Reimplemented in \hyperlink{classHttValidLooseMuonsProducer_a5b90c679cc8f4bf597e1435928402e4c}{HttValidLooseMuonsProducer}, and \hyperlink{classHttValidVetoMuonsProducer_a0eee36cccabefc0d4503017243a0409e}{HttValidVetoMuonsProducer}.\hypertarget{classHttValidMuonsProducer_a0ef099aa63658c2b4c17baa8128dad2c}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!ToMuonIsoTypeUserMode@{ToMuonIsoTypeUserMode}}
+\index{ToMuonIsoTypeUserMode@{ToMuonIsoTypeUserMode}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{ToMuonIsoTypeUserMode}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf MuonIsoTypeUserMode} HttValidMuonsProducer::ToMuonIsoTypeUserMode (std::string const \& {\em muonIsoTypeUserMode})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classHttValidMuonsProducer_a0ef099aa63658c2b4c17baa8128dad2c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHttValidMuonsProducer_a22ca8a17ba77169e7c70aed8dfb77e75}{
+\index{HttValidMuonsProducer@{HttValidMuonsProducer}!muonIsoTypeUserMode@{muonIsoTypeUserMode}}
+\index{muonIsoTypeUserMode@{muonIsoTypeUserMode}!HttValidMuonsProducer@{HttValidMuonsProducer}}
+\subsubsection[{muonIsoTypeUserMode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MuonIsoTypeUserMode} {\bf HttValidMuonsProducer::muonIsoTypeUserMode}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHttValidMuonsProducer_a22ca8a17ba77169e7c70aed8dfb77e75}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttValidMuonsProducer_8h}{HttValidMuonsProducer.h}\item 
+src/Producers/\hyperlink{HttValidMuonsProducer_8cc}{HttValidMuonsProducer.cc}\end{DoxyCompactItemize}

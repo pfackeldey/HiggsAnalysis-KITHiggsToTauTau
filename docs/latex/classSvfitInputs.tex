@@ -1,0 +1,139 @@
+\hypertarget{classSvfitInputs}{
+\section{SvfitInputs Class Reference}
+\label{classSvfitInputs}\index{SvfitInputs@{SvfitInputs}}
+}
+
+
+{\ttfamily \#include $<$SvfitTools.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSvfitInputs_a358e4bb19752369a54877771ce45f792}{SvfitInputs} ()
+\item 
+\hyperlink{classSvfitInputs_a64fef6674fbff8c5151d456d2181d55f}{SvfitInputs} (RMFLV const \&\hyperlink{classSvfitInputs_a8cbce6801e4e0ed5a0a376ab13e04697}{leptonMomentum1}, RMFLV const \&\hyperlink{classSvfitInputs_a16b08513227e966888b217e115b1f3e9}{leptonMomentum2}, \hyperlink{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}{RMDataV} const \&\hyperlink{classSvfitInputs_ace5d904fc75fdff3f820bfc9d67fb87c}{metMomentum}, \hyperlink{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}{RMSM2x2} const \&\hyperlink{classSvfitInputs_ae09cccb51b5186fd72eb03eae338f131}{metCovariance}, int const \&\hyperlink{classSvfitInputs_a784625a886909f4f9743c72f9780ccc5}{decayMode1}, int const \&\hyperlink{classSvfitInputs_a667f1b15f6955a9a40929e9f670eabea}{decayMode2})
+\item 
+\hyperlink{classSvfitInputs_aa972c71e023c7d68e2ad587bea6ba05b}{$\sim$SvfitInputs} ()
+\item 
+void \hyperlink{classSvfitInputs_a15284d867ccae598944568329364bcee}{Set} (RMFLV const \&\hyperlink{classSvfitInputs_a8cbce6801e4e0ed5a0a376ab13e04697}{leptonMomentum1}, RMFLV const \&\hyperlink{classSvfitInputs_a16b08513227e966888b217e115b1f3e9}{leptonMomentum2}, \hyperlink{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}{RMDataV} const \&\hyperlink{classSvfitInputs_ace5d904fc75fdff3f820bfc9d67fb87c}{metMomentum}, \hyperlink{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}{RMSM2x2} const \&\hyperlink{classSvfitInputs_ae09cccb51b5186fd72eb03eae338f131}{metCovariance}, int const \&\hyperlink{classSvfitInputs_a784625a886909f4f9743c72f9780ccc5}{decayMode1}, int const \&\hyperlink{classSvfitInputs_a667f1b15f6955a9a40929e9f670eabea}{decayMode2})
+\item 
+void \hyperlink{classSvfitInputs_a0620e8f725be08d3097a5cebb90adf0b}{CreateBranches} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitInputs_a7f8739a7ff2404d7e7cf323f537c4d64}{SetBranchAddresses} (TTree $\ast$tree)
+\item 
+void \hyperlink{classSvfitInputs_af56198966e4b7c1eca905a31acf586c4}{ActivateBranches} (TTree $\ast$tree, bool activate=true)
+\item 
+bool \hyperlink{classSvfitInputs_a4cd441c132a0b81fa8897da201e7ffba}{operator==} (\hyperlink{classSvfitInputs}{SvfitInputs} const \&rhs) const 
+\item 
+bool \hyperlink{classSvfitInputs_aaab59815bf07360974d7595daa4d33b9}{operator!=} (\hyperlink{classSvfitInputs}{SvfitInputs} const \&rhs) const 
+\item 
+SVfitStandaloneAlgorithm \hyperlink{classSvfitInputs_aa89032ea9c7ace07c00243dab364a602}{GetSvfitStandaloneAlgorithm} (\hyperlink{classSvfitEventKey}{SvfitEventKey} const \&svfitEventKey, int verbosity, bool addLogM, TFile $\ast$\&visPtResolutionFile) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+RMFLV $\ast$ \hyperlink{classSvfitInputs_a8cbce6801e4e0ed5a0a376ab13e04697}{leptonMomentum1} = 0
+\item 
+RMFLV $\ast$ \hyperlink{classSvfitInputs_a16b08513227e966888b217e115b1f3e9}{leptonMomentum2} = 0
+\item 
+\hyperlink{SvfitTools_8h_aaf454bd335994d52523052c77c343e3d}{RMDataV} $\ast$ \hyperlink{classSvfitInputs_ace5d904fc75fdff3f820bfc9d67fb87c}{metMomentum} = 0
+\item 
+\hyperlink{SvfitTools_8h_a80fdad30ecf55d29d315471eb3595acd}{RMSM2x2} $\ast$ \hyperlink{classSvfitInputs_ae09cccb51b5186fd72eb03eae338f131}{metCovariance} = 0
+\item 
+int \hyperlink{classSvfitInputs_a784625a886909f4f9743c72f9780ccc5}{decayMode1} = 0
+\item 
+int \hyperlink{classSvfitInputs_a667f1b15f6955a9a40929e9f670eabea}{decayMode2} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSvfitInputs_a358e4bb19752369a54877771ce45f792}{
+\index{SvfitInputs@{SvfitInputs}!SvfitInputs@{SvfitInputs}}
+\index{SvfitInputs@{SvfitInputs}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{SvfitInputs}]{\setlength{\rightskip}{0pt plus 5cm}SvfitInputs::SvfitInputs ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSvfitInputs_a358e4bb19752369a54877771ce45f792}
+\hypertarget{classSvfitInputs_a64fef6674fbff8c5151d456d2181d55f}{
+\index{SvfitInputs@{SvfitInputs}!SvfitInputs@{SvfitInputs}}
+\index{SvfitInputs@{SvfitInputs}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{SvfitInputs}]{\setlength{\rightskip}{0pt plus 5cm}SvfitInputs::SvfitInputs (RMFLV const \& {\em leptonMomentum1}, \/  RMFLV const \& {\em leptonMomentum2}, \/  {\bf RMDataV} const \& {\em metMomentum}, \/  {\bf RMSM2x2} const \& {\em metCovariance}, \/  int const \& {\em decayMode1}, \/  int const \& {\em decayMode2})}}
+\label{classSvfitInputs_a64fef6674fbff8c5151d456d2181d55f}
+\hypertarget{classSvfitInputs_aa972c71e023c7d68e2ad587bea6ba05b}{
+\index{SvfitInputs@{SvfitInputs}!$\sim$SvfitInputs@{$\sim$SvfitInputs}}
+\index{$\sim$SvfitInputs@{$\sim$SvfitInputs}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{$\sim$SvfitInputs}]{\setlength{\rightskip}{0pt plus 5cm}SvfitInputs::$\sim$SvfitInputs ()}}
+\label{classSvfitInputs_aa972c71e023c7d68e2ad587bea6ba05b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSvfitInputs_af56198966e4b7c1eca905a31acf586c4}{
+\index{SvfitInputs@{SvfitInputs}!ActivateBranches@{ActivateBranches}}
+\index{ActivateBranches@{ActivateBranches}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{ActivateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitInputs::ActivateBranches (TTree $\ast$ {\em tree}, \/  bool {\em activate} = {\ttfamily true})}}
+\label{classSvfitInputs_af56198966e4b7c1eca905a31acf586c4}
+\hypertarget{classSvfitInputs_a0620e8f725be08d3097a5cebb90adf0b}{
+\index{SvfitInputs@{SvfitInputs}!CreateBranches@{CreateBranches}}
+\index{CreateBranches@{CreateBranches}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{CreateBranches}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitInputs::CreateBranches (TTree $\ast$ {\em tree})}}
+\label{classSvfitInputs_a0620e8f725be08d3097a5cebb90adf0b}
+\hypertarget{classSvfitInputs_aa89032ea9c7ace07c00243dab364a602}{
+\index{SvfitInputs@{SvfitInputs}!GetSvfitStandaloneAlgorithm@{GetSvfitStandaloneAlgorithm}}
+\index{GetSvfitStandaloneAlgorithm@{GetSvfitStandaloneAlgorithm}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{GetSvfitStandaloneAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}SVfitStandaloneAlgorithm SvfitInputs::GetSvfitStandaloneAlgorithm ({\bf SvfitEventKey} const \& {\em svfitEventKey}, \/  int {\em verbosity}, \/  bool {\em addLogM}, \/  TFile $\ast$\& {\em visPtResolutionFile}) const}}
+\label{classSvfitInputs_aa89032ea9c7ace07c00243dab364a602}
+\hypertarget{classSvfitInputs_aaab59815bf07360974d7595daa4d33b9}{
+\index{SvfitInputs@{SvfitInputs}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitInputs::operator!= ({\bf SvfitInputs} const \& {\em rhs}) const}}
+\label{classSvfitInputs_aaab59815bf07360974d7595daa4d33b9}
+\hypertarget{classSvfitInputs_a4cd441c132a0b81fa8897da201e7ffba}{
+\index{SvfitInputs@{SvfitInputs}!operator==@{operator==}}
+\index{operator==@{operator==}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool SvfitInputs::operator== ({\bf SvfitInputs} const \& {\em rhs}) const}}
+\label{classSvfitInputs_a4cd441c132a0b81fa8897da201e7ffba}
+\hypertarget{classSvfitInputs_a15284d867ccae598944568329364bcee}{
+\index{SvfitInputs@{SvfitInputs}!Set@{Set}}
+\index{Set@{Set}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitInputs::Set (RMFLV const \& {\em leptonMomentum1}, \/  RMFLV const \& {\em leptonMomentum2}, \/  {\bf RMDataV} const \& {\em metMomentum}, \/  {\bf RMSM2x2} const \& {\em metCovariance}, \/  int const \& {\em decayMode1}, \/  int const \& {\em decayMode2})}}
+\label{classSvfitInputs_a15284d867ccae598944568329364bcee}
+\hypertarget{classSvfitInputs_a7f8739a7ff2404d7e7cf323f537c4d64}{
+\index{SvfitInputs@{SvfitInputs}!SetBranchAddresses@{SetBranchAddresses}}
+\index{SetBranchAddresses@{SetBranchAddresses}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{SetBranchAddresses}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitInputs::SetBranchAddresses (TTree $\ast$ {\em tree})}}
+\label{classSvfitInputs_a7f8739a7ff2404d7e7cf323f537c4d64}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSvfitInputs_a784625a886909f4f9743c72f9780ccc5}{
+\index{SvfitInputs@{SvfitInputs}!decayMode1@{decayMode1}}
+\index{decayMode1@{decayMode1}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{decayMode1}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitInputs::decayMode1} = 0}}
+\label{classSvfitInputs_a784625a886909f4f9743c72f9780ccc5}
+\hypertarget{classSvfitInputs_a667f1b15f6955a9a40929e9f670eabea}{
+\index{SvfitInputs@{SvfitInputs}!decayMode2@{decayMode2}}
+\index{decayMode2@{decayMode2}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{decayMode2}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SvfitInputs::decayMode2} = 0}}
+\label{classSvfitInputs_a667f1b15f6955a9a40929e9f670eabea}
+\hypertarget{classSvfitInputs_a8cbce6801e4e0ed5a0a376ab13e04697}{
+\index{SvfitInputs@{SvfitInputs}!leptonMomentum1@{leptonMomentum1}}
+\index{leptonMomentum1@{leptonMomentum1}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{leptonMomentum1}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf SvfitInputs::leptonMomentum1} = 0}}
+\label{classSvfitInputs_a8cbce6801e4e0ed5a0a376ab13e04697}
+\hypertarget{classSvfitInputs_a16b08513227e966888b217e115b1f3e9}{
+\index{SvfitInputs@{SvfitInputs}!leptonMomentum2@{leptonMomentum2}}
+\index{leptonMomentum2@{leptonMomentum2}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{leptonMomentum2}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf SvfitInputs::leptonMomentum2} = 0}}
+\label{classSvfitInputs_a16b08513227e966888b217e115b1f3e9}
+\hypertarget{classSvfitInputs_ae09cccb51b5186fd72eb03eae338f131}{
+\index{SvfitInputs@{SvfitInputs}!metCovariance@{metCovariance}}
+\index{metCovariance@{metCovariance}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{metCovariance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RMSM2x2}$\ast$ {\bf SvfitInputs::metCovariance} = 0}}
+\label{classSvfitInputs_ae09cccb51b5186fd72eb03eae338f131}
+\hypertarget{classSvfitInputs_ace5d904fc75fdff3f820bfc9d67fb87c}{
+\index{SvfitInputs@{SvfitInputs}!metMomentum@{metMomentum}}
+\index{metMomentum@{metMomentum}!SvfitInputs@{SvfitInputs}}
+\subsubsection[{metMomentum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RMDataV}$\ast$ {\bf SvfitInputs::metMomentum} = 0}}
+\label{classSvfitInputs_ace5d904fc75fdff3f820bfc9d67fb87c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Utility/\hyperlink{SvfitTools_8h}{SvfitTools.h}\item 
+src/Utility/\hyperlink{SvfitTools_8cc}{SvfitTools.cc}\end{DoxyCompactItemize}

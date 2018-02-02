@@ -1,0 +1,82 @@
+\hypertarget{classEventCountConsumer}{
+\section{EventCountConsumer Class Reference}
+\label{classEventCountConsumer}\index{EventCountConsumer@{EventCountConsumer}}
+}
+
+
+{\ttfamily \#include $<$EventCountConsumer.h$>$}Inheritance diagram for EventCountConsumer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEventCountConsumer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classEventCountConsumer_a2d04b40136bd826a4a004eb36c3354aa}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata)
+\item 
+virtual std::string \hyperlink{classEventCountConsumer_a15515cd0d7c02f86003c8afbe6bc67fc}{GetConsumerId} () const override
+\item 
+virtual void \hyperlink{classEventCountConsumer_ad252ca05c06d57a5f333cdb2081349e1}{ProcessEvent} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata, FilterResult \&result) override
+\item 
+virtual void \hyperlink{classEventCountConsumer_a47a2bedb3b15c3b17de77d66696d6b34}{Finish} (setting\_\-type const \&settings, metadata\_\-type const \&metadata)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classEventCountConsumer_a5bdcae7f74a5b2a8851c13c94a2c280e}{currentLumi}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TH1I $\ast$ \hyperlink{classEventCountConsumer_a8fb9d1d62cab36dd76967af15061ece7}{m\_\-totalEvents}
+\item 
+TH1I $\ast$ \hyperlink{classEventCountConsumer_a5b23dafc4a1424978b7ebfbaabf9a160}{m\_\-filteredEvents}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEventCountConsumer_a47a2bedb3b15c3b17de77d66696d6b34}{
+\index{EventCountConsumer@{EventCountConsumer}!Finish@{Finish}}
+\index{Finish@{Finish}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{Finish}]{\setlength{\rightskip}{0pt plus 5cm}void EventCountConsumer::Finish (setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEventCountConsumer_a47a2bedb3b15c3b17de77d66696d6b34}
+\hypertarget{classEventCountConsumer_a15515cd0d7c02f86003c8afbe6bc67fc}{
+\index{EventCountConsumer@{EventCountConsumer}!GetConsumerId@{GetConsumerId}}
+\index{GetConsumerId@{GetConsumerId}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{GetConsumerId}]{\setlength{\rightskip}{0pt plus 5cm}std::string EventCountConsumer::GetConsumerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classEventCountConsumer_a15515cd0d7c02f86003c8afbe6bc67fc}
+\hypertarget{classEventCountConsumer_a2d04b40136bd826a4a004eb36c3354aa}{
+\index{EventCountConsumer@{EventCountConsumer}!Init@{Init}}
+\index{Init@{Init}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void EventCountConsumer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEventCountConsumer_a2d04b40136bd826a4a004eb36c3354aa}
+\hypertarget{classEventCountConsumer_ad252ca05c06d57a5f333cdb2081349e1}{
+\index{EventCountConsumer@{EventCountConsumer}!ProcessEvent@{ProcessEvent}}
+\index{ProcessEvent@{ProcessEvent}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{ProcessEvent}]{\setlength{\rightskip}{0pt plus 5cm}void EventCountConsumer::ProcessEvent (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}, \/  FilterResult \& {\em result})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classEventCountConsumer_ad252ca05c06d57a5f333cdb2081349e1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEventCountConsumer_a5bdcae7f74a5b2a8851c13c94a2c280e}{
+\index{EventCountConsumer@{EventCountConsumer}!currentLumi@{currentLumi}}
+\index{currentLumi@{currentLumi}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{currentLumi}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf EventCountConsumer::currentLumi}}}
+\label{classEventCountConsumer_a5bdcae7f74a5b2a8851c13c94a2c280e}
+\hypertarget{classEventCountConsumer_a5b23dafc4a1424978b7ebfbaabf9a160}{
+\index{EventCountConsumer@{EventCountConsumer}!m\_\-filteredEvents@{m\_\-filteredEvents}}
+\index{m\_\-filteredEvents@{m\_\-filteredEvents}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{m\_\-filteredEvents}]{\setlength{\rightskip}{0pt plus 5cm}TH1I$\ast$ {\bf EventCountConsumer::m\_\-filteredEvents}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEventCountConsumer_a5b23dafc4a1424978b7ebfbaabf9a160}
+\hypertarget{classEventCountConsumer_a8fb9d1d62cab36dd76967af15061ece7}{
+\index{EventCountConsumer@{EventCountConsumer}!m\_\-totalEvents@{m\_\-totalEvents}}
+\index{m\_\-totalEvents@{m\_\-totalEvents}!EventCountConsumer@{EventCountConsumer}}
+\subsubsection[{m\_\-totalEvents}]{\setlength{\rightskip}{0pt plus 5cm}TH1I$\ast$ {\bf EventCountConsumer::m\_\-totalEvents}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEventCountConsumer_a8fb9d1d62cab36dd76967af15061ece7}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Consumers/\hyperlink{EventCountConsumer_8h}{EventCountConsumer.h}\item 
+src/Consumers/\hyperlink{EventCountConsumer_8cc}{EventCountConsumer.cc}\end{DoxyCompactItemize}

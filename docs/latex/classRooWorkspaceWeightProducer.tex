@@ -1,0 +1,119 @@
+\hypertarget{classRooWorkspaceWeightProducer}{
+\section{RooWorkspaceWeightProducer Class Reference}
+\label{classRooWorkspaceWeightProducer}\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+}
+
+
+\hyperlink{classRooWorkspaceWeightProducer}{RooWorkspaceWeightProducer} Config tags:
+\begin{DoxyItemize}
+\item Fill me with something meaningful. 
+\end{DoxyItemize} 
+
+
+{\ttfamily \#include $<$RooWorkspaceWeightProducer.h$>$}Inheritance diagram for RooWorkspaceWeightProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.14286cm]{classRooWorkspaceWeightProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRooWorkspaceWeightProducer_a6a2e96c455f4035cf3c1ecfda323eb78}{RooWorkspaceWeightProducer} ()
+\item 
+\hyperlink{classRooWorkspaceWeightProducer_a86459d83cde20d84a09f7be5c184ba47}{RooWorkspaceWeightProducer} (bool(setting\_\-type::$\ast$GetSaveRooWorkspaceTriggerWeightAsOptionalOnly)(void) const, std::string(setting\_\-type::$\ast$GetRooWorkspace)(void) const, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetRooWorkspaceWeightNames)(void) const, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetRooWorkspaceObjectNames)(void) const, std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$GetRooWorkspaceObjectArguments)(void) const)
+\item 
+virtual std::string \hyperlink{classRooWorkspaceWeightProducer_a40f7cc577a5dbf0504fc9f3c1670a0a2}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classRooWorkspaceWeightProducer_a9fcf58750dfbf0cfbca6b4a61e57f2c6}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classRooWorkspaceWeightProducer_afd139b8380a91e8aaa72066a8a826350}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRooWorkspaceWeightProducer_a3b734d1238bd91580f7f86ba5e11f4ff}{m\_\-saveTriggerWeightAsOptionalOnly}
+\item 
+std::map$<$ int, std::vector$<$ std::string $>$ $>$ \hyperlink{classRooWorkspaceWeightProducer_a2e44c1348d34ed37d73fd5cad356f28a}{m\_\-weightNames}
+\item 
+std::map$<$ int, std::vector$<$ std::string $>$ $>$ \hyperlink{classRooWorkspaceWeightProducer_ac8bb8f7313dc398dd0ff966ee21ca2de}{m\_\-functorArgs}
+\item 
+std::map$<$ int, std::vector$<$ RooFunctor $\ast$ $>$ $>$ \hyperlink{classRooWorkspaceWeightProducer_a1b8f4af2c116a1b0e0eb25fbe46598e4}{m\_\-functors}
+\item 
+RooWorkspace $\ast$ \hyperlink{classRooWorkspaceWeightProducer_add3a4f23764c43521473e942b8231d85}{m\_\-workspace}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classRooWorkspaceWeightProducer}{RooWorkspaceWeightProducer} Config tags:
+\begin{DoxyItemize}
+\item Fill me with something meaningful. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRooWorkspaceWeightProducer_a6a2e96c455f4035cf3c1ecfda323eb78}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{RooWorkspaceWeightProducer}]{\setlength{\rightskip}{0pt plus 5cm}RooWorkspaceWeightProducer::RooWorkspaceWeightProducer ()}}
+\label{classRooWorkspaceWeightProducer_a6a2e96c455f4035cf3c1ecfda323eb78}
+\hypertarget{classRooWorkspaceWeightProducer_a86459d83cde20d84a09f7be5c184ba47}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{RooWorkspaceWeightProducer}]{\setlength{\rightskip}{0pt plus 5cm}RooWorkspaceWeightProducer::RooWorkspaceWeightProducer (bool(setting\_\-type::$\ast$)(void) const  {\em GetSaveRooWorkspaceTriggerWeightAsOptionalOnly}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetRooWorkspace}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetRooWorkspaceWeightNames}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetRooWorkspaceObjectNames}, \/  std::vector$<$ std::string $>$ \&(setting\_\-type::$\ast$)(void) const  {\em GetRooWorkspaceObjectArguments})}}
+\label{classRooWorkspaceWeightProducer_a86459d83cde20d84a09f7be5c184ba47}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRooWorkspaceWeightProducer_a40f7cc577a5dbf0504fc9f3c1670a0a2}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string RooWorkspaceWeightProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_a40f7cc577a5dbf0504fc9f3c1670a0a2}
+
+
+Reimplemented in \hyperlink{classEETriggerWeightProducer_aa3ee349e72e7e9b3b64c582e5cc0d834}{EETriggerWeightProducer}, \hyperlink{classMuMuTriggerWeightProducer_aceeaf94e1e0b6fa4128b3f0b3ebec900}{MuMuTriggerWeightProducer}, \hyperlink{classTauTauTriggerWeightProducer_adac32370050277ab831ce6db2a957e8d}{TauTauTriggerWeightProducer}, and \hyperlink{classMuTauTriggerWeightProducer_ac7ed3993ecc2ad90b439b9aa9d478724}{MuTauTriggerWeightProducer}.\hypertarget{classRooWorkspaceWeightProducer_a9fcf58750dfbf0cfbca6b4a61e57f2c6}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!Init@{Init}}
+\index{Init@{Init}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void RooWorkspaceWeightProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_a9fcf58750dfbf0cfbca6b4a61e57f2c6}
+\hypertarget{classRooWorkspaceWeightProducer_afd139b8380a91e8aaa72066a8a826350}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void RooWorkspaceWeightProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_afd139b8380a91e8aaa72066a8a826350}
+
+
+Reimplemented in \hyperlink{classEETriggerWeightProducer_a1b3bd9104cf404304cecc13e4425dc07}{EETriggerWeightProducer}, \hyperlink{classMuMuTriggerWeightProducer_a0b8559ad9c392e68d1272ca49ad65a93}{MuMuTriggerWeightProducer}, \hyperlink{classTauTauTriggerWeightProducer_acea6bd34d07bef650fd48e5535ea0166}{TauTauTriggerWeightProducer}, and \hyperlink{classMuTauTriggerWeightProducer_a0401bf07b21eab934e0f9417b2316c5a}{MuTauTriggerWeightProducer}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classRooWorkspaceWeightProducer_ac8bb8f7313dc398dd0ff966ee21ca2de}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!m\_\-functorArgs@{m\_\-functorArgs}}
+\index{m\_\-functorArgs@{m\_\-functorArgs}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{m\_\-functorArgs}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$int,std::vector$<$std::string$>$ $>$ {\bf RooWorkspaceWeightProducer::m\_\-functorArgs}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_ac8bb8f7313dc398dd0ff966ee21ca2de}
+\hypertarget{classRooWorkspaceWeightProducer_a1b8f4af2c116a1b0e0eb25fbe46598e4}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!m\_\-functors@{m\_\-functors}}
+\index{m\_\-functors@{m\_\-functors}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{m\_\-functors}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$int,std::vector$<$RooFunctor$\ast$$>$ $>$ {\bf RooWorkspaceWeightProducer::m\_\-functors}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_a1b8f4af2c116a1b0e0eb25fbe46598e4}
+\hypertarget{classRooWorkspaceWeightProducer_a3b734d1238bd91580f7f86ba5e11f4ff}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!m\_\-saveTriggerWeightAsOptionalOnly@{m\_\-saveTriggerWeightAsOptionalOnly}}
+\index{m\_\-saveTriggerWeightAsOptionalOnly@{m\_\-saveTriggerWeightAsOptionalOnly}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{m\_\-saveTriggerWeightAsOptionalOnly}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf RooWorkspaceWeightProducer::m\_\-saveTriggerWeightAsOptionalOnly}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_a3b734d1238bd91580f7f86ba5e11f4ff}
+\hypertarget{classRooWorkspaceWeightProducer_a2e44c1348d34ed37d73fd5cad356f28a}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!m\_\-weightNames@{m\_\-weightNames}}
+\index{m\_\-weightNames@{m\_\-weightNames}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{m\_\-weightNames}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$int,std::vector$<$std::string$>$ $>$ {\bf RooWorkspaceWeightProducer::m\_\-weightNames}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_a2e44c1348d34ed37d73fd5cad356f28a}
+\hypertarget{classRooWorkspaceWeightProducer_add3a4f23764c43521473e942b8231d85}{
+\index{RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}!m\_\-workspace@{m\_\-workspace}}
+\index{m\_\-workspace@{m\_\-workspace}!RooWorkspaceWeightProducer@{RooWorkspaceWeightProducer}}
+\subsubsection[{m\_\-workspace}]{\setlength{\rightskip}{0pt plus 5cm}RooWorkspace$\ast$ {\bf RooWorkspaceWeightProducer::m\_\-workspace}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classRooWorkspaceWeightProducer_add3a4f23764c43521473e942b8231d85}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{RooWorkspaceWeightProducer_8h}{RooWorkspaceWeightProducer.h}\item 
+src/Producers/\hyperlink{RooWorkspaceWeightProducer_8cc}{RooWorkspaceWeightProducer.cc}\end{DoxyCompactItemize}

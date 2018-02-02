@@ -1,0 +1,159 @@
+\hypertarget{classTagAndProbeMuonPairProducer}{
+\section{TagAndProbeMuonPairProducer Class Reference}
+\label{classTagAndProbeMuonPairProducer}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+}
+
+
+{\ttfamily \#include $<$TagAndProbePairProducer.h$>$}Inheritance diagram for TagAndProbeMuonPairProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTagAndProbeMuonPairProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701d}{ValidMuonsInput} \{ \hyperlink{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da4e2ebe2d46c9c94bbb1a55250a10d578}{AUTO} =  0, 
+\hyperlink{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da1a5de02a3032886456b7632c1d6f0d96}{UNCORRECTED} =  1, 
+\hyperlink{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701daba01a371a03b0d0ea451a2206fe5cedf}{CORRECTED} =  2
+ \}
+\item 
+enum \hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455}{MuonID} \{ \par
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a85451ca86b3501a35ce0f538d68b52e4}{NONE} =  -\/1, 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a6ef0640cc1c47364161ebf9dc471a3f0}{TIGHT} =  0, 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455af10cf388cc66efe9b4c88f590968134f}{MEDIUM} =  1, 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a8161405ba568e7aa3e8c245e3359ac30}{LOOSE} =  2, 
+\par
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a9200affac8fce23ac0c13b6aade296e5}{VETO} =  3, 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a2027365660fab2c773b58bf636ae5314}{FAKEABLE} =  4, 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455ad10a4f5371a4aef5c32c1a35bd1e7469}{EMBEDDING} =  5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classTagAndProbeMuonPairProducer_ae1f2dcdf85b71e242238c980b33fe8f0}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classTagAndProbeMuonPairProducer_a151e1f7a4f0b0b35102b56d1e8cf6fc3}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classTagAndProbeMuonPairProducer_a57e3e80a55930317c0cdfbd10fd81a39}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701d}{ValidMuonsInput} \hyperlink{classTagAndProbeMuonPairProducer_a9ef91549235c69471c608919c33483dd}{ToValidMuonsInput} (std::string const \&validMuonsInput)
+\item 
+static \hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455}{MuonID} \hyperlink{classTagAndProbeMuonPairProducer_aab5bed4d0e300d632d68ba3a93c3ea64}{ToMuonID} (std::string const \&\hyperlink{classTagAndProbeMuonPairProducer_a9a517b5e47d31b7f6c5343d670ec0f3f}{muonID})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455}{MuonID} \hyperlink{classTagAndProbeMuonPairProducer_a9a517b5e47d31b7f6c5343d670ec0f3f}{muonID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!MuonID@{MuonID}}
+\index{MuonID@{MuonID}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{MuonID}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TagAndProbeMuonPairProducer::MuonID}}}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a85451ca86b3501a35ce0f538d68b52e4}{
+NONE}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a85451ca86b3501a35ce0f538d68b52e4}
+}]\index{TIGHT@{TIGHT}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!TIGHT@{TIGHT}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a6ef0640cc1c47364161ebf9dc471a3f0}{
+TIGHT}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a6ef0640cc1c47364161ebf9dc471a3f0}
+}]\index{MEDIUM@{MEDIUM}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!MEDIUM@{MEDIUM}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455af10cf388cc66efe9b4c88f590968134f}{
+MEDIUM}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455af10cf388cc66efe9b4c88f590968134f}
+}]\index{LOOSE@{LOOSE}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!LOOSE@{LOOSE}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a8161405ba568e7aa3e8c245e3359ac30}{
+LOOSE}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a8161405ba568e7aa3e8c245e3359ac30}
+}]\index{VETO@{VETO}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!VETO@{VETO}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a9200affac8fce23ac0c13b6aade296e5}{
+VETO}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a9200affac8fce23ac0c13b6aade296e5}
+}]\index{FAKEABLE@{FAKEABLE}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!FAKEABLE@{FAKEABLE}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a2027365660fab2c773b58bf636ae5314}{
+FAKEABLE}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455a2027365660fab2c773b58bf636ae5314}
+}]\index{EMBEDDING@{EMBEDDING}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!EMBEDDING@{EMBEDDING}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455ad10a4f5371a4aef5c32c1a35bd1e7469}{
+EMBEDDING}
+\label{classTagAndProbeMuonPairProducer_a60f9e6b1f42c503ba52f0cdf54fb8455ad10a4f5371a4aef5c32c1a35bd1e7469}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701d}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!ValidMuonsInput@{ValidMuonsInput}}
+\index{ValidMuonsInput@{ValidMuonsInput}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{ValidMuonsInput}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TagAndProbeMuonPairProducer::ValidMuonsInput}}}
+\label{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701d}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{AUTO@{AUTO}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!AUTO@{AUTO}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da4e2ebe2d46c9c94bbb1a55250a10d578}{
+AUTO}
+\label{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da4e2ebe2d46c9c94bbb1a55250a10d578}
+}]\index{UNCORRECTED@{UNCORRECTED}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!UNCORRECTED@{UNCORRECTED}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da1a5de02a3032886456b7632c1d6f0d96}{
+UNCORRECTED}
+\label{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701da1a5de02a3032886456b7632c1d6f0d96}
+}]\index{CORRECTED@{CORRECTED}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!CORRECTED@{CORRECTED}}\item[{\em 
+\hypertarget{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701daba01a371a03b0d0ea451a2206fe5cedf}{
+CORRECTED}
+\label{classTagAndProbeMuonPairProducer_adaf024ea8e217bd1e93cb4193768701daba01a371a03b0d0ea451a2206fe5cedf}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTagAndProbeMuonPairProducer_ae1f2dcdf85b71e242238c980b33fe8f0}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string TagAndProbeMuonPairProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_ae1f2dcdf85b71e242238c980b33fe8f0}
+\hypertarget{classTagAndProbeMuonPairProducer_a151e1f7a4f0b0b35102b56d1e8cf6fc3}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!Init@{Init}}
+\index{Init@{Init}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void TagAndProbeMuonPairProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_a151e1f7a4f0b0b35102b56d1e8cf6fc3}
+\hypertarget{classTagAndProbeMuonPairProducer_a57e3e80a55930317c0cdfbd10fd81a39}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void TagAndProbeMuonPairProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_a57e3e80a55930317c0cdfbd10fd81a39}
+\hypertarget{classTagAndProbeMuonPairProducer_aab5bed4d0e300d632d68ba3a93c3ea64}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!ToMuonID@{ToMuonID}}
+\index{ToMuonID@{ToMuonID}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{ToMuonID}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf MuonID} TagAndProbeMuonPairProducer::ToMuonID (std::string const \& {\em muonID})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_aab5bed4d0e300d632d68ba3a93c3ea64}
+\hypertarget{classTagAndProbeMuonPairProducer_a9ef91549235c69471c608919c33483dd}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!ToValidMuonsInput@{ToValidMuonsInput}}
+\index{ToValidMuonsInput@{ToValidMuonsInput}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{ToValidMuonsInput}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ValidMuonsInput} TagAndProbeMuonPairProducer::ToValidMuonsInput (std::string const \& {\em validMuonsInput})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_a9ef91549235c69471c608919c33483dd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classTagAndProbeMuonPairProducer_a9a517b5e47d31b7f6c5343d670ec0f3f}{
+\index{TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}!muonID@{muonID}}
+\index{muonID@{muonID}!TagAndProbeMuonPairProducer@{TagAndProbeMuonPairProducer}}
+\subsubsection[{muonID}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MuonID} {\bf TagAndProbeMuonPairProducer::muonID}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTagAndProbeMuonPairProducer_a9a517b5e47d31b7f6c5343d670ec0f3f}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{TagAndProbePairProducer_8h}{TagAndProbePairProducer.h}\item 
+src/Producers/\hyperlink{TagAndProbePairProducer_8cc}{TagAndProbePairProducer.cc}\end{DoxyCompactItemize}

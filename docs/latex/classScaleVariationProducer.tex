@@ -1,0 +1,58 @@
+\hypertarget{classScaleVariationProducer}{
+\section{ScaleVariationProducer Class Reference}
+\label{classScaleVariationProducer}\index{ScaleVariationProducer@{ScaleVariationProducer}}
+}
+
+
+ScaleVariationsProducer.  
+
+
+{\ttfamily \#include $<$ScaleVariationProducer.h$>$}Inheritance diagram for ScaleVariationProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classScaleVariationProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classScaleVariationProducer_aaab35f39c99ffe1d15d5fda78c065e26}{GetProducerId} () const 
+\item 
+virtual void \hyperlink{classScaleVariationProducer_a32faff7a649574b05193c921bebe8542}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classScaleVariationProducer_a8707e303a185f866fb84e990190e2029}{OnLumi} (event\_\-type const \&event, setting\_\-type const \&settings, metadata\_\-type const \&metadata) override
+\item 
+virtual void \hyperlink{classScaleVariationProducer_a065fd728acd12ae448a7ce1d7088bdae}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ScaleVariationsProducer. See \href{https://indico.cern.ch/event/494682/contributions/1172505/attachments/1223578/1800218/mcaod-Feb15-2016.pdf}{\tt https://indico.cern.ch/event/494682/contributions/1172505/attachments/1223578/1800218/mcaod-\/Feb15-\/2016.pdf} for the motivation. This Producer copies event-\/by-\/event renormalization and factorization weights from the Kappa input file to the output. This can be used to calculate the migration of signal events between channels and categories. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classScaleVariationProducer_aaab35f39c99ffe1d15d5fda78c065e26}{
+\index{ScaleVariationProducer@{ScaleVariationProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!ScaleVariationProducer@{ScaleVariationProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}std::string ScaleVariationProducer::GetProducerId () const}}
+\label{classScaleVariationProducer_aaab35f39c99ffe1d15d5fda78c065e26}
+\hypertarget{classScaleVariationProducer_a32faff7a649574b05193c921bebe8542}{
+\index{ScaleVariationProducer@{ScaleVariationProducer}!Init@{Init}}
+\index{Init@{Init}!ScaleVariationProducer@{ScaleVariationProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void ScaleVariationProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classScaleVariationProducer_a32faff7a649574b05193c921bebe8542}
+\hypertarget{classScaleVariationProducer_a8707e303a185f866fb84e990190e2029}{
+\index{ScaleVariationProducer@{ScaleVariationProducer}!OnLumi@{OnLumi}}
+\index{OnLumi@{OnLumi}!ScaleVariationProducer@{ScaleVariationProducer}}
+\subsubsection[{OnLumi}]{\setlength{\rightskip}{0pt plus 5cm}void ScaleVariationProducer::OnLumi (event\_\-type const \& {\em event}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classScaleVariationProducer_a8707e303a185f866fb84e990190e2029}
+\hypertarget{classScaleVariationProducer_a065fd728acd12ae448a7ce1d7088bdae}{
+\index{ScaleVariationProducer@{ScaleVariationProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!ScaleVariationProducer@{ScaleVariationProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void ScaleVariationProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classScaleVariationProducer_a065fd728acd12ae448a7ce1d7088bdae}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{ScaleVariationProducer_8h}{ScaleVariationProducer.h}\item 
+src/Producers/\hyperlink{ScaleVariationProducer_8cc}{ScaleVariationProducer.cc}\end{DoxyCompactItemize}

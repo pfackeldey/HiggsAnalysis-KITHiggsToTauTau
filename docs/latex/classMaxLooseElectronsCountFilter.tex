@@ -1,0 +1,48 @@
+\hypertarget{classMaxLooseElectronsCountFilter}{
+\section{MaxLooseElectronsCountFilter Class Reference}
+\label{classMaxLooseElectronsCountFilter}\index{MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}}
+}
+
+
+{\ttfamily \#include $<$MaxLooseObjectsCountFilters.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(event\_\-type const \&, product\_\-type const \&)$>$ \hyperlink{classMaxLooseElectronsCountFilter_a6da7a592ef0e21bdf5e2241f4dd4506a}{double\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classMaxLooseElectronsCountFilter_a1c3982b0f7faf50d8158da566825251f}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classMaxLooseElectronsCountFilter_ae0fd3396d0f69343224627fa33ce8595}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter checking for the existance of at most the given number of valid loose electrons. Required config tag: MaxNLooseElectrons 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMaxLooseElectronsCountFilter_a6da7a592ef0e21bdf5e2241f4dd4506a}{
+\index{MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}!double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}}
+\index{double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}!MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}}
+\subsubsection[{double\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double(event\_\-type const\&, product\_\-type const\&)$>$ {\bf MaxLooseElectronsCountFilter::double\_\-extractor\_\-lambda}}}
+\label{classMaxLooseElectronsCountFilter_a6da7a592ef0e21bdf5e2241f4dd4506a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMaxLooseElectronsCountFilter_a1c3982b0f7faf50d8158da566825251f}{
+\index{MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string MaxLooseElectronsCountFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMaxLooseElectronsCountFilter_a1c3982b0f7faf50d8158da566825251f}
+\hypertarget{classMaxLooseElectronsCountFilter_ae0fd3396d0f69343224627fa33ce8595}{
+\index{MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}!Init@{Init}}
+\index{Init@{Init}!MaxLooseElectronsCountFilter@{MaxLooseElectronsCountFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void MaxLooseElectronsCountFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMaxLooseElectronsCountFilter_ae0fd3396d0f69343224627fa33ce8595}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{MaxLooseObjectsCountFilters_8h}{MaxLooseObjectsCountFilters.h}\item 
+src/Filters/\hyperlink{MaxLooseObjectsCountFilters_8cc}{MaxLooseObjectsCountFilters.cc}\end{DoxyCompactItemize}

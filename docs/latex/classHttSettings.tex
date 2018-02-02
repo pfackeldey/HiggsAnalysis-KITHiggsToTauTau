@@ -1,0 +1,2065 @@
+\hypertarget{classHttSettings}{
+\section{HttSettings Class Reference}
+\label{classHttSettings}\index{HttSettings@{HttSettings}}
+}
+
+
+Reads settings for all parts of the KappaAnalysis code from a prepared json configuration file.  
+
+
+{\ttfamily \#include $<$HttSettings.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttSettings_ae668fb9a956228f73d235f0f6cdd345b}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetTT,\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em names of (old) MVA MET collection in kappa tuple \item\end{DoxyCompactList}\item 
+\hyperlink{classHttSettings_ad57514c4c90610ffa0dbfb7573adeed2}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetMT,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_afb075e653510a1bf5abc085da9149091}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetET,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_ac7c2fb6a9290e1fad8423b369af8d0d4}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetEM,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a384c503ac89815188770a2d62fd73e44}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetsTT,\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em names of (new) MVA MET collection in kappa tuple \item\end{DoxyCompactList}\item 
+\hyperlink{classHttSettings_a42c42494483c4ab580d8ad1b40094c25}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetsMT,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a3d01e1ff66021ed02442fe9fc5427181}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetsET,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a73b5e6629b9a83be1f201ade3a53cb4a}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMetsEM,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a9efcc755d91c4adf0eaee0c3c5caa413}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MvaMets,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_ad95fcd09e68f5825da98b58adf7e868f}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, Channel,\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em htt decay channel and event category \item\end{DoxyCompactList}\item 
+\hyperlink{classHttSettings_abe7e0c6ca1d63a2ad87bd40567eccd61}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, Category,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a36256b0f0115e6efd8cb86bb8a0a6b13}{IMPL\_\-SETTING} (bool, OSChargeLeptons)
+\item 
+\hyperlink{classHttSettings_a7702319e39e58d88570bb84ea577f208}{IMPL\_\-SETTING} (std::string, MetRecoilCorrectorFile)
+\item 
+\hyperlink{classHttSettings_a7523bd5520bf59a485cb19c11f6e902e}{IMPL\_\-SETTING} (std::string, MvaMetRecoilCorrectorFile)
+\item 
+\hyperlink{classHttSettings_a8cd0a1343cd2ae2b2e68fd148e41e59b}{IMPL\_\-SETTING} (std::string, MetShiftCorrectorFile)
+\item 
+\hyperlink{classHttSettings_a1e48c177204aca674b7a2cc958b0990e}{IMPL\_\-SETTING} (std::string, MvaMetShiftCorrectorFile)
+\item 
+\hyperlink{classHttSettings_a712769a2f44e79f09a2810f9bb3556f2}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MetCorrectionMethod,\char`\"{}quantileMapping\char`\"{})
+\item 
+\hyperlink{classHttSettings_a69b5087e83cd55eb36de66134b3622d5}{IMPL\_\-SETTING\_\-DEFAULT} (bool, ChooseMvaMet, true)
+\item 
+\hyperlink{classHttSettings_a3dc8d9cd8094adc68ce060e2a0202360}{IMPL\_\-SETTING\_\-DEFAULT} (bool, UpdateMetWithCorrectedLeptons, false)
+\item 
+\hyperlink{classHttSettings_a128ab2e519a985d51e811cf99e197646}{IMPL\_\-SETTING\_\-DEFAULT} (int, MetSysType, 0)
+\item 
+\hyperlink{classHttSettings_a7e782c3ef47b58bd6771789bf644e957}{IMPL\_\-SETTING\_\-DEFAULT} (int, MetSysShift, 0)
+\item 
+\hyperlink{classHttSettings_a4e846de7937b2f2198769026a9e4231b}{IMPL\_\-SETTING\_\-DEFAULT} (bool, MetUncertaintyShift, false)
+\item 
+\hyperlink{classHttSettings_a64be19c15dbd362e2c66ad4be1fd46dd}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MetUncertaintyType,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a19b1c2be0f5467f754d6c4c4283ca087}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (PlotlevelFilterExpressionQuantities,\{\})
+\item 
+\hyperlink{classHttSettings_acbcc938324675f415c2eb56727fda6cf}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, PlotlevelFilterExpression,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a8bff861fd341d793e6f72b573796b592}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TriggerEfficiencyData,\{\})
+\item 
+\hyperlink{classHttSettings_ac488a7041dd0ab6dd4d6898c481bece4}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TriggerEfficiencyMc,\{\})
+\item 
+\hyperlink{classHttSettings_aaacf2d8bb898b43bed3d12c702e7a2b1}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, TriggerEfficiencyHistogram,\char`\"{}triggerEfficiency\char`\"{})
+\item 
+\hyperlink{classHttSettings_a1574630abf1ab2d0197f91e7296db55f}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, TriggerEfficiencyMode,\char`\"{}multiply\_\-weights\char`\"{})
+\item 
+\hyperlink{classHttSettings_a2e6b5492e8fb2a12a4acdd8239e8635e}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (IdentificationEfficiencyData,\{\})
+\item 
+\hyperlink{classHttSettings_a46e815a98145369bfafc8ce14f6973c8}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (IdentificationEfficiencyMc,\{\})
+\item 
+\hyperlink{classHttSettings_adf2bac074503f040e82618fc2345a5fc}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, IdentificationEfficiencyHistogram,\char`\"{}identificationEfficiency\char`\"{})
+\item 
+\hyperlink{classHttSettings_ab8748bfbd6132d3e7acd14c95bf86fe6}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, IdentificationEfficiencyMode,\char`\"{}multiply\_\-weights\char`\"{})
+\item 
+\hyperlink{classHttSettings_af061ebad059cc50153cb70089a5687ea}{IMPL\_\-SETTING\_\-STRINGLIST} (EleTauFakeRateWeightFile)
+\item 
+\hyperlink{classHttSettings_a0de597dd7ea6c06a46a6f03ad93b037d}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (\hyperlink{classHttSettings_ae13115ebff12caecd683ea97cadecafc}{EleTauFakeRateHistograms}, \hyperlink{classHttSettings_ae13115ebff12caecd683ea97cadecafc}{EleTauFakeRateHistograms})
+\item 
+\hyperlink{classHttSettings_a4513b0e4e3fb25e4513b2cc2efc5e719}{IMPL\_\-SETTING\_\-STRINGLIST} (MuonTauFakeRateWeightFile)
+\item 
+\hyperlink{classHttSettings_a5b32353f2911a93bd6046427ee91f59c}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuonTauFakeRateHistograms,\{\})
+\item 
+\hyperlink{classHttSettings_a26c8ae57efd90dbab0c4ddd2b3e9a490}{IMPL\_\-SETTING} (std::string, ElectronIDType)
+\item 
+\hyperlink{classHttSettings_a003594f674aeb36ae7f899e790b819ed}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, ElectronIDName,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_ae9f77a258468ff234e15c2746addbe38}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (ElectronIDList,\{\})
+\item 
+\hyperlink{classHttSettings_a147c34ffb4aeb6b02f2a02f37dc59781}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronMvaIDCutEB1,-\/1.0)
+\item 
+\hyperlink{classHttSettings_afd05c28dd3bb00cf4732a0bc87901b34}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronMvaIDCutEB2,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ac290c24384bca58c474b0c2b97c2a382}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronMvaIDCutEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a4320a54adcb8df7075bc219c9c21a098}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronChargedIsoVetoConeSizeEB, 0.0)
+\item 
+\hyperlink{classHttSettings_a6072701632fb21cf187072f41fa1c88b}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronChargedIsoVetoConeSizeEE, 0.0)
+\item 
+\hyperlink{classHttSettings_a0f6830aa0568d5000b5ee7b7fc066e58}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronNeutralIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_a0bb6fa869d920c9d97e0a0a5978d4e08}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronPhotonIsoVetoConeSizeEB, 0.0)
+\item 
+\hyperlink{classHttSettings_aa2601b20bc336ea96cdba63e4ecb5efb}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronPhotonIsoVetoConeSizeEE, 0.0)
+\item 
+\hyperlink{classHttSettings_ade12a467db9b7a59ff20c73fa11bd768}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronDeltaBetaIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_a71a51453e53eef46fd821b8a2b66382f}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronChargedIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_afe73b2edaa37f30d09551330aa189d3c}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronNeutralIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_aa852f1b761559bf02dbb4bcaa383b6b6}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronPhotonIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a1515904af8a4c5d04f38bb8a4e115e6a}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronDeltaBetaIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a18c013ee9d78c831b113e5adb507d3b7}{IMPL\_\-SETTING} (float, ElectronIsoSignalConeSize)
+\item 
+\hyperlink{classHttSettings_ac294180c9793f6cb652ced772ca22c59}{IMPL\_\-SETTING} (float, ElectronDeltaBetaCorrectionFactor)
+\item 
+\hyperlink{classHttSettings_a3cd331880ac0f66c6e9883957fef3337}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a545431c13430b32a2546f166fb5887e1}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a838490218671a3dcaf914069ac0f3fb7}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a93e1c8ff1fb422a3f051576e2b476992}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a8abae07eb8a153952f975c7517e17a0b}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonChargedIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_afaa4bace4ed28ecc9e357f04edef811b}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonNeutralIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_a57cab6a96a01aa69019efeef1371c0ac}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonPhotonIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_aa9661bf725b0831d31ce28fc385596e2}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonDeltaBetaIsoVetoConeSize, 0.0)
+\item 
+\hyperlink{classHttSettings_afa771e6ae4c3f99eef64de1eb5a102ae}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonChargedIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a4a6545c4cd73b0d854bedd023245d66f}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonNeutralIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a6adfeaa92e8c8d17902e017089ff014c}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonPhotonIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a8001c74f4fbc97854d11ac2ef6cb62b7}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonDeltaBetaIsoPtThreshold, 0.0)
+\item 
+\hyperlink{classHttSettings_a15a54c3d01ca1b2297236e75b041f840}{IMPL\_\-SETTING} (float, MuonIsoSignalConeSize)
+\item 
+\hyperlink{classHttSettings_a380239bb554b50cec815a31e4947e978}{IMPL\_\-SETTING} (float, MuonDeltaBetaCorrectionFactor)
+\item 
+\hyperlink{classHttSettings_a7f40ee4aa5036838cfa60ece75e7bf8e}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a7758be711fa73d2ae7f189cc3d756a50}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ac14bc12887f53356e62898136bd2e65b}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_adee678dc804dcbbe8fcf8a8bb1522c66}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a10cb15cf8b50311d87ac387cc9ad182d}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronTrackDxyCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_aab852c525e62354d9c6efa3d56612087}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronTrackDzCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a600c2c10faad6847cf76443c5688adb3}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonTrackDxyCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a96cfe871dd9a2c337515ce0aa689834c}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonTrackDzCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a9bf4264eeee3192afdd65acdb6806ef4}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauTrackDzCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a9d4d24f41e2b5122dbce2e7df7b2ed39}{IMPL\_\-SETTING} (std::string, LooseElectronID)
+\item 
+\hyperlink{classHttSettings_a883fd0876b5100a04af373683acc1f25}{IMPL\_\-SETTING} (std::string, LooseElectronIDType)
+\item 
+\hyperlink{classHttSettings_abc7136adbfcc43f9f1c3ec25c55dfa05}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, LooseElectronIDName,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_aa9f8c4a76b619e9b9ef1377f4070e8c1}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronMvaIDCutEB1,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a360ed92849bfcca6dfcbf06f2915b706}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronMvaIDCutEB2,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a7472951724a2910def335470c152d36d}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronMvaIDCutEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ab63c978173eaa9c4d1d61c992d358e3c}{IMPL\_\-SETTING} (std::string, LooseElectronReco)
+\item 
+\hyperlink{classHttSettings_aff328a890479ff02d7a8c7b126da3efa}{IMPL\_\-SETTING} (std::string, LooseMuonID)
+\item 
+\hyperlink{classHttSettings_ae7c24618e83db51f1e860d14390b15c0}{IMPL\_\-SETTING} (std::string, LooseElectronIsoType)
+\item 
+\hyperlink{classHttSettings_a9ad91ad7904bcad1b441ffe3513483e8}{IMPL\_\-SETTING} (std::string, LooseElectronIso)
+\item 
+\hyperlink{classHttSettings_aefec965292f899d8922671e0b5932e8f}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a424e01a1b5a792c2b90446e03b907680}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a4f59339bd5dec544d64a5712bd410106}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a42aed7904ac15ac2617099a17299ec33}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_aa8164975f425ab26101a51bf5c347b4d}{IMPL\_\-SETTING} (std::string, LooseMuonIsoType)
+\item 
+\hyperlink{classHttSettings_a4d9b0df2ccdc94ae57c6a9c0a1351066}{IMPL\_\-SETTING} (std::string, LooseMuonIso)
+\item 
+\hyperlink{classHttSettings_abb033778d9ca77b1c67a43307bf38d87}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ad73987fd2167fe4486157affa5344f1b}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_aa4be3ae364fa0015bb78ac25abbdb237}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_ac15ce16c8e547817bd419f46fac8ebd9}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_ab08e3e8222e8746782c6151302295352}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MuonIsoTypeUserMode,\char`\"{}fromcmssw\char`\"{})
+\item 
+\hyperlink{classHttSettings_a97479bda952e07f2f6b03b5be73d00f2}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronTrackDxyCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a6db5e1c7f0335291557d4f2b366b77e3}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseElectronTrackDzCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a12b52ff05d9b9f91e06534e4f59eb39c}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonTrackDxyCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a373287cc228b1a0f8b92edee173e9ac9}{IMPL\_\-SETTING\_\-DEFAULT} (float, LooseMuonTrackDzCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ad94c7268458dfe8de611c799acca725a}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (LooseElectronLowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_af1fc9f51fe6d6291198fd5be598967ee}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (LooseMuonLowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a3f453bcf3bff04e804c16d9219d23850}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (LooseElectronUpperAbsEtaCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a05ff7c3b228a631bc3e5b7a0682a57ce}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (LooseMuonUpperAbsEtaCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a255e2d32a36f214ad7726e7a3644a49e}{IMPL\_\-SETTING} (std::string, VetoElectronID)
+\item 
+\hyperlink{classHttSettings_a56584f6e7fba4d5ace62dcc2d6ef9536}{IMPL\_\-SETTING} (std::string, VetoElectronIDType)
+\item 
+\hyperlink{classHttSettings_a2de0dba895bb5dc411cd51818a8c21d2}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, VetoElectronIDName,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_abd06ccd89c1669d409d252f47f5b71cd}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronMvaIDCutEB1,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a338306a6253ee9ac8fa07e1910ec732e}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronMvaIDCutEB2,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a448ca7df803175d519a22dcd7a9fbc84}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronMvaIDCutEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_af47c559944526dcba8e6292a83f07ea6}{IMPL\_\-SETTING} (std::string, VetoElectronReco)
+\item 
+\hyperlink{classHttSettings_aeaa16bed1e69ba55ea7918983bf1c0a3}{IMPL\_\-SETTING} (std::string, VetoMuonID)
+\item 
+\hyperlink{classHttSettings_a6dba2be5fe67cc4156a37199ee691e6d}{IMPL\_\-SETTING} (std::string, VetoElectronIsoType)
+\item 
+\hyperlink{classHttSettings_a780562e8bdad824022e61ce90585851e}{IMPL\_\-SETTING} (std::string, VetoElectronIso)
+\item 
+\hyperlink{classHttSettings_aefd84ad1695e1bdb04c825ffc3a3f11d}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a74114758514943c184cc1353dc74a793}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ac2ca333eba7108844e5ce46288424a36}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a5c7241bf19a2323faada047f5abc5c2d}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoElectronIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a208e159a71c3cb2ad25e71e057de2ec6}{IMPL\_\-SETTING} (std::string, VetoMuonIsoType)
+\item 
+\hyperlink{classHttSettings_a3a13d1b4ee69f3334d779ce4b9aba0f9}{IMPL\_\-SETTING} (std::string, VetoMuonIso)
+\item 
+\hyperlink{classHttSettings_af048269f33df9f02ef46e9d64d860d0d}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoMuonIsoPtSumOverPtLowerThresholdEB,-\/1.0)
+\item 
+\hyperlink{classHttSettings_aa87e155f0a156b6c2005e32d65ff6c0e}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoMuonIsoPtSumOverPtLowerThresholdEE,-\/1.0)
+\item 
+\hyperlink{classHttSettings_adea4499dc516f7cfd438e703d50b76ac}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoMuonIsoPtSumOverPtUpperThresholdEB, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_ad2400b8e6df12ee3dffd42c80a2b5025}{IMPL\_\-SETTING\_\-DEFAULT} (float, VetoMuonIsoPtSumOverPtUpperThresholdEE, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_ad96b23461ccea7e7983ff584eda33824}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (VetoElectronLowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_aeb8a93b9a912f8e04e639c8b85f128ef}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (VetoMuonLowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a780edfbc710a9b491ed7537ead27225a}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (VetoElectronUpperAbsEtaCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a8b698b24a00bf7a7d9f7cba39c21458b}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (VetoMuonUpperAbsEtaCuts,\{\})
+\item 
+\hyperlink{classHttSettings_a2ab5b01575a9c20f5b3f484a923b9175}{IMPL\_\-SETTING} (std::string, DiVetoElectronVetoMode)
+\item 
+\hyperlink{classHttSettings_a11d0797ee5f15ceedc51c0c83b097dcb}{IMPL\_\-SETTING\_\-DEFAULT} (float, DiVetoElectronMinDeltaRCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a614b9f9a6448fcd0eae1d09a75e1723c}{IMPL\_\-SETTING} (std::string, DiVetoMuonVetoMode)
+\item 
+\hyperlink{classHttSettings_ac82d12116eac0c155589c0040238bcc3}{IMPL\_\-SETTING\_\-DEFAULT} (float, DiVetoMuonMinDeltaRCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ae56fd4ee1a4ba1dfad77905b9106a538}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, ElectronEnergyCorrection,\char`\"{}none\char`\"{})
+\item 
+\hyperlink{classHttSettings_a6f23d8103aaea6cdfe90ca7b79ce94a9}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronEnergyCorrectionShift, 1.0)
+\item 
+\hyperlink{classHttSettings_ad23f95a86a7e9281e084669b4293d5d7}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronEnergyCorrectionShiftEB, 1.0)
+\item 
+\hyperlink{classHttSettings_a57dc3006dca1a95598947f28502475cc}{IMPL\_\-SETTING\_\-DEFAULT} (float, ElectronEnergyCorrectionShiftEE, 1.0)
+\item 
+\hyperlink{classHttSettings_a26c1338e64e048cec7d543ca9ccbf72c}{IMPL\_\-SETTING\_\-DEFAULT} (float, MuonEnergyCorrectionShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a678dfd913c2204cc5d642301a43756fa}{IMPL\_\-SETTING\_\-DEFAULT} (float, RandomMuonEnergySmearing, 0.0)
+\item 
+\hyperlink{classHttSettings_a7e16a0445696e88db976f5b6ec6e2cff}{IMPL\_\-SETTING\_\-DEFAULT} (float, RandomTauEnergySmearing, 0.0)
+\item 
+\hyperlink{classHttSettings_a26b4399da3b83c9a2c2174aad667cb69}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, TauEnergyCorrection,\char`\"{}none\char`\"{})
+\item 
+\hyperlink{classHttSettings_ae87028c834eae8a541ffa7adb6945f6a}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionOneProng, 1.0)
+\item 
+\hyperlink{classHttSettings_a990bb76f25ef953b323a1da97df0a42f}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionOneProngPiZeros, 1.0)
+\item 
+\hyperlink{classHttSettings_a9fc6f8e7febeed96c0e22ae57594b3e3}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionThreeProng, 1.0)
+\item 
+\hyperlink{classHttSettings_a888c120dedf0435ff3a7cdad154bbf6f}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a96b8aa1d1077cae74ccf8ad95db1b91e}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionOneProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_aa2da7ce271caf09424e162bde62b803c}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionOneProngPiZerosShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a274ad9b3c532a2893ed7d361d9080892}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauEnergyCorrectionThreeProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_ab36239985c161a7043a6ecc38f0808ec}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionOneProng, 1.0)
+\item 
+\hyperlink{classHttSettings_a8a2bc381791e361f3d1f2099a8fc210d}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionOneProngPiZeros, 1.0)
+\item 
+\hyperlink{classHttSettings_a5de7225a3bae5b74e3f57a0784c4a6a9}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionThreeProng, 1.0)
+\item 
+\hyperlink{classHttSettings_ac5326a137aaeaacb3ac8bb41f7f57d4f}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a7fa9710a76d1e33edb134b1da8b8308f}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionOneProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a70ec2ba6c5823ecd784b3cc84582592c}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionOneProngPiZerosShift, 1.0)
+\item 
+\hyperlink{classHttSettings_ababa9276adbac2fb90ebb2c502ef3976}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronFakeEnergyCorrectionThreeProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a7a50f923a076ad48c0a43d64124fc9e2}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionOneProng, 1.0)
+\item 
+\hyperlink{classHttSettings_a60758c002601ce89d79abe088a533c4d}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionOneProngPiZeros, 1.0)
+\item 
+\hyperlink{classHttSettings_a2d642e8ff52e663309a1fa01e4d5434e}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionThreeProng, 1.0)
+\item 
+\hyperlink{classHttSettings_a099ef27311d172e0a1bc4f218fe06f36}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a29def60556d711089d60d145a48b66fa}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionOneProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_ad096991b045aed584c1612ee93ae6ea1}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionOneProngPiZerosShift, 1.0)
+\item 
+\hyperlink{classHttSettings_aa5aa20e4627da32fa2de62bd6df5b45e}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonFakeEnergyCorrectionThreeProngShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a47895350290a623b6cf46c4766091eeb}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauJetFakeEnergyCorrection, 0.0)
+\item 
+\hyperlink{classHttSettings_a4b994d80181858ca1b197d37322e1126}{IMPL\_\-SETTING} (float, RecoMuonInElectronConeLowerPtCut)
+\item 
+\hyperlink{classHttSettings_a40db97084ea0a152fe85fd95b5f54cb6}{IMPL\_\-SETTING} (float, RecoMuonInElectronConeUpperAbsEtaCut)
+\item 
+\hyperlink{classHttSettings_aa5139267789fb86b9c690d26df803901}{IMPL\_\-SETTING} (float, RecoMuonInElectronConeSize)
+\item 
+\hyperlink{classHttSettings_a0f3c47cc748cad7c207b7efa7a3ff978}{IMPL\_\-SETTING} (std::string, ZBosonVetoType)
+\item 
+\hyperlink{classHttSettings_a4bc5e270180cfed1780f508edc312d7e}{IMPL\_\-SETTING} (float, MetLowerPtCuts)
+\item 
+\hyperlink{classHttSettings_a2939619972a67313042065bb11281e49}{IMPL\_\-SETTING} (float, MetUpperPtCuts)
+\item 
+\hyperlink{classHttSettings_a2b5e602f6e39dc6a1f02edc944fd5419}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, TauDiscriminatorIsolationName,\char`\"{}hpsPFTauDiscriminationByRawCombinedIsolationDBSumPtCorr3Hits\char`\"{})
+\item 
+\hyperlink{classHttSettings_a1578ae26bbc066aa5706fbbd1d8a495c}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauDiscriminatorIsolationCut, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a369684e978992824030fcba3051c8792}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauDiscriminatorMvaIsolation,\{\})
+\item 
+\hyperlink{classHttSettings_aa62e419cb8c62e4690f4e49ee721984f}{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT} (TauDiscriminatorAntiElectronMvaCuts,\{\})
+\item 
+\hyperlink{classHttSettings_ab2dc5540ed68cd907957fa57019a6a4e}{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT} (TauDiscriminatorAntiElectronMvaCutsLeptonIndices,\{\})
+\item 
+\hyperlink{classHttSettings_a52928e3bba3d62d14e8138e2cab0f63e}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauLowerZImpactCut, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a6a8a32ca297a735b05c67ef579ef594a}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauUpperZImpactCut, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a589c74328a3eccca2bd0ab46f667df15}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauLeadingTrackPtCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a71d7c6ca9c1d8304ebb02c4ad4393962}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauTrackMultiplicityCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ab04b9f8ef9fb66c65a4832f199d6867c}{IMPL\_\-SETTING\_\-DEFAULT} (float, SvfitMassShift, 1.0)
+\item 
+\hyperlink{classHttSettings_a37f7d51513391d0069be00e70ac80d6c}{IMPL\_\-SETTING} (int, NLooseElectrons)
+\item 
+\hyperlink{classHttSettings_a5aeb8f008ab1bbc858b8057335997611}{IMPL\_\-SETTING} (int, NLooseMuons)
+\item 
+\hyperlink{classHttSettings_a95f6a64613094769937b40065e7aadcd}{IMPL\_\-SETTING} (int, MaxNLooseElectrons)
+\item 
+\hyperlink{classHttSettings_adc4635682f2e9862ce8b2fb48bd253e3}{IMPL\_\-SETTING} (int, MaxNLooseMuons)
+\item 
+\hyperlink{classHttSettings_a630faf528cca577605aec717039f7114}{IMPL\_\-SETTING\_\-DEFAULT} (float, LowerCutHardLepPt,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a3a66cee45e0ac72fda735e26fa63fe76}{IMPL\_\-SETTING\_\-DEFAULT} (float, DiTauPairMinDeltaRCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a5dc15345059d488018fdadd26c298f24}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (DiTauPairLepton1LowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_ac90837d592db267590fd1587b8189b94}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (DiTauPairLepton2LowerPtCuts,\{\})
+\item 
+\hyperlink{classHttSettings_aad257d690e6fabf2ff987740523bd9bb}{IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT} (DiTauPairHltPathsWithoutCommonMatchRequired,\{\})
+\item 
+\hyperlink{classHttSettings_a628ac5fc04df1c3f59616431a6401868}{IMPL\_\-SETTING\_\-DEFAULT} (bool, DiTauPairIsTauIsoMVA, false)
+\item 
+\hyperlink{classHttSettings_a3460424a36d89e264f3636661324bb24}{IMPL\_\-SETTING\_\-DEFAULT} (bool, DiTauPairNoHLT, false)
+\item 
+\hyperlink{classHttSettings_ae0424bba45f16e9ee28b093ee6cf26eb}{IMPL\_\-SETTING\_\-DEFAULT} (bool, RequireFirstTriggering, false)
+\item 
+\hyperlink{classHttSettings_ad6b4742eaea19aeabc3ddcf31b69606f}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (HLTBranchNames,\{\})
+\item 
+\hyperlink{classHttSettings_adac071f81d9bd3aa4c7269b9e5f12276}{IMPL\_\-SETTING\_\-DEFAULT} (bool, DiTauPairHLTLast, false)
+\item 
+\hyperlink{classHttSettings_a01f8ffe8b57c0e0a5ce42ddea4074b10}{IMPL\_\-SETTING} (std::string, SvfitIntegrationMethod)
+\item 
+\hyperlink{classHttSettings_a7fb46615968a14864b5d70d43c53f71d}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, SvfitCacheFile,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a3119e8f477ab24526676874edcfed7b3}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, SvfitCacheTree,\char`\"{}svfitCache\char`\"{})
+\item 
+\hyperlink{classHttSettings_a87ee236801590c12c57f609a1b9e0f9c}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, SvfitCacheFileFolder,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a6f3eacd7b57c5cdec47fa3ad1cbb0173}{IMPL\_\-SETTING\_\-DEFAULT} (bool, UseFirstInputFileNameForSvfit, false)
+\item 
+\hyperlink{classHttSettings_a958ee247569fa830756d0085db2a978f}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, SvfitCacheMissBehaviour,\char`\"{}assert\char`\"{})
+\item 
+\hyperlink{classHttSettings_a3dac9f43fcb3c7a5d70b58afda648707}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, SvfitOutFile,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a6c716fd3af2c6ef4c4710befb1f56a92}{IMPL\_\-SETTING\_\-DEFAULT} (bool, GenerateSvfitInput, false)
+\item 
+\hyperlink{classHttSettings_abcde40e309d5a43f7e4b6842c9efe4e9}{IMPL\_\-SETTING} (std::string, TauTauRestFrameReco)
+\item 
+\hyperlink{classHttSettings_ac08dfb991a30202ac452541b223d4f77}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauElectronLowerDeltaRCut, 0.5)
+\item 
+\hyperlink{classHttSettings_a1d665e4d010863f0c9115b4b1070ca17}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauMuonLowerDeltaRCut, 0.5)
+\item 
+\hyperlink{classHttSettings_a6eae32445118b93d4b062fcc41517f2d}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauTauLowerDeltaRCut, 0.5)
+\item 
+\hyperlink{classHttSettings_a0761009fdeef4d51d6a22430aede8fdf}{IMPL\_\-SETTING\_\-DEFAULT} (float, JetTauLowerDeltaRCut, 0.5)
+\item 
+\hyperlink{classHttSettings_ab224cd5b480c995543678864a4e0ce0c}{IMPL\_\-SETTING} (std::string, TauSpinnerSettingsPDF)
+\item 
+\hyperlink{classHttSettings_a71ed554cb43c01667c0b873b920c4b7c}{IMPL\_\-SETTING} (float, TauSpinnerSettingsCmsEnergy)
+\item 
+\hyperlink{classHttSettings_a3d0bb915529eab47fc3d93b281dc00f1}{IMPL\_\-SETTING} (bool, TauSpinnerSettingsIpp)
+\item 
+\hyperlink{classHttSettings_a962c50a239f57a36583e58c16df03009}{IMPL\_\-SETTING} (int, TauSpinnerSettingsIpol)
+\item 
+\hyperlink{classHttSettings_a675074223c4ad2c8654c73fe71c32ebb}{IMPL\_\-SETTING} (int, TauSpinnerSettingsNonSM2)
+\item 
+\hyperlink{classHttSettings_a84f818de8883e7a52e5ca6d4ac3e2de2}{IMPL\_\-SETTING} (int, TauSpinnerSettingsNonSMN)
+\item 
+\hyperlink{classHttSettings_a78aa8b6f16bf0238d8da0db91558762d}{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT} (TauSpinnerMixingAnglesOverPiHalf,\{\})
+\item 
+\hyperlink{classHttSettings_af0a655ffdbcff54a4d4d0fbbde8bccf0}{IMPL\_\-SETTING\_\-DEFAULT} (float, TauSpinnerMixingAnglesOverPiHalfSample,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a6fd5d204a586a0fbbbb89f3f940ee017}{IMPL\_\-SETTING} (int, BosonPdgId)
+\item 
+\hyperlink{classHttSettings_ae8163b41b1187ab3e0f2f808082a18ac}{IMPL\_\-SETTING\_\-DEFAULT} (bool, PhiTransform, false)
+\item 
+\hyperlink{classHttSettings_aa09d429dfbd5ad6b9e3b4d228f9aa7fe}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (AntiTtbarTmvaInputQuantities,\{\})
+\item 
+\hyperlink{classHttSettings_a395368650c207e232b55d75f89786624}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (AntiTtbarTmvaMethods,\{\})
+\item 
+\hyperlink{classHttSettings_a96a750d3c33944e4e41172aac5b84aa1}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (AntiTtbarTmvaWeights,\{\})
+\item 
+\hyperlink{classHttSettings_a5ba7dd2259f54ac79ea4ca9c5f7690cf}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauPolarisationTmvaInputQuantities,\{\})
+\item 
+\hyperlink{classHttSettings_a5a3e870b39dd13d3859c9ec5f579a0a2}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauPolarisationTmvaMethods,\{\})
+\item 
+\hyperlink{classHttSettings_a11d5b78375d1a35dd36ac11257384dc6}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauPolarisationTmvaWeights,\{\})
+\item 
+\hyperlink{classHttSettings_a35ce0fe901e69d374becbe5f16dc2789}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MVATestMethodsInputQuantities,\{\})
+\item 
+\hyperlink{classHttSettings_a789b96782a5fc48e216ab8b19d39c099}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MVATestMethodsMethods,\{\})
+\item 
+\hyperlink{classHttSettings_a89bebd29ec416dc09e1b25ecc07f1e45}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MVATestMethodsNames,\{\})
+\item 
+\hyperlink{classHttSettings_a344986608f8f7a43084022c2ea3dbff7}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MVACustomWeights,\{\})
+\item 
+\hyperlink{classHttSettings_a3ad9fb1a46b3cefcd55d59cae270079c}{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT} (MVATestMethodsNFolds,\{\})
+\item 
+\hyperlink{classHttSettings_af35f86b3b0858c95f367862b50249a90}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MVATestMethodsWeights,\{\})
+\item 
+\hyperlink{classHttSettings_adb48bb6048ea848b6bc172ece7304d2d}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TagLeptonHltPaths,\{\})
+\item 
+\hyperlink{classHttSettings_a5c858d9a804965e10e80aaee3129ec7c}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (ProbeLeptonHltPaths,\{\})
+\item 
+\hyperlink{classHttSettings_a72c155dc0c66286049e0a96fc38d7d58}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TagLeptonTriggerFilterNames,\{\})
+\item 
+\hyperlink{classHttSettings_ac90c3f148c23ca181d8337425966f405}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (ProbeLeptonTriggerFilterNames,\{\})
+\item 
+\hyperlink{classHttSettings_a0e185c7c739d7efa8caf9a8449604110}{IMPL\_\-SETTING\_\-DEFAULT} (bool, SaveRooWorkspaceTriggerWeightAsOptionalOnly, false)
+\item 
+\hyperlink{classHttSettings_a7163f114debc502fabc0a31866245f88}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, RooWorkspace,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a8daa9985fff6d954be88d243601b56f8}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (RooWorkspaceWeightNames,\{\})
+\item 
+\hyperlink{classHttSettings_a16bc0e064dfe53c5a89b046d5e0081a2}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (RooWorkspaceObjectNames,\{\})
+\item 
+\hyperlink{classHttSettings_aab59102695ddf2fa3f151627b385e0c6}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (RooWorkspaceObjectArguments,\{\})
+\item 
+\hyperlink{classHttSettings_ac00e304a4e11243e33168edf333e61d5}{IMPL\_\-SETTING\_\-DEFAULT} (bool, SaveEETriggerWeightAsOptionalOnly, false)
+\item 
+\hyperlink{classHttSettings_a53af2d1183b8dc100d05a54b1a5568ec}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, EETriggerWeightWorkspace,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a8d7748f74329a8eca5f2574b4cd9ecb8}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (EETriggerWeightWorkspaceWeightNames,\{\})
+\item 
+\hyperlink{classHttSettings_aef75c48c8c9dfd3d5059332be5635d1d}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (EETriggerWeightWorkspaceObjectNames,\{\})
+\item 
+\hyperlink{classHttSettings_ad0011b6e8ff267281a933dd3505eba33}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (EETriggerWeightWorkspaceObjectArguments,\{\})
+\item 
+\hyperlink{classHttSettings_a0477d9837718fbff577da0e7c46e1727}{IMPL\_\-SETTING\_\-DEFAULT} (bool, SaveMuMuTriggerWeightAsOptionalOnly, false)
+\item 
+\hyperlink{classHttSettings_abf46321a9b0e9b722230dee789746fe7}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MuMuTriggerWeightWorkspace,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_afb45142a29386e30d75085c0fcb95607}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuMuTriggerWeightWorkspaceWeightNames,\{\})
+\item 
+\hyperlink{classHttSettings_aed2ac5e09cc936ae32ab26abb998b025}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuMuTriggerWeightWorkspaceObjectNames,\{\})
+\item 
+\hyperlink{classHttSettings_a4ed979f31a66000c717db31d40241bae}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuMuTriggerWeightWorkspaceObjectArguments,\{\})
+\item 
+\hyperlink{classHttSettings_af06ee6db5e66d375f02cdb462ad0109a}{IMPL\_\-SETTING\_\-DEFAULT} (bool, SaveTauTauTriggerWeightAsOptionalOnly, false)
+\item 
+\hyperlink{classHttSettings_a6cacd94282f306dcc378783dae8f193f}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, TauTauTriggerWeightWorkspace,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a6642e7c88f78f3a77c7fe8f27913cb08}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauTauTriggerWeightWorkspaceWeightNames,\{\})
+\item 
+\hyperlink{classHttSettings_a804fffc1952f3be2d23de35fca145662}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauTauTriggerWeightWorkspaceObjectNames,\{\})
+\item 
+\hyperlink{classHttSettings_a321760ee7322f44ea17c8cfc238125ff}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (TauTauTriggerWeightWorkspaceObjectArguments,\{\})
+\item 
+\hyperlink{classHttSettings_a2c395317a2b6371baae4e5b69215e80f}{IMPL\_\-SETTING\_\-DEFAULT} (bool, SaveMuTauTriggerWeightAsOptionalOnly, false)
+\item 
+\hyperlink{classHttSettings_ad5430ca5352c70d79ccce3b996973fb3}{IMPL\_\-SETTING\_\-DEFAULT} (std::string, MuTauTriggerWeightWorkspace,\char`\"{}\char`\"{})
+\item 
+\hyperlink{classHttSettings_a9256889e237953b72db38e53aaf3396d}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuTauTriggerWeightWorkspaceWeightNames,\{\})
+\item 
+\hyperlink{classHttSettings_a387e195dada120611ad08764bf90f172}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuTauTriggerWeightWorkspaceObjectNames,\{\})
+\item 
+\hyperlink{classHttSettings_abab0cd9af3ee87219628f8803c6e1b89}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (MuTauTriggerWeightWorkspaceObjectArguments,\{\})
+\item 
+\hyperlink{classHttSettings_a3dcf03b7bfe0a248a70f1528ada185cb}{IMPL\_\-SETTING\_\-DEFAULT} (int, DeltaRBinning, 100)
+\item 
+\hyperlink{classHttSettings_a02117824c52f6935030c7c52224d0e9d}{IMPL\_\-SETTING\_\-DEFAULT} (float, DeltaRMaximum, 0.4)
+\item 
+\hyperlink{classHttSettings_a985e2cd59bd900213f04ee61aa532d85}{IMPL\_\-SETTING\_\-DEFAULT} (int, IsoPtSumBinning, 200)
+\item 
+\hyperlink{classHttSettings_ae90250f13cf5baa41e67dfb9847d85c4}{IMPL\_\-SETTING\_\-DEFAULT} (float, IsoPtSumMaximum, 50)
+\item 
+\hyperlink{classHttSettings_a0862d6ec9c0f52fd03a4886b4fee068e}{IMPL\_\-SETTING\_\-DEFAULT} (float, IsoPtSumOverPtMaximum, 0.4)
+\item 
+\hyperlink{classHttSettings_a82e40b06ba0457e907594caae1c6673e}{IMPL\_\-SETTING\_\-DEFAULT} (bool, RandomMuon, false)
+\item 
+\hyperlink{classHttSettings_a247aca9246c0e51385df39069a06961e}{IMPL\_\-SETTING\_\-DEFAULT} (float, MassSmearing, 0.10)
+\item 
+\hyperlink{classHttSettings_ab8d151b450153fb32b2a421d7ee0ca41}{IMPL\_\-SETTING\_\-DEFAULT} (float, Lepton1AcceptancePtCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a112b65cd9e21261b74816f2fadea34eb}{IMPL\_\-SETTING\_\-DEFAULT} (float, Lepton2AcceptancePtCut,-\/1.0)
+\item 
+\hyperlink{classHttSettings_a74b1b317822782e7dc991237867f860b}{IMPL\_\-SETTING\_\-DEFAULT} (float, Lepton1AcceptanceEtaCut, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_a416d34e499691a6eeb0e026034b824db}{IMPL\_\-SETTING\_\-DEFAULT} (float, Lepton2AcceptanceEtaCut, std::numeric\_\-limits$<$ float $>$::max())
+\item 
+\hyperlink{classHttSettings_ac970b89b18a3285a6b20709b1372a4d7}{IMPL\_\-SETTING\_\-STRINGLIST} (PdfLheWeights)
+\item 
+\hyperlink{classHttSettings_adfc879b87f116121f3f5a0c4644cd59a}{IMPL\_\-SETTING\_\-STRINGLIST} (AlphaSLheWeights)
+\item 
+\hyperlink{classHttSettings_a224c669ebdf717c2310bd5d80ebedf40}{IMPL\_\-SETTING\_\-STRINGLIST} (ScaleLheWeights)
+\item 
+\hyperlink{classHttSettings_ae3eaf2427a38dc155a300447701af998}{IMPL\_\-SETTING\_\-FLOATLIST} (SimpleMuTauFakeRateWeightLoose)
+\item 
+\hyperlink{classHttSettings_aa818a821ac07f57f4b55254fa1352b19}{IMPL\_\-SETTING\_\-FLOATLIST} (SimpleMuTauFakeRateWeightTight)
+\item 
+\hyperlink{classHttSettings_a6b502d2417fae961ed7fd52ada54179e}{IMPL\_\-SETTING\_\-FLOATLIST} (SimpleEleTauFakeRateWeightVLoose)
+\item 
+\hyperlink{classHttSettings_a4f17d6b910aa47d38dcdb308ab4c348b}{IMPL\_\-SETTING\_\-FLOATLIST} (SimpleEleTauFakeRateWeightTight)
+\item 
+\hyperlink{classHttSettings_a3eeb2b6787abd3fbdda4854e283adfdf}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (\hyperlink{classMetFilter}{MetFilter},\{\})
+\item 
+\hyperlink{classHttSettings_ad109f6b7e230f5ce774887febfb7e248}{IMPL\_\-SETTING} (std::string, ZptReweightProducerWeights)
+\item 
+\hyperlink{classHttSettings_a95a362123622626e2ba115c9a0f701b5}{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT} (FakeFaktorFiles,\{\})
+\item 
+\hyperlink{classHttSettings_acfacd3fac8bcf39c9d542077f20b540c}{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT} (MadGraphMixingAnglesOverPiHalf,\{\})
+\item 
+\hyperlink{classHttSettings_a590977f27bcdf90a9ff244eb663a02c9}{IMPL\_\-SETTING\_\-DEFAULT} (float, MadGraphMixingAnglesOverPiHalfSample,-\/1.0)
+\item 
+\hyperlink{classHttSettings_ab215ffcb567aceff98b8289457827490}{IMPL\_\-SETTING} (std::string, MadGraphParamCard)
+\item 
+\hyperlink{classHttSettings_a5c88b182940146dcefaf3625c16ab3e4}{IMPL\_\-SETTING} (std::string, MadGraphParamCardSample)
+\item 
+\hyperlink{classHttSettings_aa918600ec8b73732b5a6432fef753e34}{IMPL\_\-SETTING\_\-DEFAULT} (bool, UseMadGraph2p5, false)
+\item 
+\hyperlink{classHttSettings_a1eeccbffbcab60449a06a669d164d79c}{IMPL\_\-SETTING} (std::string, MadGraph2p6ProcessDirectory)
+\item 
+\hyperlink{classHttSettings_adcce9324c375db2a5fe223eb85216ecd}{IMPL\_\-SETTING\_\-STRINGLIST} (MadGraph2p5ProcessDirectories)
+\item 
+\hyperlink{classHttSettings_a20711c4a2bda634227ba9127f37cc97f}{IMPL\_\-SETTING} (bool, MadGraphSortingHeavyBQuark)
+\item 
+\hyperlink{classHttSettings_af49255f4051c7dcb6547ece3b3a2cff5}{IMPL\_\-SETTING} (std::string, MELAHiggsProductionMode)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ std::string $>$ \hyperlink{classHttSettings_ae13115ebff12caecd683ea97cadecafc}{EleTauFakeRateHistograms} = \{\char`\"{}antiEVLoose\char`\"{}, \char`\"{}antiELoose\char`\"{}, \char`\"{}antiEMedium\char`\"{}, \char`\"{}antiETight\char`\"{}, \char`\"{}antiEVTight\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reads settings for all parts of the KappaAnalysis code from a prepared json configuration file. Defines settings that can be obtained from the json configuration file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttSettings_af49255f4051c7dcb6547ece3b3a2cff5}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MELAHiggsProductionMode)}}
+\label{classHttSettings_af49255f4051c7dcb6547ece3b3a2cff5}
+\hypertarget{classHttSettings_a20711c4a2bda634227ba9127f37cc97f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (bool, \/  MadGraphSortingHeavyBQuark)}}
+\label{classHttSettings_a20711c4a2bda634227ba9127f37cc97f}
+\hypertarget{classHttSettings_a1eeccbffbcab60449a06a669d164d79c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MadGraph2p6ProcessDirectory)}}
+\label{classHttSettings_a1eeccbffbcab60449a06a669d164d79c}
+\hypertarget{classHttSettings_a5c88b182940146dcefaf3625c16ab3e4}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MadGraphParamCardSample)}}
+\label{classHttSettings_a5c88b182940146dcefaf3625c16ab3e4}
+\hypertarget{classHttSettings_ab215ffcb567aceff98b8289457827490}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MadGraphParamCard)}}
+\label{classHttSettings_ab215ffcb567aceff98b8289457827490}
+\hypertarget{classHttSettings_ad109f6b7e230f5ce774887febfb7e248}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  ZptReweightProducerWeights)}}
+\label{classHttSettings_ad109f6b7e230f5ce774887febfb7e248}
+\hypertarget{classHttSettings_a6fd5d204a586a0fbbbb89f3f940ee017}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  BosonPdgId)}}
+\label{classHttSettings_a6fd5d204a586a0fbbbb89f3f940ee017}
+\hypertarget{classHttSettings_a84f818de8883e7a52e5ca6d4ac3e2de2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  TauSpinnerSettingsNonSMN)}}
+\label{classHttSettings_a84f818de8883e7a52e5ca6d4ac3e2de2}
+\hypertarget{classHttSettings_a675074223c4ad2c8654c73fe71c32ebb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  TauSpinnerSettingsNonSM2)}}
+\label{classHttSettings_a675074223c4ad2c8654c73fe71c32ebb}
+\hypertarget{classHttSettings_a962c50a239f57a36583e58c16df03009}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  TauSpinnerSettingsIpol)}}
+\label{classHttSettings_a962c50a239f57a36583e58c16df03009}
+\hypertarget{classHttSettings_a3d0bb915529eab47fc3d93b281dc00f1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (bool, \/  TauSpinnerSettingsIpp)}}
+\label{classHttSettings_a3d0bb915529eab47fc3d93b281dc00f1}
+\hypertarget{classHttSettings_a71ed554cb43c01667c0b873b920c4b7c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  TauSpinnerSettingsCmsEnergy)}}
+\label{classHttSettings_a71ed554cb43c01667c0b873b920c4b7c}
+\hypertarget{classHttSettings_ab224cd5b480c995543678864a4e0ce0c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  TauSpinnerSettingsPDF)}}
+\label{classHttSettings_ab224cd5b480c995543678864a4e0ce0c}
+\hypertarget{classHttSettings_abcde40e309d5a43f7e4b6842c9efe4e9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  TauTauRestFrameReco)}}
+\label{classHttSettings_abcde40e309d5a43f7e4b6842c9efe4e9}
+\hypertarget{classHttSettings_a01f8ffe8b57c0e0a5ce42ddea4074b10}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  SvfitIntegrationMethod)}}
+\label{classHttSettings_a01f8ffe8b57c0e0a5ce42ddea4074b10}
+\hypertarget{classHttSettings_adc4635682f2e9862ce8b2fb48bd253e3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  MaxNLooseMuons)}}
+\label{classHttSettings_adc4635682f2e9862ce8b2fb48bd253e3}
+\hypertarget{classHttSettings_a95f6a64613094769937b40065e7aadcd}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  MaxNLooseElectrons)}}
+\label{classHttSettings_a95f6a64613094769937b40065e7aadcd}
+\hypertarget{classHttSettings_a5aeb8f008ab1bbc858b8057335997611}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  NLooseMuons)}}
+\label{classHttSettings_a5aeb8f008ab1bbc858b8057335997611}
+\hypertarget{classHttSettings_a37f7d51513391d0069be00e70ac80d6c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (int, \/  NLooseElectrons)}}
+\label{classHttSettings_a37f7d51513391d0069be00e70ac80d6c}
+\hypertarget{classHttSettings_a2939619972a67313042065bb11281e49}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  MetUpperPtCuts)}}
+\label{classHttSettings_a2939619972a67313042065bb11281e49}
+\hypertarget{classHttSettings_a4bc5e270180cfed1780f508edc312d7e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  MetLowerPtCuts)}}
+\label{classHttSettings_a4bc5e270180cfed1780f508edc312d7e}
+\hypertarget{classHttSettings_a0f3c47cc748cad7c207b7efa7a3ff978}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  ZBosonVetoType)}}
+\label{classHttSettings_a0f3c47cc748cad7c207b7efa7a3ff978}
+\hypertarget{classHttSettings_aa5139267789fb86b9c690d26df803901}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  RecoMuonInElectronConeSize)}}
+\label{classHttSettings_aa5139267789fb86b9c690d26df803901}
+\hypertarget{classHttSettings_a40db97084ea0a152fe85fd95b5f54cb6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  RecoMuonInElectronConeUpperAbsEtaCut)}}
+\label{classHttSettings_a40db97084ea0a152fe85fd95b5f54cb6}
+\hypertarget{classHttSettings_a4b994d80181858ca1b197d37322e1126}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  RecoMuonInElectronConeLowerPtCut)}}
+\label{classHttSettings_a4b994d80181858ca1b197d37322e1126}
+\hypertarget{classHttSettings_a614b9f9a6448fcd0eae1d09a75e1723c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  DiVetoMuonVetoMode)}}
+\label{classHttSettings_a614b9f9a6448fcd0eae1d09a75e1723c}
+\hypertarget{classHttSettings_a2ab5b01575a9c20f5b3f484a923b9175}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  DiVetoElectronVetoMode)}}
+\label{classHttSettings_a2ab5b01575a9c20f5b3f484a923b9175}
+\hypertarget{classHttSettings_a3a13d1b4ee69f3334d779ce4b9aba0f9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoMuonIso)}}
+\label{classHttSettings_a3a13d1b4ee69f3334d779ce4b9aba0f9}
+\hypertarget{classHttSettings_a208e159a71c3cb2ad25e71e057de2ec6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoMuonIsoType)}}
+\label{classHttSettings_a208e159a71c3cb2ad25e71e057de2ec6}
+\hypertarget{classHttSettings_a780562e8bdad824022e61ce90585851e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoElectronIso)}}
+\label{classHttSettings_a780562e8bdad824022e61ce90585851e}
+\hypertarget{classHttSettings_a6dba2be5fe67cc4156a37199ee691e6d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoElectronIsoType)}}
+\label{classHttSettings_a6dba2be5fe67cc4156a37199ee691e6d}
+\hypertarget{classHttSettings_aeaa16bed1e69ba55ea7918983bf1c0a3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoMuonID)}}
+\label{classHttSettings_aeaa16bed1e69ba55ea7918983bf1c0a3}
+\hypertarget{classHttSettings_af47c559944526dcba8e6292a83f07ea6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoElectronReco)}}
+\label{classHttSettings_af47c559944526dcba8e6292a83f07ea6}
+\hypertarget{classHttSettings_a56584f6e7fba4d5ace62dcc2d6ef9536}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoElectronIDType)}}
+\label{classHttSettings_a56584f6e7fba4d5ace62dcc2d6ef9536}
+\hypertarget{classHttSettings_a255e2d32a36f214ad7726e7a3644a49e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  VetoElectronID)}}
+\label{classHttSettings_a255e2d32a36f214ad7726e7a3644a49e}
+\hypertarget{classHttSettings_a4d9b0df2ccdc94ae57c6a9c0a1351066}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseMuonIso)}}
+\label{classHttSettings_a4d9b0df2ccdc94ae57c6a9c0a1351066}
+\hypertarget{classHttSettings_aa8164975f425ab26101a51bf5c347b4d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseMuonIsoType)}}
+\label{classHttSettings_aa8164975f425ab26101a51bf5c347b4d}
+\hypertarget{classHttSettings_a9ad91ad7904bcad1b441ffe3513483e8}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseElectronIso)}}
+\label{classHttSettings_a9ad91ad7904bcad1b441ffe3513483e8}
+\hypertarget{classHttSettings_ae7c24618e83db51f1e860d14390b15c0}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseElectronIsoType)}}
+\label{classHttSettings_ae7c24618e83db51f1e860d14390b15c0}
+\hypertarget{classHttSettings_aff328a890479ff02d7a8c7b126da3efa}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseMuonID)}}
+\label{classHttSettings_aff328a890479ff02d7a8c7b126da3efa}
+\hypertarget{classHttSettings_ab63c978173eaa9c4d1d61c992d358e3c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseElectronReco)}}
+\label{classHttSettings_ab63c978173eaa9c4d1d61c992d358e3c}
+\hypertarget{classHttSettings_a883fd0876b5100a04af373683acc1f25}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseElectronIDType)}}
+\label{classHttSettings_a883fd0876b5100a04af373683acc1f25}
+\hypertarget{classHttSettings_a9d4d24f41e2b5122dbce2e7df7b2ed39}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  LooseElectronID)}}
+\label{classHttSettings_a9d4d24f41e2b5122dbce2e7df7b2ed39}
+\hypertarget{classHttSettings_a380239bb554b50cec815a31e4947e978}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  MuonDeltaBetaCorrectionFactor)}}
+\label{classHttSettings_a380239bb554b50cec815a31e4947e978}
+\hypertarget{classHttSettings_a15a54c3d01ca1b2297236e75b041f840}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  MuonIsoSignalConeSize)}}
+\label{classHttSettings_a15a54c3d01ca1b2297236e75b041f840}
+\hypertarget{classHttSettings_ac294180c9793f6cb652ced772ca22c59}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  ElectronDeltaBetaCorrectionFactor)}}
+\label{classHttSettings_ac294180c9793f6cb652ced772ca22c59}
+\hypertarget{classHttSettings_a18c013ee9d78c831b113e5adb507d3b7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (float, \/  ElectronIsoSignalConeSize)}}
+\label{classHttSettings_a18c013ee9d78c831b113e5adb507d3b7}
+\hypertarget{classHttSettings_a26c8ae57efd90dbab0c4ddd2b3e9a490}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  ElectronIDType)}}
+\label{classHttSettings_a26c8ae57efd90dbab0c4ddd2b3e9a490}
+\hypertarget{classHttSettings_a1e48c177204aca674b7a2cc958b0990e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MvaMetShiftCorrectorFile)}}
+\label{classHttSettings_a1e48c177204aca674b7a2cc958b0990e}
+\hypertarget{classHttSettings_a8cd0a1343cd2ae2b2e68fd148e41e59b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MetShiftCorrectorFile)}}
+\label{classHttSettings_a8cd0a1343cd2ae2b2e68fd148e41e59b}
+\hypertarget{classHttSettings_a7523bd5520bf59a485cb19c11f6e902e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MvaMetRecoilCorrectorFile)}}
+\label{classHttSettings_a7523bd5520bf59a485cb19c11f6e902e}
+\hypertarget{classHttSettings_a7702319e39e58d88570bb84ea577f208}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (std::string, \/  MetRecoilCorrectorFile)}}
+\label{classHttSettings_a7702319e39e58d88570bb84ea577f208}
+\hypertarget{classHttSettings_a36256b0f0115e6efd8cb86bb8a0a6b13}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING@{IMPL\_\-SETTING}}
+\index{IMPL\_\-SETTING@{IMPL\_\-SETTING}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING (bool, \/  OSChargeLeptons)}}
+\label{classHttSettings_a36256b0f0115e6efd8cb86bb8a0a6b13}
+\hypertarget{classHttSettings_aa918600ec8b73732b5a6432fef753e34}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  UseMadGraph2p5, \/  false)}}
+\label{classHttSettings_aa918600ec8b73732b5a6432fef753e34}
+\hypertarget{classHttSettings_a590977f27bcdf90a9ff244eb663a02c9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MadGraphMixingAnglesOverPiHalfSample, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a590977f27bcdf90a9ff244eb663a02c9}
+\hypertarget{classHttSettings_a416d34e499691a6eeb0e026034b824db}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  Lepton2AcceptanceEtaCut, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a416d34e499691a6eeb0e026034b824db}
+\hypertarget{classHttSettings_a74b1b317822782e7dc991237867f860b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  Lepton1AcceptanceEtaCut, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a74b1b317822782e7dc991237867f860b}
+\hypertarget{classHttSettings_a112b65cd9e21261b74816f2fadea34eb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  Lepton2AcceptancePtCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a112b65cd9e21261b74816f2fadea34eb}
+\hypertarget{classHttSettings_ab8d151b450153fb32b2a421d7ee0ca41}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  Lepton1AcceptancePtCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_ab8d151b450153fb32b2a421d7ee0ca41}
+\hypertarget{classHttSettings_a247aca9246c0e51385df39069a06961e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MassSmearing, \/  0. {\em 10})}}
+\label{classHttSettings_a247aca9246c0e51385df39069a06961e}
+\hypertarget{classHttSettings_a82e40b06ba0457e907594caae1c6673e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  RandomMuon, \/  false)}}
+\label{classHttSettings_a82e40b06ba0457e907594caae1c6673e}
+\hypertarget{classHttSettings_a0862d6ec9c0f52fd03a4886b4fee068e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  IsoPtSumOverPtMaximum, \/  0. {\em 4})}}
+\label{classHttSettings_a0862d6ec9c0f52fd03a4886b4fee068e}
+\hypertarget{classHttSettings_ae90250f13cf5baa41e67dfb9847d85c4}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  IsoPtSumMaximum, \/  50)}}
+\label{classHttSettings_ae90250f13cf5baa41e67dfb9847d85c4}
+\hypertarget{classHttSettings_a985e2cd59bd900213f04ee61aa532d85}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (int, \/  IsoPtSumBinning, \/  200)}}
+\label{classHttSettings_a985e2cd59bd900213f04ee61aa532d85}
+\hypertarget{classHttSettings_a02117824c52f6935030c7c52224d0e9d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  DeltaRMaximum, \/  0. {\em 4})}}
+\label{classHttSettings_a02117824c52f6935030c7c52224d0e9d}
+\hypertarget{classHttSettings_a3dcf03b7bfe0a248a70f1528ada185cb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (int, \/  DeltaRBinning, \/  100)}}
+\label{classHttSettings_a3dcf03b7bfe0a248a70f1528ada185cb}
+\hypertarget{classHttSettings_ad5430ca5352c70d79ccce3b996973fb3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MuTauTriggerWeightWorkspace, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_ad5430ca5352c70d79ccce3b996973fb3}
+\hypertarget{classHttSettings_a2c395317a2b6371baae4e5b69215e80f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  SaveMuTauTriggerWeightAsOptionalOnly, \/  false)}}
+\label{classHttSettings_a2c395317a2b6371baae4e5b69215e80f}
+\hypertarget{classHttSettings_a6cacd94282f306dcc378783dae8f193f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  TauTauTriggerWeightWorkspace, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a6cacd94282f306dcc378783dae8f193f}
+\hypertarget{classHttSettings_af06ee6db5e66d375f02cdb462ad0109a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  SaveTauTauTriggerWeightAsOptionalOnly, \/  false)}}
+\label{classHttSettings_af06ee6db5e66d375f02cdb462ad0109a}
+\hypertarget{classHttSettings_abf46321a9b0e9b722230dee789746fe7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MuMuTriggerWeightWorkspace, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_abf46321a9b0e9b722230dee789746fe7}
+\hypertarget{classHttSettings_a0477d9837718fbff577da0e7c46e1727}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  SaveMuMuTriggerWeightAsOptionalOnly, \/  false)}}
+\label{classHttSettings_a0477d9837718fbff577da0e7c46e1727}
+\hypertarget{classHttSettings_a53af2d1183b8dc100d05a54b1a5568ec}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  EETriggerWeightWorkspace, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a53af2d1183b8dc100d05a54b1a5568ec}
+\hypertarget{classHttSettings_ac00e304a4e11243e33168edf333e61d5}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  SaveEETriggerWeightAsOptionalOnly, \/  false)}}
+\label{classHttSettings_ac00e304a4e11243e33168edf333e61d5}
+\hypertarget{classHttSettings_a7163f114debc502fabc0a31866245f88}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  RooWorkspace, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a7163f114debc502fabc0a31866245f88}
+\hypertarget{classHttSettings_a0e185c7c739d7efa8caf9a8449604110}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  SaveRooWorkspaceTriggerWeightAsOptionalOnly, \/  false)}}
+\label{classHttSettings_a0e185c7c739d7efa8caf9a8449604110}
+\hypertarget{classHttSettings_ae8163b41b1187ab3e0f2f808082a18ac}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  PhiTransform, \/  false)}}
+\label{classHttSettings_ae8163b41b1187ab3e0f2f808082a18ac}
+\hypertarget{classHttSettings_af0a655ffdbcff54a4d4d0fbbde8bccf0}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauSpinnerMixingAnglesOverPiHalfSample, \/  -\/1. {\em 0})}}
+\label{classHttSettings_af0a655ffdbcff54a4d4d0fbbde8bccf0}
+\hypertarget{classHttSettings_a0761009fdeef4d51d6a22430aede8fdf}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  JetTauLowerDeltaRCut, \/  0. {\em 5})}}
+\label{classHttSettings_a0761009fdeef4d51d6a22430aede8fdf}
+\hypertarget{classHttSettings_a6eae32445118b93d4b062fcc41517f2d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauTauLowerDeltaRCut, \/  0. {\em 5})}}
+\label{classHttSettings_a6eae32445118b93d4b062fcc41517f2d}
+\hypertarget{classHttSettings_a1d665e4d010863f0c9115b4b1070ca17}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonLowerDeltaRCut, \/  0. {\em 5})}}
+\label{classHttSettings_a1d665e4d010863f0c9115b4b1070ca17}
+\hypertarget{classHttSettings_ac08dfb991a30202ac452541b223d4f77}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronLowerDeltaRCut, \/  0. {\em 5})}}
+\label{classHttSettings_ac08dfb991a30202ac452541b223d4f77}
+\hypertarget{classHttSettings_a6c716fd3af2c6ef4c4710befb1f56a92}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  GenerateSvfitInput, \/  false)}}
+\label{classHttSettings_a6c716fd3af2c6ef4c4710befb1f56a92}
+\hypertarget{classHttSettings_a3dac9f43fcb3c7a5d70b58afda648707}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  SvfitOutFile, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a3dac9f43fcb3c7a5d70b58afda648707}
+\hypertarget{classHttSettings_a958ee247569fa830756d0085db2a978f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  SvfitCacheMissBehaviour, \/  \char`\"{}assert\char`\"{})}}
+\label{classHttSettings_a958ee247569fa830756d0085db2a978f}
+\hypertarget{classHttSettings_a6f3eacd7b57c5cdec47fa3ad1cbb0173}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  UseFirstInputFileNameForSvfit, \/  false)}}
+\label{classHttSettings_a6f3eacd7b57c5cdec47fa3ad1cbb0173}
+\hypertarget{classHttSettings_a87ee236801590c12c57f609a1b9e0f9c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  SvfitCacheFileFolder, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a87ee236801590c12c57f609a1b9e0f9c}
+\hypertarget{classHttSettings_a3119e8f477ab24526676874edcfed7b3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  SvfitCacheTree, \/  \char`\"{}svfitCache\char`\"{})}}
+\label{classHttSettings_a3119e8f477ab24526676874edcfed7b3}
+\hypertarget{classHttSettings_a7fb46615968a14864b5d70d43c53f71d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  SvfitCacheFile, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a7fb46615968a14864b5d70d43c53f71d}
+\hypertarget{classHttSettings_adac071f81d9bd3aa4c7269b9e5f12276}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  DiTauPairHLTLast, \/  false)}}
+\label{classHttSettings_adac071f81d9bd3aa4c7269b9e5f12276}
+\hypertarget{classHttSettings_ae0424bba45f16e9ee28b093ee6cf26eb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  RequireFirstTriggering, \/  false)}}
+\label{classHttSettings_ae0424bba45f16e9ee28b093ee6cf26eb}
+\hypertarget{classHttSettings_a3460424a36d89e264f3636661324bb24}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  DiTauPairNoHLT, \/  false)}}
+\label{classHttSettings_a3460424a36d89e264f3636661324bb24}
+\hypertarget{classHttSettings_a628ac5fc04df1c3f59616431a6401868}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  DiTauPairIsTauIsoMVA, \/  false)}}
+\label{classHttSettings_a628ac5fc04df1c3f59616431a6401868}
+\hypertarget{classHttSettings_a3a66cee45e0ac72fda735e26fa63fe76}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  DiTauPairMinDeltaRCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a3a66cee45e0ac72fda735e26fa63fe76}
+\hypertarget{classHttSettings_a630faf528cca577605aec717039f7114}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LowerCutHardLepPt, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a630faf528cca577605aec717039f7114}
+\hypertarget{classHttSettings_ab04b9f8ef9fb66c65a4832f199d6867c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  SvfitMassShift, \/  1. {\em 0})}}
+\label{classHttSettings_ab04b9f8ef9fb66c65a4832f199d6867c}
+\hypertarget{classHttSettings_a71d7c6ca9c1d8304ebb02c4ad4393962}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauTrackMultiplicityCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a71d7c6ca9c1d8304ebb02c4ad4393962}
+\hypertarget{classHttSettings_a589c74328a3eccca2bd0ab46f667df15}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauLeadingTrackPtCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a589c74328a3eccca2bd0ab46f667df15}
+\hypertarget{classHttSettings_a6a8a32ca297a735b05c67ef579ef594a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauUpperZImpactCut, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a6a8a32ca297a735b05c67ef579ef594a}
+\hypertarget{classHttSettings_a52928e3bba3d62d14e8138e2cab0f63e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauLowerZImpactCut, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a52928e3bba3d62d14e8138e2cab0f63e}
+\hypertarget{classHttSettings_a1578ae26bbc066aa5706fbbd1d8a495c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauDiscriminatorIsolationCut, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a1578ae26bbc066aa5706fbbd1d8a495c}
+\hypertarget{classHttSettings_a2b5e602f6e39dc6a1f02edc944fd5419}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  TauDiscriminatorIsolationName, \/  \char`\"{}hpsPFTauDiscriminationByRawCombinedIsolationDBSumPtCorr3Hits\char`\"{})}}
+\label{classHttSettings_a2b5e602f6e39dc6a1f02edc944fd5419}
+\hypertarget{classHttSettings_a47895350290a623b6cf46c4766091eeb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauJetFakeEnergyCorrection, \/  0. {\em 0})}}
+\label{classHttSettings_a47895350290a623b6cf46c4766091eeb}
+\hypertarget{classHttSettings_aa5aa20e4627da32fa2de62bd6df5b45e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionThreeProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_aa5aa20e4627da32fa2de62bd6df5b45e}
+\hypertarget{classHttSettings_ad096991b045aed584c1612ee93ae6ea1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionOneProngPiZerosShift, \/  1. {\em 0})}}
+\label{classHttSettings_ad096991b045aed584c1612ee93ae6ea1}
+\hypertarget{classHttSettings_a29def60556d711089d60d145a48b66fa}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionOneProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_a29def60556d711089d60d145a48b66fa}
+\hypertarget{classHttSettings_a099ef27311d172e0a1bc4f218fe06f36}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionShift, \/  1. {\em 0})}}
+\label{classHttSettings_a099ef27311d172e0a1bc4f218fe06f36}
+\hypertarget{classHttSettings_a2d642e8ff52e663309a1fa01e4d5434e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionThreeProng, \/  1. {\em 0})}}
+\label{classHttSettings_a2d642e8ff52e663309a1fa01e4d5434e}
+\hypertarget{classHttSettings_a60758c002601ce89d79abe088a533c4d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionOneProngPiZeros, \/  1. {\em 0})}}
+\label{classHttSettings_a60758c002601ce89d79abe088a533c4d}
+\hypertarget{classHttSettings_a7a50f923a076ad48c0a43d64124fc9e2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauMuonFakeEnergyCorrectionOneProng, \/  1. {\em 0})}}
+\label{classHttSettings_a7a50f923a076ad48c0a43d64124fc9e2}
+\hypertarget{classHttSettings_ababa9276adbac2fb90ebb2c502ef3976}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionThreeProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_ababa9276adbac2fb90ebb2c502ef3976}
+\hypertarget{classHttSettings_a70ec2ba6c5823ecd784b3cc84582592c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionOneProngPiZerosShift, \/  1. {\em 0})}}
+\label{classHttSettings_a70ec2ba6c5823ecd784b3cc84582592c}
+\hypertarget{classHttSettings_a7fa9710a76d1e33edb134b1da8b8308f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionOneProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_a7fa9710a76d1e33edb134b1da8b8308f}
+\hypertarget{classHttSettings_ac5326a137aaeaacb3ac8bb41f7f57d4f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionShift, \/  1. {\em 0})}}
+\label{classHttSettings_ac5326a137aaeaacb3ac8bb41f7f57d4f}
+\hypertarget{classHttSettings_a5de7225a3bae5b74e3f57a0784c4a6a9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionThreeProng, \/  1. {\em 0})}}
+\label{classHttSettings_a5de7225a3bae5b74e3f57a0784c4a6a9}
+\hypertarget{classHttSettings_a8a2bc381791e361f3d1f2099a8fc210d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionOneProngPiZeros, \/  1. {\em 0})}}
+\label{classHttSettings_a8a2bc381791e361f3d1f2099a8fc210d}
+\hypertarget{classHttSettings_ab36239985c161a7043a6ecc38f0808ec}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauElectronFakeEnergyCorrectionOneProng, \/  1. {\em 0})}}
+\label{classHttSettings_ab36239985c161a7043a6ecc38f0808ec}
+\hypertarget{classHttSettings_a274ad9b3c532a2893ed7d361d9080892}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionThreeProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_a274ad9b3c532a2893ed7d361d9080892}
+\hypertarget{classHttSettings_aa2da7ce271caf09424e162bde62b803c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionOneProngPiZerosShift, \/  1. {\em 0})}}
+\label{classHttSettings_aa2da7ce271caf09424e162bde62b803c}
+\hypertarget{classHttSettings_a96b8aa1d1077cae74ccf8ad95db1b91e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionOneProngShift, \/  1. {\em 0})}}
+\label{classHttSettings_a96b8aa1d1077cae74ccf8ad95db1b91e}
+\hypertarget{classHttSettings_a888c120dedf0435ff3a7cdad154bbf6f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionShift, \/  1. {\em 0})}}
+\label{classHttSettings_a888c120dedf0435ff3a7cdad154bbf6f}
+\hypertarget{classHttSettings_a9fc6f8e7febeed96c0e22ae57594b3e3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionThreeProng, \/  1. {\em 0})}}
+\label{classHttSettings_a9fc6f8e7febeed96c0e22ae57594b3e3}
+\hypertarget{classHttSettings_a990bb76f25ef953b323a1da97df0a42f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionOneProngPiZeros, \/  1. {\em 0})}}
+\label{classHttSettings_a990bb76f25ef953b323a1da97df0a42f}
+\hypertarget{classHttSettings_ae87028c834eae8a541ffa7adb6945f6a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauEnergyCorrectionOneProng, \/  1. {\em 0})}}
+\label{classHttSettings_ae87028c834eae8a541ffa7adb6945f6a}
+\hypertarget{classHttSettings_a26b4399da3b83c9a2c2174aad667cb69}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  TauEnergyCorrection, \/  \char`\"{}none\char`\"{})}}
+\label{classHttSettings_a26b4399da3b83c9a2c2174aad667cb69}
+\hypertarget{classHttSettings_a7e16a0445696e88db976f5b6ec6e2cff}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  RandomTauEnergySmearing, \/  0. {\em 0})}}
+\label{classHttSettings_a7e16a0445696e88db976f5b6ec6e2cff}
+\hypertarget{classHttSettings_a678dfd913c2204cc5d642301a43756fa}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  RandomMuonEnergySmearing, \/  0. {\em 0})}}
+\label{classHttSettings_a678dfd913c2204cc5d642301a43756fa}
+\hypertarget{classHttSettings_a26c1338e64e048cec7d543ca9ccbf72c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonEnergyCorrectionShift, \/  1. {\em 0})}}
+\label{classHttSettings_a26c1338e64e048cec7d543ca9ccbf72c}
+\hypertarget{classHttSettings_a57dc3006dca1a95598947f28502475cc}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronEnergyCorrectionShiftEE, \/  1. {\em 0})}}
+\label{classHttSettings_a57dc3006dca1a95598947f28502475cc}
+\hypertarget{classHttSettings_ad23f95a86a7e9281e084669b4293d5d7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronEnergyCorrectionShiftEB, \/  1. {\em 0})}}
+\label{classHttSettings_ad23f95a86a7e9281e084669b4293d5d7}
+\hypertarget{classHttSettings_a6f23d8103aaea6cdfe90ca7b79ce94a9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronEnergyCorrectionShift, \/  1. {\em 0})}}
+\label{classHttSettings_a6f23d8103aaea6cdfe90ca7b79ce94a9}
+\hypertarget{classHttSettings_ae56fd4ee1a4ba1dfad77905b9106a538}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  ElectronEnergyCorrection, \/  \char`\"{}none\char`\"{})}}
+\label{classHttSettings_ae56fd4ee1a4ba1dfad77905b9106a538}
+\hypertarget{classHttSettings_ac82d12116eac0c155589c0040238bcc3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  DiVetoMuonMinDeltaRCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_ac82d12116eac0c155589c0040238bcc3}
+\hypertarget{classHttSettings_a11d0797ee5f15ceedc51c0c83b097dcb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  DiVetoElectronMinDeltaRCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a11d0797ee5f15ceedc51c0c83b097dcb}
+\hypertarget{classHttSettings_ad2400b8e6df12ee3dffd42c80a2b5025}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoMuonIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_ad2400b8e6df12ee3dffd42c80a2b5025}
+\hypertarget{classHttSettings_adea4499dc516f7cfd438e703d50b76ac}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoMuonIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_adea4499dc516f7cfd438e703d50b76ac}
+\hypertarget{classHttSettings_aa87e155f0a156b6c2005e32d65ff6c0e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoMuonIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_aa87e155f0a156b6c2005e32d65ff6c0e}
+\hypertarget{classHttSettings_af048269f33df9f02ef46e9d64d860d0d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoMuonIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_af048269f33df9f02ef46e9d64d860d0d}
+\hypertarget{classHttSettings_a5c7241bf19a2323faada047f5abc5c2d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a5c7241bf19a2323faada047f5abc5c2d}
+\hypertarget{classHttSettings_ac2ca333eba7108844e5ce46288424a36}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_ac2ca333eba7108844e5ce46288424a36}
+\hypertarget{classHttSettings_a74114758514943c184cc1353dc74a793}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a74114758514943c184cc1353dc74a793}
+\hypertarget{classHttSettings_aefd84ad1695e1bdb04c825ffc3a3f11d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_aefd84ad1695e1bdb04c825ffc3a3f11d}
+\hypertarget{classHttSettings_a448ca7df803175d519a22dcd7a9fbc84}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronMvaIDCutEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a448ca7df803175d519a22dcd7a9fbc84}
+\hypertarget{classHttSettings_a338306a6253ee9ac8fa07e1910ec732e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronMvaIDCutEB2, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a338306a6253ee9ac8fa07e1910ec732e}
+\hypertarget{classHttSettings_abd06ccd89c1669d409d252f47f5b71cd}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  VetoElectronMvaIDCutEB1, \/  -\/1. {\em 0})}}
+\label{classHttSettings_abd06ccd89c1669d409d252f47f5b71cd}
+\hypertarget{classHttSettings_a2de0dba895bb5dc411cd51818a8c21d2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  VetoElectronIDName, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a2de0dba895bb5dc411cd51818a8c21d2}
+\hypertarget{classHttSettings_a373287cc228b1a0f8b92edee173e9ac9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonTrackDzCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a373287cc228b1a0f8b92edee173e9ac9}
+\hypertarget{classHttSettings_a12b52ff05d9b9f91e06534e4f59eb39c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonTrackDxyCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a12b52ff05d9b9f91e06534e4f59eb39c}
+\hypertarget{classHttSettings_a6db5e1c7f0335291557d4f2b366b77e3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronTrackDzCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a6db5e1c7f0335291557d4f2b366b77e3}
+\hypertarget{classHttSettings_a97479bda952e07f2f6b03b5be73d00f2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronTrackDxyCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a97479bda952e07f2f6b03b5be73d00f2}
+\hypertarget{classHttSettings_ab08e3e8222e8746782c6151302295352}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MuonIsoTypeUserMode, \/  \char`\"{}fromcmssw\char`\"{})}}
+\label{classHttSettings_ab08e3e8222e8746782c6151302295352}
+\hypertarget{classHttSettings_ac15ce16c8e547817bd419f46fac8ebd9}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_ac15ce16c8e547817bd419f46fac8ebd9}
+\hypertarget{classHttSettings_aa4be3ae364fa0015bb78ac25abbdb237}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_aa4be3ae364fa0015bb78ac25abbdb237}
+\hypertarget{classHttSettings_ad73987fd2167fe4486157affa5344f1b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_ad73987fd2167fe4486157affa5344f1b}
+\hypertarget{classHttSettings_abb033778d9ca77b1c67a43307bf38d87}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseMuonIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_abb033778d9ca77b1c67a43307bf38d87}
+\hypertarget{classHttSettings_a42aed7904ac15ac2617099a17299ec33}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a42aed7904ac15ac2617099a17299ec33}
+\hypertarget{classHttSettings_a4f59339bd5dec544d64a5712bd410106}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a4f59339bd5dec544d64a5712bd410106}
+\hypertarget{classHttSettings_a424e01a1b5a792c2b90446e03b907680}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a424e01a1b5a792c2b90446e03b907680}
+\hypertarget{classHttSettings_aefec965292f899d8922671e0b5932e8f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_aefec965292f899d8922671e0b5932e8f}
+\hypertarget{classHttSettings_a7472951724a2910def335470c152d36d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronMvaIDCutEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a7472951724a2910def335470c152d36d}
+\hypertarget{classHttSettings_a360ed92849bfcca6dfcbf06f2915b706}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronMvaIDCutEB2, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a360ed92849bfcca6dfcbf06f2915b706}
+\hypertarget{classHttSettings_aa9f8c4a76b619e9b9ef1377f4070e8c1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  LooseElectronMvaIDCutEB1, \/  -\/1. {\em 0})}}
+\label{classHttSettings_aa9f8c4a76b619e9b9ef1377f4070e8c1}
+\hypertarget{classHttSettings_abc7136adbfcc43f9f1c3ec25c55dfa05}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  LooseElectronIDName, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_abc7136adbfcc43f9f1c3ec25c55dfa05}
+\hypertarget{classHttSettings_a9bf4264eeee3192afdd65acdb6806ef4}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  TauTrackDzCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a9bf4264eeee3192afdd65acdb6806ef4}
+\hypertarget{classHttSettings_a96cfe871dd9a2c337515ce0aa689834c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonTrackDzCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a96cfe871dd9a2c337515ce0aa689834c}
+\hypertarget{classHttSettings_a600c2c10faad6847cf76443c5688adb3}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonTrackDxyCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a600c2c10faad6847cf76443c5688adb3}
+\hypertarget{classHttSettings_aab852c525e62354d9c6efa3d56612087}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronTrackDzCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_aab852c525e62354d9c6efa3d56612087}
+\hypertarget{classHttSettings_a10cb15cf8b50311d87ac387cc9ad182d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronTrackDxyCut, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a10cb15cf8b50311d87ac387cc9ad182d}
+\hypertarget{classHttSettings_adee678dc804dcbbe8fcf8a8bb1522c66}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_adee678dc804dcbbe8fcf8a8bb1522c66}
+\hypertarget{classHttSettings_ac14bc12887f53356e62898136bd2e65b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_ac14bc12887f53356e62898136bd2e65b}
+\hypertarget{classHttSettings_a7758be711fa73d2ae7f189cc3d756a50}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a7758be711fa73d2ae7f189cc3d756a50}
+\hypertarget{classHttSettings_a7f40ee4aa5036838cfa60ece75e7bf8e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a7f40ee4aa5036838cfa60ece75e7bf8e}
+\hypertarget{classHttSettings_a8001c74f4fbc97854d11ac2ef6cb62b7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonDeltaBetaIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_a8001c74f4fbc97854d11ac2ef6cb62b7}
+\hypertarget{classHttSettings_a6adfeaa92e8c8d17902e017089ff014c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonPhotonIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_a6adfeaa92e8c8d17902e017089ff014c}
+\hypertarget{classHttSettings_a4a6545c4cd73b0d854bedd023245d66f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonNeutralIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_a4a6545c4cd73b0d854bedd023245d66f}
+\hypertarget{classHttSettings_afa771e6ae4c3f99eef64de1eb5a102ae}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonChargedIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_afa771e6ae4c3f99eef64de1eb5a102ae}
+\hypertarget{classHttSettings_aa9661bf725b0831d31ce28fc385596e2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonDeltaBetaIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_aa9661bf725b0831d31ce28fc385596e2}
+\hypertarget{classHttSettings_a57cab6a96a01aa69019efeef1371c0ac}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonPhotonIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_a57cab6a96a01aa69019efeef1371c0ac}
+\hypertarget{classHttSettings_afaa4bace4ed28ecc9e357f04edef811b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonNeutralIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_afaa4bace4ed28ecc9e357f04edef811b}
+\hypertarget{classHttSettings_a8abae07eb8a153952f975c7517e17a0b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  MuonChargedIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_a8abae07eb8a153952f975c7517e17a0b}
+\hypertarget{classHttSettings_a93e1c8ff1fb422a3f051576e2b476992}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronIsoPtSumOverPtUpperThresholdEE, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a93e1c8ff1fb422a3f051576e2b476992}
+\hypertarget{classHttSettings_a838490218671a3dcaf914069ac0f3fb7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronIsoPtSumOverPtUpperThresholdEB, \/  std::numeric\_\-limits$<$ float $>$:: {\em max}())}}
+\label{classHttSettings_a838490218671a3dcaf914069ac0f3fb7}
+\hypertarget{classHttSettings_a545431c13430b32a2546f166fb5887e1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronIsoPtSumOverPtLowerThresholdEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a545431c13430b32a2546f166fb5887e1}
+\hypertarget{classHttSettings_a3cd331880ac0f66c6e9883957fef3337}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronIsoPtSumOverPtLowerThresholdEB, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a3cd331880ac0f66c6e9883957fef3337}
+\hypertarget{classHttSettings_a1515904af8a4c5d04f38bb8a4e115e6a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronDeltaBetaIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_a1515904af8a4c5d04f38bb8a4e115e6a}
+\hypertarget{classHttSettings_aa852f1b761559bf02dbb4bcaa383b6b6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronPhotonIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_aa852f1b761559bf02dbb4bcaa383b6b6}
+\hypertarget{classHttSettings_afe73b2edaa37f30d09551330aa189d3c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronNeutralIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_afe73b2edaa37f30d09551330aa189d3c}
+\hypertarget{classHttSettings_a71a51453e53eef46fd821b8a2b66382f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronChargedIsoPtThreshold, \/  0. {\em 0})}}
+\label{classHttSettings_a71a51453e53eef46fd821b8a2b66382f}
+\hypertarget{classHttSettings_ade12a467db9b7a59ff20c73fa11bd768}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronDeltaBetaIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_ade12a467db9b7a59ff20c73fa11bd768}
+\hypertarget{classHttSettings_aa2601b20bc336ea96cdba63e4ecb5efb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronPhotonIsoVetoConeSizeEE, \/  0. {\em 0})}}
+\label{classHttSettings_aa2601b20bc336ea96cdba63e4ecb5efb}
+\hypertarget{classHttSettings_a0bb6fa869d920c9d97e0a0a5978d4e08}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronPhotonIsoVetoConeSizeEB, \/  0. {\em 0})}}
+\label{classHttSettings_a0bb6fa869d920c9d97e0a0a5978d4e08}
+\hypertarget{classHttSettings_a0f6830aa0568d5000b5ee7b7fc066e58}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronNeutralIsoVetoConeSize, \/  0. {\em 0})}}
+\label{classHttSettings_a0f6830aa0568d5000b5ee7b7fc066e58}
+\hypertarget{classHttSettings_a6072701632fb21cf187072f41fa1c88b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronChargedIsoVetoConeSizeEE, \/  0. {\em 0})}}
+\label{classHttSettings_a6072701632fb21cf187072f41fa1c88b}
+\hypertarget{classHttSettings_a4320a54adcb8df7075bc219c9c21a098}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronChargedIsoVetoConeSizeEB, \/  0. {\em 0})}}
+\label{classHttSettings_a4320a54adcb8df7075bc219c9c21a098}
+\hypertarget{classHttSettings_ac290c24384bca58c474b0c2b97c2a382}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronMvaIDCutEE, \/  -\/1. {\em 0})}}
+\label{classHttSettings_ac290c24384bca58c474b0c2b97c2a382}
+\hypertarget{classHttSettings_afd05c28dd3bb00cf4732a0bc87901b34}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronMvaIDCutEB2, \/  -\/1. {\em 0})}}
+\label{classHttSettings_afd05c28dd3bb00cf4732a0bc87901b34}
+\hypertarget{classHttSettings_a147c34ffb4aeb6b02f2a02f37dc59781}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (float, \/  ElectronMvaIDCutEB1, \/  -\/1. {\em 0})}}
+\label{classHttSettings_a147c34ffb4aeb6b02f2a02f37dc59781}
+\hypertarget{classHttSettings_a003594f674aeb36ae7f899e790b819ed}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  ElectronIDName, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a003594f674aeb36ae7f899e790b819ed}
+\hypertarget{classHttSettings_ab8748bfbd6132d3e7acd14c95bf86fe6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  IdentificationEfficiencyMode, \/  \char`\"{}multiply\_\-weights\char`\"{})}}
+\label{classHttSettings_ab8748bfbd6132d3e7acd14c95bf86fe6}
+\hypertarget{classHttSettings_adf2bac074503f040e82618fc2345a5fc}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  IdentificationEfficiencyHistogram, \/  \char`\"{}identificationEfficiency\char`\"{})}}
+\label{classHttSettings_adf2bac074503f040e82618fc2345a5fc}
+\hypertarget{classHttSettings_a1574630abf1ab2d0197f91e7296db55f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  TriggerEfficiencyMode, \/  \char`\"{}multiply\_\-weights\char`\"{})}}
+\label{classHttSettings_a1574630abf1ab2d0197f91e7296db55f}
+\hypertarget{classHttSettings_aaacf2d8bb898b43bed3d12c702e7a2b1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  TriggerEfficiencyHistogram, \/  \char`\"{}triggerEfficiency\char`\"{})}}
+\label{classHttSettings_aaacf2d8bb898b43bed3d12c702e7a2b1}
+\hypertarget{classHttSettings_acbcc938324675f415c2eb56727fda6cf}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  PlotlevelFilterExpression, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_acbcc938324675f415c2eb56727fda6cf}
+\hypertarget{classHttSettings_a64be19c15dbd362e2c66ad4be1fd46dd}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MetUncertaintyType, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a64be19c15dbd362e2c66ad4be1fd46dd}
+\hypertarget{classHttSettings_a4e846de7937b2f2198769026a9e4231b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  MetUncertaintyShift, \/  false)}}
+\label{classHttSettings_a4e846de7937b2f2198769026a9e4231b}
+\hypertarget{classHttSettings_a7e782c3ef47b58bd6771789bf644e957}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (int, \/  MetSysShift, \/  0)}}
+\label{classHttSettings_a7e782c3ef47b58bd6771789bf644e957}
+\hypertarget{classHttSettings_a128ab2e519a985d51e811cf99e197646}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (int, \/  MetSysType, \/  0)}}
+\label{classHttSettings_a128ab2e519a985d51e811cf99e197646}
+\hypertarget{classHttSettings_a3dc8d9cd8094adc68ce060e2a0202360}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  UpdateMetWithCorrectedLeptons, \/  false)}}
+\label{classHttSettings_a3dc8d9cd8094adc68ce060e2a0202360}
+\hypertarget{classHttSettings_a69b5087e83cd55eb36de66134b3622d5}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (bool, \/  ChooseMvaMet, \/  true)}}
+\label{classHttSettings_a69b5087e83cd55eb36de66134b3622d5}
+\hypertarget{classHttSettings_a712769a2f44e79f09a2810f9bb3556f2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MetCorrectionMethod, \/  \char`\"{}quantileMapping\char`\"{})}}
+\label{classHttSettings_a712769a2f44e79f09a2810f9bb3556f2}
+\hypertarget{classHttSettings_abe7e0c6ca1d63a2ad87bd40567eccd61}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  Category, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_abe7e0c6ca1d63a2ad87bd40567eccd61}
+\hypertarget{classHttSettings_ad95fcd09e68f5825da98b58adf7e868f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  Channel, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_ad95fcd09e68f5825da98b58adf7e868f}
+
+
+htt decay channel and event category \hypertarget{classHttSettings_a9efcc755d91c4adf0eaee0c3c5caa413}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMets, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a9efcc755d91c4adf0eaee0c3c5caa413}
+\hypertarget{classHttSettings_a73b5e6629b9a83be1f201ade3a53cb4a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetsEM, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a73b5e6629b9a83be1f201ade3a53cb4a}
+\hypertarget{classHttSettings_a3d01e1ff66021ed02442fe9fc5427181}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetsET, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a3d01e1ff66021ed02442fe9fc5427181}
+\hypertarget{classHttSettings_a42c42494483c4ab580d8ad1b40094c25}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetsMT, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a42c42494483c4ab580d8ad1b40094c25}
+\hypertarget{classHttSettings_a384c503ac89815188770a2d62fd73e44}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetsTT, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_a384c503ac89815188770a2d62fd73e44}
+
+
+names of (new) MVA MET collection in kappa tuple \hypertarget{classHttSettings_ac7c2fb6a9290e1fad8423b369af8d0d4}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetEM, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_ac7c2fb6a9290e1fad8423b369af8d0d4}
+\hypertarget{classHttSettings_afb075e653510a1bf5abc085da9149091}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetET, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_afb075e653510a1bf5abc085da9149091}
+\hypertarget{classHttSettings_ad57514c4c90610ffa0dbfb7573adeed2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetMT, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_ad57514c4c90610ffa0dbfb7573adeed2}
+\hypertarget{classHttSettings_ae668fb9a956228f73d235f0f6cdd345b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-DEFAULT@{IMPL\_\-SETTING\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-DEFAULT (std::string, \/  MvaMetTT, \/  \char`\"{}\char`\"{})}}
+\label{classHttSettings_ae668fb9a956228f73d235f0f6cdd345b}
+
+
+names of (old) MVA MET collection in kappa tuple \hypertarget{classHttSettings_a4f17d6b910aa47d38dcdb308ab4c348b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST (SimpleEleTauFakeRateWeightTight)}}
+\label{classHttSettings_a4f17d6b910aa47d38dcdb308ab4c348b}
+\hypertarget{classHttSettings_a6b502d2417fae961ed7fd52ada54179e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST (SimpleEleTauFakeRateWeightVLoose)}}
+\label{classHttSettings_a6b502d2417fae961ed7fd52ada54179e}
+\hypertarget{classHttSettings_aa818a821ac07f57f4b55254fa1352b19}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST (SimpleMuTauFakeRateWeightTight)}}
+\label{classHttSettings_aa818a821ac07f57f4b55254fa1352b19}
+\hypertarget{classHttSettings_ae3eaf2427a38dc155a300447701af998}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST@{IMPL\_\-SETTING\_\-FLOATLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST (SimpleMuTauFakeRateWeightLoose)}}
+\label{classHttSettings_ae3eaf2427a38dc155a300447701af998}
+\hypertarget{classHttSettings_acfacd3fac8bcf39c9d542077f20b540c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT (MadGraphMixingAnglesOverPiHalf)}}
+\label{classHttSettings_acfacd3fac8bcf39c9d542077f20b540c}
+\hypertarget{classHttSettings_a78aa8b6f16bf0238d8da0db91558762d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT (TauSpinnerMixingAnglesOverPiHalf)}}
+\label{classHttSettings_a78aa8b6f16bf0238d8da0db91558762d}
+\hypertarget{classHttSettings_aa62e419cb8c62e4690f4e49ee721984f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-FLOATLIST\_\-DEFAULT (TauDiscriminatorAntiElectronMvaCuts)}}
+\label{classHttSettings_aa62e419cb8c62e4690f4e49ee721984f}
+\hypertarget{classHttSettings_a3ad9fb1a46b3cefcd55d59cae270079c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT (MVATestMethodsNFolds)}}
+\label{classHttSettings_a3ad9fb1a46b3cefcd55d59cae270079c}
+\hypertarget{classHttSettings_ab2dc5540ed68cd907957fa57019a6a4e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-INTLIST\_\-DEFAULT (TauDiscriminatorAntiElectronMvaCutsLeptonIndices)}}
+\label{classHttSettings_ab2dc5540ed68cd907957fa57019a6a4e}
+\hypertarget{classHttSettings_aad257d690e6fabf2ff987740523bd9bb}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-SORTED\_\-STRINGLIST\_\-DEFAULT (DiTauPairHltPathsWithoutCommonMatchRequired)}}
+\label{classHttSettings_aad257d690e6fabf2ff987740523bd9bb}
+\hypertarget{classHttSettings_adcce9324c375db2a5fe223eb85216ecd}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (MadGraph2p5ProcessDirectories)}}
+\label{classHttSettings_adcce9324c375db2a5fe223eb85216ecd}
+\hypertarget{classHttSettings_a224c669ebdf717c2310bd5d80ebedf40}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (ScaleLheWeights)}}
+\label{classHttSettings_a224c669ebdf717c2310bd5d80ebedf40}
+\hypertarget{classHttSettings_adfc879b87f116121f3f5a0c4644cd59a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (AlphaSLheWeights)}}
+\label{classHttSettings_adfc879b87f116121f3f5a0c4644cd59a}
+\hypertarget{classHttSettings_ac970b89b18a3285a6b20709b1372a4d7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (PdfLheWeights)}}
+\label{classHttSettings_ac970b89b18a3285a6b20709b1372a4d7}
+\hypertarget{classHttSettings_a4513b0e4e3fb25e4513b2cc2efc5e719}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (MuonTauFakeRateWeightFile)}}
+\label{classHttSettings_a4513b0e4e3fb25e4513b2cc2efc5e719}
+\hypertarget{classHttSettings_af061ebad059cc50153cb70089a5687ea}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST@{IMPL\_\-SETTING\_\-STRINGLIST}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST (EleTauFakeRateWeightFile)}}
+\label{classHttSettings_af061ebad059cc50153cb70089a5687ea}
+\hypertarget{classHttSettings_a95a362123622626e2ba115c9a0f701b5}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (FakeFaktorFiles)}}
+\label{classHttSettings_a95a362123622626e2ba115c9a0f701b5}
+\hypertarget{classHttSettings_a3eeb2b6787abd3fbdda4854e283adfdf}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT ({\bf MetFilter})}}
+\label{classHttSettings_a3eeb2b6787abd3fbdda4854e283adfdf}
+\hypertarget{classHttSettings_abab0cd9af3ee87219628f8803c6e1b89}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuTauTriggerWeightWorkspaceObjectArguments)}}
+\label{classHttSettings_abab0cd9af3ee87219628f8803c6e1b89}
+\hypertarget{classHttSettings_a387e195dada120611ad08764bf90f172}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuTauTriggerWeightWorkspaceObjectNames)}}
+\label{classHttSettings_a387e195dada120611ad08764bf90f172}
+\hypertarget{classHttSettings_a9256889e237953b72db38e53aaf3396d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuTauTriggerWeightWorkspaceWeightNames)}}
+\label{classHttSettings_a9256889e237953b72db38e53aaf3396d}
+\hypertarget{classHttSettings_a321760ee7322f44ea17c8cfc238125ff}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauTauTriggerWeightWorkspaceObjectArguments)}}
+\label{classHttSettings_a321760ee7322f44ea17c8cfc238125ff}
+\hypertarget{classHttSettings_a804fffc1952f3be2d23de35fca145662}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauTauTriggerWeightWorkspaceObjectNames)}}
+\label{classHttSettings_a804fffc1952f3be2d23de35fca145662}
+\hypertarget{classHttSettings_a6642e7c88f78f3a77c7fe8f27913cb08}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauTauTriggerWeightWorkspaceWeightNames)}}
+\label{classHttSettings_a6642e7c88f78f3a77c7fe8f27913cb08}
+\hypertarget{classHttSettings_a4ed979f31a66000c717db31d40241bae}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuMuTriggerWeightWorkspaceObjectArguments)}}
+\label{classHttSettings_a4ed979f31a66000c717db31d40241bae}
+\hypertarget{classHttSettings_aed2ac5e09cc936ae32ab26abb998b025}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuMuTriggerWeightWorkspaceObjectNames)}}
+\label{classHttSettings_aed2ac5e09cc936ae32ab26abb998b025}
+\hypertarget{classHttSettings_afb45142a29386e30d75085c0fcb95607}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuMuTriggerWeightWorkspaceWeightNames)}}
+\label{classHttSettings_afb45142a29386e30d75085c0fcb95607}
+\hypertarget{classHttSettings_ad0011b6e8ff267281a933dd3505eba33}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (EETriggerWeightWorkspaceObjectArguments)}}
+\label{classHttSettings_ad0011b6e8ff267281a933dd3505eba33}
+\hypertarget{classHttSettings_aef75c48c8c9dfd3d5059332be5635d1d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (EETriggerWeightWorkspaceObjectNames)}}
+\label{classHttSettings_aef75c48c8c9dfd3d5059332be5635d1d}
+\hypertarget{classHttSettings_a8d7748f74329a8eca5f2574b4cd9ecb8}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (EETriggerWeightWorkspaceWeightNames)}}
+\label{classHttSettings_a8d7748f74329a8eca5f2574b4cd9ecb8}
+\hypertarget{classHttSettings_aab59102695ddf2fa3f151627b385e0c6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (RooWorkspaceObjectArguments)}}
+\label{classHttSettings_aab59102695ddf2fa3f151627b385e0c6}
+\hypertarget{classHttSettings_a16bc0e064dfe53c5a89b046d5e0081a2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (RooWorkspaceObjectNames)}}
+\label{classHttSettings_a16bc0e064dfe53c5a89b046d5e0081a2}
+\hypertarget{classHttSettings_a8daa9985fff6d954be88d243601b56f8}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (RooWorkspaceWeightNames)}}
+\label{classHttSettings_a8daa9985fff6d954be88d243601b56f8}
+\hypertarget{classHttSettings_ac90c3f148c23ca181d8337425966f405}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (ProbeLeptonTriggerFilterNames)}}
+\label{classHttSettings_ac90c3f148c23ca181d8337425966f405}
+\hypertarget{classHttSettings_a72c155dc0c66286049e0a96fc38d7d58}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TagLeptonTriggerFilterNames)}}
+\label{classHttSettings_a72c155dc0c66286049e0a96fc38d7d58}
+\hypertarget{classHttSettings_a5c858d9a804965e10e80aaee3129ec7c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (ProbeLeptonHltPaths)}}
+\label{classHttSettings_a5c858d9a804965e10e80aaee3129ec7c}
+\hypertarget{classHttSettings_adb48bb6048ea848b6bc172ece7304d2d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TagLeptonHltPaths)}}
+\label{classHttSettings_adb48bb6048ea848b6bc172ece7304d2d}
+\hypertarget{classHttSettings_af35f86b3b0858c95f367862b50249a90}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MVATestMethodsWeights)}}
+\label{classHttSettings_af35f86b3b0858c95f367862b50249a90}
+\hypertarget{classHttSettings_a344986608f8f7a43084022c2ea3dbff7}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MVACustomWeights)}}
+\label{classHttSettings_a344986608f8f7a43084022c2ea3dbff7}
+\hypertarget{classHttSettings_a89bebd29ec416dc09e1b25ecc07f1e45}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MVATestMethodsNames)}}
+\label{classHttSettings_a89bebd29ec416dc09e1b25ecc07f1e45}
+\hypertarget{classHttSettings_a789b96782a5fc48e216ab8b19d39c099}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MVATestMethodsMethods)}}
+\label{classHttSettings_a789b96782a5fc48e216ab8b19d39c099}
+\hypertarget{classHttSettings_a35ce0fe901e69d374becbe5f16dc2789}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MVATestMethodsInputQuantities)}}
+\label{classHttSettings_a35ce0fe901e69d374becbe5f16dc2789}
+\hypertarget{classHttSettings_a11d5b78375d1a35dd36ac11257384dc6}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauPolarisationTmvaWeights)}}
+\label{classHttSettings_a11d5b78375d1a35dd36ac11257384dc6}
+\hypertarget{classHttSettings_a5a3e870b39dd13d3859c9ec5f579a0a2}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauPolarisationTmvaMethods)}}
+\label{classHttSettings_a5a3e870b39dd13d3859c9ec5f579a0a2}
+\hypertarget{classHttSettings_a5ba7dd2259f54ac79ea4ca9c5f7690cf}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauPolarisationTmvaInputQuantities)}}
+\label{classHttSettings_a5ba7dd2259f54ac79ea4ca9c5f7690cf}
+\hypertarget{classHttSettings_a96a750d3c33944e4e41172aac5b84aa1}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (AntiTtbarTmvaWeights)}}
+\label{classHttSettings_a96a750d3c33944e4e41172aac5b84aa1}
+\hypertarget{classHttSettings_a395368650c207e232b55d75f89786624}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (AntiTtbarTmvaMethods)}}
+\label{classHttSettings_a395368650c207e232b55d75f89786624}
+\hypertarget{classHttSettings_aa09d429dfbd5ad6b9e3b4d228f9aa7fe}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (AntiTtbarTmvaInputQuantities)}}
+\label{classHttSettings_aa09d429dfbd5ad6b9e3b4d228f9aa7fe}
+\hypertarget{classHttSettings_ad6b4742eaea19aeabc3ddcf31b69606f}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (HLTBranchNames)}}
+\label{classHttSettings_ad6b4742eaea19aeabc3ddcf31b69606f}
+\hypertarget{classHttSettings_ac90837d592db267590fd1587b8189b94}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (DiTauPairLepton2LowerPtCuts)}}
+\label{classHttSettings_ac90837d592db267590fd1587b8189b94}
+\hypertarget{classHttSettings_a5dc15345059d488018fdadd26c298f24}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (DiTauPairLepton1LowerPtCuts)}}
+\label{classHttSettings_a5dc15345059d488018fdadd26c298f24}
+\hypertarget{classHttSettings_a369684e978992824030fcba3051c8792}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TauDiscriminatorMvaIsolation)}}
+\label{classHttSettings_a369684e978992824030fcba3051c8792}
+\hypertarget{classHttSettings_a8b698b24a00bf7a7d9f7cba39c21458b}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (VetoMuonUpperAbsEtaCuts)}}
+\label{classHttSettings_a8b698b24a00bf7a7d9f7cba39c21458b}
+\hypertarget{classHttSettings_a780edfbc710a9b491ed7537ead27225a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (VetoElectronUpperAbsEtaCuts)}}
+\label{classHttSettings_a780edfbc710a9b491ed7537ead27225a}
+\hypertarget{classHttSettings_aeb8a93b9a912f8e04e639c8b85f128ef}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (VetoMuonLowerPtCuts)}}
+\label{classHttSettings_aeb8a93b9a912f8e04e639c8b85f128ef}
+\hypertarget{classHttSettings_ad96b23461ccea7e7983ff584eda33824}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (VetoElectronLowerPtCuts)}}
+\label{classHttSettings_ad96b23461ccea7e7983ff584eda33824}
+\hypertarget{classHttSettings_a05ff7c3b228a631bc3e5b7a0682a57ce}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (LooseMuonUpperAbsEtaCuts)}}
+\label{classHttSettings_a05ff7c3b228a631bc3e5b7a0682a57ce}
+\hypertarget{classHttSettings_a3f453bcf3bff04e804c16d9219d23850}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (LooseElectronUpperAbsEtaCuts)}}
+\label{classHttSettings_a3f453bcf3bff04e804c16d9219d23850}
+\hypertarget{classHttSettings_af1fc9f51fe6d6291198fd5be598967ee}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (LooseMuonLowerPtCuts)}}
+\label{classHttSettings_af1fc9f51fe6d6291198fd5be598967ee}
+\hypertarget{classHttSettings_ad94c7268458dfe8de611c799acca725a}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (LooseElectronLowerPtCuts)}}
+\label{classHttSettings_ad94c7268458dfe8de611c799acca725a}
+\hypertarget{classHttSettings_ae9f77a258468ff234e15c2746addbe38}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (ElectronIDList)}}
+\label{classHttSettings_ae9f77a258468ff234e15c2746addbe38}
+\hypertarget{classHttSettings_a5b32353f2911a93bd6046427ee91f59c}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (MuonTauFakeRateHistograms)}}
+\label{classHttSettings_a5b32353f2911a93bd6046427ee91f59c}
+\hypertarget{classHttSettings_a0de597dd7ea6c06a46a6f03ad93b037d}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT ({\bf EleTauFakeRateHistograms}, \/  {\bf EleTauFakeRateHistograms})}}
+\label{classHttSettings_a0de597dd7ea6c06a46a6f03ad93b037d}
+\hypertarget{classHttSettings_a46e815a98145369bfafc8ce14f6973c8}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (IdentificationEfficiencyMc)}}
+\label{classHttSettings_a46e815a98145369bfafc8ce14f6973c8}
+\hypertarget{classHttSettings_a2e6b5492e8fb2a12a4acdd8239e8635e}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (IdentificationEfficiencyData)}}
+\label{classHttSettings_a2e6b5492e8fb2a12a4acdd8239e8635e}
+\hypertarget{classHttSettings_ac488a7041dd0ab6dd4d6898c481bece4}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TriggerEfficiencyMc)}}
+\label{classHttSettings_ac488a7041dd0ab6dd4d6898c481bece4}
+\hypertarget{classHttSettings_a8bff861fd341d793e6f72b573796b592}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (TriggerEfficiencyData)}}
+\label{classHttSettings_a8bff861fd341d793e6f72b573796b592}
+\hypertarget{classHttSettings_a19b1c2be0f5467f754d6c4c4283ca087}{
+\index{HttSettings@{HttSettings}!IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}}
+\index{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT@{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}!HttSettings@{HttSettings}}
+\subsubsection[{IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}HttSettings::IMPL\_\-SETTING\_\-STRINGLIST\_\-DEFAULT (PlotlevelFilterExpressionQuantities)}}
+\label{classHttSettings_a19b1c2be0f5467f754d6c4c4283ca087}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHttSettings_ae13115ebff12caecd683ea97cadecafc}{
+\index{HttSettings@{HttSettings}!EleTauFakeRateHistograms@{EleTauFakeRateHistograms}}
+\index{EleTauFakeRateHistograms@{EleTauFakeRateHistograms}!HttSettings@{HttSettings}}
+\subsubsection[{EleTauFakeRateHistograms}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::string$>$ {\bf HttSettings::EleTauFakeRateHistograms} = \{\char`\"{}antiEVLoose\char`\"{}, \char`\"{}antiELoose\char`\"{}, \char`\"{}antiEMedium\char`\"{}, \char`\"{}antiETight\char`\"{}, \char`\"{}antiEVTight\char`\"{}\}}}
+\label{classHttSettings_ae13115ebff12caecd683ea97cadecafc}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{HttSettings_8h}{HttSettings.h}\end{DoxyCompactItemize}

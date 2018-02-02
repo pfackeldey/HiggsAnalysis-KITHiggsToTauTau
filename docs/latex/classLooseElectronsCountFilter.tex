@@ -1,0 +1,48 @@
+\hypertarget{classLooseElectronsCountFilter}{
+\section{LooseElectronsCountFilter Class Reference}
+\label{classLooseElectronsCountFilter}\index{LooseElectronsCountFilter@{LooseElectronsCountFilter}}
+}
+
+
+{\ttfamily \#include $<$LooseObjectsCountFilters.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(event\_\-type const \&, product\_\-type const \&)$>$ \hyperlink{classLooseElectronsCountFilter_a614a004e9b827d6af0528a9f35c8f125}{double\_\-extractor\_\-lambda}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classLooseElectronsCountFilter_a44f431ff35de350eee4c35bdf2c65ca8}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classLooseElectronsCountFilter_ac1b0f92669ffa2c61805d4fe3a5c124c}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter checking for the existance of exactly the given number of valid loose electrons. Required config tag: NLooseElectrons 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classLooseElectronsCountFilter_a614a004e9b827d6af0528a9f35c8f125}{
+\index{LooseElectronsCountFilter@{LooseElectronsCountFilter}!double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}}
+\index{double\_\-extractor\_\-lambda@{double\_\-extractor\_\-lambda}!LooseElectronsCountFilter@{LooseElectronsCountFilter}}
+\subsubsection[{double\_\-extractor\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double(event\_\-type const\&, product\_\-type const\&)$>$ {\bf LooseElectronsCountFilter::double\_\-extractor\_\-lambda}}}
+\label{classLooseElectronsCountFilter_a614a004e9b827d6af0528a9f35c8f125}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLooseElectronsCountFilter_a44f431ff35de350eee4c35bdf2c65ca8}{
+\index{LooseElectronsCountFilter@{LooseElectronsCountFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!LooseElectronsCountFilter@{LooseElectronsCountFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string LooseElectronsCountFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classLooseElectronsCountFilter_a44f431ff35de350eee4c35bdf2c65ca8}
+\hypertarget{classLooseElectronsCountFilter_ac1b0f92669ffa2c61805d4fe3a5c124c}{
+\index{LooseElectronsCountFilter@{LooseElectronsCountFilter}!Init@{Init}}
+\index{Init@{Init}!LooseElectronsCountFilter@{LooseElectronsCountFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void LooseElectronsCountFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classLooseElectronsCountFilter_ac1b0f92669ffa2c61805d4fe3a5c124c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{LooseObjectsCountFilters_8h}{LooseObjectsCountFilters.h}\item 
+src/Filters/\hyperlink{LooseObjectsCountFilters_8cc}{LooseObjectsCountFilters.cc}\end{DoxyCompactItemize}

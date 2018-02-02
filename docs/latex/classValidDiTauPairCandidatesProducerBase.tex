@@ -1,0 +1,65 @@
+\hypertarget{classValidDiTauPairCandidatesProducerBase}{
+\section{ValidDiTauPairCandidatesProducerBase$<$ TLepton1, TLepton2 $>$ Class Template Reference}
+\label{classValidDiTauPairCandidatesProducerBase}\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+}
+
+
+Producers for candidates of di-\/tau pairs.  
+
+
+{\ttfamily \#include $<$ValidDiTauPairCandidatesProducers.h$>$}Inheritance diagram for ValidDiTauPairCandidatesProducerBase$<$ TLepton1, TLepton2 $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classValidDiTauPairCandidatesProducerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classValidDiTauPairCandidatesProducerBase_ab262ca6b1bfefa6899542a50c0bf008e}{ValidDiTauPairCandidatesProducerBase} (std::vector$<$ TLepton1 $\ast$ $>$ product\_\-type::$\ast$validLeptonsMember1, std::vector$<$ TLepton2 $\ast$ $>$ product\_\-type::$\ast$validLeptonsMember2)
+\item 
+virtual void \hyperlink{classValidDiTauPairCandidatesProducerBase_a981ac448f8ca76e5458fb33e5b50ed32}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classValidDiTauPairCandidatesProducerBase_ae99afcc869a696d8ea6ab910b03fd22b}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classValidDiTauPairCandidatesProducerBase_addca0dffbd06ba4ffb76518f85144e75}{AdditionalCriteria} (\hyperlink{classDiTauPair}{DiTauPair} const \&diTauPair, event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TLepton1, class TLepton2$>$ class ValidDiTauPairCandidatesProducerBase$<$ TLepton1, TLepton2 $>$}
+
+Producers for candidates of di-\/tau pairs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classValidDiTauPairCandidatesProducerBase_ab262ca6b1bfefa6899542a50c0bf008e}{
+\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}!ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}!ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+\subsubsection[{ValidDiTauPairCandidatesProducerBase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton1, class TLepton2$>$ {\bf ValidDiTauPairCandidatesProducerBase}$<$ TLepton1, TLepton2 $>$::{\bf ValidDiTauPairCandidatesProducerBase} (std::vector$<$ TLepton1 $\ast$ $>$ product\_\-type::$\ast$ {\em validLeptonsMember1}, \/  std::vector$<$ TLepton2 $\ast$ $>$ product\_\-type::$\ast$ {\em validLeptonsMember2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classValidDiTauPairCandidatesProducerBase_ab262ca6b1bfefa6899542a50c0bf008e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classValidDiTauPairCandidatesProducerBase_addca0dffbd06ba4ffb76518f85144e75}{
+\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}!AdditionalCriteria@{AdditionalCriteria}}
+\index{AdditionalCriteria@{AdditionalCriteria}!ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+\subsubsection[{AdditionalCriteria}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton1, class TLepton2$>$ virtual bool {\bf ValidDiTauPairCandidatesProducerBase}$<$ TLepton1, TLepton2 $>$::AdditionalCriteria ({\bf DiTauPair} const \& {\em diTauPair}, \/  event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classValidDiTauPairCandidatesProducerBase_addca0dffbd06ba4ffb76518f85144e75}
+\hypertarget{classValidDiTauPairCandidatesProducerBase_a981ac448f8ca76e5458fb33e5b50ed32}{
+\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}!Init@{Init}}
+\index{Init@{Init}!ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton1, class TLepton2$>$ virtual void {\bf ValidDiTauPairCandidatesProducerBase}$<$ TLepton1, TLepton2 $>$::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classValidDiTauPairCandidatesProducerBase_a981ac448f8ca76e5458fb33e5b50ed32}
+\hypertarget{classValidDiTauPairCandidatesProducerBase_ae99afcc869a696d8ea6ab910b03fd22b}{
+\index{ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}!Produce@{Produce}}
+\index{Produce@{Produce}!ValidDiTauPairCandidatesProducerBase@{ValidDiTauPairCandidatesProducerBase}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton1, class TLepton2$>$ virtual void {\bf ValidDiTauPairCandidatesProducerBase}$<$ TLepton1, TLepton2 $>$::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classValidDiTauPairCandidatesProducerBase_ae99afcc869a696d8ea6ab910b03fd22b}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{ValidDiTauPairCandidatesProducers_8h}{ValidDiTauPairCandidatesProducers.h}\end{DoxyCompactItemize}

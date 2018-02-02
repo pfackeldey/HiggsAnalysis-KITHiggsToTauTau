@@ -1,0 +1,51 @@
+\hypertarget{classIdentificationWeightProducer}{
+\section{IdentificationWeightProducer Class Reference}
+\label{classIdentificationWeightProducer}\index{IdentificationWeightProducer@{IdentificationWeightProducer}}
+}
+
+
+{\ttfamily \#include $<$DataMcScaleFactorProducers.h$>$}Inheritance diagram for IdentificationWeightProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classIdentificationWeightProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classIdentificationWeightProducer_abbf54fd2f0f78f6a4489734373ab6788}{GetProducerId} () const override
+\item 
+\hyperlink{classIdentificationWeightProducer_a1fb06b51eec690fc9332fe060853e444}{IdentificationWeightProducer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for the identification weights using the functions and paramters provided by the Htt group
+
+Required config tags:
+\begin{DoxyItemize}
+\item IdentificationEfficiencyData (vector of ROOT files containing identificationEfficiencies histogram)
+\item IdentificationEfficiencyMc (vector of ROOT files containing identificationEfficiencies histogram)
+\item IdentificationEfficiencyHistogram (default: identificationEfficiencies) 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIdentificationWeightProducer_a1fb06b51eec690fc9332fe060853e444}{
+\index{IdentificationWeightProducer@{IdentificationWeightProducer}!IdentificationWeightProducer@{IdentificationWeightProducer}}
+\index{IdentificationWeightProducer@{IdentificationWeightProducer}!IdentificationWeightProducer@{IdentificationWeightProducer}}
+\subsubsection[{IdentificationWeightProducer}]{\setlength{\rightskip}{0pt plus 5cm}IdentificationWeightProducer::IdentificationWeightProducer ()}}
+\label{classIdentificationWeightProducer_a1fb06b51eec690fc9332fe060853e444}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIdentificationWeightProducer_abbf54fd2f0f78f6a4489734373ab6788}{
+\index{IdentificationWeightProducer@{IdentificationWeightProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!IdentificationWeightProducer@{IdentificationWeightProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string IdentificationWeightProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classIdentificationWeightProducer_abbf54fd2f0f78f6a4489734373ab6788}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{DataMcScaleFactorProducers_8h}{DataMcScaleFactorProducers.h}\item 
+src/Producers/\hyperlink{DataMcScaleFactorProducers_8cc}{DataMcScaleFactorProducers.cc}\end{DoxyCompactItemize}

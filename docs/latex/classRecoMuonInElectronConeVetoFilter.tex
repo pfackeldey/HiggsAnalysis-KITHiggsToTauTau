@@ -1,0 +1,46 @@
+\hypertarget{classRecoMuonInElectronConeVetoFilter}{
+\section{RecoMuonInElectronConeVetoFilter Class Reference}
+\label{classRecoMuonInElectronConeVetoFilter}\index{RecoMuonInElectronConeVetoFilter@{RecoMuonInElectronConeVetoFilter}}
+}
+
+
+{\ttfamily \#include $<$RecoMuonInElectronConeVetoFilter.h$>$}Inheritance diagram for RecoMuonInElectronConeVetoFilter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classRecoMuonInElectronConeVetoFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classRecoMuonInElectronConeVetoFilter_a8b2194629ef6648e295babb183f28602}{GetFilterId} () const override
+\item 
+virtual bool \hyperlink{classRecoMuonInElectronConeVetoFilter_a28c2389ed3a5a3b4b5f21b50cccb14d7}{DoesEventPass} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter for Veto on reco muon (without ID requirement) withing electron cone Required config tags:
+\begin{DoxyItemize}
+\item RecoMuonInElectronConeLowerPtCut
+\item RecoMuonInElectronConeUpperAbsEtaCut
+\item RecoMuonInElectronConeSize 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classRecoMuonInElectronConeVetoFilter_a28c2389ed3a5a3b4b5f21b50cccb14d7}{
+\index{RecoMuonInElectronConeVetoFilter@{RecoMuonInElectronConeVetoFilter}!DoesEventPass@{DoesEventPass}}
+\index{DoesEventPass@{DoesEventPass}!RecoMuonInElectronConeVetoFilter@{RecoMuonInElectronConeVetoFilter}}
+\subsubsection[{DoesEventPass}]{\setlength{\rightskip}{0pt plus 5cm}bool RecoMuonInElectronConeVetoFilter::DoesEventPass (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classRecoMuonInElectronConeVetoFilter_a28c2389ed3a5a3b4b5f21b50cccb14d7}
+\hypertarget{classRecoMuonInElectronConeVetoFilter_a8b2194629ef6648e295babb183f28602}{
+\index{RecoMuonInElectronConeVetoFilter@{RecoMuonInElectronConeVetoFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!RecoMuonInElectronConeVetoFilter@{RecoMuonInElectronConeVetoFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string RecoMuonInElectronConeVetoFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classRecoMuonInElectronConeVetoFilter_a8b2194629ef6648e295babb183f28602}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{RecoMuonInElectronConeVetoFilter_8h}{RecoMuonInElectronConeVetoFilter.h}\item 
+src/Filters/\hyperlink{RecoMuonInElectronConeVetoFilter_8cc}{RecoMuonInElectronConeVetoFilter.cc}\end{DoxyCompactItemize}

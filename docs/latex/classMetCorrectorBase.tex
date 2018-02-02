@@ -1,0 +1,209 @@
+\hypertarget{classMetCorrectorBase}{
+\section{MetCorrectorBase$<$ TMet $>$ Class Template Reference}
+\label{classMetCorrectorBase}\index{MetCorrectorBase@{MetCorrectorBase}}
+}
+
+
+Corrects the MET created by the MET producer.  
+
+
+{\ttfamily \#include $<$MetCorrectors.h$>$}Inheritance diagram for MetCorrectorBase$<$ TMet $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classMetCorrectorBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfa}{CorrectionMethod} \{ \hyperlink{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaac198e6341886c4ae59b4a309a168da33}{NONE} = 0, 
+\hyperlink{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaaaadedae30db7b716ab6b302d073c30b0}{QUANTILE\_\-MAPPING} = 1, 
+\hyperlink{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaa9f9f7d2ca81e1d7580b61f22ee6fc82b}{MEAN\_\-RESOLUTION} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetCorrectorBase_aa81947e3ed5338e560a872c4496cfb05}{MetCorrectorBase} (TMet $\ast$product\_\-type::$\ast$metMemberUncorrected, TMet product\_\-type::$\ast$metMemberCorrected, std::vector$<$ float $>$ product\_\-type::$\ast$metCorrections, std::string(setting\_\-type::$\ast$\hyperlink{classMetCorrectorBase_ab75acb883f87b203f02497a8ac1d9612}{GetRecoilCorrectorFile})(void) const, std::string(setting\_\-type::$\ast$\hyperlink{classMetCorrectorBase_ae8439b8b315c598df5771d88cd245a49}{GetMetShiftCorrectorFile})(void) const, bool(setting\_\-type::$\ast$\hyperlink{classMetCorrectorBase_a9ee54f0240f3285b68a6a8290618cfad}{GetUpdateMetWithCorrectedLeptons})(void) const )
+\item 
+virtual void \hyperlink{classMetCorrectorBase_a16b625ee626c0cead5c6c4d65ac180e4}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classMetCorrectorBase_a06f1a4a2b3884caa0a01ef47654e3040}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TMet $\ast$product\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_adad757ee9377e76716ccc0a112e1de20}{m\_\-metMemberUncorrected}
+\item 
+TMet product\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_a12111218c46fcb7d0076b3eb68723c2e}{m\_\-metMemberCorrected}
+\item 
+std::vector$<$ float $>$ product\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_a5f393c3c3de785b48c88fdb4068d78ee}{m\_\-metCorrections}
+\item 
+std::string(setting\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_ab75acb883f87b203f02497a8ac1d9612}{GetRecoilCorrectorFile} )(void) const 
+\item 
+std::string(setting\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_ae8439b8b315c598df5771d88cd245a49}{GetMetShiftCorrectorFile} )(void) const 
+\item 
+\hyperlink{classRecoilCorrector}{RecoilCorrector} $\ast$ \hyperlink{classMetCorrectorBase_a5b1690be919bde47dcfd8f5d5be781c8}{m\_\-recoilCorrector}
+\item 
+\hyperlink{classMEtSys}{MEtSys} $\ast$ \hyperlink{classMetCorrectorBase_a5ca29fccc54b4183b2cf73a4e0183abe}{m\_\-metShiftCorrector}
+\item 
+\hyperlink{classMEtSys_afab2b6468da059ee0d9c8471ea7e7018}{MEtSys::ProcessType} \hyperlink{classMetCorrectorBase_a2ac16c2b3fcfddb16098eea641d506c3}{m\_\-processType}
+\item 
+\hyperlink{classMEtSys_ade79c833dae227147e7a69c89b190cb1}{MEtSys::SysType} \hyperlink{classMetCorrectorBase_addd0772673419e699b040fe06cc6db74}{m\_\-sysType}
+\item 
+\hyperlink{classMEtSys_ab7a2f541cbd603695f3fdf6c52f826b3}{MEtSys::SysShift} \hyperlink{classMetCorrectorBase_aaf1ddd88ab9c9070e006cf6d69ce1ca6}{m\_\-sysShift}
+\item 
+bool \hyperlink{classMetCorrectorBase_af0c8f314b82074900251d273fbabba12}{m\_\-isWJets}
+\item 
+bool \hyperlink{classMetCorrectorBase_a198e2c6d4ab350166b2a3ef2da7fef07}{m\_\-doMetSys}
+\item 
+\hyperlink{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfa}{CorrectionMethod} \hyperlink{classMetCorrectorBase_a645b5d5383e8faeaa831f1920e5b4665}{m\_\-correctionMethod}
+\item 
+bool \hyperlink{classMetCorrectorBase_a83e63d8cf10b1729d0b52bc400051ab3}{m\_\-correctGlobalMet}
+\item 
+bool(setting\_\-type::$\ast$ \hyperlink{classMetCorrectorBase_a9ee54f0240f3285b68a6a8290618cfad}{GetUpdateMetWithCorrectedLeptons} )(void) const 
+\item 
+KMETUncertainty::Type \hyperlink{classMetCorrectorBase_ae43982fe34cd695eaa6faca8ebbb75b0}{m\_\-metUncertaintyType}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TMet$>$ class MetCorrectorBase$<$ TMet $>$}
+
+Corrects the MET created by the MET producer. Run this producer after the Valid(Tagged)JetsProducer, since it relies on the number of jets in the event. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfa}{
+\index{MetCorrectorBase@{MetCorrectorBase}!CorrectionMethod@{CorrectionMethod}}
+\index{CorrectionMethod@{CorrectionMethod}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{CorrectionMethod}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ enum {\bf MetCorrectorBase::CorrectionMethod}}}
+\label{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfa}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!MetCorrectorBase@{MetCorrectorBase}}\index{MetCorrectorBase@{MetCorrectorBase}!NONE@{NONE}}\item[{\em 
+\hypertarget{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaac198e6341886c4ae59b4a309a168da33}{
+NONE}
+\label{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaac198e6341886c4ae59b4a309a168da33}
+}]\index{QUANTILE\_\-MAPPING@{QUANTILE\_\-MAPPING}!MetCorrectorBase@{MetCorrectorBase}}\index{MetCorrectorBase@{MetCorrectorBase}!QUANTILE\_\-MAPPING@{QUANTILE\_\-MAPPING}}\item[{\em 
+\hypertarget{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaaaadedae30db7b716ab6b302d073c30b0}{
+QUANTILE\_\-MAPPING}
+\label{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaaaadedae30db7b716ab6b302d073c30b0}
+}]\index{MEAN\_\-RESOLUTION@{MEAN\_\-RESOLUTION}!MetCorrectorBase@{MetCorrectorBase}}\index{MetCorrectorBase@{MetCorrectorBase}!MEAN\_\-RESOLUTION@{MEAN\_\-RESOLUTION}}\item[{\em 
+\hypertarget{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaa9f9f7d2ca81e1d7580b61f22ee6fc82b}{
+MEAN\_\-RESOLUTION}
+\label{classMetCorrectorBase_a37bb26e946b22f52f1f358c7dd0bedfaa9f9f7d2ca81e1d7580b61f22ee6fc82b}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMetCorrectorBase_aa81947e3ed5338e560a872c4496cfb05}{
+\index{MetCorrectorBase@{MetCorrectorBase}!MetCorrectorBase@{MetCorrectorBase}}
+\index{MetCorrectorBase@{MetCorrectorBase}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{MetCorrectorBase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf MetCorrectorBase} (TMet $\ast$product\_\-type::$\ast$ {\em metMemberUncorrected}, \/  TMet product\_\-type::$\ast$ {\em metMemberCorrected}, \/  std::vector$<$ float $>$ product\_\-type::$\ast$ {\em metCorrections}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetRecoilCorrectorFile}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetMetShiftCorrectorFile}, \/  bool(setting\_\-type::$\ast$)(void) const  {\em GetUpdateMetWithCorrectedLeptons})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMetCorrectorBase_aa81947e3ed5338e560a872c4496cfb05}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMetCorrectorBase_a16b625ee626c0cead5c6c4d65ac180e4}{
+\index{MetCorrectorBase@{MetCorrectorBase}!Init@{Init}}
+\index{Init@{Init}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ virtual void {\bf MetCorrectorBase}$<$ TMet $>$::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMetCorrectorBase_a16b625ee626c0cead5c6c4d65ac180e4}
+
+
+Reimplemented in \hyperlink{classMetCorrector_a6ee5bc3ba9731e73c395057f47e86f67}{MetCorrector}, and \hyperlink{classMvaMetCorrector_a82861f8921f0f9d792acd4f79ef1cff5}{MvaMetCorrector}.\hypertarget{classMetCorrectorBase_a06f1a4a2b3884caa0a01ef47654e3040}{
+\index{MetCorrectorBase@{MetCorrectorBase}!Produce@{Produce}}
+\index{Produce@{Produce}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ virtual void {\bf MetCorrectorBase}$<$ TMet $>$::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMetCorrectorBase_a06f1a4a2b3884caa0a01ef47654e3040}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMetCorrectorBase_ae8439b8b315c598df5771d88cd245a49}{
+\index{MetCorrectorBase@{MetCorrectorBase}!GetMetShiftCorrectorFile@{GetMetShiftCorrectorFile}}
+\index{GetMetShiftCorrectorFile@{GetMetShiftCorrectorFile}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{GetMetShiftCorrectorFile}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ std::string(setting\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf GetMetShiftCorrectorFile})(void) const \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_ae8439b8b315c598df5771d88cd245a49}
+\hypertarget{classMetCorrectorBase_ab75acb883f87b203f02497a8ac1d9612}{
+\index{MetCorrectorBase@{MetCorrectorBase}!GetRecoilCorrectorFile@{GetRecoilCorrectorFile}}
+\index{GetRecoilCorrectorFile@{GetRecoilCorrectorFile}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{GetRecoilCorrectorFile}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ std::string(setting\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf GetRecoilCorrectorFile})(void) const \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_ab75acb883f87b203f02497a8ac1d9612}
+\hypertarget{classMetCorrectorBase_a9ee54f0240f3285b68a6a8290618cfad}{
+\index{MetCorrectorBase@{MetCorrectorBase}!GetUpdateMetWithCorrectedLeptons@{GetUpdateMetWithCorrectedLeptons}}
+\index{GetUpdateMetWithCorrectedLeptons@{GetUpdateMetWithCorrectedLeptons}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{GetUpdateMetWithCorrectedLeptons}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ bool(setting\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf GetUpdateMetWithCorrectedLeptons})(void) const \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a9ee54f0240f3285b68a6a8290618cfad}
+\hypertarget{classMetCorrectorBase_a83e63d8cf10b1729d0b52bc400051ab3}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-correctGlobalMet@{m\_\-correctGlobalMet}}
+\index{m\_\-correctGlobalMet@{m\_\-correctGlobalMet}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-correctGlobalMet}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ bool {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-correctGlobalMet}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a83e63d8cf10b1729d0b52bc400051ab3}
+\hypertarget{classMetCorrectorBase_a645b5d5383e8faeaa831f1920e5b4665}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-correctionMethod@{m\_\-correctionMethod}}
+\index{m\_\-correctionMethod@{m\_\-correctionMethod}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-correctionMethod}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf CorrectionMethod} {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-correctionMethod}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a645b5d5383e8faeaa831f1920e5b4665}
+\hypertarget{classMetCorrectorBase_a198e2c6d4ab350166b2a3ef2da7fef07}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-doMetSys@{m\_\-doMetSys}}
+\index{m\_\-doMetSys@{m\_\-doMetSys}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-doMetSys}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ bool {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-doMetSys}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a198e2c6d4ab350166b2a3ef2da7fef07}
+\hypertarget{classMetCorrectorBase_af0c8f314b82074900251d273fbabba12}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-isWJets@{m\_\-isWJets}}
+\index{m\_\-isWJets@{m\_\-isWJets}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-isWJets}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ bool {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-isWJets}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_af0c8f314b82074900251d273fbabba12}
+\hypertarget{classMetCorrectorBase_a5f393c3c3de785b48c88fdb4068d78ee}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-metCorrections@{m\_\-metCorrections}}
+\index{m\_\-metCorrections@{m\_\-metCorrections}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-metCorrections}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ std::vector$<$float$>$ product\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-metCorrections}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a5f393c3c3de785b48c88fdb4068d78ee}
+\hypertarget{classMetCorrectorBase_a12111218c46fcb7d0076b3eb68723c2e}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-metMemberCorrected@{m\_\-metMemberCorrected}}
+\index{m\_\-metMemberCorrected@{m\_\-metMemberCorrected}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-metMemberCorrected}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ TMet product\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-metMemberCorrected}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a12111218c46fcb7d0076b3eb68723c2e}
+\hypertarget{classMetCorrectorBase_adad757ee9377e76716ccc0a112e1de20}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-metMemberUncorrected@{m\_\-metMemberUncorrected}}
+\index{m\_\-metMemberUncorrected@{m\_\-metMemberUncorrected}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-metMemberUncorrected}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ TMet$\ast$ product\_\-type::$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-metMemberUncorrected}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_adad757ee9377e76716ccc0a112e1de20}
+\hypertarget{classMetCorrectorBase_a5ca29fccc54b4183b2cf73a4e0183abe}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-metShiftCorrector@{m\_\-metShiftCorrector}}
+\index{m\_\-metShiftCorrector@{m\_\-metShiftCorrector}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-metShiftCorrector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MEtSys}$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-metShiftCorrector}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a5ca29fccc54b4183b2cf73a4e0183abe}
+\hypertarget{classMetCorrectorBase_ae43982fe34cd695eaa6faca8ebbb75b0}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-metUncertaintyType@{m\_\-metUncertaintyType}}
+\index{m\_\-metUncertaintyType@{m\_\-metUncertaintyType}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-metUncertaintyType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ KMETUncertainty::Type {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-metUncertaintyType}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_ae43982fe34cd695eaa6faca8ebbb75b0}
+\hypertarget{classMetCorrectorBase_a2ac16c2b3fcfddb16098eea641d506c3}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-processType@{m\_\-processType}}
+\index{m\_\-processType@{m\_\-processType}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-processType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MEtSys::ProcessType} {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-processType}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a2ac16c2b3fcfddb16098eea641d506c3}
+\hypertarget{classMetCorrectorBase_a5b1690be919bde47dcfd8f5d5be781c8}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-recoilCorrector@{m\_\-recoilCorrector}}
+\index{m\_\-recoilCorrector@{m\_\-recoilCorrector}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-recoilCorrector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf RecoilCorrector}$\ast$ {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-recoilCorrector}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_a5b1690be919bde47dcfd8f5d5be781c8}
+\hypertarget{classMetCorrectorBase_aaf1ddd88ab9c9070e006cf6d69ce1ca6}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-sysShift@{m\_\-sysShift}}
+\index{m\_\-sysShift@{m\_\-sysShift}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-sysShift}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MEtSys::SysShift} {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-sysShift}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_aaf1ddd88ab9c9070e006cf6d69ce1ca6}
+\hypertarget{classMetCorrectorBase_addd0772673419e699b040fe06cc6db74}{
+\index{MetCorrectorBase@{MetCorrectorBase}!m\_\-sysType@{m\_\-sysType}}
+\index{m\_\-sysType@{m\_\-sysType}!MetCorrectorBase@{MetCorrectorBase}}
+\subsubsection[{m\_\-sysType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TMet$>$ {\bf MEtSys::SysType} {\bf MetCorrectorBase}$<$ TMet $>$::{\bf m\_\-sysType}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMetCorrectorBase_addd0772673419e699b040fe06cc6db74}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{MetCorrectors_8h}{MetCorrectors.h}\end{DoxyCompactItemize}

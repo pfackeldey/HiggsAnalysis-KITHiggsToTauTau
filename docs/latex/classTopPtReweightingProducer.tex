@@ -1,0 +1,57 @@
+\hypertarget{classTopPtReweightingProducer}{
+\section{TopPtReweightingProducer Class Reference}
+\label{classTopPtReweightingProducer}\index{TopPtReweightingProducer@{TopPtReweightingProducer}}
+}
+
+
+\hyperlink{classTopPtReweightingProducer}{TopPtReweightingProducer} Top Pt reweighting as suggested on: \href{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopPtReweighting}{\tt https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopPtReweighting} Config tags:
+\begin{DoxyItemize}
+\item TopPtReweightingStrategy: possible values: Run1, Run2. If something else is defined, then Run2 is taken. Both weigths are computed. 
+\end{DoxyItemize} 
+
+
+{\ttfamily \#include $<$TopPtReweightingProducer.h$>$}Inheritance diagram for TopPtReweightingProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTopPtReweightingProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classTopPtReweightingProducer_a8fb041235c98ea0209154727d2afec87}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classTopPtReweightingProducer_a92085c1110d08e3926513ad967316094}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+void \hyperlink{classTopPtReweightingProducer_a3681934df5c0df3260d894df2a46b790}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classTopPtReweightingProducer}{TopPtReweightingProducer} Top Pt reweighting as suggested on: \href{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopPtReweighting}{\tt https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopPtReweighting} Config tags:
+\begin{DoxyItemize}
+\item TopPtReweightingStrategy: possible values: Run1, Run2. If something else is defined, then Run2 is taken. Both weigths are computed. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classTopPtReweightingProducer_a8fb041235c98ea0209154727d2afec87}{
+\index{TopPtReweightingProducer@{TopPtReweightingProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TopPtReweightingProducer@{TopPtReweightingProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}std::string TopPtReweightingProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}override\mbox{]}}}}
+\label{classTopPtReweightingProducer_a8fb041235c98ea0209154727d2afec87}
+\hypertarget{classTopPtReweightingProducer_a92085c1110d08e3926513ad967316094}{
+\index{TopPtReweightingProducer@{TopPtReweightingProducer}!Init@{Init}}
+\index{Init@{Init}!TopPtReweightingProducer@{TopPtReweightingProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void TopPtReweightingProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTopPtReweightingProducer_a92085c1110d08e3926513ad967316094}
+\hypertarget{classTopPtReweightingProducer_a3681934df5c0df3260d894df2a46b790}{
+\index{TopPtReweightingProducer@{TopPtReweightingProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!TopPtReweightingProducer@{TopPtReweightingProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void TopPtReweightingProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override\mbox{]}}}}
+\label{classTopPtReweightingProducer_a3681934df5c0df3260d894df2a46b790}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{TopPtReweightingProducer_8h}{TopPtReweightingProducer.h}\item 
+src/Producers/\hyperlink{TopPtReweightingProducer_8cc}{TopPtReweightingProducer.cc}\end{DoxyCompactItemize}

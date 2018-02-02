@@ -1,0 +1,57 @@
+\hypertarget{classMVATestMethodsProducer}{
+\section{MVATestMethodsProducer Class Reference}
+\label{classMVATestMethodsProducer}\index{MVATestMethodsProducer@{MVATestMethodsProducer}}
+}
+
+
+Producer for discriminator agains TTbar (as used in the EM channel).  
+
+
+{\ttfamily \#include $<$MVATestMethodsProducer.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classMVATestMethodsProducer_a1795ecbaa668fc1f9492bcd69e76a3d7}{GetProducerId} () const override
+\item 
+\hyperlink{classMVATestMethodsProducer_a8068f80a6a967eb30f9f00e911f6d55a}{MVATestMethodsProducer} ()
+\item 
+virtual void \hyperlink{classMVATestMethodsProducer_ab506b8dbdd00dce1bfd273877da3bf5f}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classMVATestMethodsProducer_ad462de17d5f9e2cf8379dc9e8d502f1c}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for discriminator agains TTbar (as used in the EM channel). Required config tags with an short example: \{ \char`\"{}MVATestMethodsInputQuantities\char`\"{}: \mbox{[} \char`\"{}0;pVecSum,lep1Pt:=pt\_\-1,lep1MetMt:=mt\_\-1,lep2Pt:=pt\_\-2,lep2MetMt:=mt\_\-2,pfMetPt:=met,mvaMetPt:=mvamet,pZetaMissVis,pZetaMiss,pZetaVis,nJets30:=njets,nBJets20:=nbtag,min\_\-ll\_\-jet\_\-eta,lep1\_\-centrality,lep2\_\-centrality,delta\_\-lep\_\-centrality,lep1IsoOverPt:=iso\_\-1\char`\"{}, \char`\"{}1;pVecSum,lep1Pt:=pt\_\-1,lep1MetMt:=mt\_\-1,lep2Pt:=pt\_\-2,lep2MetMt:=mt\_\-2,pfMetPt:=met,mvaMetPt:=mvamet,pZetaMissVis,pZetaMiss,pZetaVis,nJets30:=njets,nBJets20:=nbtag,min\_\-ll\_\-jet\_\-eta,lep1\_\-centrality,lep2\_\-centrality,delta\_\-lep\_\-centrality,lep1IsoOverPt:=iso\_\-1\char`\"{} \mbox{]}, \char`\"{}MVATestMethodsMethods\char`\"{}: \mbox{[} \char`\"{}0;BDT\char`\"{}, \char`\"{}0;BDT\char`\"{}, \char`\"{}0;BDT\char`\"{}, \char`\"{}1;BDT\char`\"{}, \char`\"{}1;BDT\char`\"{} \mbox{]}, \char`\"{}MVATestMethodsNFolds\char`\"{}: \mbox{[} 3, 1, 1 \mbox{]}, \char`\"{}MVATestMethodsNames\char`\"{}: \mbox{[} \char`\"{}ggh\_\-150\_\-zXX\char`\"{}, \char`\"{}ggh\_\-250\_\-zXX\char`\"{} \mbox{]}, \char`\"{}MVATestMethodsWeights\char`\"{}: \mbox{[} \char`\"{}/nfs/dust/cms/user/mschmitt/analysis/CMSSW\_\-7\_\-1\_\-5/src/test\_\-nfold/weights/T1\_\-BDT\_\-ggh\_\-150\_\-zXX.weights.xml\char`\"{}, \char`\"{}/nfs/dust/cms/user/mschmitt/analysis/CMSSW\_\-7\_\-1\_\-5/src/test\_\-nfold/weights/T2\_\-BDT\_\-ggh\_\-150\_\-zXX.weights.xml\char`\"{}, \char`\"{}/nfs/dust/cms/user/mschmitt/analysis/CMSSW\_\-7\_\-1\_\-5/src/test\_\-nfold/weights/T3\_\-BDT\_\-ggh\_\-150\_\-zXX.weights.xml\char`\"{}, \char`\"{}/nfs/dust/cms/user/mschmitt/analysis/CMSSW\_\-7\_\-1\_\-5/src/test\_\-nfold/weights/T1\_\-BDT\_\-ggh\_\-250\_\-zXX.weights.xml\char`\"{}, \char`\"{}/nfs/dust/cms/user/mschmitt/analysis/CMSSW\_\-7\_\-1\_\-5/src/test\_\-nfold/weights/T1\_\-BDT\_\-ggh\_\-250\_\-zXX.weights.xml\char`\"{} \mbox{]} \}
+
+Detailed description: \char`\"{}MVATestMethodsInputQuantities\char`\"{}: This is a string list containing training variables for different TMVA Factory instances. The number followed by ; defines the number of factory those variables belong to. \char`\"{}MVATestMethodsMethods\char`\"{}: Number followed by ; defines the number ob factory those method belongs to \char`\"{}MVATestMethodsNFolds\char`\"{}: This number indicates how much of the methods belong to one N-\/Fold Training: as in the example the 0;BDT methods belong to one single 3-\/Fold training and are treated accordingly \char`\"{}MVATestMethodsNames\char`\"{}: This is a name base for n-\/fold and regular training. There will be exactly this name as variable and in case of N-\/Fold training several names derived from that one. For the 3-\/Fod training in the example: ggh\_\-150\_\-zXX -\/$>$ \{ggh\_\-150\_\-zXX, T1ggh\_\-150\_\-zXX, T2ggh\_\-150\_\-zXX, T3ggh\_\-150\_\-zXX\} for a regular training there will not be a T1base\_\-name present \char`\"{}MVATestMethodsWeights\char`\"{}: Stringlist of weightfiles in the same order as the methods were specified 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMVATestMethodsProducer_a8068f80a6a967eb30f9f00e911f6d55a}{
+\index{MVATestMethodsProducer@{MVATestMethodsProducer}!MVATestMethodsProducer@{MVATestMethodsProducer}}
+\index{MVATestMethodsProducer@{MVATestMethodsProducer}!MVATestMethodsProducer@{MVATestMethodsProducer}}
+\subsubsection[{MVATestMethodsProducer}]{\setlength{\rightskip}{0pt plus 5cm}MVATestMethodsProducer::MVATestMethodsProducer ()}}
+\label{classMVATestMethodsProducer_a8068f80a6a967eb30f9f00e911f6d55a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMVATestMethodsProducer_a1795ecbaa668fc1f9492bcd69e76a3d7}{
+\index{MVATestMethodsProducer@{MVATestMethodsProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!MVATestMethodsProducer@{MVATestMethodsProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string MVATestMethodsProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMVATestMethodsProducer_a1795ecbaa668fc1f9492bcd69e76a3d7}
+\hypertarget{classMVATestMethodsProducer_ab506b8dbdd00dce1bfd273877da3bf5f}{
+\index{MVATestMethodsProducer@{MVATestMethodsProducer}!Init@{Init}}
+\index{Init@{Init}!MVATestMethodsProducer@{MVATestMethodsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void MVATestMethodsProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMVATestMethodsProducer_ab506b8dbdd00dce1bfd273877da3bf5f}
+\hypertarget{classMVATestMethodsProducer_ad462de17d5f9e2cf8379dc9e8d502f1c}{
+\index{MVATestMethodsProducer@{MVATestMethodsProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!MVATestMethodsProducer@{MVATestMethodsProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void MVATestMethodsProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMVATestMethodsProducer_ad462de17d5f9e2cf8379dc9e8d502f1c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{MVATestMethodsProducer_8h}{MVATestMethodsProducer.h}\item 
+src/Producers/\hyperlink{MVATestMethodsProducer_8cc}{MVATestMethodsProducer.cc}\end{DoxyCompactItemize}

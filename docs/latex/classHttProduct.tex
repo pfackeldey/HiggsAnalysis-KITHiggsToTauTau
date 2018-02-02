@@ -1,0 +1,1898 @@
+\hypertarget{classHttProduct}{
+\section{HttProduct Class Reference}
+\label{classHttProduct}\index{HttProduct@{HttProduct}}
+}
+
+
+{\ttfamily \#include $<$HttProduct.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ KElectron $\ast$ $>$ \hyperlink{classHttProduct_ac87470e7729b6905e0a309224834180c}{m\_\-validLooseElectrons}
+\begin{DoxyCompactList}\small\item\em added by \hyperlink{classHttValidLooseElectronsProducer}{HttValidLooseElectronsProducer} \item\end{DoxyCompactList}\item 
+std::vector$<$ KElectron $\ast$ $>$ \hyperlink{classHttProduct_a82093fe39383edfbc2979d94d7571b9c}{m\_\-invalidLooseElectrons}
+\item 
+std::vector$<$ KElectron $\ast$ $>$ \hyperlink{classHttProduct_a3450684de78cac75697b14e7dd778fbe}{m\_\-validVetoElectrons}
+\begin{DoxyCompactList}\small\item\em added by \hyperlink{classHttValidVetoElectronsProducer}{HttValidVetoElectronsProducer} \item\end{DoxyCompactList}\item 
+std::vector$<$ KElectron $\ast$ $>$ \hyperlink{classHttProduct_affc89af16634fbc01c58de3632220b1f}{m\_\-invalidVetoElectrons}
+\item 
+std::vector$<$ KMuon $\ast$ $>$ \hyperlink{classHttProduct_a0d748a5f5c91b50ee29939c0b1ee23c1}{m\_\-validLooseMuons}
+\begin{DoxyCompactList}\small\item\em added by \hyperlink{classHttValidLooseMuonsProducer}{HttValidLooseMuonsProducer} \item\end{DoxyCompactList}\item 
+std::vector$<$ KMuon $\ast$ $>$ \hyperlink{classHttProduct_a66da1a4ef1d2123a91736e848c59eeed}{m\_\-invalidLooseMuons}
+\item 
+std::vector$<$ KMuon $\ast$ $>$ \hyperlink{classHttProduct_ae4fc7a166cfb5909aedb1088bd7957c2}{m\_\-validVetoMuons}
+\begin{DoxyCompactList}\small\item\em added by \hyperlink{classHttValidVetoMuonsProducer}{HttValidVetoMuonsProducer} \item\end{DoxyCompactList}\item 
+std::vector$<$ KMuon $\ast$ $>$ \hyperlink{classHttProduct_abab9056d187c5418241eac5bd0f096ec}{m\_\-invalidVetoMuons}
+\item 
+std::vector$<$ \hyperlink{classDiTauPair}{DiTauPair} $>$ \hyperlink{classHttProduct_af59b7e6a1ea36e0e84b34d9bfbda2484}{m\_\-validDiTauPairCandidates}
+\begin{DoxyCompactList}\small\item\em added by DiTauPairCandidatesProducers \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{classDiTauPair}{DiTauPair} $>$ \hyperlink{classHttProduct_ab3c39138bbc65d2e38906de8726f21b4}{m\_\-invalidDiTauPairCandidates}
+\item 
+std::vector$<$ \hyperlink{classDiGenTauPair}{DiGenTauPair} $>$ \hyperlink{classHttProduct_a0865735d27c7a69146e4edab092a4db2}{m\_\-genDiTauPairCandidates}
+\begin{DoxyCompactList}\small\item\em added by GenDiTauPairCandidatesProducers and \hyperlink{classGenDiTauPairAcceptanceProducer}{GenDiTauPairAcceptanceProducer} \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{classDiGenTauPair}{DiGenTauPair} $>$ \hyperlink{classHttProduct_a327e2e641fe1ed7ffdbd16b115e1dfd5}{m\_\-genDiTauPairInAcceptance}
+\item 
+bool \hyperlink{classHttProduct_a1569de0dcfa961c09eecd41f9cbff856}{m\_\-extraElecVeto} = false
+\item 
+bool \hyperlink{classHttProduct_af4194179accc2aaaf06f6cd734c0622b}{m\_\-extraMuonVeto} = false
+\item 
+int \hyperlink{classHttProduct_ae33b3df3a4e4ac02097c818a11f3f319}{m\_\-nDiElectronVetoPairsOS} = 0
+\item 
+int \hyperlink{classHttProduct_ae5056eaf6e08614a971727bcc63b3a84}{m\_\-nDiElectronVetoPairsSS} = 0
+\item 
+int \hyperlink{classHttProduct_a451eb95711c40e4c210c2a5850e1b89d}{m\_\-nDiMuonVetoPairsOS} = 0
+\item 
+int \hyperlink{classHttProduct_a68e6a6fd20b591ca502d71f412d45a3f}{m\_\-nDiMuonVetoPairsSS} = 0
+\item 
+std::vector$<$ KTau $\ast$ $>$ \hyperlink{classHttProduct_a42f077b59a010e311381923b680bd2c2}{m\_\-validTTHTaus}
+\item 
+\hyperlink{classHttEnumTypes_a5e7e80b023df2c06dfd1e9c08f6efb35}{HttEnumTypes::DecayChannel} \hyperlink{classHttProduct_ab1216927e208e9ad29a1e84d253ef03d}{m\_\-decayChannel}
+\item 
+\hyperlink{classHttEnumTypes_a09f53466ade8cb436d340aedf88ab0c2}{HttEnumTypes::SystematicShift} \hyperlink{classHttProduct_ad96ec3ff0504af461f0e71ed57853ef7}{m\_\-systematicShift} = HttEnumTypes::SystematicShift::CENTRAL
+\item 
+float \hyperlink{classHttProduct_a5d765e15fd61df93b581ac259fffa8bc}{m\_\-systematicShiftSigma} = 0.0
+\item 
+std::vector$<$ KLepton $\ast$ $>$ \hyperlink{classHttProduct_accc7dc9b7ee8356d0163149738aa933b}{m\_\-ptOrderedLeptons}
+\item 
+std::vector$<$ KLepton $\ast$ $>$ \hyperlink{classHttProduct_af914b7dae638ccd70a9f3fd33a39ebb1}{m\_\-flavourOrderedLeptons}
+\item 
+std::vector$<$ KLepton $\ast$ $>$ \hyperlink{classHttProduct_ab6f4f492a592b34911ad317378b72f1b}{m\_\-chargeOrderedLeptons}
+\item 
+std::vector$<$ KGenParticle $\ast$ $>$ \hyperlink{classHttProduct_aeed3fd71b9606c0d2a4d8da8500e510a}{m\_\-ptOrderedGenLeptons}
+\item 
+std::vector$<$ KGenParticle $\ast$ $>$ \hyperlink{classHttProduct_a18eca3b916d8a8824d92200c957e7ac9}{m\_\-flavourOrderedGenLeptons}
+\item 
+std::vector$<$ KGenParticle $\ast$ $>$ \hyperlink{classHttProduct_a70bf9c026bb6be12a25a0e793215511f}{m\_\-chargeOrderedGenLeptons}
+\item 
+std::vector$<$ RMFLV $\ast$ $>$ \hyperlink{classHttProduct_aeea816c374d3c6bc8627b18a82830485}{m\_\-ptOrderedGenLeptonVisibleLVs}
+\item 
+std::vector$<$ RMFLV $\ast$ $>$ \hyperlink{classHttProduct_a8ba976173e7b164b171a5cb19fce4d77}{m\_\-flavourOrderedGenLeptonVisibleLVs}
+\item 
+std::vector$<$ RMFLV $\ast$ $>$ \hyperlink{classHttProduct_a736650de11728388126970486f2f4417}{m\_\-chargeOrderedGenLeptonVisibleLVs}
+\item 
+std::map$<$ KTau $\ast$, double $>$ \hyperlink{classHttProduct_ae3eb0ecf3e4e1bfeb79cb090e6224582}{m\_\-tauEnergyScaleWeight}
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_adecfb7ee858684689f8d4aad6faa0be9}{m\_\-leptonIsolation}
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_a6b289be98575ef2ae3f0d8c9ae7b432f}{m\_\-leptonIsolationOverPt}
+\item 
+std::map$<$ KElectron $\ast$, double $>$ \hyperlink{classHttProduct_a29ffba30f2e0e486ebe1f6267461d0a8}{m\_\-electronIsolation}
+\item 
+std::map$<$ KElectron $\ast$, double $>$ \hyperlink{classHttProduct_a8f5dd10373ad2d502aea2f9ad4446cee}{m\_\-electronIsolationOverPt}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a56c9bfb7b1ef1191b730bb36a9fc9972}{m\_\-muonIsolation}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_aa378e6264b7559aa9e86a5aa691f60a7}{m\_\-muonIsolationOverPt}
+\item 
+std::map$<$ KTau $\ast$, double $>$ \hyperlink{classHttProduct_a367ae5e6dcf667daf5a392d6f6161222}{m\_\-tauIsolation}
+\item 
+std::map$<$ KTau $\ast$, double $>$ \hyperlink{classHttProduct_a58eff332aabde35e468ae2ef115696b2}{m\_\-tauIsolationOverPt}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a39b3d69fe737078f76c46dae49670add}{m\_\-muonChargedIsolation}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_abdfa11aaba1b4edcba7715e68cf2aaca}{m\_\-muonNeutralIsolation}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a5aa31ac41552608c176cb28a3e3c06f6}{m\_\-muonPhotonIsolation}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a25a663d9b0c0c232d8b25834fd82a922}{m\_\-muonDeltaBetaIsolation}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a12dbd2d89ff730740180bcdf6e375089}{m\_\-muonChargedIsolationOverPt}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_ab1f969d8d977e78fe88e12ef315f6583}{m\_\-muonNeutralIsolationOverPt}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_aedf7aad859164dc7ec217ee3586d4d8b}{m\_\-muonPhotonIsolationOverPt}
+\item 
+std::map$<$ KMuon $\ast$, double $>$ \hyperlink{classHttProduct_a3cdbe21e10c8bd9e790732191ecd5776}{m\_\-muonDeltaBetaIsolationOverPt}
+\item 
+RMFLV \hyperlink{classHttProduct_a507d922119a2091de4885740846c3b6b}{m\_\-diLeptonSystem}
+\item 
+RMFLV \hyperlink{classHttProduct_aae54f2c0092ba8aea1b631f5ba8ca813}{m\_\-diLeptonPlusMetSystem}
+\item 
+RMFLV \hyperlink{classHttProduct_ae5c2946262b801bfb4c754689bbe5fbf}{m\_\-diLeptonGenSystem}
+\item 
+bool \hyperlink{classHttProduct_a6a324cf345b28109cae9dcee49c95b2e}{m\_\-diLeptonGenSystemFound} = false
+\item 
+RMFLV \hyperlink{classHttProduct_aeff39416edd99d269ce0ca52f551f252}{m\_\-diTauGenSystem}
+\item 
+bool \hyperlink{classHttProduct_a6cccf4c815d41dfa8fd2956960d3794b}{m\_\-diTauGenSystemFound} = false
+\item 
+double \hyperlink{classHttProduct_a215a81b1db6f7bd11ff6d0ee0178386d}{m\_\-col}
+\item 
+double \hyperlink{classHttProduct_a07f77401cf50bb193347cbec02ebae05}{m\_\-tauSpinnerPolarisation} = DefaultValues::UndefinedDouble
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_ad23306a6f236a70a45aed2d285e32750}{m\_\-polarisationOmegasSvfit}
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_a5d985659a837ce0cd45fd247c8d28827}{m\_\-polarisationOmegasSimpleFit}
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_a8eda87274c5559af86ec2fac290f8aad}{m\_\-polarisationOmegaBarsSvfit}
+\item 
+std::map$<$ KLepton $\ast$, double $>$ \hyperlink{classHttProduct_a2c33c1585a230077b24bc0050ccec598}{m\_\-polarisationOmegaBarsSimpleFit}
+\item 
+double \hyperlink{classHttProduct_a829ebf0e411d8e2ad1410ccff493db0e}{m\_\-polarisationCombinedOmegaSvfit} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_adf20d7ef58760c4a6ded6a6547315b5c}{m\_\-polarisationCombinedOmegaSimpleFit} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a76ad97fa61bb687121369e7eefd46836}{m\_\-polarisationCombinedOmegaBarSvfit} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a9dfb25a74bfaf26ad2c4da1fee5f7572}{m\_\-polarisationCombinedOmegaBarSimpleFit} = DefaultValues::UndefinedDouble
+\item 
+TVector2 \hyperlink{classHttProduct_a9452803893bd2284d830ff46f52f606b}{m\_\-recoMetOnGenMetProjection}
+\item 
+TVector2 \hyperlink{classHttProduct_a9cad0f70398e40cc1b27bbbb5ca3f25b}{m\_\-metPull}
+\item 
+TVector2 \hyperlink{classHttProduct_abeb2d8eb1b290b609a225cef8616d021}{m\_\-recoMetOnBoson}
+\item 
+TVector2 \hyperlink{classHttProduct_ab2b4e95415346741761baf7a260e9d07}{m\_\-recoilOnBoson}
+\item 
+double \hyperlink{classHttProduct_a5cd0d8131990b751fa9c37148267a82f}{m\_\-chiSquare}
+\item 
+TVector2 \hyperlink{classHttProduct_a14c6dc367cae8ab8dfec16d20180cd8d}{m\_\-recoPfMetOnGenMetProjection}
+\item 
+TVector2 \hyperlink{classHttProduct_af0871f430337a0e9afd9142e2c685332}{m\_\-pfmetPull}
+\item 
+TVector2 \hyperlink{classHttProduct_abea8bb6a2a1f310bffeeed4e3c1828e9}{m\_\-recoPfMetOnBoson}
+\item 
+TVector2 \hyperlink{classHttProduct_ac875645551f9928222a8f22f2487b444}{m\_\-pfrecoilOnBoson}
+\item 
+double \hyperlink{classHttProduct_a662eecf0d76a57e4dc516b9acef7fb6a}{m\_\-chiSquarePf}
+\item 
+double \hyperlink{classHttProduct_aff2a9293122d9236decdc9ee37d16916}{m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt}
+\item 
+double \hyperlink{classHttProduct_ae3ef7216b4923322f5f2bae4e4631691}{m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt}
+\item 
+double \hyperlink{classHttProduct_af396cb9db5d26bff1fc6950b75fe8a69}{m\_\-genBosonPt}
+\item 
+double \hyperlink{classHttProduct_aebef7da9d392e74d5a2f9ed5ccbc1b0e}{m\_\-genBosonPhi}
+\item 
+std::vector$<$ RMFLV $>$ \hyperlink{classHttProduct_a052e584fa560589e8b47cff8675827e4}{m\_\-flavourOrderedTauMomentaCA}
+\item 
+RMFLV \hyperlink{classHttProduct_a1a670963cdd4350b7abc851b0b69366e}{m\_\-diTauSystemCA}
+\item 
+bool \hyperlink{classHttProduct_a02e57a61e9244518c03d5b61798b5bfa}{m\_\-validCollinearApproximation} = false
+\item 
+double \hyperlink{classHttProduct_afc00696a0a2e05df1472fa9023b8ce57}{pZetaVis} = 0.0
+\item 
+double \hyperlink{classHttProduct_a75672ea51e6fd225c866ade315ba0982}{pZetaMiss} = 0.0
+\item 
+double \hyperlink{classHttProduct_abba102385ce7747d70c597409670aad8}{pZetaMissVis} = 0.0
+\item 
+\hyperlink{classSvfitEventKey}{SvfitEventKey} \hyperlink{classHttProduct_a417c202e5be95c4971c52d7f51e92fd5}{m\_\-svfitEventKey}
+\item 
+\hyperlink{classSvfitInputs}{SvfitInputs} \hyperlink{classHttProduct_a40ff729dcc44f180cb51b6532f5cbcc3}{m\_\-svfitInputs}
+\item 
+\hyperlink{classSvfitResults}{SvfitResults} \hyperlink{classHttProduct_ae13b0856479d03387c5319192f4c7b77}{m\_\-svfitResults}
+\item 
+bool \hyperlink{classHttProduct_accdce5615fc40068d8411be69b349f1c}{m\_\-svfitCalculated} = false
+\item 
+std::map$<$ KLepton $\ast$, RMFLV $>$ \hyperlink{classHttProduct_afb683c52b390000148389a34a3b66a17}{m\_\-svfitTaus}
+\item 
+std::map$<$ KLepton $\ast$, RMFLV $>$ \hyperlink{classHttProduct_a169a364722b7ef30ef64c0cc9ab41047}{m\_\-simpleFitTaus}
+\item 
+RMFLV \hyperlink{classHttProduct_a71add7604b6cd190216b8f32420d27aa}{m\_\-diTauSystemSimpleFit} = DefaultValues::UndefinedRMFLV
+\item 
+RMDLV \hyperlink{classHttProduct_a1384e5a262d702da85fc56f8297e26fe}{m\_\-diJetSystem}
+\item 
+bool \hyperlink{classHttProduct_a54ab9cbac6194efe53e721aa77aba8f8}{m\_\-diJetSystemAvailable} = false
+\item 
+int \hyperlink{classHttProduct_a29fc4394e47bea58d6477ee8f7ead81e}{m\_\-nCentralJets20} = 0
+\item 
+int \hyperlink{classHttProduct_abb86def8117c39e95b455f4e054cea06}{m\_\-nCentralJets30} = 0
+\item 
+RMDLV \hyperlink{classHttProduct_ad122b9b5efd27c7a930acb0c0c06c9c6}{m\_\-diGenJetSystem}
+\item 
+bool \hyperlink{classHttProduct_add98b9d1ecc7acd2c77861aa295dea19}{m\_\-diGenJetSystemAvailable} = false
+\item 
+std::map$<$ \hyperlink{classHttEnumTypes_a6d52b15105995df93610454d88c598f0}{HttEnumTypes::JetEnergyUncertaintyShiftName}, std::vector$<$ KJet $\ast$ $>$ $>$ \hyperlink{classHttProduct_a37927d009e750a74a32b77e1b3431fbe}{m\_\-correctedJetsBySplitUncertainty}
+\item 
+std::map$<$ \hyperlink{classHttEnumTypes_a6d52b15105995df93610454d88c598f0}{HttEnumTypes::JetEnergyUncertaintyShiftName}, std::vector$<$ KJet $\ast$ $>$ $>$ \hyperlink{classHttProduct_aba1b83caaf97fb12f47642179f8a3dd6}{m\_\-correctedBTaggedJetsBySplitUncertainty}
+\item 
+KMET $\ast$ \hyperlink{classHttProduct_a262e1f83347405eaad1b7f4324f1ca43}{m\_\-metUncorr} = 0
+\item 
+KMET $\ast$ \hyperlink{classHttProduct_aa787c5a62f9e8fcff5ba469b877864aa}{m\_\-puppiMetUncorr} = 0
+\item 
+KMET $\ast$ \hyperlink{classHttProduct_a9c2604be85c44fc57f7fa3fd067a9a8f}{m\_\-pfmetUncorr} = 0
+\item 
+KMET $\ast$ \hyperlink{classHttProduct_a45f94abd585fbce86a75e170bd5e17d9}{m\_\-mvametUncorr} = 0
+\item 
+std::vector$<$ float $>$ \hyperlink{classHttProduct_a17c2bf4e38deeba8621905cf106e334d}{m\_\-mvametCorrections}
+\item 
+std::vector$<$ float $>$ \hyperlink{classHttProduct_a8da5000e9a19e09d4495b8d81d4c67c9}{m\_\-pfmetCorrections}
+\item 
+KMET \hyperlink{classHttProduct_a7c4828e5053357081c0b6013762913cd}{m\_\-met}
+\item 
+KMET \hyperlink{classHttProduct_aa99f9a9c423fc8188938dcc0155da4c4}{m\_\-pfmet}
+\item 
+KMET \hyperlink{classHttProduct_a44f387057d5dafe967b68fd5eb58a79f}{m\_\-mvamet}
+\item 
+\hyperlink{classHttEnumTypes_add21b4b1cefbea05ecb244d1b72f52e7}{HttEnumTypes::TauTauRestFrameReco} \hyperlink{classHttProduct_af34a6998b5fe3ae490f3e4be430b9333}{m\_\-tauTauRestFrameReco} = HttEnumTypes::TauTauRestFrameReco::NONE
+\item 
+std::vector$<$ RMFLV $>$ \hyperlink{classHttProduct_a1927121e20f6b91f82993722074198c0}{m\_\-flavourOrderedTauMomenta}
+\item 
+std::vector$<$ ROOT::Math::Boost $>$ \hyperlink{classHttProduct_ad47b7fcac7b589b6a4f9a3f8f6816388}{m\_\-boostsToTauRestFrames}
+\item 
+bool \hyperlink{classHttProduct_ab784e7805f945bedf6e2cc3ee39f7112}{m\_\-tauMomentaReconstructed} = false
+\item 
+RMFLV \hyperlink{classHttProduct_aeda613181415aa218fe0cacc9bb3e7a5}{m\_\-diTauSystem}
+\item 
+ROOT::Math::Boost \hyperlink{classHttProduct_ac7288a01a3f35dc7b5ef2d0b4c713cd8}{m\_\-boostToDiTauRestFrame}
+\item 
+bool \hyperlink{classHttProduct_a74732bcc7098f15e0bcca4c01e5738f9}{m\_\-diTauSystemReconstructed} = false
+\item 
+std::map$<$ KLepton $\ast$, RMFLV $>$ \hyperlink{classHttProduct_a92352e3b04bf6249535bf5f02aef3193}{m\_\-leptonsBoostToDiLeptonSystem}
+\item 
+std::map$<$ KLepton $\ast$, RMFLV $>$ \hyperlink{classHttProduct_ac52a68f17b8c456a8dc7a23ca8c35926}{m\_\-leptonsBoostToDiTauSystem}
+\item 
+std::map$<$ RMFLV $\ast$, RMFLV $>$ \hyperlink{classHttProduct_aea1e343fbe03ad6d80b4390c49592699}{m\_\-tausBoostToDiTauSystem}
+\item 
+std::map$<$ KGenTau $\ast$, RMFLV $>$ \hyperlink{classHttProduct_ad51c5ccec06913d5eb09f11bc42bbce5}{m\_\-genVisTausBoostToGenDiLeptonSystem}
+\item 
+std::map$<$ KGenTau $\ast$, RMFLV $>$ \hyperlink{classHttProduct_aad0006f795c69ebf4010459418693721}{m\_\-genTausBoostToGenDiLeptonSystem}
+\item 
+std::map$<$ KGenTau $\ast$, RMFLV $>$ \hyperlink{classHttProduct_ac04d1f87583b1228a755735133e53bf6}{m\_\-genTausBoostToGenDiTauSystem}
+\item 
+KRefitVertex $\ast$ \hyperlink{classHttProduct_a2e67ba21921d25e857e5265bf53fa1b8}{m\_\-refitPV} = 0
+\item 
+KRefitVertex $\ast$ \hyperlink{classHttProduct_a059310143e55e578c6f0ec5613e79ca6}{m\_\-refitPVBS} = 0
+\item 
+RMPoint $\ast$ \hyperlink{classHttProduct_a485baa2ac1d1ecbdb55366c9865d27fe}{m\_\-refP1} = 0
+\item 
+RMPoint $\ast$ \hyperlink{classHttProduct_adc963cf8394312ce7d86c8ae53f0c6cd}{m\_\-refP2} = 0
+\item 
+RMFLV $\ast$ \hyperlink{classHttProduct_a6316ad75d22057f3a6405904144e3307}{m\_\-track1p4} = 0
+\item 
+RMFLV $\ast$ \hyperlink{classHttProduct_a8a6f0088a1ba7e9838e0b2f9b551bce5}{m\_\-track2p4} = 0
+\item 
+float \hyperlink{classHttProduct_a7ceef9ded23ad83000f89af8167cd962}{m\_\-d3DnewPV1} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_afb1ebfc82910386b745aef7f8dc897c0}{m\_\-err3DnewPV1} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_a5cd0dab7ec8daff69e1540b1436141f2}{m\_\-d2DnewPV1} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_ac4058691f0eab33136a5fcfd728e8e96}{m\_\-err2DnewPV1} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_aef4f07e87a2d4ca39749fb4c2b5e8f60}{m\_\-d3DnewPV2} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_acc86e1f479ff6ab8b9b7b7397b423437}{m\_\-err3DnewPV2} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_a0efa7a19a8e5b0e2129c91ae58cf24f4}{m\_\-d2DnewPV2} = DefaultValues::UndefinedFloat
+\item 
+float \hyperlink{classHttProduct_aabbc4184d62a6cd2b6e71d70eddda294}{m\_\-err2DnewPV2} = DefaultValues::UndefinedFloat
+\item 
+RMPoint $\ast$ \hyperlink{classHttProduct_a62c0b404f4cbf75e58a963c62466dadc}{m\_\-genPV} = 0
+\item 
+double \hyperlink{classHttProduct_a7da22d22be0ba3757a18a750846dd7f2}{m\_\-genZMinus} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_afe89f44a7b3f1740434a14a97f6ca420}{m\_\-genZPlus} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a5faddab4b5f97fa2d558d451f6fa2ea7}{m\_\-genZs} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a60b4a2e75cda48c95d74b39cfb2af593}{m\_\-d0\_\-1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a0c1690a7af0dbfe2784f9a0987faeff3}{m\_\-d0\_\-2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_afa36e40279c564966ba388f4387d1cb4}{m\_\-d0s\_\-area} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_aef0897c87944ba5924db4f50b37f9822}{m\_\-d0s\_\-dist} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a5462fd77ffc176948b012b32406dd4f3}{m\_\-genPhiCP} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a080bded07e8508ff0e09577f95340002}{m\_\-genPhiStarCP} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a42f44956643d702be12d765e1eecf960}{m\_\-genPhiStar} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_ab159ac6f1da38310b236baacbf299ea2}{m\_\-genOStarCP} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a0a2c6b3a36ff1a5f90830f63212336da}{m\_\-genPhi} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_adbf6b4ae920c78e982d14c577d720ad5}{m\_\-genOCP} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_aec9091c51829b8de6be9303ec1002c7a}{m\_\-genPhiCPLab} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a169478ca381091cb1692885ad0a5bac4}{m\_\-genPhiStarCPComb} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a91a52a64c8c738cbb842fe389c60c07d}{m\_\-genPhiCP\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a64b92a877f8d6ad7a514214e1929c342}{m\_\-genPhiStarCP\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a2fe4a315ccbd2834d619db751d842cb8}{m\_\-genPhi\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a8d816230bd59c76d77a3833858e8434c}{m\_\-genPhiStar\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a0c74881d1d4b145b91ec71d49e18fa63}{m\_\-gen\_\-yTau} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a4ed4969177d24dcd0ffa92970479cb5f}{m\_\-gen\_\-posyTauL} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a2513cc424cf38a9c992c6c51d01234b5}{m\_\-gen\_\-negyTauL} = DefaultValues::UndefinedDouble
+\item 
+std::pair$<$ double, double $>$ \hyperlink{classHttProduct_a6f852191cf4b853424e8b4c4b3202160}{m\_\-genChargedProngEnergies} = std::make\_\-pair(DefaultValues::UndefinedDouble, DefaultValues::UndefinedDouble)
+\item 
+KGenParticle $\ast$ \hyperlink{classHttProduct_a53a29768acceece5863f783c114d7e2f}{m\_\-genOneProngCharged1} = 0
+\item 
+KGenParticle $\ast$ \hyperlink{classHttProduct_a3cad468b45916675c7d3b551d3deb421}{m\_\-genOneProngCharged2} = 0
+\item 
+unsigned int \hyperlink{classHttProduct_abb0ed1f2a021227a3f5730fb133dc293}{m\_\-genTau1ProngsSize} = DefaultValues::UndefinedInt
+\item 
+unsigned int \hyperlink{classHttProduct_a48cfa5c2f5cf0b2909858ac0dfc3badc}{m\_\-genTau2ProngsSize} = DefaultValues::UndefinedInt
+\item 
+int \hyperlink{classHttProduct_a55c67bddc9cd45d950cbc943a63f4632}{m\_\-genTau1DecayMode} = DefaultValues::UndefinedInt
+\item 
+int \hyperlink{classHttProduct_a92b05122d3b7e10810649fb55b51d7cc}{m\_\-genTau2DecayMode} = DefaultValues::UndefinedInt
+\item 
+int \hyperlink{classHttProduct_af53a9d1e5cee3afcb40adc1640836c4d}{m\_\-genTauTree1DecayMode} = DefaultValues::UndefinedInt
+\item 
+int \hyperlink{classHttProduct_a97d011daac22c9d02478a6b11e660193}{m\_\-genTauTree2DecayMode} = DefaultValues::UndefinedInt
+\item 
+RMPoint $\ast$ \hyperlink{classHttProduct_ae3617dc56d9ef3bb87dacb354286f3fb}{m\_\-genSV1} = 0
+\item 
+RMPoint $\ast$ \hyperlink{classHttProduct_a519090c41ad7a95fde740478e4a0717f}{m\_\-genSV2} = 0
+\item 
+TVector3 \hyperlink{classHttProduct_ade104eec9f075c87d0de6c816e5fd260}{m\_\-genIP1}
+\item 
+TVector3 \hyperlink{classHttProduct_afa86c42d8eb6accbfa740e341c837fc1}{m\_\-genIP2}
+\item 
+double \hyperlink{classHttProduct_ac16132a7c669ebff09cb300be554a4c8}{m\_\-genCosPsiPlus} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a8c5dc87b3c1234c92106729e42bc49d0}{m\_\-genCosPsiMinus} = DefaultValues::UndefinedDouble
+\item 
+KVertex $\ast$ \hyperlink{classHttProduct_ad59601b3ebee99a873ca371e79cbd1c4}{m\_\-thePV} = 0
+\item 
+KBeamSpot $\ast$ \hyperlink{classHttProduct_a21bfcdace50cb23137eb9cd1c6de4f0a}{m\_\-theBS} = 0
+\item 
+TVector3 \hyperlink{classHttProduct_a571feb2272c3205b12c0bd6e694127d3}{m\_\-recoIP1}
+\item 
+TVector3 \hyperlink{classHttProduct_afd8ea5060d1649bdc05b7598a43d3f30}{m\_\-recoIP2}
+\item 
+TVector3 \hyperlink{classHttProduct_aea4fe73c340c52db4fe5a427d2cf9be5}{m\_\-recoIP1\_\-refitPV}
+\item 
+TVector3 \hyperlink{classHttProduct_ab6f1595deb54f67149fdcc3a30adf7fa}{m\_\-recoIP2\_\-refitPV}
+\item 
+double \hyperlink{classHttProduct_aff72a2230f489c350ef7c9e484ad1fe6}{m\_\-cosPsiPlus} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a059c70723ea678b74ce0e482532a276e}{m\_\-cosPsiMinus} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_aac726a3ccc8029923223bcd08e75f010}{m\_\-deltaEtaGenRecoIP1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a57bff061908d353a2f651657bd8e4de1}{m\_\-deltaEtaGenRecoIP2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a4e55c66a5e3ec73aadb0a3917f727e7a}{m\_\-deltaPhiGenRecoIP1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a5bc17e1dd51ff83408e8cd70fc7b4d2d}{m\_\-deltaPhiGenRecoIP2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a74cf87b5a1e3860aea33859f66bfd15b}{m\_\-deltaRGenRecoIP1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_afb7a0e37e07af8fba505256a0ff722ac}{m\_\-deltaRGenRecoIP2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a3d4aa891d7628157d9aabe530a1b1c86}{m\_\-deltaGenRecoIP1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a4ace48eb8ca08b83d4d7363639fa5dd5}{m\_\-deltaGenRecoIP2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a6b60262540f218d140d75aae2c052796}{m\_\-deltaRrecoIP1s} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a2bf06664258fe38b2b7ee4c163e4ff7d}{m\_\-deltaRrecoIP2s} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_aa4bd2e24680c73548ed2fbc6b4ac7a19}{m\_\-recoPhiStarCP} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a40b2f8b7d918c15baa3a1adc88e5bd84}{m\_\-recoPhiStarCPrPV} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_ac8e1ce629cd837f8fc345c13390ceec9}{m\_\-recoPhiStarCPrPV2} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a098ffec9c6c3ed02c71847654cbbd3d4}{m\_\-recoPhiStarCPrPVbs} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a94f1cb54eab52625888eda222d67e21d}{m\_\-recoPhiStarCPComb} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a1d8bfbc2f1469b322c46f058b8a2eaf2}{m\_\-recoPhiStarCPCombMerged} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a5aef45105c9b2e2069feeb411adf5904}{m\_\-recoPhiStarCP\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_acbda6aa9798ef7cb8c3cefb04cf81bce}{m\_\-recoPhiStarCP\_\-rho\_\-merged} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a497bb3a130adff99248aba9890339632}{m\_\-recoPhiStarCPrPV\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a5aede4ad7706e790207d27cdfe281525}{m\_\-recoPhiStarCPrPVbs\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a8152fe5094df12ffcce5647c008f9f42}{m\_\-reco\_\-posyTauL} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_ab108952b461b79071c8dc6d25fb901b8}{m\_\-reco\_\-negyTauL} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_adce7e4fdde050504e61358f745be9c35}{m\_\-recoPhiStar} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a382e6a65e1bc7bac27069f8cfff2d234}{m\_\-recoPhiStar\_\-rho} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a213a48df02bd0bcf562c3cf636fc6df2}{m\_\-recoChargedPiPlus\_\-rho\_\-pt} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a08d03c554a680c0d4009618907a50a5e}{m\_\-recoChargedPiMinus\_\-pt} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a6e16f6cd5da93ccaa83bc33abc443189}{m\_\-recoPiZeroPlus\_\-pt} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a7786e41a155cb50c5083eba8575cb262}{m\_\-recoPiZeroMinus\_\-pt} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a904bf8957cc303f9c257259d898675e8}{m\_\-recoChargedPiPlus\_\-eta} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a86d235473b682dc25e69a6fde2c91fa7}{m\_\-recoChargedPiMinus\_\-eta} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a319d9cdf83b816f05085fbe62afe435c}{m\_\-recoPiZeroPlus\_\-eta} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_abdeb3313e8426bbf9d2a4d888104651a}{m\_\-recoPiZeroMinus\_\-eta} = DefaultValues::UndefinedDouble
+\item 
+KGenParticle $\ast$ \hyperlink{classHttProduct_ab6e20142aa603f129f8beb7935997aca}{m\_\-recoChargedParticle1} = 0
+\item 
+KGenParticle $\ast$ \hyperlink{classHttProduct_ade299bec9d6dd15b181cd562ec28cd3b}{m\_\-recoChargedParitcle2} = 0
+\item 
+std::pair$<$ double, double $>$ \hyperlink{classHttProduct_a00b53081f6bd3ad818e9108569389e43}{m\_\-recoChargedHadronEnergies} = std::make\_\-pair(DefaultValues::UndefinedDouble, DefaultValues::UndefinedDouble)
+\item 
+double \hyperlink{classHttProduct_a4bd6de3ec7586444d48d4d0d89d3deaf}{m\_\-recoTrackRefError1} = DefaultValues::UndefinedDouble
+\item 
+double \hyperlink{classHttProduct_a95d22008c2a25f1bd7403f12b1f1666e}{m\_\-recoTrackRefError2} = DefaultValues::UndefinedDouble
+\item 
+std::vector$<$ double $>$ \hyperlink{classHttProduct_acabaf148b0c74108cceed4250817b299}{m\_\-antiTtbarDiscriminators}
+\item 
+std::vector$<$ double $>$ \hyperlink{classHttProduct_aa0c3f0fdfab21ffb2f82fd856dc54410}{m\_\-tauPolarisationDiscriminators}
+\item 
+std::vector$<$ double $>$ \hyperlink{classHttProduct_a5edebff621a1c9c48bed3a53bd7d0749}{m\_\-MVATestMethodsDiscriminators}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_a4b39739074003e2a8c665d32005c4e2b}{m\_\-ptOrderedGenTaus}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_af3a22fec33a3dc27d44b9124c8d1efca}{m\_\-flavourOrderedGenTaus}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_a7d32c5bc91b092a3a59af15a00ec6ec4}{m\_\-chargeOrderedGenTaus}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_a9b4abe266732576c4acebde25b49a9a0}{m\_\-validGenTausToElectrons}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_a0f0b0a177d96a0aaa051228061356033}{m\_\-validGenTausToMuons}
+\item 
+std::vector$<$ KGenTau $\ast$ $>$ \hyperlink{classHttProduct_abd8f9838618318dde76c1c98b6d00e0d}{m\_\-validGenTausToTaus}
+\item 
+std::vector$<$ std::pair$<$ KElectron $\ast$, KElectron $\ast$ $>$ $>$ \hyperlink{classHttProduct_a4593cae98fab3011e52bf798ff266e75}{m\_\-triggerTagProbeElectronPairs}
+\item 
+std::vector$<$ std::pair$<$ KMuon $\ast$, KMuon $\ast$ $>$ $>$ \hyperlink{classHttProduct_a2222d478d3a8d53ab57680b6da314bf9}{m\_\-triggerTagProbeMuonPairs}
+\item 
+std::vector$<$ std::pair$<$ KMuon $\ast$, KTau $\ast$ $>$ $>$ \hyperlink{classHttProduct_a7b64fed593836a716e0549e4e3e593aa}{m\_\-triggerTagProbeMuonTauPairs}
+\item 
+std::vector$<$ std::pair$<$ KElectron $\ast$, KTau $\ast$ $>$ $>$ \hyperlink{classHttProduct_af58c919d7ebff1dbf5a0b062f4e093ae}{m\_\-triggerTagProbeElectronTauPairs}
+\item 
+std::vector$<$ std::pair$<$ bool, bool $>$ $>$ \hyperlink{classHttProduct_a165cea4e5d0a8f8ef984c4ce4ffeb125}{m\_\-triggerTagProbeElectronMatchedPairs}
+\item 
+std::vector$<$ std::pair$<$ bool, bool $>$ $>$ \hyperlink{classHttProduct_a3eedf80335cc6f6b9162db2c4228b1ea}{m\_\-triggerTagProbeMuonMatchedPairs}
+\item 
+std::vector$<$ std::pair$<$ bool, bool $>$ $>$ \hyperlink{classHttProduct_a14ce939d448152c742021f043fc8922b}{m\_\-triggerTagProbeMuonTauMatchedPairs}
+\item 
+std::vector$<$ std::pair$<$ bool, bool $>$ $>$ \hyperlink{classHttProduct_acfac99f7abceb758f67853389752d1fb}{m\_\-triggerTagProbeElectronTauMatchedPairs}
+\item 
+double \hyperlink{classHttProduct_aff3f5f7a0d777506d01369813d160925}{m\_\-pVecSum} = -\/1
+\item 
+double \hyperlink{classHttProduct_a45abb293846b6666a1f790e5958b719d}{m\_\-pScalSum} = -\/1
+\item 
+double \hyperlink{classHttProduct_a306c181da30a859bd7a13a8beadbdde8}{m\_\-MinLLJetEta} = 10
+\item 
+double \hyperlink{classHttProduct_a8bdd8eb96d0520201f6a22c63825c054}{m\_\-Lep1Centrality} = -\/1.5
+\item 
+double \hyperlink{classHttProduct_ad25c9324459c0af1d52a48d390ba10f5}{m\_\-Lep2Centrality} = -\/1
+\item 
+double \hyperlink{classHttProduct_a17019f40da6b7ba83825adeefd969762}{m\_\-DiLepCentrality} = -\/1
+\item 
+double \hyperlink{classHttProduct_af1162d2a415a6723deb5c030b927d5bb}{m\_\-DiLepDiJetDeltaR} = -\/1
+\item 
+double \hyperlink{classHttProduct_a3bbd6c168edc7d78fadea31138436d80}{m\_\-diLepBoost} = -\/10
+\item 
+double \hyperlink{classHttProduct_a19a4c4f7995a7610bc10a51ed67a9745}{m\_\-diLepJet1DeltaR} = -\/10
+\item 
+double \hyperlink{classHttProduct_ab5ac9c755a375ddcf9c7fa7f98b7ddcf}{m\_\-diLepDeltaR} = -\/10
+\item 
+double \hyperlink{classHttProduct_a955310c3531e866279424134441817b8}{m\_\-diJetDeltaMass} = -\/10
+\item 
+double \hyperlink{classHttProduct_a6fce97a5c2d17c85ef4fe7f43da9577a}{m\_\-diJetSymDeltaEta} = -\/30
+\item 
+double \hyperlink{classHttProduct_a24e5e7cffc173ca220dac9da285f808a}{m\_\-diJetDeltaR} = -\/1
+\item 
+double \hyperlink{classHttProduct_af3ab7873fcb22271944c6230723c3a2f}{m\_\-diCJetDeltaMass} = -\/10
+\item 
+double \hyperlink{classHttProduct_a65bad50cdbf271e1feaea726b4df4ea3}{m\_\-diCJetSymDeltaEta} = -\/30
+\item 
+double \hyperlink{classHttProduct_aa495631422c54973b3565a1113bda0ba}{m\_\-diCJetDeltaR} = -\/1
+\item 
+double \hyperlink{classHttProduct_ade6a2753273f1bcf7dba3ffbc843e0b0}{m\_\-diCJetAbsDeltaPhi} = -\/1
+\item 
+double \hyperlink{classHttProduct_a681ffc49f91457b1ff5d8a3a938cc6b6}{m\_\-diCJetSymEta1} = -\/1
+\item 
+double \hyperlink{classHttProduct_ac6955f8cf5af8bed0cbd98dc28a63e82}{m\_\-jccsv1} = -\/1
+\item 
+double \hyperlink{classHttProduct_a12e1a3ff84e4a6a2a35a867920ba6e0f}{m\_\-jccsv2} = -\/1
+\item 
+double \hyperlink{classHttProduct_a5aba8fcf3ac6800253caa48ac9188fa4}{m\_\-jccsv3} = -\/1
+\item 
+double \hyperlink{classHttProduct_a2063343b5b6864ced890829817b8e98c}{m\_\-jccsv4} = -\/1
+\item 
+double \hyperlink{classHttProduct_a24c512c316b95df8293cc5fb66a146bc}{m\_\-csv1JetPt} = -\/10
+\item 
+double \hyperlink{classHttProduct_a4cc75b7222fe46c6a57933454a69c859}{m\_\-csv2JetPt} = -\/10
+\item 
+double \hyperlink{classHttProduct_a58b4fd27f0f6ff1a9abe8ba113e137fb}{m\_\-csv1JetMass} = -\/10
+\item 
+double \hyperlink{classHttProduct_ac5607acc08338d09bda39eb55684acb9}{m\_\-csv2JetMass} = -\/10
+\item 
+double \hyperlink{classHttProduct_afd2b667de3da0cab39012456116ff14a}{m\_\-diCJetMass} = -\/10
+\item 
+double \hyperlink{classHttProduct_a44276b9923909f4eca106fcec1968b30}{m\_\-pVecSumCSVJets} = -\/1
+\item 
+double \hyperlink{classHttProduct_acc65cd96f1114a8c00337ce3b57ea03b}{m\_\-pfSumHt} = 0.
+\item 
+RMFLV \hyperlink{classHttProduct_a7ead93647a4958c65f8bb84c689ea0b5}{m\_\-pfSumP4}
+\item 
+double \hyperlink{classHttProduct_ad0bfad9592c131371736c14e9ed16e71}{m\_\-pfSumHtWithoutZMuMu} = 0.
+\item 
+RMFLV \hyperlink{classHttProduct_a8304bb2e0d778a235a427993641ed25f}{m\_\-pfSumP4WithoutZMuMu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHttProduct_acabaf148b0c74108cceed4250817b299}{
+\index{HttProduct@{HttProduct}!m\_\-antiTtbarDiscriminators@{m\_\-antiTtbarDiscriminators}}
+\index{m\_\-antiTtbarDiscriminators@{m\_\-antiTtbarDiscriminators}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-antiTtbarDiscriminators}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf HttProduct::m\_\-antiTtbarDiscriminators}}}
+\label{classHttProduct_acabaf148b0c74108cceed4250817b299}
+\hypertarget{classHttProduct_ad47b7fcac7b589b6a4f9a3f8f6816388}{
+\index{HttProduct@{HttProduct}!m\_\-boostsToTauRestFrames@{m\_\-boostsToTauRestFrames}}
+\index{m\_\-boostsToTauRestFrames@{m\_\-boostsToTauRestFrames}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-boostsToTauRestFrames}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ROOT::Math::Boost$>$ {\bf HttProduct::m\_\-boostsToTauRestFrames}}}
+\label{classHttProduct_ad47b7fcac7b589b6a4f9a3f8f6816388}
+\hypertarget{classHttProduct_ac7288a01a3f35dc7b5ef2d0b4c713cd8}{
+\index{HttProduct@{HttProduct}!m\_\-boostToDiTauRestFrame@{m\_\-boostToDiTauRestFrame}}
+\index{m\_\-boostToDiTauRestFrame@{m\_\-boostToDiTauRestFrame}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-boostToDiTauRestFrame}]{\setlength{\rightskip}{0pt plus 5cm}ROOT::Math::Boost {\bf HttProduct::m\_\-boostToDiTauRestFrame}}}
+\label{classHttProduct_ac7288a01a3f35dc7b5ef2d0b4c713cd8}
+\hypertarget{classHttProduct_a70bf9c026bb6be12a25a0e793215511f}{
+\index{HttProduct@{HttProduct}!m\_\-chargeOrderedGenLeptons@{m\_\-chargeOrderedGenLeptons}}
+\index{m\_\-chargeOrderedGenLeptons@{m\_\-chargeOrderedGenLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chargeOrderedGenLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenParticle$\ast$$>$ {\bf HttProduct::m\_\-chargeOrderedGenLeptons}}}
+\label{classHttProduct_a70bf9c026bb6be12a25a0e793215511f}
+\hypertarget{classHttProduct_a736650de11728388126970486f2f4417}{
+\index{HttProduct@{HttProduct}!m\_\-chargeOrderedGenLeptonVisibleLVs@{m\_\-chargeOrderedGenLeptonVisibleLVs}}
+\index{m\_\-chargeOrderedGenLeptonVisibleLVs@{m\_\-chargeOrderedGenLeptonVisibleLVs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chargeOrderedGenLeptonVisibleLVs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$RMFLV$\ast$$>$ {\bf HttProduct::m\_\-chargeOrderedGenLeptonVisibleLVs}}}
+\label{classHttProduct_a736650de11728388126970486f2f4417}
+\hypertarget{classHttProduct_a7d32c5bc91b092a3a59af15a00ec6ec4}{
+\index{HttProduct@{HttProduct}!m\_\-chargeOrderedGenTaus@{m\_\-chargeOrderedGenTaus}}
+\index{m\_\-chargeOrderedGenTaus@{m\_\-chargeOrderedGenTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chargeOrderedGenTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-chargeOrderedGenTaus}}}
+\label{classHttProduct_a7d32c5bc91b092a3a59af15a00ec6ec4}
+\hypertarget{classHttProduct_ab6f4f492a592b34911ad317378b72f1b}{
+\index{HttProduct@{HttProduct}!m\_\-chargeOrderedLeptons@{m\_\-chargeOrderedLeptons}}
+\index{m\_\-chargeOrderedLeptons@{m\_\-chargeOrderedLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chargeOrderedLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KLepton$\ast$$>$ {\bf HttProduct::m\_\-chargeOrderedLeptons}}}
+\label{classHttProduct_ab6f4f492a592b34911ad317378b72f1b}
+\hypertarget{classHttProduct_a5cd0d8131990b751fa9c37148267a82f}{
+\index{HttProduct@{HttProduct}!m\_\-chiSquare@{m\_\-chiSquare}}
+\index{m\_\-chiSquare@{m\_\-chiSquare}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chiSquare}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-chiSquare}}}
+\label{classHttProduct_a5cd0d8131990b751fa9c37148267a82f}
+\hypertarget{classHttProduct_a662eecf0d76a57e4dc516b9acef7fb6a}{
+\index{HttProduct@{HttProduct}!m\_\-chiSquarePf@{m\_\-chiSquarePf}}
+\index{m\_\-chiSquarePf@{m\_\-chiSquarePf}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-chiSquarePf}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-chiSquarePf}}}
+\label{classHttProduct_a662eecf0d76a57e4dc516b9acef7fb6a}
+\hypertarget{classHttProduct_a215a81b1db6f7bd11ff6d0ee0178386d}{
+\index{HttProduct@{HttProduct}!m\_\-col@{m\_\-col}}
+\index{m\_\-col@{m\_\-col}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-col}}}
+\label{classHttProduct_a215a81b1db6f7bd11ff6d0ee0178386d}
+\hypertarget{classHttProduct_aba1b83caaf97fb12f47642179f8a3dd6}{
+\index{HttProduct@{HttProduct}!m\_\-correctedBTaggedJetsBySplitUncertainty@{m\_\-correctedBTaggedJetsBySplitUncertainty}}
+\index{m\_\-correctedBTaggedJetsBySplitUncertainty@{m\_\-correctedBTaggedJetsBySplitUncertainty}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-correctedBTaggedJetsBySplitUncertainty}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<${\bf HttEnumTypes::JetEnergyUncertaintyShiftName}, std::vector$<$KJet$\ast$$>$ $>$ {\bf HttProduct::m\_\-correctedBTaggedJetsBySplitUncertainty}}}
+\label{classHttProduct_aba1b83caaf97fb12f47642179f8a3dd6}
+\hypertarget{classHttProduct_a37927d009e750a74a32b77e1b3431fbe}{
+\index{HttProduct@{HttProduct}!m\_\-correctedJetsBySplitUncertainty@{m\_\-correctedJetsBySplitUncertainty}}
+\index{m\_\-correctedJetsBySplitUncertainty@{m\_\-correctedJetsBySplitUncertainty}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-correctedJetsBySplitUncertainty}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<${\bf HttEnumTypes::JetEnergyUncertaintyShiftName}, std::vector$<$KJet$\ast$$>$ $>$ {\bf HttProduct::m\_\-correctedJetsBySplitUncertainty}}}
+\label{classHttProduct_a37927d009e750a74a32b77e1b3431fbe}
+\hypertarget{classHttProduct_a059c70723ea678b74ce0e482532a276e}{
+\index{HttProduct@{HttProduct}!m\_\-cosPsiMinus@{m\_\-cosPsiMinus}}
+\index{m\_\-cosPsiMinus@{m\_\-cosPsiMinus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-cosPsiMinus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-cosPsiMinus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a059c70723ea678b74ce0e482532a276e}
+\hypertarget{classHttProduct_aff72a2230f489c350ef7c9e484ad1fe6}{
+\index{HttProduct@{HttProduct}!m\_\-cosPsiPlus@{m\_\-cosPsiPlus}}
+\index{m\_\-cosPsiPlus@{m\_\-cosPsiPlus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-cosPsiPlus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-cosPsiPlus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_aff72a2230f489c350ef7c9e484ad1fe6}
+\hypertarget{classHttProduct_a58b4fd27f0f6ff1a9abe8ba113e137fb}{
+\index{HttProduct@{HttProduct}!m\_\-csv1JetMass@{m\_\-csv1JetMass}}
+\index{m\_\-csv1JetMass@{m\_\-csv1JetMass}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-csv1JetMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-csv1JetMass} = -\/10}}
+\label{classHttProduct_a58b4fd27f0f6ff1a9abe8ba113e137fb}
+\hypertarget{classHttProduct_a24c512c316b95df8293cc5fb66a146bc}{
+\index{HttProduct@{HttProduct}!m\_\-csv1JetPt@{m\_\-csv1JetPt}}
+\index{m\_\-csv1JetPt@{m\_\-csv1JetPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-csv1JetPt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-csv1JetPt} = -\/10}}
+\label{classHttProduct_a24c512c316b95df8293cc5fb66a146bc}
+\hypertarget{classHttProduct_ac5607acc08338d09bda39eb55684acb9}{
+\index{HttProduct@{HttProduct}!m\_\-csv2JetMass@{m\_\-csv2JetMass}}
+\index{m\_\-csv2JetMass@{m\_\-csv2JetMass}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-csv2JetMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-csv2JetMass} = -\/10}}
+\label{classHttProduct_ac5607acc08338d09bda39eb55684acb9}
+\hypertarget{classHttProduct_a4cc75b7222fe46c6a57933454a69c859}{
+\index{HttProduct@{HttProduct}!m\_\-csv2JetPt@{m\_\-csv2JetPt}}
+\index{m\_\-csv2JetPt@{m\_\-csv2JetPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-csv2JetPt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-csv2JetPt} = -\/10}}
+\label{classHttProduct_a4cc75b7222fe46c6a57933454a69c859}
+\hypertarget{classHttProduct_a60b4a2e75cda48c95d74b39cfb2af593}{
+\index{HttProduct@{HttProduct}!m\_\-d0\_\-1@{m\_\-d0\_\-1}}
+\index{m\_\-d0\_\-1@{m\_\-d0\_\-1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d0\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-d0\_\-1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a60b4a2e75cda48c95d74b39cfb2af593}
+\hypertarget{classHttProduct_a0c1690a7af0dbfe2784f9a0987faeff3}{
+\index{HttProduct@{HttProduct}!m\_\-d0\_\-2@{m\_\-d0\_\-2}}
+\index{m\_\-d0\_\-2@{m\_\-d0\_\-2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d0\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-d0\_\-2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a0c1690a7af0dbfe2784f9a0987faeff3}
+\hypertarget{classHttProduct_afa36e40279c564966ba388f4387d1cb4}{
+\index{HttProduct@{HttProduct}!m\_\-d0s\_\-area@{m\_\-d0s\_\-area}}
+\index{m\_\-d0s\_\-area@{m\_\-d0s\_\-area}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d0s\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-d0s\_\-area} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_afa36e40279c564966ba388f4387d1cb4}
+\hypertarget{classHttProduct_aef0897c87944ba5924db4f50b37f9822}{
+\index{HttProduct@{HttProduct}!m\_\-d0s\_\-dist@{m\_\-d0s\_\-dist}}
+\index{m\_\-d0s\_\-dist@{m\_\-d0s\_\-dist}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d0s\_\-dist}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-d0s\_\-dist} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_aef0897c87944ba5924db4f50b37f9822}
+\hypertarget{classHttProduct_a5cd0dab7ec8daff69e1540b1436141f2}{
+\index{HttProduct@{HttProduct}!m\_\-d2DnewPV1@{m\_\-d2DnewPV1}}
+\index{m\_\-d2DnewPV1@{m\_\-d2DnewPV1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d2DnewPV1}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-d2DnewPV1} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_a5cd0dab7ec8daff69e1540b1436141f2}
+\hypertarget{classHttProduct_a0efa7a19a8e5b0e2129c91ae58cf24f4}{
+\index{HttProduct@{HttProduct}!m\_\-d2DnewPV2@{m\_\-d2DnewPV2}}
+\index{m\_\-d2DnewPV2@{m\_\-d2DnewPV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d2DnewPV2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-d2DnewPV2} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_a0efa7a19a8e5b0e2129c91ae58cf24f4}
+\hypertarget{classHttProduct_a7ceef9ded23ad83000f89af8167cd962}{
+\index{HttProduct@{HttProduct}!m\_\-d3DnewPV1@{m\_\-d3DnewPV1}}
+\index{m\_\-d3DnewPV1@{m\_\-d3DnewPV1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d3DnewPV1}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-d3DnewPV1} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_a7ceef9ded23ad83000f89af8167cd962}
+\hypertarget{classHttProduct_aef4f07e87a2d4ca39749fb4c2b5e8f60}{
+\index{HttProduct@{HttProduct}!m\_\-d3DnewPV2@{m\_\-d3DnewPV2}}
+\index{m\_\-d3DnewPV2@{m\_\-d3DnewPV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-d3DnewPV2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-d3DnewPV2} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_aef4f07e87a2d4ca39749fb4c2b5e8f60}
+\hypertarget{classHttProduct_ab1216927e208e9ad29a1e84d253ef03d}{
+\index{HttProduct@{HttProduct}!m\_\-decayChannel@{m\_\-decayChannel}}
+\index{m\_\-decayChannel@{m\_\-decayChannel}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-decayChannel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::DecayChannel} {\bf HttProduct::m\_\-decayChannel}}}
+\label{classHttProduct_ab1216927e208e9ad29a1e84d253ef03d}
+\hypertarget{classHttProduct_aac726a3ccc8029923223bcd08e75f010}{
+\index{HttProduct@{HttProduct}!m\_\-deltaEtaGenRecoIP1@{m\_\-deltaEtaGenRecoIP1}}
+\index{m\_\-deltaEtaGenRecoIP1@{m\_\-deltaEtaGenRecoIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaEtaGenRecoIP1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaEtaGenRecoIP1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_aac726a3ccc8029923223bcd08e75f010}
+\hypertarget{classHttProduct_a57bff061908d353a2f651657bd8e4de1}{
+\index{HttProduct@{HttProduct}!m\_\-deltaEtaGenRecoIP2@{m\_\-deltaEtaGenRecoIP2}}
+\index{m\_\-deltaEtaGenRecoIP2@{m\_\-deltaEtaGenRecoIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaEtaGenRecoIP2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaEtaGenRecoIP2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a57bff061908d353a2f651657bd8e4de1}
+\hypertarget{classHttProduct_a3d4aa891d7628157d9aabe530a1b1c86}{
+\index{HttProduct@{HttProduct}!m\_\-deltaGenRecoIP1@{m\_\-deltaGenRecoIP1}}
+\index{m\_\-deltaGenRecoIP1@{m\_\-deltaGenRecoIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaGenRecoIP1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaGenRecoIP1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a3d4aa891d7628157d9aabe530a1b1c86}
+\hypertarget{classHttProduct_a4ace48eb8ca08b83d4d7363639fa5dd5}{
+\index{HttProduct@{HttProduct}!m\_\-deltaGenRecoIP2@{m\_\-deltaGenRecoIP2}}
+\index{m\_\-deltaGenRecoIP2@{m\_\-deltaGenRecoIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaGenRecoIP2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaGenRecoIP2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a4ace48eb8ca08b83d4d7363639fa5dd5}
+\hypertarget{classHttProduct_a4e55c66a5e3ec73aadb0a3917f727e7a}{
+\index{HttProduct@{HttProduct}!m\_\-deltaPhiGenRecoIP1@{m\_\-deltaPhiGenRecoIP1}}
+\index{m\_\-deltaPhiGenRecoIP1@{m\_\-deltaPhiGenRecoIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaPhiGenRecoIP1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaPhiGenRecoIP1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a4e55c66a5e3ec73aadb0a3917f727e7a}
+\hypertarget{classHttProduct_a5bc17e1dd51ff83408e8cd70fc7b4d2d}{
+\index{HttProduct@{HttProduct}!m\_\-deltaPhiGenRecoIP2@{m\_\-deltaPhiGenRecoIP2}}
+\index{m\_\-deltaPhiGenRecoIP2@{m\_\-deltaPhiGenRecoIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaPhiGenRecoIP2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaPhiGenRecoIP2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a5bc17e1dd51ff83408e8cd70fc7b4d2d}
+\hypertarget{classHttProduct_a74cf87b5a1e3860aea33859f66bfd15b}{
+\index{HttProduct@{HttProduct}!m\_\-deltaRGenRecoIP1@{m\_\-deltaRGenRecoIP1}}
+\index{m\_\-deltaRGenRecoIP1@{m\_\-deltaRGenRecoIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaRGenRecoIP1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaRGenRecoIP1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a74cf87b5a1e3860aea33859f66bfd15b}
+\hypertarget{classHttProduct_afb7a0e37e07af8fba505256a0ff722ac}{
+\index{HttProduct@{HttProduct}!m\_\-deltaRGenRecoIP2@{m\_\-deltaRGenRecoIP2}}
+\index{m\_\-deltaRGenRecoIP2@{m\_\-deltaRGenRecoIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaRGenRecoIP2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaRGenRecoIP2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_afb7a0e37e07af8fba505256a0ff722ac}
+\hypertarget{classHttProduct_a6b60262540f218d140d75aae2c052796}{
+\index{HttProduct@{HttProduct}!m\_\-deltaRrecoIP1s@{m\_\-deltaRrecoIP1s}}
+\index{m\_\-deltaRrecoIP1s@{m\_\-deltaRrecoIP1s}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaRrecoIP1s}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaRrecoIP1s} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a6b60262540f218d140d75aae2c052796}
+\hypertarget{classHttProduct_a2bf06664258fe38b2b7ee4c163e4ff7d}{
+\index{HttProduct@{HttProduct}!m\_\-deltaRrecoIP2s@{m\_\-deltaRrecoIP2s}}
+\index{m\_\-deltaRrecoIP2s@{m\_\-deltaRrecoIP2s}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-deltaRrecoIP2s}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-deltaRrecoIP2s} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a2bf06664258fe38b2b7ee4c163e4ff7d}
+\hypertarget{classHttProduct_ade6a2753273f1bcf7dba3ffbc843e0b0}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetAbsDeltaPhi@{m\_\-diCJetAbsDeltaPhi}}
+\index{m\_\-diCJetAbsDeltaPhi@{m\_\-diCJetAbsDeltaPhi}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetAbsDeltaPhi}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetAbsDeltaPhi} = -\/1}}
+\label{classHttProduct_ade6a2753273f1bcf7dba3ffbc843e0b0}
+\hypertarget{classHttProduct_af3ab7873fcb22271944c6230723c3a2f}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetDeltaMass@{m\_\-diCJetDeltaMass}}
+\index{m\_\-diCJetDeltaMass@{m\_\-diCJetDeltaMass}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetDeltaMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetDeltaMass} = -\/10}}
+\label{classHttProduct_af3ab7873fcb22271944c6230723c3a2f}
+\hypertarget{classHttProduct_aa495631422c54973b3565a1113bda0ba}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetDeltaR@{m\_\-diCJetDeltaR}}
+\index{m\_\-diCJetDeltaR@{m\_\-diCJetDeltaR}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetDeltaR}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetDeltaR} = -\/1}}
+\label{classHttProduct_aa495631422c54973b3565a1113bda0ba}
+\hypertarget{classHttProduct_afd2b667de3da0cab39012456116ff14a}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetMass@{m\_\-diCJetMass}}
+\index{m\_\-diCJetMass@{m\_\-diCJetMass}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetMass} = -\/10}}
+\label{classHttProduct_afd2b667de3da0cab39012456116ff14a}
+\hypertarget{classHttProduct_a65bad50cdbf271e1feaea726b4df4ea3}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetSymDeltaEta@{m\_\-diCJetSymDeltaEta}}
+\index{m\_\-diCJetSymDeltaEta@{m\_\-diCJetSymDeltaEta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetSymDeltaEta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetSymDeltaEta} = -\/30}}
+\label{classHttProduct_a65bad50cdbf271e1feaea726b4df4ea3}
+\hypertarget{classHttProduct_a681ffc49f91457b1ff5d8a3a938cc6b6}{
+\index{HttProduct@{HttProduct}!m\_\-diCJetSymEta1@{m\_\-diCJetSymEta1}}
+\index{m\_\-diCJetSymEta1@{m\_\-diCJetSymEta1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diCJetSymEta1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diCJetSymEta1} = -\/1}}
+\label{classHttProduct_a681ffc49f91457b1ff5d8a3a938cc6b6}
+\hypertarget{classHttProduct_ad122b9b5efd27c7a930acb0c0c06c9c6}{
+\index{HttProduct@{HttProduct}!m\_\-diGenJetSystem@{m\_\-diGenJetSystem}}
+\index{m\_\-diGenJetSystem@{m\_\-diGenJetSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diGenJetSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMDLV {\bf HttProduct::m\_\-diGenJetSystem}}}
+\label{classHttProduct_ad122b9b5efd27c7a930acb0c0c06c9c6}
+\hypertarget{classHttProduct_add98b9d1ecc7acd2c77861aa295dea19}{
+\index{HttProduct@{HttProduct}!m\_\-diGenJetSystemAvailable@{m\_\-diGenJetSystemAvailable}}
+\index{m\_\-diGenJetSystemAvailable@{m\_\-diGenJetSystemAvailable}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diGenJetSystemAvailable}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-diGenJetSystemAvailable} = false}}
+\label{classHttProduct_add98b9d1ecc7acd2c77861aa295dea19}
+\hypertarget{classHttProduct_a955310c3531e866279424134441817b8}{
+\index{HttProduct@{HttProduct}!m\_\-diJetDeltaMass@{m\_\-diJetDeltaMass}}
+\index{m\_\-diJetDeltaMass@{m\_\-diJetDeltaMass}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diJetDeltaMass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diJetDeltaMass} = -\/10}}
+\label{classHttProduct_a955310c3531e866279424134441817b8}
+\hypertarget{classHttProduct_a24e5e7cffc173ca220dac9da285f808a}{
+\index{HttProduct@{HttProduct}!m\_\-diJetDeltaR@{m\_\-diJetDeltaR}}
+\index{m\_\-diJetDeltaR@{m\_\-diJetDeltaR}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diJetDeltaR}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diJetDeltaR} = -\/1}}
+\label{classHttProduct_a24e5e7cffc173ca220dac9da285f808a}
+\hypertarget{classHttProduct_a6fce97a5c2d17c85ef4fe7f43da9577a}{
+\index{HttProduct@{HttProduct}!m\_\-diJetSymDeltaEta@{m\_\-diJetSymDeltaEta}}
+\index{m\_\-diJetSymDeltaEta@{m\_\-diJetSymDeltaEta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diJetSymDeltaEta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diJetSymDeltaEta} = -\/30}}
+\label{classHttProduct_a6fce97a5c2d17c85ef4fe7f43da9577a}
+\hypertarget{classHttProduct_a1384e5a262d702da85fc56f8297e26fe}{
+\index{HttProduct@{HttProduct}!m\_\-diJetSystem@{m\_\-diJetSystem}}
+\index{m\_\-diJetSystem@{m\_\-diJetSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diJetSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMDLV {\bf HttProduct::m\_\-diJetSystem}}}
+\label{classHttProduct_a1384e5a262d702da85fc56f8297e26fe}
+\hypertarget{classHttProduct_a54ab9cbac6194efe53e721aa77aba8f8}{
+\index{HttProduct@{HttProduct}!m\_\-diJetSystemAvailable@{m\_\-diJetSystemAvailable}}
+\index{m\_\-diJetSystemAvailable@{m\_\-diJetSystemAvailable}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diJetSystemAvailable}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-diJetSystemAvailable} = false}}
+\label{classHttProduct_a54ab9cbac6194efe53e721aa77aba8f8}
+\hypertarget{classHttProduct_a3bbd6c168edc7d78fadea31138436d80}{
+\index{HttProduct@{HttProduct}!m\_\-diLepBoost@{m\_\-diLepBoost}}
+\index{m\_\-diLepBoost@{m\_\-diLepBoost}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLepBoost}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diLepBoost} = -\/10}}
+\label{classHttProduct_a3bbd6c168edc7d78fadea31138436d80}
+\hypertarget{classHttProduct_a17019f40da6b7ba83825adeefd969762}{
+\index{HttProduct@{HttProduct}!m\_\-DiLepCentrality@{m\_\-DiLepCentrality}}
+\index{m\_\-DiLepCentrality@{m\_\-DiLepCentrality}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-DiLepCentrality}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-DiLepCentrality} = -\/1}}
+\label{classHttProduct_a17019f40da6b7ba83825adeefd969762}
+\hypertarget{classHttProduct_ab5ac9c755a375ddcf9c7fa7f98b7ddcf}{
+\index{HttProduct@{HttProduct}!m\_\-diLepDeltaR@{m\_\-diLepDeltaR}}
+\index{m\_\-diLepDeltaR@{m\_\-diLepDeltaR}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLepDeltaR}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diLepDeltaR} = -\/10}}
+\label{classHttProduct_ab5ac9c755a375ddcf9c7fa7f98b7ddcf}
+\hypertarget{classHttProduct_af1162d2a415a6723deb5c030b927d5bb}{
+\index{HttProduct@{HttProduct}!m\_\-DiLepDiJetDeltaR@{m\_\-DiLepDiJetDeltaR}}
+\index{m\_\-DiLepDiJetDeltaR@{m\_\-DiLepDiJetDeltaR}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-DiLepDiJetDeltaR}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-DiLepDiJetDeltaR} = -\/1}}
+\label{classHttProduct_af1162d2a415a6723deb5c030b927d5bb}
+\hypertarget{classHttProduct_a19a4c4f7995a7610bc10a51ed67a9745}{
+\index{HttProduct@{HttProduct}!m\_\-diLepJet1DeltaR@{m\_\-diLepJet1DeltaR}}
+\index{m\_\-diLepJet1DeltaR@{m\_\-diLepJet1DeltaR}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLepJet1DeltaR}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-diLepJet1DeltaR} = -\/10}}
+\label{classHttProduct_a19a4c4f7995a7610bc10a51ed67a9745}
+\hypertarget{classHttProduct_ae5c2946262b801bfb4c754689bbe5fbf}{
+\index{HttProduct@{HttProduct}!m\_\-diLeptonGenSystem@{m\_\-diLeptonGenSystem}}
+\index{m\_\-diLeptonGenSystem@{m\_\-diLeptonGenSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLeptonGenSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diLeptonGenSystem}}}
+\label{classHttProduct_ae5c2946262b801bfb4c754689bbe5fbf}
+\hypertarget{classHttProduct_a6a324cf345b28109cae9dcee49c95b2e}{
+\index{HttProduct@{HttProduct}!m\_\-diLeptonGenSystemFound@{m\_\-diLeptonGenSystemFound}}
+\index{m\_\-diLeptonGenSystemFound@{m\_\-diLeptonGenSystemFound}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLeptonGenSystemFound}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-diLeptonGenSystemFound} = false}}
+\label{classHttProduct_a6a324cf345b28109cae9dcee49c95b2e}
+\hypertarget{classHttProduct_aae54f2c0092ba8aea1b631f5ba8ca813}{
+\index{HttProduct@{HttProduct}!m\_\-diLeptonPlusMetSystem@{m\_\-diLeptonPlusMetSystem}}
+\index{m\_\-diLeptonPlusMetSystem@{m\_\-diLeptonPlusMetSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLeptonPlusMetSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diLeptonPlusMetSystem}}}
+\label{classHttProduct_aae54f2c0092ba8aea1b631f5ba8ca813}
+\hypertarget{classHttProduct_a507d922119a2091de4885740846c3b6b}{
+\index{HttProduct@{HttProduct}!m\_\-diLeptonSystem@{m\_\-diLeptonSystem}}
+\index{m\_\-diLeptonSystem@{m\_\-diLeptonSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diLeptonSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diLeptonSystem}}}
+\label{classHttProduct_a507d922119a2091de4885740846c3b6b}
+\hypertarget{classHttProduct_aeff39416edd99d269ce0ca52f551f252}{
+\index{HttProduct@{HttProduct}!m\_\-diTauGenSystem@{m\_\-diTauGenSystem}}
+\index{m\_\-diTauGenSystem@{m\_\-diTauGenSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauGenSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diTauGenSystem}}}
+\label{classHttProduct_aeff39416edd99d269ce0ca52f551f252}
+\hypertarget{classHttProduct_a6cccf4c815d41dfa8fd2956960d3794b}{
+\index{HttProduct@{HttProduct}!m\_\-diTauGenSystemFound@{m\_\-diTauGenSystemFound}}
+\index{m\_\-diTauGenSystemFound@{m\_\-diTauGenSystemFound}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauGenSystemFound}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-diTauGenSystemFound} = false}}
+\label{classHttProduct_a6cccf4c815d41dfa8fd2956960d3794b}
+\hypertarget{classHttProduct_aeda613181415aa218fe0cacc9bb3e7a5}{
+\index{HttProduct@{HttProduct}!m\_\-diTauSystem@{m\_\-diTauSystem}}
+\index{m\_\-diTauSystem@{m\_\-diTauSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauSystem}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diTauSystem}}}
+\label{classHttProduct_aeda613181415aa218fe0cacc9bb3e7a5}
+\hypertarget{classHttProduct_a1a670963cdd4350b7abc851b0b69366e}{
+\index{HttProduct@{HttProduct}!m\_\-diTauSystemCA@{m\_\-diTauSystemCA}}
+\index{m\_\-diTauSystemCA@{m\_\-diTauSystemCA}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauSystemCA}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diTauSystemCA}}}
+\label{classHttProduct_a1a670963cdd4350b7abc851b0b69366e}
+\hypertarget{classHttProduct_a74732bcc7098f15e0bcca4c01e5738f9}{
+\index{HttProduct@{HttProduct}!m\_\-diTauSystemReconstructed@{m\_\-diTauSystemReconstructed}}
+\index{m\_\-diTauSystemReconstructed@{m\_\-diTauSystemReconstructed}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauSystemReconstructed}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-diTauSystemReconstructed} = false}}
+\label{classHttProduct_a74732bcc7098f15e0bcca4c01e5738f9}
+\hypertarget{classHttProduct_a71add7604b6cd190216b8f32420d27aa}{
+\index{HttProduct@{HttProduct}!m\_\-diTauSystemSimpleFit@{m\_\-diTauSystemSimpleFit}}
+\index{m\_\-diTauSystemSimpleFit@{m\_\-diTauSystemSimpleFit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-diTauSystemSimpleFit}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-diTauSystemSimpleFit} = DefaultValues::UndefinedRMFLV}}
+\label{classHttProduct_a71add7604b6cd190216b8f32420d27aa}
+\hypertarget{classHttProduct_a29ffba30f2e0e486ebe1f6267461d0a8}{
+\index{HttProduct@{HttProduct}!m\_\-electronIsolation@{m\_\-electronIsolation}}
+\index{m\_\-electronIsolation@{m\_\-electronIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-electronIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KElectron$\ast$, double$>$ {\bf HttProduct::m\_\-electronIsolation}}}
+\label{classHttProduct_a29ffba30f2e0e486ebe1f6267461d0a8}
+\hypertarget{classHttProduct_a8f5dd10373ad2d502aea2f9ad4446cee}{
+\index{HttProduct@{HttProduct}!m\_\-electronIsolationOverPt@{m\_\-electronIsolationOverPt}}
+\index{m\_\-electronIsolationOverPt@{m\_\-electronIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-electronIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KElectron$\ast$, double$>$ {\bf HttProduct::m\_\-electronIsolationOverPt}}}
+\label{classHttProduct_a8f5dd10373ad2d502aea2f9ad4446cee}
+\hypertarget{classHttProduct_ac4058691f0eab33136a5fcfd728e8e96}{
+\index{HttProduct@{HttProduct}!m\_\-err2DnewPV1@{m\_\-err2DnewPV1}}
+\index{m\_\-err2DnewPV1@{m\_\-err2DnewPV1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-err2DnewPV1}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-err2DnewPV1} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_ac4058691f0eab33136a5fcfd728e8e96}
+\hypertarget{classHttProduct_aabbc4184d62a6cd2b6e71d70eddda294}{
+\index{HttProduct@{HttProduct}!m\_\-err2DnewPV2@{m\_\-err2DnewPV2}}
+\index{m\_\-err2DnewPV2@{m\_\-err2DnewPV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-err2DnewPV2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-err2DnewPV2} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_aabbc4184d62a6cd2b6e71d70eddda294}
+\hypertarget{classHttProduct_afb1ebfc82910386b745aef7f8dc897c0}{
+\index{HttProduct@{HttProduct}!m\_\-err3DnewPV1@{m\_\-err3DnewPV1}}
+\index{m\_\-err3DnewPV1@{m\_\-err3DnewPV1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-err3DnewPV1}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-err3DnewPV1} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_afb1ebfc82910386b745aef7f8dc897c0}
+\hypertarget{classHttProduct_acc86e1f479ff6ab8b9b7b7397b423437}{
+\index{HttProduct@{HttProduct}!m\_\-err3DnewPV2@{m\_\-err3DnewPV2}}
+\index{m\_\-err3DnewPV2@{m\_\-err3DnewPV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-err3DnewPV2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-err3DnewPV2} = DefaultValues::UndefinedFloat}}
+\label{classHttProduct_acc86e1f479ff6ab8b9b7b7397b423437}
+\hypertarget{classHttProduct_a1569de0dcfa961c09eecd41f9cbff856}{
+\index{HttProduct@{HttProduct}!m\_\-extraElecVeto@{m\_\-extraElecVeto}}
+\index{m\_\-extraElecVeto@{m\_\-extraElecVeto}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-extraElecVeto}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-extraElecVeto} = false}}
+\label{classHttProduct_a1569de0dcfa961c09eecd41f9cbff856}
+\hypertarget{classHttProduct_af4194179accc2aaaf06f6cd734c0622b}{
+\index{HttProduct@{HttProduct}!m\_\-extraMuonVeto@{m\_\-extraMuonVeto}}
+\index{m\_\-extraMuonVeto@{m\_\-extraMuonVeto}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-extraMuonVeto}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-extraMuonVeto} = false}}
+\label{classHttProduct_af4194179accc2aaaf06f6cd734c0622b}
+\hypertarget{classHttProduct_a18eca3b916d8a8824d92200c957e7ac9}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedGenLeptons@{m\_\-flavourOrderedGenLeptons}}
+\index{m\_\-flavourOrderedGenLeptons@{m\_\-flavourOrderedGenLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedGenLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenParticle$\ast$$>$ {\bf HttProduct::m\_\-flavourOrderedGenLeptons}}}
+\label{classHttProduct_a18eca3b916d8a8824d92200c957e7ac9}
+\hypertarget{classHttProduct_a8ba976173e7b164b171a5cb19fce4d77}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedGenLeptonVisibleLVs@{m\_\-flavourOrderedGenLeptonVisibleLVs}}
+\index{m\_\-flavourOrderedGenLeptonVisibleLVs@{m\_\-flavourOrderedGenLeptonVisibleLVs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedGenLeptonVisibleLVs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$RMFLV$\ast$$>$ {\bf HttProduct::m\_\-flavourOrderedGenLeptonVisibleLVs}}}
+\label{classHttProduct_a8ba976173e7b164b171a5cb19fce4d77}
+\hypertarget{classHttProduct_af3a22fec33a3dc27d44b9124c8d1efca}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedGenTaus@{m\_\-flavourOrderedGenTaus}}
+\index{m\_\-flavourOrderedGenTaus@{m\_\-flavourOrderedGenTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedGenTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-flavourOrderedGenTaus}}}
+\label{classHttProduct_af3a22fec33a3dc27d44b9124c8d1efca}
+\hypertarget{classHttProduct_af914b7dae638ccd70a9f3fd33a39ebb1}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedLeptons@{m\_\-flavourOrderedLeptons}}
+\index{m\_\-flavourOrderedLeptons@{m\_\-flavourOrderedLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KLepton$\ast$$>$ {\bf HttProduct::m\_\-flavourOrderedLeptons}}}
+\label{classHttProduct_af914b7dae638ccd70a9f3fd33a39ebb1}
+\hypertarget{classHttProduct_a1927121e20f6b91f82993722074198c0}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedTauMomenta@{m\_\-flavourOrderedTauMomenta}}
+\index{m\_\-flavourOrderedTauMomenta@{m\_\-flavourOrderedTauMomenta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedTauMomenta}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$RMFLV$>$ {\bf HttProduct::m\_\-flavourOrderedTauMomenta}}}
+\label{classHttProduct_a1927121e20f6b91f82993722074198c0}
+\hypertarget{classHttProduct_a052e584fa560589e8b47cff8675827e4}{
+\index{HttProduct@{HttProduct}!m\_\-flavourOrderedTauMomentaCA@{m\_\-flavourOrderedTauMomentaCA}}
+\index{m\_\-flavourOrderedTauMomentaCA@{m\_\-flavourOrderedTauMomentaCA}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-flavourOrderedTauMomentaCA}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$RMFLV$>$ {\bf HttProduct::m\_\-flavourOrderedTauMomentaCA}}}
+\label{classHttProduct_a052e584fa560589e8b47cff8675827e4}
+\hypertarget{classHttProduct_a2513cc424cf38a9c992c6c51d01234b5}{
+\index{HttProduct@{HttProduct}!m\_\-gen\_\-negyTauL@{m\_\-gen\_\-negyTauL}}
+\index{m\_\-gen\_\-negyTauL@{m\_\-gen\_\-negyTauL}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-gen\_\-negyTauL}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-gen\_\-negyTauL} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a2513cc424cf38a9c992c6c51d01234b5}
+\hypertarget{classHttProduct_a4ed4969177d24dcd0ffa92970479cb5f}{
+\index{HttProduct@{HttProduct}!m\_\-gen\_\-posyTauL@{m\_\-gen\_\-posyTauL}}
+\index{m\_\-gen\_\-posyTauL@{m\_\-gen\_\-posyTauL}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-gen\_\-posyTauL}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-gen\_\-posyTauL} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a4ed4969177d24dcd0ffa92970479cb5f}
+\hypertarget{classHttProduct_a0c74881d1d4b145b91ec71d49e18fa63}{
+\index{HttProduct@{HttProduct}!m\_\-gen\_\-yTau@{m\_\-gen\_\-yTau}}
+\index{m\_\-gen\_\-yTau@{m\_\-gen\_\-yTau}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-gen\_\-yTau}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-gen\_\-yTau} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a0c74881d1d4b145b91ec71d49e18fa63}
+\hypertarget{classHttProduct_aebef7da9d392e74d5a2f9ed5ccbc1b0e}{
+\index{HttProduct@{HttProduct}!m\_\-genBosonPhi@{m\_\-genBosonPhi}}
+\index{m\_\-genBosonPhi@{m\_\-genBosonPhi}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genBosonPhi}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genBosonPhi}}}
+\label{classHttProduct_aebef7da9d392e74d5a2f9ed5ccbc1b0e}
+\hypertarget{classHttProduct_af396cb9db5d26bff1fc6950b75fe8a69}{
+\index{HttProduct@{HttProduct}!m\_\-genBosonPt@{m\_\-genBosonPt}}
+\index{m\_\-genBosonPt@{m\_\-genBosonPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genBosonPt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genBosonPt}}}
+\label{classHttProduct_af396cb9db5d26bff1fc6950b75fe8a69}
+\hypertarget{classHttProduct_a6f852191cf4b853424e8b4c4b3202160}{
+\index{HttProduct@{HttProduct}!m\_\-genChargedProngEnergies@{m\_\-genChargedProngEnergies}}
+\index{m\_\-genChargedProngEnergies@{m\_\-genChargedProngEnergies}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genChargedProngEnergies}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$double,double$>$ {\bf HttProduct::m\_\-genChargedProngEnergies} = std::make\_\-pair(DefaultValues::UndefinedDouble, DefaultValues::UndefinedDouble)}}
+\label{classHttProduct_a6f852191cf4b853424e8b4c4b3202160}
+\hypertarget{classHttProduct_a8c5dc87b3c1234c92106729e42bc49d0}{
+\index{HttProduct@{HttProduct}!m\_\-genCosPsiMinus@{m\_\-genCosPsiMinus}}
+\index{m\_\-genCosPsiMinus@{m\_\-genCosPsiMinus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genCosPsiMinus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genCosPsiMinus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a8c5dc87b3c1234c92106729e42bc49d0}
+\hypertarget{classHttProduct_ac16132a7c669ebff09cb300be554a4c8}{
+\index{HttProduct@{HttProduct}!m\_\-genCosPsiPlus@{m\_\-genCosPsiPlus}}
+\index{m\_\-genCosPsiPlus@{m\_\-genCosPsiPlus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genCosPsiPlus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genCosPsiPlus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_ac16132a7c669ebff09cb300be554a4c8}
+\hypertarget{classHttProduct_a0865735d27c7a69146e4edab092a4db2}{
+\index{HttProduct@{HttProduct}!m\_\-genDiTauPairCandidates@{m\_\-genDiTauPairCandidates}}
+\index{m\_\-genDiTauPairCandidates@{m\_\-genDiTauPairCandidates}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genDiTauPairCandidates}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DiGenTauPair}$>$ {\bf HttProduct::m\_\-genDiTauPairCandidates}}}
+\label{classHttProduct_a0865735d27c7a69146e4edab092a4db2}
+
+
+added by GenDiTauPairCandidatesProducers and \hyperlink{classGenDiTauPairAcceptanceProducer}{GenDiTauPairAcceptanceProducer} \hypertarget{classHttProduct_a327e2e641fe1ed7ffdbd16b115e1dfd5}{
+\index{HttProduct@{HttProduct}!m\_\-genDiTauPairInAcceptance@{m\_\-genDiTauPairInAcceptance}}
+\index{m\_\-genDiTauPairInAcceptance@{m\_\-genDiTauPairInAcceptance}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genDiTauPairInAcceptance}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DiGenTauPair}$>$ {\bf HttProduct::m\_\-genDiTauPairInAcceptance}}}
+\label{classHttProduct_a327e2e641fe1ed7ffdbd16b115e1dfd5}
+\hypertarget{classHttProduct_ade104eec9f075c87d0de6c816e5fd260}{
+\index{HttProduct@{HttProduct}!m\_\-genIP1@{m\_\-genIP1}}
+\index{m\_\-genIP1@{m\_\-genIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genIP1}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-genIP1}}}
+\label{classHttProduct_ade104eec9f075c87d0de6c816e5fd260}
+\hypertarget{classHttProduct_afa86c42d8eb6accbfa740e341c837fc1}{
+\index{HttProduct@{HttProduct}!m\_\-genIP2@{m\_\-genIP2}}
+\index{m\_\-genIP2@{m\_\-genIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genIP2}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-genIP2}}}
+\label{classHttProduct_afa86c42d8eb6accbfa740e341c837fc1}
+\hypertarget{classHttProduct_adbf6b4ae920c78e982d14c577d720ad5}{
+\index{HttProduct@{HttProduct}!m\_\-genOCP@{m\_\-genOCP}}
+\index{m\_\-genOCP@{m\_\-genOCP}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genOCP}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genOCP} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_adbf6b4ae920c78e982d14c577d720ad5}
+\hypertarget{classHttProduct_a53a29768acceece5863f783c114d7e2f}{
+\index{HttProduct@{HttProduct}!m\_\-genOneProngCharged1@{m\_\-genOneProngCharged1}}
+\index{m\_\-genOneProngCharged1@{m\_\-genOneProngCharged1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genOneProngCharged1}]{\setlength{\rightskip}{0pt plus 5cm}KGenParticle$\ast$ {\bf HttProduct::m\_\-genOneProngCharged1} = 0}}
+\label{classHttProduct_a53a29768acceece5863f783c114d7e2f}
+\hypertarget{classHttProduct_a3cad468b45916675c7d3b551d3deb421}{
+\index{HttProduct@{HttProduct}!m\_\-genOneProngCharged2@{m\_\-genOneProngCharged2}}
+\index{m\_\-genOneProngCharged2@{m\_\-genOneProngCharged2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genOneProngCharged2}]{\setlength{\rightskip}{0pt plus 5cm}KGenParticle$\ast$ {\bf HttProduct::m\_\-genOneProngCharged2} = 0}}
+\label{classHttProduct_a3cad468b45916675c7d3b551d3deb421}
+\hypertarget{classHttProduct_ab159ac6f1da38310b236baacbf299ea2}{
+\index{HttProduct@{HttProduct}!m\_\-genOStarCP@{m\_\-genOStarCP}}
+\index{m\_\-genOStarCP@{m\_\-genOStarCP}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genOStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genOStarCP} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_ab159ac6f1da38310b236baacbf299ea2}
+\hypertarget{classHttProduct_a0a2c6b3a36ff1a5f90830f63212336da}{
+\index{HttProduct@{HttProduct}!m\_\-genPhi@{m\_\-genPhi}}
+\index{m\_\-genPhi@{m\_\-genPhi}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhi}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhi} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a0a2c6b3a36ff1a5f90830f63212336da}
+\hypertarget{classHttProduct_a2fe4a315ccbd2834d619db751d842cb8}{
+\index{HttProduct@{HttProduct}!m\_\-genPhi\_\-rho@{m\_\-genPhi\_\-rho}}
+\index{m\_\-genPhi\_\-rho@{m\_\-genPhi\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhi\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhi\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a2fe4a315ccbd2834d619db751d842cb8}
+\hypertarget{classHttProduct_a5462fd77ffc176948b012b32406dd4f3}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiCP@{m\_\-genPhiCP}}
+\index{m\_\-genPhiCP@{m\_\-genPhiCP}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiCP}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiCP} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a5462fd77ffc176948b012b32406dd4f3}
+\hypertarget{classHttProduct_a91a52a64c8c738cbb842fe389c60c07d}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiCP\_\-rho@{m\_\-genPhiCP\_\-rho}}
+\index{m\_\-genPhiCP\_\-rho@{m\_\-genPhiCP\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiCP\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiCP\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a91a52a64c8c738cbb842fe389c60c07d}
+\hypertarget{classHttProduct_aec9091c51829b8de6be9303ec1002c7a}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiCPLab@{m\_\-genPhiCPLab}}
+\index{m\_\-genPhiCPLab@{m\_\-genPhiCPLab}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiCPLab}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiCPLab} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_aec9091c51829b8de6be9303ec1002c7a}
+\hypertarget{classHttProduct_a42f44956643d702be12d765e1eecf960}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiStar@{m\_\-genPhiStar}}
+\index{m\_\-genPhiStar@{m\_\-genPhiStar}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiStar}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiStar} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a42f44956643d702be12d765e1eecf960}
+\hypertarget{classHttProduct_a8d816230bd59c76d77a3833858e8434c}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiStar\_\-rho@{m\_\-genPhiStar\_\-rho}}
+\index{m\_\-genPhiStar\_\-rho@{m\_\-genPhiStar\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiStar\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiStar\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a8d816230bd59c76d77a3833858e8434c}
+\hypertarget{classHttProduct_a080bded07e8508ff0e09577f95340002}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiStarCP@{m\_\-genPhiStarCP}}
+\index{m\_\-genPhiStarCP@{m\_\-genPhiStarCP}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiStarCP} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a080bded07e8508ff0e09577f95340002}
+\hypertarget{classHttProduct_a64b92a877f8d6ad7a514214e1929c342}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiStarCP\_\-rho@{m\_\-genPhiStarCP\_\-rho}}
+\index{m\_\-genPhiStarCP\_\-rho@{m\_\-genPhiStarCP\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiStarCP\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiStarCP\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a64b92a877f8d6ad7a514214e1929c342}
+\hypertarget{classHttProduct_a169478ca381091cb1692885ad0a5bac4}{
+\index{HttProduct@{HttProduct}!m\_\-genPhiStarCPComb@{m\_\-genPhiStarCPComb}}
+\index{m\_\-genPhiStarCPComb@{m\_\-genPhiStarCPComb}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPhiStarCPComb}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genPhiStarCPComb} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a169478ca381091cb1692885ad0a5bac4}
+\hypertarget{classHttProduct_a62c0b404f4cbf75e58a963c62466dadc}{
+\index{HttProduct@{HttProduct}!m\_\-genPV@{m\_\-genPV}}
+\index{m\_\-genPV@{m\_\-genPV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genPV}]{\setlength{\rightskip}{0pt plus 5cm}RMPoint$\ast$ {\bf HttProduct::m\_\-genPV} = 0}}
+\label{classHttProduct_a62c0b404f4cbf75e58a963c62466dadc}
+\hypertarget{classHttProduct_ae3617dc56d9ef3bb87dacb354286f3fb}{
+\index{HttProduct@{HttProduct}!m\_\-genSV1@{m\_\-genSV1}}
+\index{m\_\-genSV1@{m\_\-genSV1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genSV1}]{\setlength{\rightskip}{0pt plus 5cm}RMPoint$\ast$ {\bf HttProduct::m\_\-genSV1} = 0}}
+\label{classHttProduct_ae3617dc56d9ef3bb87dacb354286f3fb}
+\hypertarget{classHttProduct_a519090c41ad7a95fde740478e4a0717f}{
+\index{HttProduct@{HttProduct}!m\_\-genSV2@{m\_\-genSV2}}
+\index{m\_\-genSV2@{m\_\-genSV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genSV2}]{\setlength{\rightskip}{0pt plus 5cm}RMPoint$\ast$ {\bf HttProduct::m\_\-genSV2} = 0}}
+\label{classHttProduct_a519090c41ad7a95fde740478e4a0717f}
+\hypertarget{classHttProduct_a55c67bddc9cd45d950cbc943a63f4632}{
+\index{HttProduct@{HttProduct}!m\_\-genTau1DecayMode@{m\_\-genTau1DecayMode}}
+\index{m\_\-genTau1DecayMode@{m\_\-genTau1DecayMode}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTau1DecayMode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-genTau1DecayMode} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_a55c67bddc9cd45d950cbc943a63f4632}
+\hypertarget{classHttProduct_abb0ed1f2a021227a3f5730fb133dc293}{
+\index{HttProduct@{HttProduct}!m\_\-genTau1ProngsSize@{m\_\-genTau1ProngsSize}}
+\index{m\_\-genTau1ProngsSize@{m\_\-genTau1ProngsSize}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTau1ProngsSize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf HttProduct::m\_\-genTau1ProngsSize} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_abb0ed1f2a021227a3f5730fb133dc293}
+\hypertarget{classHttProduct_a92b05122d3b7e10810649fb55b51d7cc}{
+\index{HttProduct@{HttProduct}!m\_\-genTau2DecayMode@{m\_\-genTau2DecayMode}}
+\index{m\_\-genTau2DecayMode@{m\_\-genTau2DecayMode}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTau2DecayMode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-genTau2DecayMode} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_a92b05122d3b7e10810649fb55b51d7cc}
+\hypertarget{classHttProduct_a48cfa5c2f5cf0b2909858ac0dfc3badc}{
+\index{HttProduct@{HttProduct}!m\_\-genTau2ProngsSize@{m\_\-genTau2ProngsSize}}
+\index{m\_\-genTau2ProngsSize@{m\_\-genTau2ProngsSize}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTau2ProngsSize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf HttProduct::m\_\-genTau2ProngsSize} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_a48cfa5c2f5cf0b2909858ac0dfc3badc}
+\hypertarget{classHttProduct_aad0006f795c69ebf4010459418693721}{
+\index{HttProduct@{HttProduct}!m\_\-genTausBoostToGenDiLeptonSystem@{m\_\-genTausBoostToGenDiLeptonSystem}}
+\index{m\_\-genTausBoostToGenDiLeptonSystem@{m\_\-genTausBoostToGenDiLeptonSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTausBoostToGenDiLeptonSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KGenTau$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-genTausBoostToGenDiLeptonSystem}}}
+\label{classHttProduct_aad0006f795c69ebf4010459418693721}
+\hypertarget{classHttProduct_ac04d1f87583b1228a755735133e53bf6}{
+\index{HttProduct@{HttProduct}!m\_\-genTausBoostToGenDiTauSystem@{m\_\-genTausBoostToGenDiTauSystem}}
+\index{m\_\-genTausBoostToGenDiTauSystem@{m\_\-genTausBoostToGenDiTauSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTausBoostToGenDiTauSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KGenTau$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-genTausBoostToGenDiTauSystem}}}
+\label{classHttProduct_ac04d1f87583b1228a755735133e53bf6}
+\hypertarget{classHttProduct_af53a9d1e5cee3afcb40adc1640836c4d}{
+\index{HttProduct@{HttProduct}!m\_\-genTauTree1DecayMode@{m\_\-genTauTree1DecayMode}}
+\index{m\_\-genTauTree1DecayMode@{m\_\-genTauTree1DecayMode}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTauTree1DecayMode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-genTauTree1DecayMode} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_af53a9d1e5cee3afcb40adc1640836c4d}
+\hypertarget{classHttProduct_a97d011daac22c9d02478a6b11e660193}{
+\index{HttProduct@{HttProduct}!m\_\-genTauTree2DecayMode@{m\_\-genTauTree2DecayMode}}
+\index{m\_\-genTauTree2DecayMode@{m\_\-genTauTree2DecayMode}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genTauTree2DecayMode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-genTauTree2DecayMode} = DefaultValues::UndefinedInt}}
+\label{classHttProduct_a97d011daac22c9d02478a6b11e660193}
+\hypertarget{classHttProduct_ad51c5ccec06913d5eb09f11bc42bbce5}{
+\index{HttProduct@{HttProduct}!m\_\-genVisTausBoostToGenDiLeptonSystem@{m\_\-genVisTausBoostToGenDiLeptonSystem}}
+\index{m\_\-genVisTausBoostToGenDiLeptonSystem@{m\_\-genVisTausBoostToGenDiLeptonSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genVisTausBoostToGenDiLeptonSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KGenTau$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-genVisTausBoostToGenDiLeptonSystem}}}
+\label{classHttProduct_ad51c5ccec06913d5eb09f11bc42bbce5}
+\hypertarget{classHttProduct_a7da22d22be0ba3757a18a750846dd7f2}{
+\index{HttProduct@{HttProduct}!m\_\-genZMinus@{m\_\-genZMinus}}
+\index{m\_\-genZMinus@{m\_\-genZMinus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genZMinus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genZMinus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a7da22d22be0ba3757a18a750846dd7f2}
+\hypertarget{classHttProduct_afe89f44a7b3f1740434a14a97f6ca420}{
+\index{HttProduct@{HttProduct}!m\_\-genZPlus@{m\_\-genZPlus}}
+\index{m\_\-genZPlus@{m\_\-genZPlus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genZPlus}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genZPlus} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_afe89f44a7b3f1740434a14a97f6ca420}
+\hypertarget{classHttProduct_a5faddab4b5f97fa2d558d451f6fa2ea7}{
+\index{HttProduct@{HttProduct}!m\_\-genZs@{m\_\-genZs}}
+\index{m\_\-genZs@{m\_\-genZs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-genZs}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-genZs} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a5faddab4b5f97fa2d558d451f6fa2ea7}
+\hypertarget{classHttProduct_ab3c39138bbc65d2e38906de8726f21b4}{
+\index{HttProduct@{HttProduct}!m\_\-invalidDiTauPairCandidates@{m\_\-invalidDiTauPairCandidates}}
+\index{m\_\-invalidDiTauPairCandidates@{m\_\-invalidDiTauPairCandidates}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-invalidDiTauPairCandidates}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DiTauPair}$>$ {\bf HttProduct::m\_\-invalidDiTauPairCandidates}}}
+\label{classHttProduct_ab3c39138bbc65d2e38906de8726f21b4}
+\hypertarget{classHttProduct_a82093fe39383edfbc2979d94d7571b9c}{
+\index{HttProduct@{HttProduct}!m\_\-invalidLooseElectrons@{m\_\-invalidLooseElectrons}}
+\index{m\_\-invalidLooseElectrons@{m\_\-invalidLooseElectrons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-invalidLooseElectrons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KElectron$\ast$$>$ {\bf HttProduct::m\_\-invalidLooseElectrons}}}
+\label{classHttProduct_a82093fe39383edfbc2979d94d7571b9c}
+\hypertarget{classHttProduct_a66da1a4ef1d2123a91736e848c59eeed}{
+\index{HttProduct@{HttProduct}!m\_\-invalidLooseMuons@{m\_\-invalidLooseMuons}}
+\index{m\_\-invalidLooseMuons@{m\_\-invalidLooseMuons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-invalidLooseMuons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KMuon$\ast$$>$ {\bf HttProduct::m\_\-invalidLooseMuons}}}
+\label{classHttProduct_a66da1a4ef1d2123a91736e848c59eeed}
+\hypertarget{classHttProduct_affc89af16634fbc01c58de3632220b1f}{
+\index{HttProduct@{HttProduct}!m\_\-invalidVetoElectrons@{m\_\-invalidVetoElectrons}}
+\index{m\_\-invalidVetoElectrons@{m\_\-invalidVetoElectrons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-invalidVetoElectrons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KElectron$\ast$$>$ {\bf HttProduct::m\_\-invalidVetoElectrons}}}
+\label{classHttProduct_affc89af16634fbc01c58de3632220b1f}
+\hypertarget{classHttProduct_abab9056d187c5418241eac5bd0f096ec}{
+\index{HttProduct@{HttProduct}!m\_\-invalidVetoMuons@{m\_\-invalidVetoMuons}}
+\index{m\_\-invalidVetoMuons@{m\_\-invalidVetoMuons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-invalidVetoMuons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KMuon$\ast$$>$ {\bf HttProduct::m\_\-invalidVetoMuons}}}
+\label{classHttProduct_abab9056d187c5418241eac5bd0f096ec}
+\hypertarget{classHttProduct_ac6955f8cf5af8bed0cbd98dc28a63e82}{
+\index{HttProduct@{HttProduct}!m\_\-jccsv1@{m\_\-jccsv1}}
+\index{m\_\-jccsv1@{m\_\-jccsv1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-jccsv1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-jccsv1} = -\/1}}
+\label{classHttProduct_ac6955f8cf5af8bed0cbd98dc28a63e82}
+\hypertarget{classHttProduct_a12e1a3ff84e4a6a2a35a867920ba6e0f}{
+\index{HttProduct@{HttProduct}!m\_\-jccsv2@{m\_\-jccsv2}}
+\index{m\_\-jccsv2@{m\_\-jccsv2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-jccsv2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-jccsv2} = -\/1}}
+\label{classHttProduct_a12e1a3ff84e4a6a2a35a867920ba6e0f}
+\hypertarget{classHttProduct_a5aba8fcf3ac6800253caa48ac9188fa4}{
+\index{HttProduct@{HttProduct}!m\_\-jccsv3@{m\_\-jccsv3}}
+\index{m\_\-jccsv3@{m\_\-jccsv3}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-jccsv3}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-jccsv3} = -\/1}}
+\label{classHttProduct_a5aba8fcf3ac6800253caa48ac9188fa4}
+\hypertarget{classHttProduct_a2063343b5b6864ced890829817b8e98c}{
+\index{HttProduct@{HttProduct}!m\_\-jccsv4@{m\_\-jccsv4}}
+\index{m\_\-jccsv4@{m\_\-jccsv4}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-jccsv4}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-jccsv4} = -\/1}}
+\label{classHttProduct_a2063343b5b6864ced890829817b8e98c}
+\hypertarget{classHttProduct_a8bdd8eb96d0520201f6a22c63825c054}{
+\index{HttProduct@{HttProduct}!m\_\-Lep1Centrality@{m\_\-Lep1Centrality}}
+\index{m\_\-Lep1Centrality@{m\_\-Lep1Centrality}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-Lep1Centrality}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-Lep1Centrality} = -\/1.5}}
+\label{classHttProduct_a8bdd8eb96d0520201f6a22c63825c054}
+\hypertarget{classHttProduct_ad25c9324459c0af1d52a48d390ba10f5}{
+\index{HttProduct@{HttProduct}!m\_\-Lep2Centrality@{m\_\-Lep2Centrality}}
+\index{m\_\-Lep2Centrality@{m\_\-Lep2Centrality}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-Lep2Centrality}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-Lep2Centrality} = -\/1}}
+\label{classHttProduct_ad25c9324459c0af1d52a48d390ba10f5}
+\hypertarget{classHttProduct_adecfb7ee858684689f8d4aad6faa0be9}{
+\index{HttProduct@{HttProduct}!m\_\-leptonIsolation@{m\_\-leptonIsolation}}
+\index{m\_\-leptonIsolation@{m\_\-leptonIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-leptonIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-leptonIsolation}}}
+\label{classHttProduct_adecfb7ee858684689f8d4aad6faa0be9}
+\hypertarget{classHttProduct_a6b289be98575ef2ae3f0d8c9ae7b432f}{
+\index{HttProduct@{HttProduct}!m\_\-leptonIsolationOverPt@{m\_\-leptonIsolationOverPt}}
+\index{m\_\-leptonIsolationOverPt@{m\_\-leptonIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-leptonIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-leptonIsolationOverPt}}}
+\label{classHttProduct_a6b289be98575ef2ae3f0d8c9ae7b432f}
+\hypertarget{classHttProduct_a92352e3b04bf6249535bf5f02aef3193}{
+\index{HttProduct@{HttProduct}!m\_\-leptonsBoostToDiLeptonSystem@{m\_\-leptonsBoostToDiLeptonSystem}}
+\index{m\_\-leptonsBoostToDiLeptonSystem@{m\_\-leptonsBoostToDiLeptonSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-leptonsBoostToDiLeptonSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-leptonsBoostToDiLeptonSystem}}}
+\label{classHttProduct_a92352e3b04bf6249535bf5f02aef3193}
+\hypertarget{classHttProduct_ac52a68f17b8c456a8dc7a23ca8c35926}{
+\index{HttProduct@{HttProduct}!m\_\-leptonsBoostToDiTauSystem@{m\_\-leptonsBoostToDiTauSystem}}
+\index{m\_\-leptonsBoostToDiTauSystem@{m\_\-leptonsBoostToDiTauSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-leptonsBoostToDiTauSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-leptonsBoostToDiTauSystem}}}
+\label{classHttProduct_ac52a68f17b8c456a8dc7a23ca8c35926}
+\hypertarget{classHttProduct_a7c4828e5053357081c0b6013762913cd}{
+\index{HttProduct@{HttProduct}!m\_\-met@{m\_\-met}}
+\index{m\_\-met@{m\_\-met}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-met}]{\setlength{\rightskip}{0pt plus 5cm}KMET {\bf HttProduct::m\_\-met}}}
+\label{classHttProduct_a7c4828e5053357081c0b6013762913cd}
+\hypertarget{classHttProduct_aff2a9293122d9236decdc9ee37d16916}{
+\index{HttProduct@{HttProduct}!m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt@{m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt}}
+\index{m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt@{m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-metPlusVisLepsOnGenBosonPtOverGenBosonPt}}}
+\label{classHttProduct_aff2a9293122d9236decdc9ee37d16916}
+\hypertarget{classHttProduct_a9cad0f70398e40cc1b27bbbb5ca3f25b}{
+\index{HttProduct@{HttProduct}!m\_\-metPull@{m\_\-metPull}}
+\index{m\_\-metPull@{m\_\-metPull}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-metPull}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-metPull}}}
+\label{classHttProduct_a9cad0f70398e40cc1b27bbbb5ca3f25b}
+\hypertarget{classHttProduct_a262e1f83347405eaad1b7f4324f1ca43}{
+\index{HttProduct@{HttProduct}!m\_\-metUncorr@{m\_\-metUncorr}}
+\index{m\_\-metUncorr@{m\_\-metUncorr}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-metUncorr}]{\setlength{\rightskip}{0pt plus 5cm}KMET$\ast$ {\bf HttProduct::m\_\-metUncorr} = 0}}
+\label{classHttProduct_a262e1f83347405eaad1b7f4324f1ca43}
+\hypertarget{classHttProduct_a306c181da30a859bd7a13a8beadbdde8}{
+\index{HttProduct@{HttProduct}!m\_\-MinLLJetEta@{m\_\-MinLLJetEta}}
+\index{m\_\-MinLLJetEta@{m\_\-MinLLJetEta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-MinLLJetEta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-MinLLJetEta} = 10}}
+\label{classHttProduct_a306c181da30a859bd7a13a8beadbdde8}
+\hypertarget{classHttProduct_a39b3d69fe737078f76c46dae49670add}{
+\index{HttProduct@{HttProduct}!m\_\-muonChargedIsolation@{m\_\-muonChargedIsolation}}
+\index{m\_\-muonChargedIsolation@{m\_\-muonChargedIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonChargedIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonChargedIsolation}}}
+\label{classHttProduct_a39b3d69fe737078f76c46dae49670add}
+\hypertarget{classHttProduct_a12dbd2d89ff730740180bcdf6e375089}{
+\index{HttProduct@{HttProduct}!m\_\-muonChargedIsolationOverPt@{m\_\-muonChargedIsolationOverPt}}
+\index{m\_\-muonChargedIsolationOverPt@{m\_\-muonChargedIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonChargedIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonChargedIsolationOverPt}}}
+\label{classHttProduct_a12dbd2d89ff730740180bcdf6e375089}
+\hypertarget{classHttProduct_a25a663d9b0c0c232d8b25834fd82a922}{
+\index{HttProduct@{HttProduct}!m\_\-muonDeltaBetaIsolation@{m\_\-muonDeltaBetaIsolation}}
+\index{m\_\-muonDeltaBetaIsolation@{m\_\-muonDeltaBetaIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonDeltaBetaIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonDeltaBetaIsolation}}}
+\label{classHttProduct_a25a663d9b0c0c232d8b25834fd82a922}
+\hypertarget{classHttProduct_a3cdbe21e10c8bd9e790732191ecd5776}{
+\index{HttProduct@{HttProduct}!m\_\-muonDeltaBetaIsolationOverPt@{m\_\-muonDeltaBetaIsolationOverPt}}
+\index{m\_\-muonDeltaBetaIsolationOverPt@{m\_\-muonDeltaBetaIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonDeltaBetaIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonDeltaBetaIsolationOverPt}}}
+\label{classHttProduct_a3cdbe21e10c8bd9e790732191ecd5776}
+\hypertarget{classHttProduct_a56c9bfb7b1ef1191b730bb36a9fc9972}{
+\index{HttProduct@{HttProduct}!m\_\-muonIsolation@{m\_\-muonIsolation}}
+\index{m\_\-muonIsolation@{m\_\-muonIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonIsolation}}}
+\label{classHttProduct_a56c9bfb7b1ef1191b730bb36a9fc9972}
+\hypertarget{classHttProduct_aa378e6264b7559aa9e86a5aa691f60a7}{
+\index{HttProduct@{HttProduct}!m\_\-muonIsolationOverPt@{m\_\-muonIsolationOverPt}}
+\index{m\_\-muonIsolationOverPt@{m\_\-muonIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonIsolationOverPt}}}
+\label{classHttProduct_aa378e6264b7559aa9e86a5aa691f60a7}
+\hypertarget{classHttProduct_abdfa11aaba1b4edcba7715e68cf2aaca}{
+\index{HttProduct@{HttProduct}!m\_\-muonNeutralIsolation@{m\_\-muonNeutralIsolation}}
+\index{m\_\-muonNeutralIsolation@{m\_\-muonNeutralIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonNeutralIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonNeutralIsolation}}}
+\label{classHttProduct_abdfa11aaba1b4edcba7715e68cf2aaca}
+\hypertarget{classHttProduct_ab1f969d8d977e78fe88e12ef315f6583}{
+\index{HttProduct@{HttProduct}!m\_\-muonNeutralIsolationOverPt@{m\_\-muonNeutralIsolationOverPt}}
+\index{m\_\-muonNeutralIsolationOverPt@{m\_\-muonNeutralIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonNeutralIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonNeutralIsolationOverPt}}}
+\label{classHttProduct_ab1f969d8d977e78fe88e12ef315f6583}
+\hypertarget{classHttProduct_a5aa31ac41552608c176cb28a3e3c06f6}{
+\index{HttProduct@{HttProduct}!m\_\-muonPhotonIsolation@{m\_\-muonPhotonIsolation}}
+\index{m\_\-muonPhotonIsolation@{m\_\-muonPhotonIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonPhotonIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonPhotonIsolation}}}
+\label{classHttProduct_a5aa31ac41552608c176cb28a3e3c06f6}
+\hypertarget{classHttProduct_aedf7aad859164dc7ec217ee3586d4d8b}{
+\index{HttProduct@{HttProduct}!m\_\-muonPhotonIsolationOverPt@{m\_\-muonPhotonIsolationOverPt}}
+\index{m\_\-muonPhotonIsolationOverPt@{m\_\-muonPhotonIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-muonPhotonIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KMuon$\ast$, double$>$ {\bf HttProduct::m\_\-muonPhotonIsolationOverPt}}}
+\label{classHttProduct_aedf7aad859164dc7ec217ee3586d4d8b}
+\hypertarget{classHttProduct_a44f387057d5dafe967b68fd5eb58a79f}{
+\index{HttProduct@{HttProduct}!m\_\-mvamet@{m\_\-mvamet}}
+\index{m\_\-mvamet@{m\_\-mvamet}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-mvamet}]{\setlength{\rightskip}{0pt plus 5cm}KMET {\bf HttProduct::m\_\-mvamet}}}
+\label{classHttProduct_a44f387057d5dafe967b68fd5eb58a79f}
+\hypertarget{classHttProduct_a17c2bf4e38deeba8621905cf106e334d}{
+\index{HttProduct@{HttProduct}!m\_\-mvametCorrections@{m\_\-mvametCorrections}}
+\index{m\_\-mvametCorrections@{m\_\-mvametCorrections}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-mvametCorrections}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$float$>$ {\bf HttProduct::m\_\-mvametCorrections}}}
+\label{classHttProduct_a17c2bf4e38deeba8621905cf106e334d}
+\hypertarget{classHttProduct_a45f94abd585fbce86a75e170bd5e17d9}{
+\index{HttProduct@{HttProduct}!m\_\-mvametUncorr@{m\_\-mvametUncorr}}
+\index{m\_\-mvametUncorr@{m\_\-mvametUncorr}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-mvametUncorr}]{\setlength{\rightskip}{0pt plus 5cm}KMET$\ast$ {\bf HttProduct::m\_\-mvametUncorr} = 0}}
+\label{classHttProduct_a45f94abd585fbce86a75e170bd5e17d9}
+\hypertarget{classHttProduct_a5edebff621a1c9c48bed3a53bd7d0749}{
+\index{HttProduct@{HttProduct}!m\_\-MVATestMethodsDiscriminators@{m\_\-MVATestMethodsDiscriminators}}
+\index{m\_\-MVATestMethodsDiscriminators@{m\_\-MVATestMethodsDiscriminators}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-MVATestMethodsDiscriminators}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf HttProduct::m\_\-MVATestMethodsDiscriminators}}}
+\label{classHttProduct_a5edebff621a1c9c48bed3a53bd7d0749}
+\hypertarget{classHttProduct_a29fc4394e47bea58d6477ee8f7ead81e}{
+\index{HttProduct@{HttProduct}!m\_\-nCentralJets20@{m\_\-nCentralJets20}}
+\index{m\_\-nCentralJets20@{m\_\-nCentralJets20}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nCentralJets20}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nCentralJets20} = 0}}
+\label{classHttProduct_a29fc4394e47bea58d6477ee8f7ead81e}
+\hypertarget{classHttProduct_abb86def8117c39e95b455f4e054cea06}{
+\index{HttProduct@{HttProduct}!m\_\-nCentralJets30@{m\_\-nCentralJets30}}
+\index{m\_\-nCentralJets30@{m\_\-nCentralJets30}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nCentralJets30}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nCentralJets30} = 0}}
+\label{classHttProduct_abb86def8117c39e95b455f4e054cea06}
+\hypertarget{classHttProduct_ae33b3df3a4e4ac02097c818a11f3f319}{
+\index{HttProduct@{HttProduct}!m\_\-nDiElectronVetoPairsOS@{m\_\-nDiElectronVetoPairsOS}}
+\index{m\_\-nDiElectronVetoPairsOS@{m\_\-nDiElectronVetoPairsOS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nDiElectronVetoPairsOS}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nDiElectronVetoPairsOS} = 0}}
+\label{classHttProduct_ae33b3df3a4e4ac02097c818a11f3f319}
+\hypertarget{classHttProduct_ae5056eaf6e08614a971727bcc63b3a84}{
+\index{HttProduct@{HttProduct}!m\_\-nDiElectronVetoPairsSS@{m\_\-nDiElectronVetoPairsSS}}
+\index{m\_\-nDiElectronVetoPairsSS@{m\_\-nDiElectronVetoPairsSS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nDiElectronVetoPairsSS}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nDiElectronVetoPairsSS} = 0}}
+\label{classHttProduct_ae5056eaf6e08614a971727bcc63b3a84}
+\hypertarget{classHttProduct_a451eb95711c40e4c210c2a5850e1b89d}{
+\index{HttProduct@{HttProduct}!m\_\-nDiMuonVetoPairsOS@{m\_\-nDiMuonVetoPairsOS}}
+\index{m\_\-nDiMuonVetoPairsOS@{m\_\-nDiMuonVetoPairsOS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nDiMuonVetoPairsOS}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nDiMuonVetoPairsOS} = 0}}
+\label{classHttProduct_a451eb95711c40e4c210c2a5850e1b89d}
+\hypertarget{classHttProduct_a68e6a6fd20b591ca502d71f412d45a3f}{
+\index{HttProduct@{HttProduct}!m\_\-nDiMuonVetoPairsSS@{m\_\-nDiMuonVetoPairsSS}}
+\index{m\_\-nDiMuonVetoPairsSS@{m\_\-nDiMuonVetoPairsSS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-nDiMuonVetoPairsSS}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf HttProduct::m\_\-nDiMuonVetoPairsSS} = 0}}
+\label{classHttProduct_a68e6a6fd20b591ca502d71f412d45a3f}
+\hypertarget{classHttProduct_aa99f9a9c423fc8188938dcc0155da4c4}{
+\index{HttProduct@{HttProduct}!m\_\-pfmet@{m\_\-pfmet}}
+\index{m\_\-pfmet@{m\_\-pfmet}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfmet}]{\setlength{\rightskip}{0pt plus 5cm}KMET {\bf HttProduct::m\_\-pfmet}}}
+\label{classHttProduct_aa99f9a9c423fc8188938dcc0155da4c4}
+\hypertarget{classHttProduct_a8da5000e9a19e09d4495b8d81d4c67c9}{
+\index{HttProduct@{HttProduct}!m\_\-pfmetCorrections@{m\_\-pfmetCorrections}}
+\index{m\_\-pfmetCorrections@{m\_\-pfmetCorrections}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfmetCorrections}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$float$>$ {\bf HttProduct::m\_\-pfmetCorrections}}}
+\label{classHttProduct_a8da5000e9a19e09d4495b8d81d4c67c9}
+\hypertarget{classHttProduct_ae3ef7216b4923322f5f2bae4e4631691}{
+\index{HttProduct@{HttProduct}!m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt@{m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt}}
+\index{m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt@{m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pfmetPlusVisLepsOnGenBosonPtOverGenBosonPt}}}
+\label{classHttProduct_ae3ef7216b4923322f5f2bae4e4631691}
+\hypertarget{classHttProduct_af0871f430337a0e9afd9142e2c685332}{
+\index{HttProduct@{HttProduct}!m\_\-pfmetPull@{m\_\-pfmetPull}}
+\index{m\_\-pfmetPull@{m\_\-pfmetPull}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfmetPull}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-pfmetPull}}}
+\label{classHttProduct_af0871f430337a0e9afd9142e2c685332}
+\hypertarget{classHttProduct_a9c2604be85c44fc57f7fa3fd067a9a8f}{
+\index{HttProduct@{HttProduct}!m\_\-pfmetUncorr@{m\_\-pfmetUncorr}}
+\index{m\_\-pfmetUncorr@{m\_\-pfmetUncorr}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfmetUncorr}]{\setlength{\rightskip}{0pt plus 5cm}KMET$\ast$ {\bf HttProduct::m\_\-pfmetUncorr} = 0}}
+\label{classHttProduct_a9c2604be85c44fc57f7fa3fd067a9a8f}
+\hypertarget{classHttProduct_ac875645551f9928222a8f22f2487b444}{
+\index{HttProduct@{HttProduct}!m\_\-pfrecoilOnBoson@{m\_\-pfrecoilOnBoson}}
+\index{m\_\-pfrecoilOnBoson@{m\_\-pfrecoilOnBoson}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfrecoilOnBoson}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-pfrecoilOnBoson}}}
+\label{classHttProduct_ac875645551f9928222a8f22f2487b444}
+\hypertarget{classHttProduct_acc65cd96f1114a8c00337ce3b57ea03b}{
+\index{HttProduct@{HttProduct}!m\_\-pfSumHt@{m\_\-pfSumHt}}
+\index{m\_\-pfSumHt@{m\_\-pfSumHt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfSumHt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pfSumHt} = 0.}}
+\label{classHttProduct_acc65cd96f1114a8c00337ce3b57ea03b}
+\hypertarget{classHttProduct_ad0bfad9592c131371736c14e9ed16e71}{
+\index{HttProduct@{HttProduct}!m\_\-pfSumHtWithoutZMuMu@{m\_\-pfSumHtWithoutZMuMu}}
+\index{m\_\-pfSumHtWithoutZMuMu@{m\_\-pfSumHtWithoutZMuMu}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfSumHtWithoutZMuMu}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pfSumHtWithoutZMuMu} = 0.}}
+\label{classHttProduct_ad0bfad9592c131371736c14e9ed16e71}
+\hypertarget{classHttProduct_a7ead93647a4958c65f8bb84c689ea0b5}{
+\index{HttProduct@{HttProduct}!m\_\-pfSumP4@{m\_\-pfSumP4}}
+\index{m\_\-pfSumP4@{m\_\-pfSumP4}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfSumP4}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-pfSumP4}}}
+\label{classHttProduct_a7ead93647a4958c65f8bb84c689ea0b5}
+\hypertarget{classHttProduct_a8304bb2e0d778a235a427993641ed25f}{
+\index{HttProduct@{HttProduct}!m\_\-pfSumP4WithoutZMuMu@{m\_\-pfSumP4WithoutZMuMu}}
+\index{m\_\-pfSumP4WithoutZMuMu@{m\_\-pfSumP4WithoutZMuMu}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pfSumP4WithoutZMuMu}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV {\bf HttProduct::m\_\-pfSumP4WithoutZMuMu}}}
+\label{classHttProduct_a8304bb2e0d778a235a427993641ed25f}
+\hypertarget{classHttProduct_a9dfb25a74bfaf26ad2c4da1fee5f7572}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationCombinedOmegaBarSimpleFit@{m\_\-polarisationCombinedOmegaBarSimpleFit}}
+\index{m\_\-polarisationCombinedOmegaBarSimpleFit@{m\_\-polarisationCombinedOmegaBarSimpleFit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationCombinedOmegaBarSimpleFit}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-polarisationCombinedOmegaBarSimpleFit} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a9dfb25a74bfaf26ad2c4da1fee5f7572}
+\hypertarget{classHttProduct_a76ad97fa61bb687121369e7eefd46836}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationCombinedOmegaBarSvfit@{m\_\-polarisationCombinedOmegaBarSvfit}}
+\index{m\_\-polarisationCombinedOmegaBarSvfit@{m\_\-polarisationCombinedOmegaBarSvfit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationCombinedOmegaBarSvfit}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-polarisationCombinedOmegaBarSvfit} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a76ad97fa61bb687121369e7eefd46836}
+\hypertarget{classHttProduct_adf20d7ef58760c4a6ded6a6547315b5c}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationCombinedOmegaSimpleFit@{m\_\-polarisationCombinedOmegaSimpleFit}}
+\index{m\_\-polarisationCombinedOmegaSimpleFit@{m\_\-polarisationCombinedOmegaSimpleFit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationCombinedOmegaSimpleFit}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-polarisationCombinedOmegaSimpleFit} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_adf20d7ef58760c4a6ded6a6547315b5c}
+\hypertarget{classHttProduct_a829ebf0e411d8e2ad1410ccff493db0e}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationCombinedOmegaSvfit@{m\_\-polarisationCombinedOmegaSvfit}}
+\index{m\_\-polarisationCombinedOmegaSvfit@{m\_\-polarisationCombinedOmegaSvfit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationCombinedOmegaSvfit}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-polarisationCombinedOmegaSvfit} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a829ebf0e411d8e2ad1410ccff493db0e}
+\hypertarget{classHttProduct_a2c33c1585a230077b24bc0050ccec598}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationOmegaBarsSimpleFit@{m\_\-polarisationOmegaBarsSimpleFit}}
+\index{m\_\-polarisationOmegaBarsSimpleFit@{m\_\-polarisationOmegaBarsSimpleFit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationOmegaBarsSimpleFit}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-polarisationOmegaBarsSimpleFit}}}
+\label{classHttProduct_a2c33c1585a230077b24bc0050ccec598}
+\hypertarget{classHttProduct_a8eda87274c5559af86ec2fac290f8aad}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationOmegaBarsSvfit@{m\_\-polarisationOmegaBarsSvfit}}
+\index{m\_\-polarisationOmegaBarsSvfit@{m\_\-polarisationOmegaBarsSvfit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationOmegaBarsSvfit}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-polarisationOmegaBarsSvfit}}}
+\label{classHttProduct_a8eda87274c5559af86ec2fac290f8aad}
+\hypertarget{classHttProduct_a5d985659a837ce0cd45fd247c8d28827}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationOmegasSimpleFit@{m\_\-polarisationOmegasSimpleFit}}
+\index{m\_\-polarisationOmegasSimpleFit@{m\_\-polarisationOmegasSimpleFit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationOmegasSimpleFit}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-polarisationOmegasSimpleFit}}}
+\label{classHttProduct_a5d985659a837ce0cd45fd247c8d28827}
+\hypertarget{classHttProduct_ad23306a6f236a70a45aed2d285e32750}{
+\index{HttProduct@{HttProduct}!m\_\-polarisationOmegasSvfit@{m\_\-polarisationOmegasSvfit}}
+\index{m\_\-polarisationOmegasSvfit@{m\_\-polarisationOmegasSvfit}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-polarisationOmegasSvfit}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, double$>$ {\bf HttProduct::m\_\-polarisationOmegasSvfit}}}
+\label{classHttProduct_ad23306a6f236a70a45aed2d285e32750}
+\hypertarget{classHttProduct_a45abb293846b6666a1f790e5958b719d}{
+\index{HttProduct@{HttProduct}!m\_\-pScalSum@{m\_\-pScalSum}}
+\index{m\_\-pScalSum@{m\_\-pScalSum}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pScalSum}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pScalSum} = -\/1}}
+\label{classHttProduct_a45abb293846b6666a1f790e5958b719d}
+\hypertarget{classHttProduct_aeed3fd71b9606c0d2a4d8da8500e510a}{
+\index{HttProduct@{HttProduct}!m\_\-ptOrderedGenLeptons@{m\_\-ptOrderedGenLeptons}}
+\index{m\_\-ptOrderedGenLeptons@{m\_\-ptOrderedGenLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-ptOrderedGenLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenParticle$\ast$$>$ {\bf HttProduct::m\_\-ptOrderedGenLeptons}}}
+\label{classHttProduct_aeed3fd71b9606c0d2a4d8da8500e510a}
+\hypertarget{classHttProduct_aeea816c374d3c6bc8627b18a82830485}{
+\index{HttProduct@{HttProduct}!m\_\-ptOrderedGenLeptonVisibleLVs@{m\_\-ptOrderedGenLeptonVisibleLVs}}
+\index{m\_\-ptOrderedGenLeptonVisibleLVs@{m\_\-ptOrderedGenLeptonVisibleLVs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-ptOrderedGenLeptonVisibleLVs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$RMFLV$\ast$$>$ {\bf HttProduct::m\_\-ptOrderedGenLeptonVisibleLVs}}}
+\label{classHttProduct_aeea816c374d3c6bc8627b18a82830485}
+\hypertarget{classHttProduct_a4b39739074003e2a8c665d32005c4e2b}{
+\index{HttProduct@{HttProduct}!m\_\-ptOrderedGenTaus@{m\_\-ptOrderedGenTaus}}
+\index{m\_\-ptOrderedGenTaus@{m\_\-ptOrderedGenTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-ptOrderedGenTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-ptOrderedGenTaus}}}
+\label{classHttProduct_a4b39739074003e2a8c665d32005c4e2b}
+\hypertarget{classHttProduct_accc7dc9b7ee8356d0163149738aa933b}{
+\index{HttProduct@{HttProduct}!m\_\-ptOrderedLeptons@{m\_\-ptOrderedLeptons}}
+\index{m\_\-ptOrderedLeptons@{m\_\-ptOrderedLeptons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-ptOrderedLeptons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KLepton$\ast$$>$ {\bf HttProduct::m\_\-ptOrderedLeptons}}}
+\label{classHttProduct_accc7dc9b7ee8356d0163149738aa933b}
+\hypertarget{classHttProduct_aa787c5a62f9e8fcff5ba469b877864aa}{
+\index{HttProduct@{HttProduct}!m\_\-puppiMetUncorr@{m\_\-puppiMetUncorr}}
+\index{m\_\-puppiMetUncorr@{m\_\-puppiMetUncorr}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-puppiMetUncorr}]{\setlength{\rightskip}{0pt plus 5cm}KMET$\ast$ {\bf HttProduct::m\_\-puppiMetUncorr} = 0}}
+\label{classHttProduct_aa787c5a62f9e8fcff5ba469b877864aa}
+\hypertarget{classHttProduct_aff3f5f7a0d777506d01369813d160925}{
+\index{HttProduct@{HttProduct}!m\_\-pVecSum@{m\_\-pVecSum}}
+\index{m\_\-pVecSum@{m\_\-pVecSum}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pVecSum}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pVecSum} = -\/1}}
+\label{classHttProduct_aff3f5f7a0d777506d01369813d160925}
+\hypertarget{classHttProduct_a44276b9923909f4eca106fcec1968b30}{
+\index{HttProduct@{HttProduct}!m\_\-pVecSumCSVJets@{m\_\-pVecSumCSVJets}}
+\index{m\_\-pVecSumCSVJets@{m\_\-pVecSumCSVJets}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-pVecSumCSVJets}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-pVecSumCSVJets} = -\/1}}
+\label{classHttProduct_a44276b9923909f4eca106fcec1968b30}
+\hypertarget{classHttProduct_ab108952b461b79071c8dc6d25fb901b8}{
+\index{HttProduct@{HttProduct}!m\_\-reco\_\-negyTauL@{m\_\-reco\_\-negyTauL}}
+\index{m\_\-reco\_\-negyTauL@{m\_\-reco\_\-negyTauL}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-reco\_\-negyTauL}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-reco\_\-negyTauL} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_ab108952b461b79071c8dc6d25fb901b8}
+\hypertarget{classHttProduct_a8152fe5094df12ffcce5647c008f9f42}{
+\index{HttProduct@{HttProduct}!m\_\-reco\_\-posyTauL@{m\_\-reco\_\-posyTauL}}
+\index{m\_\-reco\_\-posyTauL@{m\_\-reco\_\-posyTauL}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-reco\_\-posyTauL}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-reco\_\-posyTauL} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a8152fe5094df12ffcce5647c008f9f42}
+\hypertarget{classHttProduct_a00b53081f6bd3ad818e9108569389e43}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedHadronEnergies@{m\_\-recoChargedHadronEnergies}}
+\index{m\_\-recoChargedHadronEnergies@{m\_\-recoChargedHadronEnergies}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedHadronEnergies}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$double,double$>$ {\bf HttProduct::m\_\-recoChargedHadronEnergies} = std::make\_\-pair(DefaultValues::UndefinedDouble, DefaultValues::UndefinedDouble)}}
+\label{classHttProduct_a00b53081f6bd3ad818e9108569389e43}
+\hypertarget{classHttProduct_ade299bec9d6dd15b181cd562ec28cd3b}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedParitcle2@{m\_\-recoChargedParitcle2}}
+\index{m\_\-recoChargedParitcle2@{m\_\-recoChargedParitcle2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedParitcle2}]{\setlength{\rightskip}{0pt plus 5cm}KGenParticle$\ast$ {\bf HttProduct::m\_\-recoChargedParitcle2} = 0}}
+\label{classHttProduct_ade299bec9d6dd15b181cd562ec28cd3b}
+\hypertarget{classHttProduct_ab6e20142aa603f129f8beb7935997aca}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedParticle1@{m\_\-recoChargedParticle1}}
+\index{m\_\-recoChargedParticle1@{m\_\-recoChargedParticle1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedParticle1}]{\setlength{\rightskip}{0pt plus 5cm}KGenParticle$\ast$ {\bf HttProduct::m\_\-recoChargedParticle1} = 0}}
+\label{classHttProduct_ab6e20142aa603f129f8beb7935997aca}
+\hypertarget{classHttProduct_a86d235473b682dc25e69a6fde2c91fa7}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedPiMinus\_\-eta@{m\_\-recoChargedPiMinus\_\-eta}}
+\index{m\_\-recoChargedPiMinus\_\-eta@{m\_\-recoChargedPiMinus\_\-eta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedPiMinus\_\-eta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoChargedPiMinus\_\-eta} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a86d235473b682dc25e69a6fde2c91fa7}
+\hypertarget{classHttProduct_a08d03c554a680c0d4009618907a50a5e}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedPiMinus\_\-pt@{m\_\-recoChargedPiMinus\_\-pt}}
+\index{m\_\-recoChargedPiMinus\_\-pt@{m\_\-recoChargedPiMinus\_\-pt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedPiMinus\_\-pt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoChargedPiMinus\_\-pt} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a08d03c554a680c0d4009618907a50a5e}
+\hypertarget{classHttProduct_a904bf8957cc303f9c257259d898675e8}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedPiPlus\_\-eta@{m\_\-recoChargedPiPlus\_\-eta}}
+\index{m\_\-recoChargedPiPlus\_\-eta@{m\_\-recoChargedPiPlus\_\-eta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedPiPlus\_\-eta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoChargedPiPlus\_\-eta} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a904bf8957cc303f9c257259d898675e8}
+\hypertarget{classHttProduct_a213a48df02bd0bcf562c3cf636fc6df2}{
+\index{HttProduct@{HttProduct}!m\_\-recoChargedPiPlus\_\-rho\_\-pt@{m\_\-recoChargedPiPlus\_\-rho\_\-pt}}
+\index{m\_\-recoChargedPiPlus\_\-rho\_\-pt@{m\_\-recoChargedPiPlus\_\-rho\_\-pt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoChargedPiPlus\_\-rho\_\-pt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoChargedPiPlus\_\-rho\_\-pt} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a213a48df02bd0bcf562c3cf636fc6df2}
+\hypertarget{classHttProduct_ab2b4e95415346741761baf7a260e9d07}{
+\index{HttProduct@{HttProduct}!m\_\-recoilOnBoson@{m\_\-recoilOnBoson}}
+\index{m\_\-recoilOnBoson@{m\_\-recoilOnBoson}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoilOnBoson}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-recoilOnBoson}}}
+\label{classHttProduct_ab2b4e95415346741761baf7a260e9d07}
+\hypertarget{classHttProduct_a571feb2272c3205b12c0bd6e694127d3}{
+\index{HttProduct@{HttProduct}!m\_\-recoIP1@{m\_\-recoIP1}}
+\index{m\_\-recoIP1@{m\_\-recoIP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoIP1}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-recoIP1}}}
+\label{classHttProduct_a571feb2272c3205b12c0bd6e694127d3}
+\hypertarget{classHttProduct_aea4fe73c340c52db4fe5a427d2cf9be5}{
+\index{HttProduct@{HttProduct}!m\_\-recoIP1\_\-refitPV@{m\_\-recoIP1\_\-refitPV}}
+\index{m\_\-recoIP1\_\-refitPV@{m\_\-recoIP1\_\-refitPV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoIP1\_\-refitPV}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-recoIP1\_\-refitPV}}}
+\label{classHttProduct_aea4fe73c340c52db4fe5a427d2cf9be5}
+\hypertarget{classHttProduct_afd8ea5060d1649bdc05b7598a43d3f30}{
+\index{HttProduct@{HttProduct}!m\_\-recoIP2@{m\_\-recoIP2}}
+\index{m\_\-recoIP2@{m\_\-recoIP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoIP2}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-recoIP2}}}
+\label{classHttProduct_afd8ea5060d1649bdc05b7598a43d3f30}
+\hypertarget{classHttProduct_ab6f1595deb54f67149fdcc3a30adf7fa}{
+\index{HttProduct@{HttProduct}!m\_\-recoIP2\_\-refitPV@{m\_\-recoIP2\_\-refitPV}}
+\index{m\_\-recoIP2\_\-refitPV@{m\_\-recoIP2\_\-refitPV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoIP2\_\-refitPV}]{\setlength{\rightskip}{0pt plus 5cm}TVector3 {\bf HttProduct::m\_\-recoIP2\_\-refitPV}}}
+\label{classHttProduct_ab6f1595deb54f67149fdcc3a30adf7fa}
+\hypertarget{classHttProduct_abeb2d8eb1b290b609a225cef8616d021}{
+\index{HttProduct@{HttProduct}!m\_\-recoMetOnBoson@{m\_\-recoMetOnBoson}}
+\index{m\_\-recoMetOnBoson@{m\_\-recoMetOnBoson}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoMetOnBoson}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-recoMetOnBoson}}}
+\label{classHttProduct_abeb2d8eb1b290b609a225cef8616d021}
+\hypertarget{classHttProduct_a9452803893bd2284d830ff46f52f606b}{
+\index{HttProduct@{HttProduct}!m\_\-recoMetOnGenMetProjection@{m\_\-recoMetOnGenMetProjection}}
+\index{m\_\-recoMetOnGenMetProjection@{m\_\-recoMetOnGenMetProjection}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoMetOnGenMetProjection}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-recoMetOnGenMetProjection}}}
+\label{classHttProduct_a9452803893bd2284d830ff46f52f606b}
+\hypertarget{classHttProduct_abea8bb6a2a1f310bffeeed4e3c1828e9}{
+\index{HttProduct@{HttProduct}!m\_\-recoPfMetOnBoson@{m\_\-recoPfMetOnBoson}}
+\index{m\_\-recoPfMetOnBoson@{m\_\-recoPfMetOnBoson}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPfMetOnBoson}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-recoPfMetOnBoson}}}
+\label{classHttProduct_abea8bb6a2a1f310bffeeed4e3c1828e9}
+\hypertarget{classHttProduct_a14c6dc367cae8ab8dfec16d20180cd8d}{
+\index{HttProduct@{HttProduct}!m\_\-recoPfMetOnGenMetProjection@{m\_\-recoPfMetOnGenMetProjection}}
+\index{m\_\-recoPfMetOnGenMetProjection@{m\_\-recoPfMetOnGenMetProjection}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPfMetOnGenMetProjection}]{\setlength{\rightskip}{0pt plus 5cm}TVector2 {\bf HttProduct::m\_\-recoPfMetOnGenMetProjection}}}
+\label{classHttProduct_a14c6dc367cae8ab8dfec16d20180cd8d}
+\hypertarget{classHttProduct_adce7e4fdde050504e61358f745be9c35}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStar@{m\_\-recoPhiStar}}
+\index{m\_\-recoPhiStar@{m\_\-recoPhiStar}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStar}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStar} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_adce7e4fdde050504e61358f745be9c35}
+\hypertarget{classHttProduct_a382e6a65e1bc7bac27069f8cfff2d234}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStar\_\-rho@{m\_\-recoPhiStar\_\-rho}}
+\index{m\_\-recoPhiStar\_\-rho@{m\_\-recoPhiStar\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStar\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStar\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a382e6a65e1bc7bac27069f8cfff2d234}
+\hypertarget{classHttProduct_aa4bd2e24680c73548ed2fbc6b4ac7a19}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCP@{m\_\-recoPhiStarCP}}
+\index{m\_\-recoPhiStarCP@{m\_\-recoPhiStarCP}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCP}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCP} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_aa4bd2e24680c73548ed2fbc6b4ac7a19}
+\hypertarget{classHttProduct_a5aef45105c9b2e2069feeb411adf5904}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCP\_\-rho@{m\_\-recoPhiStarCP\_\-rho}}
+\index{m\_\-recoPhiStarCP\_\-rho@{m\_\-recoPhiStarCP\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCP\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCP\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a5aef45105c9b2e2069feeb411adf5904}
+\hypertarget{classHttProduct_acbda6aa9798ef7cb8c3cefb04cf81bce}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCP\_\-rho\_\-merged@{m\_\-recoPhiStarCP\_\-rho\_\-merged}}
+\index{m\_\-recoPhiStarCP\_\-rho\_\-merged@{m\_\-recoPhiStarCP\_\-rho\_\-merged}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCP\_\-rho\_\-merged}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCP\_\-rho\_\-merged} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_acbda6aa9798ef7cb8c3cefb04cf81bce}
+\hypertarget{classHttProduct_a94f1cb54eab52625888eda222d67e21d}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPComb@{m\_\-recoPhiStarCPComb}}
+\index{m\_\-recoPhiStarCPComb@{m\_\-recoPhiStarCPComb}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPComb}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPComb} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a94f1cb54eab52625888eda222d67e21d}
+\hypertarget{classHttProduct_a1d8bfbc2f1469b322c46f058b8a2eaf2}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPCombMerged@{m\_\-recoPhiStarCPCombMerged}}
+\index{m\_\-recoPhiStarCPCombMerged@{m\_\-recoPhiStarCPCombMerged}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPCombMerged}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPCombMerged} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a1d8bfbc2f1469b322c46f058b8a2eaf2}
+\hypertarget{classHttProduct_a40b2f8b7d918c15baa3a1adc88e5bd84}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPrPV@{m\_\-recoPhiStarCPrPV}}
+\index{m\_\-recoPhiStarCPrPV@{m\_\-recoPhiStarCPrPV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPrPV}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPrPV} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a40b2f8b7d918c15baa3a1adc88e5bd84}
+\hypertarget{classHttProduct_ac8e1ce629cd837f8fc345c13390ceec9}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPrPV2@{m\_\-recoPhiStarCPrPV2}}
+\index{m\_\-recoPhiStarCPrPV2@{m\_\-recoPhiStarCPrPV2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPrPV2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPrPV2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_ac8e1ce629cd837f8fc345c13390ceec9}
+\hypertarget{classHttProduct_a497bb3a130adff99248aba9890339632}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPrPV\_\-rho@{m\_\-recoPhiStarCPrPV\_\-rho}}
+\index{m\_\-recoPhiStarCPrPV\_\-rho@{m\_\-recoPhiStarCPrPV\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPrPV\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPrPV\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a497bb3a130adff99248aba9890339632}
+\hypertarget{classHttProduct_a098ffec9c6c3ed02c71847654cbbd3d4}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPrPVbs@{m\_\-recoPhiStarCPrPVbs}}
+\index{m\_\-recoPhiStarCPrPVbs@{m\_\-recoPhiStarCPrPVbs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPrPVbs}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPrPVbs} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a098ffec9c6c3ed02c71847654cbbd3d4}
+\hypertarget{classHttProduct_a5aede4ad7706e790207d27cdfe281525}{
+\index{HttProduct@{HttProduct}!m\_\-recoPhiStarCPrPVbs\_\-rho@{m\_\-recoPhiStarCPrPVbs\_\-rho}}
+\index{m\_\-recoPhiStarCPrPVbs\_\-rho@{m\_\-recoPhiStarCPrPVbs\_\-rho}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPhiStarCPrPVbs\_\-rho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPhiStarCPrPVbs\_\-rho} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a5aede4ad7706e790207d27cdfe281525}
+\hypertarget{classHttProduct_abdeb3313e8426bbf9d2a4d888104651a}{
+\index{HttProduct@{HttProduct}!m\_\-recoPiZeroMinus\_\-eta@{m\_\-recoPiZeroMinus\_\-eta}}
+\index{m\_\-recoPiZeroMinus\_\-eta@{m\_\-recoPiZeroMinus\_\-eta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPiZeroMinus\_\-eta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPiZeroMinus\_\-eta} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_abdeb3313e8426bbf9d2a4d888104651a}
+\hypertarget{classHttProduct_a7786e41a155cb50c5083eba8575cb262}{
+\index{HttProduct@{HttProduct}!m\_\-recoPiZeroMinus\_\-pt@{m\_\-recoPiZeroMinus\_\-pt}}
+\index{m\_\-recoPiZeroMinus\_\-pt@{m\_\-recoPiZeroMinus\_\-pt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPiZeroMinus\_\-pt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPiZeroMinus\_\-pt} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a7786e41a155cb50c5083eba8575cb262}
+\hypertarget{classHttProduct_a319d9cdf83b816f05085fbe62afe435c}{
+\index{HttProduct@{HttProduct}!m\_\-recoPiZeroPlus\_\-eta@{m\_\-recoPiZeroPlus\_\-eta}}
+\index{m\_\-recoPiZeroPlus\_\-eta@{m\_\-recoPiZeroPlus\_\-eta}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPiZeroPlus\_\-eta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPiZeroPlus\_\-eta} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a319d9cdf83b816f05085fbe62afe435c}
+\hypertarget{classHttProduct_a6e16f6cd5da93ccaa83bc33abc443189}{
+\index{HttProduct@{HttProduct}!m\_\-recoPiZeroPlus\_\-pt@{m\_\-recoPiZeroPlus\_\-pt}}
+\index{m\_\-recoPiZeroPlus\_\-pt@{m\_\-recoPiZeroPlus\_\-pt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoPiZeroPlus\_\-pt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoPiZeroPlus\_\-pt} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a6e16f6cd5da93ccaa83bc33abc443189}
+\hypertarget{classHttProduct_a4bd6de3ec7586444d48d4d0d89d3deaf}{
+\index{HttProduct@{HttProduct}!m\_\-recoTrackRefError1@{m\_\-recoTrackRefError1}}
+\index{m\_\-recoTrackRefError1@{m\_\-recoTrackRefError1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoTrackRefError1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoTrackRefError1} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a4bd6de3ec7586444d48d4d0d89d3deaf}
+\hypertarget{classHttProduct_a95d22008c2a25f1bd7403f12b1f1666e}{
+\index{HttProduct@{HttProduct}!m\_\-recoTrackRefError2@{m\_\-recoTrackRefError2}}
+\index{m\_\-recoTrackRefError2@{m\_\-recoTrackRefError2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-recoTrackRefError2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-recoTrackRefError2} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a95d22008c2a25f1bd7403f12b1f1666e}
+\hypertarget{classHttProduct_a2e67ba21921d25e857e5265bf53fa1b8}{
+\index{HttProduct@{HttProduct}!m\_\-refitPV@{m\_\-refitPV}}
+\index{m\_\-refitPV@{m\_\-refitPV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-refitPV}]{\setlength{\rightskip}{0pt plus 5cm}KRefitVertex$\ast$ {\bf HttProduct::m\_\-refitPV} = 0}}
+\label{classHttProduct_a2e67ba21921d25e857e5265bf53fa1b8}
+\hypertarget{classHttProduct_a059310143e55e578c6f0ec5613e79ca6}{
+\index{HttProduct@{HttProduct}!m\_\-refitPVBS@{m\_\-refitPVBS}}
+\index{m\_\-refitPVBS@{m\_\-refitPVBS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-refitPVBS}]{\setlength{\rightskip}{0pt plus 5cm}KRefitVertex$\ast$ {\bf HttProduct::m\_\-refitPVBS} = 0}}
+\label{classHttProduct_a059310143e55e578c6f0ec5613e79ca6}
+\hypertarget{classHttProduct_a485baa2ac1d1ecbdb55366c9865d27fe}{
+\index{HttProduct@{HttProduct}!m\_\-refP1@{m\_\-refP1}}
+\index{m\_\-refP1@{m\_\-refP1}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-refP1}]{\setlength{\rightskip}{0pt plus 5cm}RMPoint$\ast$ {\bf HttProduct::m\_\-refP1} = 0}}
+\label{classHttProduct_a485baa2ac1d1ecbdb55366c9865d27fe}
+\hypertarget{classHttProduct_adc963cf8394312ce7d86c8ae53f0c6cd}{
+\index{HttProduct@{HttProduct}!m\_\-refP2@{m\_\-refP2}}
+\index{m\_\-refP2@{m\_\-refP2}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-refP2}]{\setlength{\rightskip}{0pt plus 5cm}RMPoint$\ast$ {\bf HttProduct::m\_\-refP2} = 0}}
+\label{classHttProduct_adc963cf8394312ce7d86c8ae53f0c6cd}
+\hypertarget{classHttProduct_a169a364722b7ef30ef64c0cc9ab41047}{
+\index{HttProduct@{HttProduct}!m\_\-simpleFitTaus@{m\_\-simpleFitTaus}}
+\index{m\_\-simpleFitTaus@{m\_\-simpleFitTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-simpleFitTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-simpleFitTaus}}}
+\label{classHttProduct_a169a364722b7ef30ef64c0cc9ab41047}
+\hypertarget{classHttProduct_accdce5615fc40068d8411be69b349f1c}{
+\index{HttProduct@{HttProduct}!m\_\-svfitCalculated@{m\_\-svfitCalculated}}
+\index{m\_\-svfitCalculated@{m\_\-svfitCalculated}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-svfitCalculated}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-svfitCalculated} = false}}
+\label{classHttProduct_accdce5615fc40068d8411be69b349f1c}
+\hypertarget{classHttProduct_a417c202e5be95c4971c52d7f51e92fd5}{
+\index{HttProduct@{HttProduct}!m\_\-svfitEventKey@{m\_\-svfitEventKey}}
+\index{m\_\-svfitEventKey@{m\_\-svfitEventKey}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-svfitEventKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SvfitEventKey} {\bf HttProduct::m\_\-svfitEventKey}\hspace{0.3cm}{\ttfamily  \mbox{[}mutable\mbox{]}}}}
+\label{classHttProduct_a417c202e5be95c4971c52d7f51e92fd5}
+\hypertarget{classHttProduct_a40ff729dcc44f180cb51b6532f5cbcc3}{
+\index{HttProduct@{HttProduct}!m\_\-svfitInputs@{m\_\-svfitInputs}}
+\index{m\_\-svfitInputs@{m\_\-svfitInputs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-svfitInputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SvfitInputs} {\bf HttProduct::m\_\-svfitInputs}\hspace{0.3cm}{\ttfamily  \mbox{[}mutable\mbox{]}}}}
+\label{classHttProduct_a40ff729dcc44f180cb51b6532f5cbcc3}
+\hypertarget{classHttProduct_ae13b0856479d03387c5319192f4c7b77}{
+\index{HttProduct@{HttProduct}!m\_\-svfitResults@{m\_\-svfitResults}}
+\index{m\_\-svfitResults@{m\_\-svfitResults}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-svfitResults}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SvfitResults} {\bf HttProduct::m\_\-svfitResults}\hspace{0.3cm}{\ttfamily  \mbox{[}mutable\mbox{]}}}}
+\label{classHttProduct_ae13b0856479d03387c5319192f4c7b77}
+\hypertarget{classHttProduct_afb683c52b390000148389a34a3b66a17}{
+\index{HttProduct@{HttProduct}!m\_\-svfitTaus@{m\_\-svfitTaus}}
+\index{m\_\-svfitTaus@{m\_\-svfitTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-svfitTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KLepton$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-svfitTaus}}}
+\label{classHttProduct_afb683c52b390000148389a34a3b66a17}
+\hypertarget{classHttProduct_ad96ec3ff0504af461f0e71ed57853ef7}{
+\index{HttProduct@{HttProduct}!m\_\-systematicShift@{m\_\-systematicShift}}
+\index{m\_\-systematicShift@{m\_\-systematicShift}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-systematicShift}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::SystematicShift} {\bf HttProduct::m\_\-systematicShift} = HttEnumTypes::SystematicShift::CENTRAL}}
+\label{classHttProduct_ad96ec3ff0504af461f0e71ed57853ef7}
+\hypertarget{classHttProduct_a5d765e15fd61df93b581ac259fffa8bc}{
+\index{HttProduct@{HttProduct}!m\_\-systematicShiftSigma@{m\_\-systematicShiftSigma}}
+\index{m\_\-systematicShiftSigma@{m\_\-systematicShiftSigma}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-systematicShiftSigma}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf HttProduct::m\_\-systematicShiftSigma} = 0.0}}
+\label{classHttProduct_a5d765e15fd61df93b581ac259fffa8bc}
+\hypertarget{classHttProduct_ae3eb0ecf3e4e1bfeb79cb090e6224582}{
+\index{HttProduct@{HttProduct}!m\_\-tauEnergyScaleWeight@{m\_\-tauEnergyScaleWeight}}
+\index{m\_\-tauEnergyScaleWeight@{m\_\-tauEnergyScaleWeight}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauEnergyScaleWeight}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KTau$\ast$, double$>$ {\bf HttProduct::m\_\-tauEnergyScaleWeight}}}
+\label{classHttProduct_ae3eb0ecf3e4e1bfeb79cb090e6224582}
+\hypertarget{classHttProduct_a367ae5e6dcf667daf5a392d6f6161222}{
+\index{HttProduct@{HttProduct}!m\_\-tauIsolation@{m\_\-tauIsolation}}
+\index{m\_\-tauIsolation@{m\_\-tauIsolation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauIsolation}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KTau$\ast$, double$>$ {\bf HttProduct::m\_\-tauIsolation}}}
+\label{classHttProduct_a367ae5e6dcf667daf5a392d6f6161222}
+\hypertarget{classHttProduct_a58eff332aabde35e468ae2ef115696b2}{
+\index{HttProduct@{HttProduct}!m\_\-tauIsolationOverPt@{m\_\-tauIsolationOverPt}}
+\index{m\_\-tauIsolationOverPt@{m\_\-tauIsolationOverPt}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauIsolationOverPt}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$KTau$\ast$, double$>$ {\bf HttProduct::m\_\-tauIsolationOverPt}}}
+\label{classHttProduct_a58eff332aabde35e468ae2ef115696b2}
+\hypertarget{classHttProduct_ab784e7805f945bedf6e2cc3ee39f7112}{
+\index{HttProduct@{HttProduct}!m\_\-tauMomentaReconstructed@{m\_\-tauMomentaReconstructed}}
+\index{m\_\-tauMomentaReconstructed@{m\_\-tauMomentaReconstructed}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauMomentaReconstructed}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-tauMomentaReconstructed} = false}}
+\label{classHttProduct_ab784e7805f945bedf6e2cc3ee39f7112}
+\hypertarget{classHttProduct_aa0c3f0fdfab21ffb2f82fd856dc54410}{
+\index{HttProduct@{HttProduct}!m\_\-tauPolarisationDiscriminators@{m\_\-tauPolarisationDiscriminators}}
+\index{m\_\-tauPolarisationDiscriminators@{m\_\-tauPolarisationDiscriminators}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauPolarisationDiscriminators}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf HttProduct::m\_\-tauPolarisationDiscriminators}}}
+\label{classHttProduct_aa0c3f0fdfab21ffb2f82fd856dc54410}
+\hypertarget{classHttProduct_aea1e343fbe03ad6d80b4390c49592699}{
+\index{HttProduct@{HttProduct}!m\_\-tausBoostToDiTauSystem@{m\_\-tausBoostToDiTauSystem}}
+\index{m\_\-tausBoostToDiTauSystem@{m\_\-tausBoostToDiTauSystem}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tausBoostToDiTauSystem}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$RMFLV$\ast$, RMFLV$>$ {\bf HttProduct::m\_\-tausBoostToDiTauSystem}}}
+\label{classHttProduct_aea1e343fbe03ad6d80b4390c49592699}
+\hypertarget{classHttProduct_a07f77401cf50bb193347cbec02ebae05}{
+\index{HttProduct@{HttProduct}!m\_\-tauSpinnerPolarisation@{m\_\-tauSpinnerPolarisation}}
+\index{m\_\-tauSpinnerPolarisation@{m\_\-tauSpinnerPolarisation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauSpinnerPolarisation}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::m\_\-tauSpinnerPolarisation} = DefaultValues::UndefinedDouble}}
+\label{classHttProduct_a07f77401cf50bb193347cbec02ebae05}
+\hypertarget{classHttProduct_af34a6998b5fe3ae490f3e4be430b9333}{
+\index{HttProduct@{HttProduct}!m\_\-tauTauRestFrameReco@{m\_\-tauTauRestFrameReco}}
+\index{m\_\-tauTauRestFrameReco@{m\_\-tauTauRestFrameReco}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-tauTauRestFrameReco}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::TauTauRestFrameReco} {\bf HttProduct::m\_\-tauTauRestFrameReco} = HttEnumTypes::TauTauRestFrameReco::NONE}}
+\label{classHttProduct_af34a6998b5fe3ae490f3e4be430b9333}
+\hypertarget{classHttProduct_a21bfcdace50cb23137eb9cd1c6de4f0a}{
+\index{HttProduct@{HttProduct}!m\_\-theBS@{m\_\-theBS}}
+\index{m\_\-theBS@{m\_\-theBS}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-theBS}]{\setlength{\rightskip}{0pt plus 5cm}KBeamSpot$\ast$ {\bf HttProduct::m\_\-theBS} = 0}}
+\label{classHttProduct_a21bfcdace50cb23137eb9cd1c6de4f0a}
+\hypertarget{classHttProduct_ad59601b3ebee99a873ca371e79cbd1c4}{
+\index{HttProduct@{HttProduct}!m\_\-thePV@{m\_\-thePV}}
+\index{m\_\-thePV@{m\_\-thePV}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-thePV}]{\setlength{\rightskip}{0pt plus 5cm}KVertex$\ast$ {\bf HttProduct::m\_\-thePV} = 0}}
+\label{classHttProduct_ad59601b3ebee99a873ca371e79cbd1c4}
+\hypertarget{classHttProduct_a6316ad75d22057f3a6405904144e3307}{
+\index{HttProduct@{HttProduct}!m\_\-track1p4@{m\_\-track1p4}}
+\index{m\_\-track1p4@{m\_\-track1p4}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-track1p4}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf HttProduct::m\_\-track1p4} = 0}}
+\label{classHttProduct_a6316ad75d22057f3a6405904144e3307}
+\hypertarget{classHttProduct_a8a6f0088a1ba7e9838e0b2f9b551bce5}{
+\index{HttProduct@{HttProduct}!m\_\-track2p4@{m\_\-track2p4}}
+\index{m\_\-track2p4@{m\_\-track2p4}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-track2p4}]{\setlength{\rightskip}{0pt plus 5cm}RMFLV$\ast$ {\bf HttProduct::m\_\-track2p4} = 0}}
+\label{classHttProduct_a8a6f0088a1ba7e9838e0b2f9b551bce5}
+\hypertarget{classHttProduct_a165cea4e5d0a8f8ef984c4ce4ffeb125}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeElectronMatchedPairs@{m\_\-triggerTagProbeElectronMatchedPairs}}
+\index{m\_\-triggerTagProbeElectronMatchedPairs@{m\_\-triggerTagProbeElectronMatchedPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeElectronMatchedPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$bool, bool$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeElectronMatchedPairs}}}
+\label{classHttProduct_a165cea4e5d0a8f8ef984c4ce4ffeb125}
+\hypertarget{classHttProduct_a4593cae98fab3011e52bf798ff266e75}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeElectronPairs@{m\_\-triggerTagProbeElectronPairs}}
+\index{m\_\-triggerTagProbeElectronPairs@{m\_\-triggerTagProbeElectronPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeElectronPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$KElectron$\ast$, KElectron$\ast$$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeElectronPairs}}}
+\label{classHttProduct_a4593cae98fab3011e52bf798ff266e75}
+\hypertarget{classHttProduct_acfac99f7abceb758f67853389752d1fb}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeElectronTauMatchedPairs@{m\_\-triggerTagProbeElectronTauMatchedPairs}}
+\index{m\_\-triggerTagProbeElectronTauMatchedPairs@{m\_\-triggerTagProbeElectronTauMatchedPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeElectronTauMatchedPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$bool, bool$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeElectronTauMatchedPairs}}}
+\label{classHttProduct_acfac99f7abceb758f67853389752d1fb}
+\hypertarget{classHttProduct_af58c919d7ebff1dbf5a0b062f4e093ae}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeElectronTauPairs@{m\_\-triggerTagProbeElectronTauPairs}}
+\index{m\_\-triggerTagProbeElectronTauPairs@{m\_\-triggerTagProbeElectronTauPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeElectronTauPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$KElectron$\ast$, KTau$\ast$$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeElectronTauPairs}}}
+\label{classHttProduct_af58c919d7ebff1dbf5a0b062f4e093ae}
+\hypertarget{classHttProduct_a3eedf80335cc6f6b9162db2c4228b1ea}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeMuonMatchedPairs@{m\_\-triggerTagProbeMuonMatchedPairs}}
+\index{m\_\-triggerTagProbeMuonMatchedPairs@{m\_\-triggerTagProbeMuonMatchedPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeMuonMatchedPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$bool, bool$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeMuonMatchedPairs}}}
+\label{classHttProduct_a3eedf80335cc6f6b9162db2c4228b1ea}
+\hypertarget{classHttProduct_a2222d478d3a8d53ab57680b6da314bf9}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeMuonPairs@{m\_\-triggerTagProbeMuonPairs}}
+\index{m\_\-triggerTagProbeMuonPairs@{m\_\-triggerTagProbeMuonPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeMuonPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$KMuon$\ast$, KMuon$\ast$$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeMuonPairs}}}
+\label{classHttProduct_a2222d478d3a8d53ab57680b6da314bf9}
+\hypertarget{classHttProduct_a14ce939d448152c742021f043fc8922b}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeMuonTauMatchedPairs@{m\_\-triggerTagProbeMuonTauMatchedPairs}}
+\index{m\_\-triggerTagProbeMuonTauMatchedPairs@{m\_\-triggerTagProbeMuonTauMatchedPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeMuonTauMatchedPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$bool, bool$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeMuonTauMatchedPairs}}}
+\label{classHttProduct_a14ce939d448152c742021f043fc8922b}
+\hypertarget{classHttProduct_a7b64fed593836a716e0549e4e3e593aa}{
+\index{HttProduct@{HttProduct}!m\_\-triggerTagProbeMuonTauPairs@{m\_\-triggerTagProbeMuonTauPairs}}
+\index{m\_\-triggerTagProbeMuonTauPairs@{m\_\-triggerTagProbeMuonTauPairs}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-triggerTagProbeMuonTauPairs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::pair$<$KMuon$\ast$, KTau$\ast$$>$ $>$ {\bf HttProduct::m\_\-triggerTagProbeMuonTauPairs}}}
+\label{classHttProduct_a7b64fed593836a716e0549e4e3e593aa}
+\hypertarget{classHttProduct_a02e57a61e9244518c03d5b61798b5bfa}{
+\index{HttProduct@{HttProduct}!m\_\-validCollinearApproximation@{m\_\-validCollinearApproximation}}
+\index{m\_\-validCollinearApproximation@{m\_\-validCollinearApproximation}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validCollinearApproximation}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf HttProduct::m\_\-validCollinearApproximation} = false}}
+\label{classHttProduct_a02e57a61e9244518c03d5b61798b5bfa}
+\hypertarget{classHttProduct_af59b7e6a1ea36e0e84b34d9bfbda2484}{
+\index{HttProduct@{HttProduct}!m\_\-validDiTauPairCandidates@{m\_\-validDiTauPairCandidates}}
+\index{m\_\-validDiTauPairCandidates@{m\_\-validDiTauPairCandidates}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validDiTauPairCandidates}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DiTauPair}$>$ {\bf HttProduct::m\_\-validDiTauPairCandidates}}}
+\label{classHttProduct_af59b7e6a1ea36e0e84b34d9bfbda2484}
+
+
+added by DiTauPairCandidatesProducers \hypertarget{classHttProduct_a9b4abe266732576c4acebde25b49a9a0}{
+\index{HttProduct@{HttProduct}!m\_\-validGenTausToElectrons@{m\_\-validGenTausToElectrons}}
+\index{m\_\-validGenTausToElectrons@{m\_\-validGenTausToElectrons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validGenTausToElectrons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-validGenTausToElectrons}}}
+\label{classHttProduct_a9b4abe266732576c4acebde25b49a9a0}
+\hypertarget{classHttProduct_a0f0b0a177d96a0aaa051228061356033}{
+\index{HttProduct@{HttProduct}!m\_\-validGenTausToMuons@{m\_\-validGenTausToMuons}}
+\index{m\_\-validGenTausToMuons@{m\_\-validGenTausToMuons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validGenTausToMuons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-validGenTausToMuons}}}
+\label{classHttProduct_a0f0b0a177d96a0aaa051228061356033}
+\hypertarget{classHttProduct_abd8f9838618318dde76c1c98b6d00e0d}{
+\index{HttProduct@{HttProduct}!m\_\-validGenTausToTaus@{m\_\-validGenTausToTaus}}
+\index{m\_\-validGenTausToTaus@{m\_\-validGenTausToTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validGenTausToTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KGenTau$\ast$$>$ {\bf HttProduct::m\_\-validGenTausToTaus}}}
+\label{classHttProduct_abd8f9838618318dde76c1c98b6d00e0d}
+\hypertarget{classHttProduct_ac87470e7729b6905e0a309224834180c}{
+\index{HttProduct@{HttProduct}!m\_\-validLooseElectrons@{m\_\-validLooseElectrons}}
+\index{m\_\-validLooseElectrons@{m\_\-validLooseElectrons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validLooseElectrons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KElectron$\ast$$>$ {\bf HttProduct::m\_\-validLooseElectrons}}}
+\label{classHttProduct_ac87470e7729b6905e0a309224834180c}
+
+
+added by \hyperlink{classHttValidLooseElectronsProducer}{HttValidLooseElectronsProducer} \hypertarget{classHttProduct_a0d748a5f5c91b50ee29939c0b1ee23c1}{
+\index{HttProduct@{HttProduct}!m\_\-validLooseMuons@{m\_\-validLooseMuons}}
+\index{m\_\-validLooseMuons@{m\_\-validLooseMuons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validLooseMuons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KMuon$\ast$$>$ {\bf HttProduct::m\_\-validLooseMuons}}}
+\label{classHttProduct_a0d748a5f5c91b50ee29939c0b1ee23c1}
+
+
+added by \hyperlink{classHttValidLooseMuonsProducer}{HttValidLooseMuonsProducer} \hypertarget{classHttProduct_a42f077b59a010e311381923b680bd2c2}{
+\index{HttProduct@{HttProduct}!m\_\-validTTHTaus@{m\_\-validTTHTaus}}
+\index{m\_\-validTTHTaus@{m\_\-validTTHTaus}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validTTHTaus}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KTau$\ast$$>$ {\bf HttProduct::m\_\-validTTHTaus}}}
+\label{classHttProduct_a42f077b59a010e311381923b680bd2c2}
+\hypertarget{classHttProduct_a3450684de78cac75697b14e7dd778fbe}{
+\index{HttProduct@{HttProduct}!m\_\-validVetoElectrons@{m\_\-validVetoElectrons}}
+\index{m\_\-validVetoElectrons@{m\_\-validVetoElectrons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validVetoElectrons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KElectron$\ast$$>$ {\bf HttProduct::m\_\-validVetoElectrons}}}
+\label{classHttProduct_a3450684de78cac75697b14e7dd778fbe}
+
+
+added by \hyperlink{classHttValidVetoElectronsProducer}{HttValidVetoElectronsProducer} \hypertarget{classHttProduct_ae4fc7a166cfb5909aedb1088bd7957c2}{
+\index{HttProduct@{HttProduct}!m\_\-validVetoMuons@{m\_\-validVetoMuons}}
+\index{m\_\-validVetoMuons@{m\_\-validVetoMuons}!HttProduct@{HttProduct}}
+\subsubsection[{m\_\-validVetoMuons}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$KMuon$\ast$$>$ {\bf HttProduct::m\_\-validVetoMuons}}}
+\label{classHttProduct_ae4fc7a166cfb5909aedb1088bd7957c2}
+
+
+added by \hyperlink{classHttValidVetoMuonsProducer}{HttValidVetoMuonsProducer} \hypertarget{classHttProduct_a75672ea51e6fd225c866ade315ba0982}{
+\index{HttProduct@{HttProduct}!pZetaMiss@{pZetaMiss}}
+\index{pZetaMiss@{pZetaMiss}!HttProduct@{HttProduct}}
+\subsubsection[{pZetaMiss}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::pZetaMiss} = 0.0}}
+\label{classHttProduct_a75672ea51e6fd225c866ade315ba0982}
+\hypertarget{classHttProduct_abba102385ce7747d70c597409670aad8}{
+\index{HttProduct@{HttProduct}!pZetaMissVis@{pZetaMissVis}}
+\index{pZetaMissVis@{pZetaMissVis}!HttProduct@{HttProduct}}
+\subsubsection[{pZetaMissVis}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::pZetaMissVis} = 0.0}}
+\label{classHttProduct_abba102385ce7747d70c597409670aad8}
+\hypertarget{classHttProduct_afc00696a0a2e05df1472fa9023b8ce57}{
+\index{HttProduct@{HttProduct}!pZetaVis@{pZetaVis}}
+\index{pZetaVis@{pZetaVis}!HttProduct@{HttProduct}}
+\subsubsection[{pZetaVis}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf HttProduct::pZetaVis} = 0.0}}
+\label{classHttProduct_afc00696a0a2e05df1472fa9023b8ce57}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{HttProduct_8h}{HttProduct.h}\end{DoxyCompactItemize}

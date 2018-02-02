@@ -1,0 +1,96 @@
+\hypertarget{classHttMuonCorrectionsProducer}{
+\section{HttMuonCorrectionsProducer Class Reference}
+\label{classHttMuonCorrectionsProducer}\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+}
+
+
+Producer for muon energy scale corrections (Htt version).  
+
+
+{\ttfamily \#include $<$HttMuonCorrectionsProducer.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef KappaTypes::event\_\-type \hyperlink{classHttMuonCorrectionsProducer_af824f6024adedbe70fe035266dadf478}{event\_\-type}
+\item 
+typedef KappaTypes::product\_\-type \hyperlink{classHttMuonCorrectionsProducer_a3c072777f0a0774ed74f65a8b2ad9266}{product\_\-type}
+\item 
+typedef KappaTypes::setting\_\-type \hyperlink{classHttMuonCorrectionsProducer_a4533d535084a1cddd6040a94f5121029}{setting\_\-type}
+\item 
+typedef KappaTypes::metadata\_\-type \hyperlink{classHttMuonCorrectionsProducer_a476ef6cd31fb12781cc58bba7e4101b8}{metadata\_\-type}
+\item 
+typedef \hyperlink{classHttEvent}{HttTypes::event\_\-type} \hyperlink{classHttMuonCorrectionsProducer_a2b194859034a2861bb0e907f804d3b9a}{spec\_\-event\_\-type}
+\item 
+typedef \hyperlink{classHttProduct}{HttTypes::product\_\-type} \hyperlink{classHttMuonCorrectionsProducer_a5cd35af6f147de434807fe1cee0c94f3}{spec\_\-product\_\-type}
+\item 
+typedef \hyperlink{classHttSettings}{HttTypes::setting\_\-type} \hyperlink{classHttMuonCorrectionsProducer_a195b7a51208446ecf4de6c4df71d4312}{spec\_\-setting\_\-type}
+\item 
+typedef \hyperlink{classHttMetadata}{HttTypes::metadata\_\-type} \hyperlink{classHttMuonCorrectionsProducer_a630925269a247d74e4fb82cb6f3c4e16}{spec\_\-metadata\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttMuonCorrectionsProducer_a26afde578803c883482d80e0e1f6fa76}{AdditionalCorrections} (KMuon $\ast$muon, \hyperlink{classHttMuonCorrectionsProducer_af824f6024adedbe70fe035266dadf478}{event\_\-type} const \&event, \hyperlink{classHttMuonCorrectionsProducer_a3c072777f0a0774ed74f65a8b2ad9266}{product\_\-type} \&product, \hyperlink{classHttMuonCorrectionsProducer_a4533d535084a1cddd6040a94f5121029}{setting\_\-type} const \&settings, \hyperlink{classHttMuonCorrectionsProducer_a476ef6cd31fb12781cc58bba7e4101b8}{metadata\_\-type} const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for muon energy scale corrections (Htt version). Required config tags
+\begin{DoxyItemize}
+\item MuonEnergyCorrection (possible value: fall2015) 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classHttMuonCorrectionsProducer_af824f6024adedbe70fe035266dadf478}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!event\_\-type@{event\_\-type}}
+\index{event\_\-type@{event\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::event\_\-type {\bf HttMuonCorrectionsProducer::event\_\-type}}}
+\label{classHttMuonCorrectionsProducer_af824f6024adedbe70fe035266dadf478}
+\hypertarget{classHttMuonCorrectionsProducer_a476ef6cd31fb12781cc58bba7e4101b8}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!metadata\_\-type@{metadata\_\-type}}
+\index{metadata\_\-type@{metadata\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::metadata\_\-type {\bf HttMuonCorrectionsProducer::metadata\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a476ef6cd31fb12781cc58bba7e4101b8}
+\hypertarget{classHttMuonCorrectionsProducer_a3c072777f0a0774ed74f65a8b2ad9266}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!product\_\-type@{product\_\-type}}
+\index{product\_\-type@{product\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::product\_\-type {\bf HttMuonCorrectionsProducer::product\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a3c072777f0a0774ed74f65a8b2ad9266}
+\hypertarget{classHttMuonCorrectionsProducer_a4533d535084a1cddd6040a94f5121029}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!setting\_\-type@{setting\_\-type}}
+\index{setting\_\-type@{setting\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::setting\_\-type {\bf HttMuonCorrectionsProducer::setting\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a4533d535084a1cddd6040a94f5121029}
+\hypertarget{classHttMuonCorrectionsProducer_a2b194859034a2861bb0e907f804d3b9a}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!spec\_\-event\_\-type@{spec\_\-event\_\-type}}
+\index{spec\_\-event\_\-type@{spec\_\-event\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{spec\_\-event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::event\_\-type} {\bf HttMuonCorrectionsProducer::spec\_\-event\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a2b194859034a2861bb0e907f804d3b9a}
+\hypertarget{classHttMuonCorrectionsProducer_a630925269a247d74e4fb82cb6f3c4e16}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}}
+\index{spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{spec\_\-metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::metadata\_\-type} {\bf HttMuonCorrectionsProducer::spec\_\-metadata\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a630925269a247d74e4fb82cb6f3c4e16}
+\hypertarget{classHttMuonCorrectionsProducer_a5cd35af6f147de434807fe1cee0c94f3}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!spec\_\-product\_\-type@{spec\_\-product\_\-type}}
+\index{spec\_\-product\_\-type@{spec\_\-product\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{spec\_\-product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::product\_\-type} {\bf HttMuonCorrectionsProducer::spec\_\-product\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a5cd35af6f147de434807fe1cee0c94f3}
+\hypertarget{classHttMuonCorrectionsProducer_a195b7a51208446ecf4de6c4df71d4312}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!spec\_\-setting\_\-type@{spec\_\-setting\_\-type}}
+\index{spec\_\-setting\_\-type@{spec\_\-setting\_\-type}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{spec\_\-setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::setting\_\-type} {\bf HttMuonCorrectionsProducer::spec\_\-setting\_\-type}}}
+\label{classHttMuonCorrectionsProducer_a195b7a51208446ecf4de6c4df71d4312}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttMuonCorrectionsProducer_a26afde578803c883482d80e0e1f6fa76}{
+\index{HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}!AdditionalCorrections@{AdditionalCorrections}}
+\index{AdditionalCorrections@{AdditionalCorrections}!HttMuonCorrectionsProducer@{HttMuonCorrectionsProducer}}
+\subsubsection[{AdditionalCorrections}]{\setlength{\rightskip}{0pt plus 5cm}void HttMuonCorrectionsProducer::AdditionalCorrections (KMuon $\ast$ {\em muon}, \/  {\bf event\_\-type} const \& {\em event}, \/  {\bf product\_\-type} \& {\em product}, \/  {\bf setting\_\-type} const \& {\em settings}, \/  {\bf metadata\_\-type} const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, protected, virtual\mbox{]}}}}
+\label{classHttMuonCorrectionsProducer_a26afde578803c883482d80e0e1f6fa76}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttMuonCorrectionsProducer_8h}{HttMuonCorrectionsProducer.h}\item 
+src/Producers/\hyperlink{HttMuonCorrectionsProducer_8cc}{HttMuonCorrectionsProducer.cc}\end{DoxyCompactItemize}

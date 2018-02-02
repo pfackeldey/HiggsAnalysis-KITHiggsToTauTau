@@ -1,0 +1,79 @@
+\hypertarget{classSvfitProducer}{
+\section{SvfitProducer Class Reference}
+\label{classSvfitProducer}\index{SvfitProducer@{SvfitProducer}}
+}
+
+
+{\ttfamily \#include $<$SvfitProducer.h$>$}Inheritance diagram for SvfitProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classSvfitProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classSvfitProducer_a4d3e01005d6b27e53359d8d1ebf9cdd6}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classSvfitProducer_a4a9cbb8accbcec85effd108d5d6c0ee8}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual void \hyperlink{classSvfitProducer_a46759a532a1e02fce1fc1d5a4a173d03}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttEnumTypes_a51f8f038c31766e1b929398fa2239dcd}{HttEnumTypes::SvfitCacheMissBehaviour} \hyperlink{classSvfitProducer_a74c771b1c8d35938af552a7635844c76}{svfitCacheMissBehaviour}
+\item 
+\hyperlink{classSvfitTools}{SvfitTools} \hyperlink{classSvfitProducer_a5c2ef16c786f2db347ef45f1cc54500a}{svfitTools}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for SVfit
+
+Required config tags:
+\begin{DoxyItemize}
+\item SvfitIntegrationMethod (possible values: markovchain, vegas)
+\item GetSvfitCacheFile (need to be implemented as global setting, default: empty)
+\item GetSvfitCacheTree (need to be implemented as global setting, default: svfitCache)
+\end{DoxyItemize}
+
+Required packages: git clone \href{https://github.com:veelken/SVfit_standalone.git}{\tt https://github.com:veelken/SVfit\_\-standalone.git} TauAnalysis/SVfitStandalone
+
+Old version: \href{http://cms-sw.github.io/faq.html#how-do-i-access-the-old-cvs-repository-to-check-what-was-really-there}{\tt http://cms-\/sw.github.io/faq.html\#how-\/do-\/i-\/access-\/the-\/old-\/cvs-\/repository-\/to-\/check-\/what-\/was-\/really-\/there} cvs co -\/r V00-\/02-\/03s TauAnalysis/CandidateTools \href{https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013#Di_Tau_Mass_Reconstruction}{\tt https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorkingSummer2013\#Di\_\-Tau\_\-Mass\_\-Reconstruction} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSvfitProducer_a4d3e01005d6b27e53359d8d1ebf9cdd6}{
+\index{SvfitProducer@{SvfitProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!SvfitProducer@{SvfitProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string SvfitProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classSvfitProducer_a4d3e01005d6b27e53359d8d1ebf9cdd6}
+\hypertarget{classSvfitProducer_a4a9cbb8accbcec85effd108d5d6c0ee8}{
+\index{SvfitProducer@{SvfitProducer}!Init@{Init}}
+\index{Init@{Init}!SvfitProducer@{SvfitProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classSvfitProducer_a4a9cbb8accbcec85effd108d5d6c0ee8}
+\hypertarget{classSvfitProducer_a46759a532a1e02fce1fc1d5a4a173d03}{
+\index{SvfitProducer@{SvfitProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!SvfitProducer@{SvfitProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void SvfitProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classSvfitProducer_a46759a532a1e02fce1fc1d5a4a173d03}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSvfitProducer_a74c771b1c8d35938af552a7635844c76}{
+\index{SvfitProducer@{SvfitProducer}!svfitCacheMissBehaviour@{svfitCacheMissBehaviour}}
+\index{svfitCacheMissBehaviour@{svfitCacheMissBehaviour}!SvfitProducer@{SvfitProducer}}
+\subsubsection[{svfitCacheMissBehaviour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HttEnumTypes::SvfitCacheMissBehaviour} {\bf SvfitProducer::svfitCacheMissBehaviour}}}
+\label{classSvfitProducer_a74c771b1c8d35938af552a7635844c76}
+\hypertarget{classSvfitProducer_a5c2ef16c786f2db347ef45f1cc54500a}{
+\index{SvfitProducer@{SvfitProducer}!svfitTools@{svfitTools}}
+\index{svfitTools@{svfitTools}!SvfitProducer@{SvfitProducer}}
+\subsubsection[{svfitTools}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SvfitTools} {\bf SvfitProducer::svfitTools}\hspace{0.3cm}{\ttfamily  \mbox{[}mutable\mbox{]}}}}
+\label{classSvfitProducer_a5c2ef16c786f2db347ef45f1cc54500a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{SvfitProducer_8h}{SvfitProducer.h}\item 
+src/Producers/\hyperlink{SvfitProducer_8cc}{SvfitProducer.cc}\end{DoxyCompactItemize}

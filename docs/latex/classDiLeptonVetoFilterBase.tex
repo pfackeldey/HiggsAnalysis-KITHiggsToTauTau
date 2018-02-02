@@ -1,0 +1,108 @@
+\hypertarget{classDiLeptonVetoFilterBase}{
+\section{DiLeptonVetoFilterBase$<$ TLepton $>$ Class Template Reference}
+\label{classDiLeptonVetoFilterBase}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+}
+
+
+{\ttfamily \#include $<$DiLeptonVetoFilters.h$>$}Inheritance diagram for DiLeptonVetoFilterBase$<$ TLepton $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classDiLeptonVetoFilterBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fe}{VetoMode} \{ \par
+\hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea44f1085c72384a3ee8c1b2e04bd17a0e}{NONE} =  -\/1, 
+\hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea6799754dd1eed9286031a5f3334a4330}{VETO\_\-OS\_\-KEEP\_\-SS} =  0, 
+\hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feafb324814186b1cb3d0ade9c0c77c816a}{VETO\_\-SS\_\-KEEP\_\-OS} =  1, 
+\hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feaeda61ce7fe92ad3daf4ebe4c7354403a}{VETO\_\-OS\_\-VETO\_\-SS} =  2, 
+\par
+\hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea93bf1585b32e974917ebd99858e14fbe}{KEEP\_\-OS\_\-KEEP\_\-SS} =  2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDiLeptonVetoFilterBase_acaa3d72c0af99599541c3fcb11829184}{DiLeptonVetoFilterBase} (std::vector$<$ TLepton $\ast$ $>$ product\_\-type::$\ast$leptons, std::string(setting\_\-type::$\ast$GetDiLeptonVetoMode)(void) const)
+\item 
+virtual void \hyperlink{classDiLeptonVetoFilterBase_a6a332de68628eb7626a66d529930493e}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual bool \hyperlink{classDiLeptonVetoFilterBase_a762d65d117fba9ecc691e4ade7bca8a3}{DoesEventPass} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fe}{VetoMode} \hyperlink{classDiLeptonVetoFilterBase_a9e4842d8a50e4bb01838013c43d8dd17}{ToVetoMode} (std::string const \&vetoMode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TLepton$>$ class DiLeptonVetoFilterBase$<$ TLepton $>$}
+
+Abstract filter for Veto of dileptons 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fe}{
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!VetoMode@{VetoMode}}
+\index{VetoMode@{VetoMode}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\subsubsection[{VetoMode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton$>$ enum {\bf DiLeptonVetoFilterBase::VetoMode}}}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fe}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!NONE@{NONE}}\item[{\em 
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea44f1085c72384a3ee8c1b2e04bd17a0e}{
+NONE}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea44f1085c72384a3ee8c1b2e04bd17a0e}
+}]\index{VETO\_\-OS\_\-KEEP\_\-SS@{VETO\_\-OS\_\-KEEP\_\-SS}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!VETO\_\-OS\_\-KEEP\_\-SS@{VETO\_\-OS\_\-KEEP\_\-SS}}\item[{\em 
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea6799754dd1eed9286031a5f3334a4330}{
+VETO\_\-OS\_\-KEEP\_\-SS}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea6799754dd1eed9286031a5f3334a4330}
+}]\index{VETO\_\-SS\_\-KEEP\_\-OS@{VETO\_\-SS\_\-KEEP\_\-OS}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!VETO\_\-SS\_\-KEEP\_\-OS@{VETO\_\-SS\_\-KEEP\_\-OS}}\item[{\em 
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feafb324814186b1cb3d0ade9c0c77c816a}{
+VETO\_\-SS\_\-KEEP\_\-OS}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feafb324814186b1cb3d0ade9c0c77c816a}
+}]\index{VETO\_\-OS\_\-VETO\_\-SS@{VETO\_\-OS\_\-VETO\_\-SS}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!VETO\_\-OS\_\-VETO\_\-SS@{VETO\_\-OS\_\-VETO\_\-SS}}\item[{\em 
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feaeda61ce7fe92ad3daf4ebe4c7354403a}{
+VETO\_\-OS\_\-VETO\_\-SS}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0feaeda61ce7fe92ad3daf4ebe4c7354403a}
+}]\index{KEEP\_\-OS\_\-KEEP\_\-SS@{KEEP\_\-OS\_\-KEEP\_\-SS}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!KEEP\_\-OS\_\-KEEP\_\-SS@{KEEP\_\-OS\_\-KEEP\_\-SS}}\item[{\em 
+\hypertarget{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea93bf1585b32e974917ebd99858e14fbe}{
+KEEP\_\-OS\_\-KEEP\_\-SS}
+\label{classDiLeptonVetoFilterBase_a61fbc3c58cdc545f10826f677cecd0fea93bf1585b32e974917ebd99858e14fbe}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDiLeptonVetoFilterBase_acaa3d72c0af99599541c3fcb11829184}{
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\subsubsection[{DiLeptonVetoFilterBase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton$>$ {\bf DiLeptonVetoFilterBase}$<$ TLepton $>$::{\bf DiLeptonVetoFilterBase} (std::vector$<$ TLepton $\ast$ $>$ product\_\-type::$\ast$ {\em leptons}, \/  std::string(setting\_\-type::$\ast$)(void) const  {\em GetDiLeptonVetoMode})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDiLeptonVetoFilterBase_acaa3d72c0af99599541c3fcb11829184}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDiLeptonVetoFilterBase_a762d65d117fba9ecc691e4ade7bca8a3}{
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!DoesEventPass@{DoesEventPass}}
+\index{DoesEventPass@{DoesEventPass}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\subsubsection[{DoesEventPass}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton$>$ virtual bool {\bf DiLeptonVetoFilterBase}$<$ TLepton $>$::DoesEventPass (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classDiLeptonVetoFilterBase_a762d65d117fba9ecc691e4ade7bca8a3}
+\hypertarget{classDiLeptonVetoFilterBase_a6a332de68628eb7626a66d529930493e}{
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!Init@{Init}}
+\index{Init@{Init}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton$>$ virtual void {\bf DiLeptonVetoFilterBase}$<$ TLepton $>$::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classDiLeptonVetoFilterBase_a6a332de68628eb7626a66d529930493e}
+\hypertarget{classDiLeptonVetoFilterBase_a9e4842d8a50e4bb01838013c43d8dd17}{
+\index{DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}!ToVetoMode@{ToVetoMode}}
+\index{ToVetoMode@{ToVetoMode}!DiLeptonVetoFilterBase@{DiLeptonVetoFilterBase}}
+\subsubsection[{ToVetoMode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TLepton$>$ static {\bf VetoMode} {\bf DiLeptonVetoFilterBase}$<$ TLepton $>$::ToVetoMode (std::string const \& {\em vetoMode})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classDiLeptonVetoFilterBase_a9e4842d8a50e4bb01838013c43d8dd17}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{DiLeptonVetoFilters_8h}{DiLeptonVetoFilters.h}\end{DoxyCompactItemize}

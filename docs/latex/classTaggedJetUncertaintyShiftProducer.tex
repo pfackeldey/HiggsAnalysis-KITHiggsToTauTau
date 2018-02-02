@@ -1,0 +1,57 @@
+\hypertarget{classTaggedJetUncertaintyShiftProducer}{
+\section{TaggedJetUncertaintyShiftProducer Class Reference}
+\label{classTaggedJetUncertaintyShiftProducer}\index{TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}}
+}
+
+
+Producer for jet energy scale corrections (Htt version).  
+
+
+{\ttfamily \#include $<$TaggedJetUncertaintyShiftProducer.h$>$}Inheritance diagram for TaggedJetUncertaintyShiftProducer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTaggedJetUncertaintyShiftProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classTaggedJetUncertaintyShiftProducer_ac0810ddb6c73d8e1ff9fc55a801b6046}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+std::string \hyperlink{classTaggedJetUncertaintyShiftProducer_a8c04af8f7018d1e03f14f4bf89b90a0d}{GetProducerId} () const override
+\item 
+virtual void \hyperlink{classTaggedJetUncertaintyShiftProducer_a45171dc99c8a5f63ecdb9531831c473a}{Produce} (event\_\-type const \&event, product\_\-type \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for jet energy scale corrections (Htt version). Mostly copied from \href{https://github.com/truggles/FinalStateAnalysis/blob/miniAOD_8_0_25/PatTools/plugins/MiniAODJetFullSystematicsEmbedder.cc}{\tt https://github.com/truggles/FinalStateAnalysis/blob/miniAOD\_\-8\_\-0\_\-25/PatTools/plugins/MiniAODJetFullSystematicsEmbedder.cc}
+
+Required config tags
+\begin{DoxyItemize}
+\item JetEnergyCorrectionSplitUncertaintyParameters (file location)
+\item JetEnergyCorrectionSplitUncertaintyParameterNames (list of names) 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classTaggedJetUncertaintyShiftProducer_a8c04af8f7018d1e03f14f4bf89b90a0d}{
+\index{TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}!GetProducerId@{GetProducerId}}
+\index{GetProducerId@{GetProducerId}!TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}}
+\subsubsection[{GetProducerId}]{\setlength{\rightskip}{0pt plus 5cm}std::string TaggedJetUncertaintyShiftProducer::GetProducerId () const\hspace{0.3cm}{\ttfamily  \mbox{[}override\mbox{]}}}}
+\label{classTaggedJetUncertaintyShiftProducer_a8c04af8f7018d1e03f14f4bf89b90a0d}
+\hypertarget{classTaggedJetUncertaintyShiftProducer_ac0810ddb6c73d8e1ff9fc55a801b6046}{
+\index{TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}!Init@{Init}}
+\index{Init@{Init}!TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void TaggedJetUncertaintyShiftProducer::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTaggedJetUncertaintyShiftProducer_ac0810ddb6c73d8e1ff9fc55a801b6046}
+\hypertarget{classTaggedJetUncertaintyShiftProducer_a45171dc99c8a5f63ecdb9531831c473a}{
+\index{TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}!Produce@{Produce}}
+\index{Produce@{Produce}!TaggedJetUncertaintyShiftProducer@{TaggedJetUncertaintyShiftProducer}}
+\subsubsection[{Produce}]{\setlength{\rightskip}{0pt plus 5cm}void TaggedJetUncertaintyShiftProducer::Produce (event\_\-type const \& {\em event}, \/  product\_\-type \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classTaggedJetUncertaintyShiftProducer_a45171dc99c8a5f63ecdb9531831c473a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{TaggedJetUncertaintyShiftProducer_8h}{TaggedJetUncertaintyShiftProducer.h}\item 
+src/Producers/\hyperlink{TaggedJetUncertaintyShiftProducer_8cc}{TaggedJetUncertaintyShiftProducer.cc}\end{DoxyCompactItemize}

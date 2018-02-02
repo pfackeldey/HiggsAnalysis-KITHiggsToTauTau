@@ -1,0 +1,51 @@
+\hypertarget{classMetFilter}{
+\section{MetFilter Class Reference}
+\label{classMetFilter}\index{MetFilter@{MetFilter}}
+}
+
+
+{\ttfamily \#include $<$MetFilter.h$>$}Inheritance diagram for MetFilter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classMetFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::string \hyperlink{classMetFilter_a87ef009255db01cd6c5b36f8304c9366}{GetFilterId} () const override
+\item 
+virtual void \hyperlink{classMetFilter_a0021979947fb228dde496d0a7c4c16d1}{Init} (setting\_\-type const \&settings, metadata\_\-type \&metadata) override
+\item 
+virtual bool \hyperlink{classMetFilter_a341f5c453bdcde081b8e524a9c8dfdc3}{DoesEventPass} (event\_\-type const \&event, product\_\-type const \&product, setting\_\-type const \&settings, metadata\_\-type const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter for the metfilter. Required config tag:
+\begin{DoxyItemize}
+\item \hyperlink{classMetFilter}{MetFilter} 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classMetFilter_a341f5c453bdcde081b8e524a9c8dfdc3}{
+\index{MetFilter@{MetFilter}!DoesEventPass@{DoesEventPass}}
+\index{DoesEventPass@{DoesEventPass}!MetFilter@{MetFilter}}
+\subsubsection[{DoesEventPass}]{\setlength{\rightskip}{0pt plus 5cm}bool MetFilter::DoesEventPass (event\_\-type const \& {\em event}, \/  product\_\-type const \& {\em product}, \/  setting\_\-type const \& {\em settings}, \/  metadata\_\-type const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMetFilter_a341f5c453bdcde081b8e524a9c8dfdc3}
+\hypertarget{classMetFilter_a87ef009255db01cd6c5b36f8304c9366}{
+\index{MetFilter@{MetFilter}!GetFilterId@{GetFilterId}}
+\index{GetFilterId@{GetFilterId}!MetFilter@{MetFilter}}
+\subsubsection[{GetFilterId}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string MetFilter::GetFilterId () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, override, virtual\mbox{]}}}}
+\label{classMetFilter_a87ef009255db01cd6c5b36f8304c9366}
+\hypertarget{classMetFilter_a0021979947fb228dde496d0a7c4c16d1}{
+\index{MetFilter@{MetFilter}!Init@{Init}}
+\index{Init@{Init}!MetFilter@{MetFilter}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void MetFilter::Init (setting\_\-type const \& {\em settings}, \/  metadata\_\-type \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classMetFilter_a0021979947fb228dde496d0a7c4c16d1}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Filters/\hyperlink{MetFilter_8h}{MetFilter.h}\item 
+src/Filters/\hyperlink{MetFilter_8cc}{MetFilter.cc}\end{DoxyCompactItemize}

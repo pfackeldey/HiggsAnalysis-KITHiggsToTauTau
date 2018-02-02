@@ -1,0 +1,159 @@
+\hypertarget{classHttTauCorrectionsProducer}{
+\section{HttTauCorrectionsProducer Class Reference}
+\label{classHttTauCorrectionsProducer}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+}
+
+
+Producer for tau energy scale corrections (Htt version).  
+
+
+{\ttfamily \#include $<$HttTauCorrectionsProducer.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8}{TauEnergyCorrection} \{ \par
+\hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a0100ab9ea446921eeaa0afa8897bc835}{NONE} =  -\/1, 
+\hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a395906167299d7ca1efc972b37f56542}{SUMMER2013} =  0, 
+\hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a41fdbd59ae3ac1c079321490dc2f9357}{NEWTAUID} =  1, 
+\hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ae11388885bd3683fdf33074da89042ed}{SMHTT2016}, 
+\par
+\hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ad7231809c1351c46aa3253d44c29a522}{MSSMHTT2016}
+ \}
+\item 
+typedef KappaTypes::event\_\-type \hyperlink{classHttTauCorrectionsProducer_a5f98d673ed860926fc2f057a600839bc}{event\_\-type}
+\item 
+typedef KappaTypes::product\_\-type \hyperlink{classHttTauCorrectionsProducer_abc73e85eb18f55e8bee20a8c65c90cdc}{product\_\-type}
+\item 
+typedef KappaTypes::setting\_\-type \hyperlink{classHttTauCorrectionsProducer_a710b2e9a72d130b031cafe041a85ea38}{setting\_\-type}
+\item 
+typedef KappaTypes::metadata\_\-type \hyperlink{classHttTauCorrectionsProducer_ae29469055ab934186c32520cefd75bb5}{metadata\_\-type}
+\item 
+typedef \hyperlink{classHttEvent}{HttTypes::event\_\-type} \hyperlink{classHttTauCorrectionsProducer_ae32e39786600e8e67c480c5551a1e8be}{spec\_\-event\_\-type}
+\item 
+typedef \hyperlink{classHttProduct}{HttTypes::product\_\-type} \hyperlink{classHttTauCorrectionsProducer_ae64e3c74df3b92cbd379ac4e59cfec55}{spec\_\-product\_\-type}
+\item 
+typedef \hyperlink{classHttSettings}{HttTypes::setting\_\-type} \hyperlink{classHttTauCorrectionsProducer_aa42fcd9da7e1096141057f55878fe9e1}{spec\_\-setting\_\-type}
+\item 
+typedef \hyperlink{classHttMetadata}{HttTypes::metadata\_\-type} \hyperlink{classHttTauCorrectionsProducer_a1360d8d058cd25d09e1ef47cf3f37fc1}{spec\_\-metadata\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttTauCorrectionsProducer_ad331a4f917c0e86447c5ee80871a082d}{Init} (\hyperlink{classHttTauCorrectionsProducer_a710b2e9a72d130b031cafe041a85ea38}{setting\_\-type} const \&settings, \hyperlink{classHttTauCorrectionsProducer_ae29469055ab934186c32520cefd75bb5}{metadata\_\-type} \&metadata) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8}{TauEnergyCorrection} \hyperlink{classHttTauCorrectionsProducer_aa38eb3feab13858436018db4360f7be4}{ToTauEnergyCorrection} (std::string const \&tauEnergyCorrection)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttTauCorrectionsProducer_a8b1827912c40c7a6b0f4853b53419df2}{AdditionalCorrections} (KTau $\ast$tau, \hyperlink{classHttTauCorrectionsProducer_a5f98d673ed860926fc2f057a600839bc}{event\_\-type} const \&event, \hyperlink{classHttTauCorrectionsProducer_abc73e85eb18f55e8bee20a8c65c90cdc}{product\_\-type} \&product, \hyperlink{classHttTauCorrectionsProducer_a710b2e9a72d130b031cafe041a85ea38}{setting\_\-type} const \&settings, \hyperlink{classHttTauCorrectionsProducer_ae29469055ab934186c32520cefd75bb5}{metadata\_\-type} const \&metadata) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Producer for tau energy scale corrections (Htt version). Required config tags
+\begin{DoxyItemize}
+\item TauEnergyCorrection (possible value: summer2013) 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classHttTauCorrectionsProducer_a5f98d673ed860926fc2f057a600839bc}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!event\_\-type@{event\_\-type}}
+\index{event\_\-type@{event\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::event\_\-type {\bf HttTauCorrectionsProducer::event\_\-type}}}
+\label{classHttTauCorrectionsProducer_a5f98d673ed860926fc2f057a600839bc}
+\hypertarget{classHttTauCorrectionsProducer_ae29469055ab934186c32520cefd75bb5}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!metadata\_\-type@{metadata\_\-type}}
+\index{metadata\_\-type@{metadata\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::metadata\_\-type {\bf HttTauCorrectionsProducer::metadata\_\-type}}}
+\label{classHttTauCorrectionsProducer_ae29469055ab934186c32520cefd75bb5}
+\hypertarget{classHttTauCorrectionsProducer_abc73e85eb18f55e8bee20a8c65c90cdc}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!product\_\-type@{product\_\-type}}
+\index{product\_\-type@{product\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::product\_\-type {\bf HttTauCorrectionsProducer::product\_\-type}}}
+\label{classHttTauCorrectionsProducer_abc73e85eb18f55e8bee20a8c65c90cdc}
+\hypertarget{classHttTauCorrectionsProducer_a710b2e9a72d130b031cafe041a85ea38}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!setting\_\-type@{setting\_\-type}}
+\index{setting\_\-type@{setting\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef KappaTypes::setting\_\-type {\bf HttTauCorrectionsProducer::setting\_\-type}}}
+\label{classHttTauCorrectionsProducer_a710b2e9a72d130b031cafe041a85ea38}
+\hypertarget{classHttTauCorrectionsProducer_ae32e39786600e8e67c480c5551a1e8be}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!spec\_\-event\_\-type@{spec\_\-event\_\-type}}
+\index{spec\_\-event\_\-type@{spec\_\-event\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{spec\_\-event\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::event\_\-type} {\bf HttTauCorrectionsProducer::spec\_\-event\_\-type}}}
+\label{classHttTauCorrectionsProducer_ae32e39786600e8e67c480c5551a1e8be}
+\hypertarget{classHttTauCorrectionsProducer_a1360d8d058cd25d09e1ef47cf3f37fc1}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}}
+\index{spec\_\-metadata\_\-type@{spec\_\-metadata\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{spec\_\-metadata\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::metadata\_\-type} {\bf HttTauCorrectionsProducer::spec\_\-metadata\_\-type}}}
+\label{classHttTauCorrectionsProducer_a1360d8d058cd25d09e1ef47cf3f37fc1}
+\hypertarget{classHttTauCorrectionsProducer_ae64e3c74df3b92cbd379ac4e59cfec55}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!spec\_\-product\_\-type@{spec\_\-product\_\-type}}
+\index{spec\_\-product\_\-type@{spec\_\-product\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{spec\_\-product\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::product\_\-type} {\bf HttTauCorrectionsProducer::spec\_\-product\_\-type}}}
+\label{classHttTauCorrectionsProducer_ae64e3c74df3b92cbd379ac4e59cfec55}
+\hypertarget{classHttTauCorrectionsProducer_aa42fcd9da7e1096141057f55878fe9e1}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!spec\_\-setting\_\-type@{spec\_\-setting\_\-type}}
+\index{spec\_\-setting\_\-type@{spec\_\-setting\_\-type}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{spec\_\-setting\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf HttTypes::setting\_\-type} {\bf HttTauCorrectionsProducer::spec\_\-setting\_\-type}}}
+\label{classHttTauCorrectionsProducer_aa42fcd9da7e1096141057f55878fe9e1}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!TauEnergyCorrection@{TauEnergyCorrection}}
+\index{TauEnergyCorrection@{TauEnergyCorrection}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{TauEnergyCorrection}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf HttTauCorrectionsProducer::TauEnergyCorrection}}}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NONE@{NONE}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!NONE@{NONE}}\item[{\em 
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a0100ab9ea446921eeaa0afa8897bc835}{
+NONE}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a0100ab9ea446921eeaa0afa8897bc835}
+}]\index{SUMMER2013@{SUMMER2013}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!SUMMER2013@{SUMMER2013}}\item[{\em 
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a395906167299d7ca1efc972b37f56542}{
+SUMMER2013}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a395906167299d7ca1efc972b37f56542}
+}]\index{NEWTAUID@{NEWTAUID}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!NEWTAUID@{NEWTAUID}}\item[{\em 
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a41fdbd59ae3ac1c079321490dc2f9357}{
+NEWTAUID}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8a41fdbd59ae3ac1c079321490dc2f9357}
+}]\index{SMHTT2016@{SMHTT2016}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!SMHTT2016@{SMHTT2016}}\item[{\em 
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ae11388885bd3683fdf33074da89042ed}{
+SMHTT2016}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ae11388885bd3683fdf33074da89042ed}
+}]\index{MSSMHTT2016@{MSSMHTT2016}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!MSSMHTT2016@{MSSMHTT2016}}\item[{\em 
+\hypertarget{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ad7231809c1351c46aa3253d44c29a522}{
+MSSMHTT2016}
+\label{classHttTauCorrectionsProducer_acc717e96c2a4615a19cad294596fb2f8ad7231809c1351c46aa3253d44c29a522}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttTauCorrectionsProducer_a8b1827912c40c7a6b0f4853b53419df2}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!AdditionalCorrections@{AdditionalCorrections}}
+\index{AdditionalCorrections@{AdditionalCorrections}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{AdditionalCorrections}]{\setlength{\rightskip}{0pt plus 5cm}void HttTauCorrectionsProducer::AdditionalCorrections (KTau $\ast$ {\em tau}, \/  {\bf event\_\-type} const \& {\em event}, \/  {\bf product\_\-type} \& {\em product}, \/  {\bf setting\_\-type} const \& {\em settings}, \/  {\bf metadata\_\-type} const \& {\em metadata}) const\hspace{0.3cm}{\ttfamily  \mbox{[}override, protected, virtual\mbox{]}}}}
+\label{classHttTauCorrectionsProducer_a8b1827912c40c7a6b0f4853b53419df2}
+\hypertarget{classHttTauCorrectionsProducer_ad331a4f917c0e86447c5ee80871a082d}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!Init@{Init}}
+\index{Init@{Init}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void HttTauCorrectionsProducer::Init ({\bf setting\_\-type} const \& {\em settings}, \/  {\bf metadata\_\-type} \& {\em metadata})\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual\mbox{]}}}}
+\label{classHttTauCorrectionsProducer_ad331a4f917c0e86447c5ee80871a082d}
+\hypertarget{classHttTauCorrectionsProducer_aa38eb3feab13858436018db4360f7be4}{
+\index{HttTauCorrectionsProducer@{HttTauCorrectionsProducer}!ToTauEnergyCorrection@{ToTauEnergyCorrection}}
+\index{ToTauEnergyCorrection@{ToTauEnergyCorrection}!HttTauCorrectionsProducer@{HttTauCorrectionsProducer}}
+\subsubsection[{ToTauEnergyCorrection}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf TauEnergyCorrection} HttTauCorrectionsProducer::ToTauEnergyCorrection (std::string const \& {\em tauEnergyCorrection})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classHttTauCorrectionsProducer_aa38eb3feab13858436018db4360f7be4}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+interface/Producers/\hyperlink{HttTauCorrectionsProducer_8h}{HttTauCorrectionsProducer.h}\item 
+src/Producers/\hyperlink{HttTauCorrectionsProducer_8cc}{HttTauCorrectionsProducer.cc}\end{DoxyCompactItemize}
